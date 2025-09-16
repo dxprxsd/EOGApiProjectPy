@@ -1,0 +1,55 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "type": "appeals_category",
+      "attributes": {
+        "id": 1,
+        "name": "Первичное обращение",
+        "slug": "piervichnoie_obrashchieniie",
+        "external_id": 1,
+        "shown_for_kind": "portal",
+        "active": true
+      },
+      "relationships": {
+        "admins": {
+          "data": []
+        }
+      }
+    },
+    {
+      "id": "2",
+      "type": "appeals_category",
+      "attributes": {
+        "id": 2,
+        "name": "Повторное обращение",
+        "slug": "povtornoie_obrashchieniie",
+        "external_id": 2,
+        "shown_for_kind": "portal",
+        "active": true
+      },
+      "relationships": {
+        "admins": {
+          "data": []
+        }
+      }
+    },
+    {
+      "id": "3",
+      "type": "appeals_category",
+      "attributes": {
+        "id": 3,
+        "name": "Жалоба",
+        "slug": "zhaloba",
+        "external_id": 3,
+        "shown_for_kind": "portal",
+        "active": true
+      },
+      "relationships": {
+        "admins": {
+          "data": []
+        }
+      }
+    }
+  ]
+}
