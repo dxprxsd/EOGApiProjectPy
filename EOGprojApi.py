@@ -341,7 +341,7 @@ def main():
     categories_data = get_appeals_categories()
     
     if categories_data:
-        print(f"✓ Успешно получено {len(categories_data.get('data', []))} категорий!")
+        print(f"Успешно получено {len(categories_data.get('data', []))} категорий!")
         save_api_categories_to_file(categories_data, "api_categories.txt")
         save_raw_json_to_file(categories_data, "api_categories_raw")
         
@@ -359,7 +359,7 @@ def main():
                 subjects_data = get_appeals_subjects(category_id=first_category_id, page=1, per=50)
                 
                 if subjects_data:
-                    print(f"✓ Успешно получено {len(subjects_data.get('data', []))} тем обращений!")
+                    print(f"Успешно получено {len(subjects_data.get('data', []))} тем обращений!")
                     save_api_subjects_to_file(subjects_data, f"api_subjects_category_{first_category_id}.txt")
                     save_raw_json_to_file(subjects_data, f"api_subjects_raw_{first_category_id}")
                     
@@ -369,7 +369,7 @@ def main():
                         attrs = subject.get('attributes', {})
                         print(f"- {attrs.get('name', 'N/A')} (ID: {attrs.get('id', 'N/A')})")
     else:
-        print("✗ Не удалось получить данные категорий от API")
+        print("Не удалось получить данные категорий от API")
     
     print("\n" + "=" * 60)
     print("ПОЛУЧЕНИЕ ДАННЫХ ИЗ БАЗЫ ДАННЫХ")
@@ -380,7 +380,7 @@ def main():
     gez_data = get_gez_data(limit=1000)
     
     if gez_data:
-        print(f"✓ Успешно получено {len(gez_data)} записей из БД!")
+        print(f"Успешно получено {len(gez_data)} записей из БД!")
         save_db_data_to_file(gez_data, "db_gez_data.json")
         save_raw_json_to_file(gez_data, "db_gez_raw")
         
@@ -389,7 +389,7 @@ def main():
         for i, record in enumerate(gez_data[:5], 1):
             print(f"{i}. ID: {record.get('ind', 'N/A')}, Номер: {record.get('num', 'N/A')}")
     else:
-        print("✗ Не удалось получить данные из базы данных")
+        print("Не удалось получить данные из базы данных")
     
     print("\n" + "=" * 60)
     print("ВЫПОЛНЕНИЕ ЗАВЕРШЕНО!")
@@ -419,7 +419,7 @@ def main():
     categories_data = get_appeals_categories()
     
     if categories_data:
-        print(f"✓ Успешно получено {len(categories_data.get('data', []))} категорий!")
+        print(f"Успешно получено {len(categories_data.get('data', []))} категорий!")
         save_api_categories_to_file(categories_data, "api_categories.txt")
         save_raw_json_to_file(categories_data, "api_categories_raw")
         
@@ -437,7 +437,7 @@ def main():
                 subjects_data = get_appeals_subjects(category_id=first_category_id, page=1, per=50)
                 
                 if subjects_data:
-                    print(f"✓ Успешно получено {len(subjects_data.get('data', []))} тем обращений!")
+                    print(f"Успешно получено {len(subjects_data.get('data', []))} тем обращений!")
                     save_api_subjects_to_file(subjects_data, f"api_subjects_category_{first_category_id}.txt")
                     save_raw_json_to_file(subjects_data, f"api_subjects_raw_{first_category_id}")
                     
@@ -447,7 +447,7 @@ def main():
                         attrs = subject.get('attributes', {})
                         print(f"- {attrs.get('name', 'N/A')} (ID: {attrs.get('id', 'N/A')})")
     else:
-        print("✗ Не удалось получить данные категорий от API")
+        print("Не удалось получить данные категорий от API")
     
     print("\n" + "=" * 60)
     print("ПОЛУЧЕНИЕ ДАННЫХ ИЗ БАЗЫ ДАННЫХ")
@@ -458,7 +458,7 @@ def main():
     gez_data = get_gez_data(limit=1000)
     
     if gez_data:
-        print(f"✓ Успешно получено {len(gez_data)} записей из БД!")
+        print(f"Успешно получено {len(gez_data)} записей из БД!")
         save_db_data_to_file(gez_data, "db_gez_data.json")
         save_raw_json_to_file(gez_data, "db_gez_raw")
         
@@ -467,7 +467,7 @@ def main():
         for i, record in enumerate(gez_data[:5], 1):
             print(f"{i}. ID: {record.get('ind', 'N/A')}, Номер: {record.get('num', 'N/A')}")
     else:
-        print("✗ Не удалось получить данные из базы данных")
+        print("Не удалось получить данные из базы данных")
     
     print("\n" + "=" * 60)
     print("ВЫПОЛНЕНИЕ ЗАВЕРШЕНО!")
