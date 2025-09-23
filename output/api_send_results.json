@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "total_sent": 1,
+    "success_count": 0,
+    "error_count": 1,
+    "sent_at": "2025-09-23T09:48:31.725179"
+  },
+  "results": [
+    {
+      "template_number": 1,
+      "source": "pto_grp",
+      "source_id": 1,
+      "status": "error",
+      "sent_at": "2025-09-23T09:48:31.724956",
+      "object_name": "ГРП № 1"
+    }
+  ]
+}
