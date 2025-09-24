@@ -2,308 +2,253 @@ import requests
 import json
 import urllib3
 from datetime import datetime
-import os
+import base64
 
 # Отключаем предупреждения SSL
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-# Настройки
+# Настройки прокси
+PROXY_HOST = '192.168.1.2'
+PROXY_PORT = 8080
+PROXY_USER = 'kuzminiv'
+PROXY_PASS = '12345678Q!'
+
+# URL прокси
+PROXY_URL = f"http://{PROXY_USER}:{PROXY_PASS}@{PROXY_HOST}:{PROXY_PORT}"
+
+# Настройки API
 API_BASE_URL = "https://tpsg.etpgpb.ru/v1"
 TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODQiLCJzY3AiOiJ2MV9hZG1pbiIsImF1ZCI6bnVsbCwiaWF0IjoxNzU3MDU3OTIwLCJleHAiOjE3NTk2ODc2NjYsImp0aSI6ImE1M2MyZjgwLWNhNWEtNDczMy1iMmYwLWVkMWM3MGZlMmE4OSJ9.pD4u28LZkxaC7gf7jocrZmYfp1V8TwgnG7_tIYqB70w"
 
-class AppealsAPI:
-    def __init__(self, base_url, token):
-        self.base_url = base_url
-        self.token = token
-        self.session = requests.Session()
-        self.setup_session()
+def test_different_auth_methods():
+    """Тестируем разные методы авторизации"""
+    print("=" * 70)
+    print("ТЕСТИРОВАНИЕ РАЗНЫХ МЕТОДОВ АВТОРИЗАЦИИ")
+    print("=" * 70)
     
-    def setup_session(self):
-        """Настройка сессии с обходом проблем с прокси"""
-        self.session.headers.update({
-            'Authorization': f'Bearer {self.token}',
-            'Content-Type': 'application/json',
-            'Accept': 'application/json',
-            'User-Agent': 'Appeals-API-Client/1.0'
-        })
-        
-        # Отключаем проверку SSL
-        self.session.verify = False
-        
-        # Отключаем использование прокси для этого домена
-        self.session.trust_env = False
-        
-        # Альтернативно: очищаем переменные окружения прокси
-        os.environ.pop('HTTP_PROXY', None)
-        os.environ.pop('HTTPS_PROXY', None)
-        os.environ.pop('http_proxy', None)
-        os.environ.pop('https_proxy', None)
+    # Базовые настройки
+    proxies = {'http': PROXY_URL, 'https': PROXY_URL}
+    params = {'page': 1, 'per': 2}
+    url = f"{API_BASE_URL}/admin/appeals/consultations"
     
-    def test_connection(self):
-        """Тестирование подключения"""
+    # Методы авторизации для тестирования
+    auth_methods = [
+        {
+            'name': 'Bearer Token (стандартный)',
+            'headers': {'Authorization': f'Bearer {TOKEN}'}
+        },
+        {
+            'name': 'Basic Auth с токеном как паролем',
+            'headers': {'Authorization': f'Basic {base64.b64encode(f":{TOKEN}".encode()).decode()}'}
+        },
+        {
+            'name': 'Basic Auth с admin:token',
+            'headers': {'Authorization': f'Basic {base64.b64encode(f"admin:{TOKEN}".encode()).decode()}'}
+        },
+        {
+            'name': 'Basic Auth с token:token',
+            'headers': {'Authorization': f'Basic {base64.b64encode(f"{TOKEN}:{TOKEN}".encode()).decode()}'}
+        },
+        {
+            'name': 'X-Auth-Token header',
+            'headers': {'X-Auth-Token': TOKEN}
+        },
+        {
+            'name': 'X-Authorization header',
+            'headers': {'X-Authorization': f'Bearer {TOKEN}'}
+        },
+        {
+            'name': 'Token в параметрах URL (token)',
+            'params': {'token': TOKEN, 'page': 1, 'per': 2},
+            'headers': {}
+        },
+        {
+            'name': 'Token в параметрах URL (access_token)',
+            'params': {'access_token': TOKEN, 'page': 1, 'per': 2},
+            'headers': {}
+        },
+        {
+            'name': 'Token в параметрах URL (auth_token)',
+            'params': {'auth_token': TOKEN, 'page': 1, 'per': 2},
+            'headers': {}
+        },
+        {
+            'name': 'Token в URL path',
+            'url': f"{API_BASE_URL}/admin/appeals/consultations?token={TOKEN}",
+            'headers': {}
+        },
+    ]
+    
+    # Общие заголовки
+    common_headers = {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    }
+    
+    successful_methods = []
+    
+    for i, method in enumerate(auth_methods, 1):
+        print(f"\n{i}. {method['name']}")
+        print("-" * 50)
+        
         try:
-            response = self.session.get(
-                f"{self.base_url}/admin/appeals",
-                params={'page': 1, 'per': 1},
-                timeout=10
-            )
+            # Подготавливаем параметры запроса
+            request_headers = common_headers.copy()
+            request_headers.update(method.get('headers', {}))
             
-            if response.status_code == 200:
-                return True, "Подключение успешно"
-            else:
-                return False, f"Ошибка {response.status_code}: {response.text}"
-                
-        except requests.exceptions.ProxyError as e:
-            # Пробуем без прокси
-            try:
-                print("Обнаружена проблема с прокси. Пробуем прямое соединение...")
-                response = requests.get(
-                    f"{self.base_url}/admin/appeals",
-                    params={'page': 1, 'per': 1},
-                    headers={
-                        'Authorization': f'Bearer {self.token}',
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    verify=False,
-                    timeout=10
-                )
-                
-                if response.status_code == 200:
-                    return True, "Подключение успешно (прямое соединение)"
-                else:
-                    return False, f"Ошибка {response.status_code}: {response.text}"
-                    
-            except Exception as e2:
-                return False, f"Ошибка прямого соединения: {e2}"
-                
-        except requests.exceptions.RequestException as e:
-            return False, f"Ошибка соединения: {e}"
-    
-    def get_appeals_page(self, page=1, per_page=50, filters=None):
-        """Получение одной страницы обращений"""
-        params = {
-            'page': page,
-            'per': per_page
-        }
-        
-        if filters:
-            params.update(filters)
-        
-        try:
-            response = self.session.get(
-                f"{self.base_url}/admin/appeals",
-                params=params,
+            request_params = params.copy()
+            request_params.update(method.get('params', {}))
+            
+            request_url = method.get('url', url)
+            
+            print(f"URL: {request_url}")
+            print(f"Headers: {request_headers}")
+            print(f"Params: {request_params}")
+            
+            response = requests.get(
+                request_url,
+                headers=request_headers,
+                params=request_params,
+                proxies=proxies,
+                verify=False,
                 timeout=30
             )
             
+            print(f"Status: {response.status_code}")
+            
             if response.status_code == 200:
-                return response.json()
-            else:
-                print(f"Ошибка API: {response.status_code} - {response.text}")
-                return None
+                print("УСПЕХ!")
+                successful_methods.append(method['name'])
                 
-        except requests.exceptions.ProxyError:
-            # Пробуем прямое соединение при ошибке прокси
-            print("Проблема с прокси. Пробуем прямое соединение...")
-            try:
-                response = requests.get(
-                    f"{self.base_url}/admin/appeals",
-                    params=params,
-                    headers={
-                        'Authorization': f'Bearer {self.token}',
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    verify=False,
-                    timeout=30
-                )
-                
-                if response.status_code == 200:
-                    return response.json()
-                else:
-                    print(f"Ошибка API при прямом соединении: {response.status_code} - {response.text}")
-                    return None
+                # Показываем немного данных
+                data = response.json()
+                if 'data' in data:
+                    print(f"Получено {len(data['data'])} обращений")
                     
-            except Exception as e:
-                print(f"Ошибка прямого соединения: {e}")
-                return None
-                
-        except requests.exceptions.RequestException as e:
-            print(f"Ошибка запроса: {e}")
-            return None
-    
-    def get_all_appeals(self, per_page=50, max_pages=None, filters=None):
-        """Получение всех обращений с пагинацией"""
-        all_appeals = []
-        page = 1
-        
-        while True:
-            print(f"Получение страницы {page}...")
-            
-            data = self.get_appeals_page(page, per_page, filters)
-            
-            if not data or 'data' not in data:
-                print("Нет данных или неверный формат ответа")
-                break
-                
-            appeals = data['data']
-            if not appeals:
-                print("Больше данных нет")
-                break
-                
-            all_appeals.extend(appeals)
-            print(f"Получено {len(appeals)} обращений")
-            
-            # Проверяем пагинацию
-            meta = data.get('meta', {})
-            total_pages = meta.get('total_pages', 1)
-            
-            if page >= total_pages:
-                print(f"Достигнута последняя страница. Всего страниц: {total_pages}")
-                break
-            
-            # Ограничение количества страниц если указано
-            if max_pages and page >= max_pages:
-                print(f"Достигнуто ограничение в {max_pages} страниц")
-                break
-                
-            page += 1
-        
-        return all_appeals
-
-    def get_appeals_by_category(self, category_ids, per_page=50):
-        """Получить обращения по категориям"""
-        filters = {
-            'category_ids[]': category_ids,
-            'included[]': ['user', 'organization', 'subject', 'category']
-        }
-        return self.get_all_appeals(per_page=per_page, filters=filters)
-
-    def search_appeals(self, search_query, per_page=50):
-        """Поиск обращений"""
-        if len(search_query) < 3:
-            print("Поисковый запрос должен содержать минимум 3 символа")
-            return []
-        
-        filters = {
-            'query': search_query,
-            'included[]': ['user', 'organization', 'subject', 'category']
-        }
-        return self.get_all_appeals(per_page=per_page, filters=filters)
-
-# Функция для анализа токена
-def analyze_token(token):
-    """Анализ JWT токена"""
-    try:
-        import base64
-        import json
-        
-        parts = token.split('.')
-        if len(parts) != 3:
-            print("Неверный формат JWT токена")
-            return False
-        
-        # Декодируем payload (вторая часть токена)
-        payload_json = base64.b64decode(parts[1] + '==').decode('utf-8')
-        payload = json.loads(payload_json)
-        
-        print("Информация о токене:")
-        print(f"Subject: {payload.get('sub')}")
-        print(f"Scope: {payload.get('scp')}")
-        
-        exp_timestamp = payload.get('exp')
-        if exp_timestamp:
-            exp_time = datetime.fromtimestamp(exp_timestamp)
-            now = datetime.now()
-            if exp_time < now:
-                print(f"Токен истек: {exp_time}")
-                return False
+            elif response.status_code == 403:
+                print("Ошибка 403: Не хватает прав")
+                try:
+                    error_data = response.json()
+                    print(f"Детали: {error_data}")
+                except:
+                    print(f"Текст: {response.text}")
+                    
+            elif response.status_code == 401:
+                print("Ошибка 401: Неавторизован")
+                try:
+                    error_data = response.json()
+                    print(f"Детали: {error_data}")
+                except:
+                    print(f"Текст: {response.text}")
             else:
-                print(f"Токен действителен до: {exp_time}")
-                return True
+                print(f"Ошибка {response.status_code}")
+                print(f"Текст: {response.text[:200]}...")
+                
+        except Exception as e:
+            print(f"Ошибка запроса: {e}")
+    
+    # Итоги
+    print("\n" + "=" * 70)
+    print("ИТОГИ ТЕСТИРОВАНИЯ")
+    print("=" * 70)
+    
+    if successful_methods:
+        print("УСПЕШНЫЕ МЕТОДЫ:")
+        for method in successful_methods:
+            print(f"  - {method}")
+    else:
+        print("Ни один метод авторизации не сработал")
+
+def test_with_token_in_url():
+    """Тест с токеном прямо в URL"""
+    print("\n" + "=" * 70)
+    print("ТЕСТ С ТОКОНОМ В URL")
+    print("=" * 70)
+    
+    proxies = {'http': PROXY_URL, 'https': PROXY_URL}
+    
+    # Разные варианты URL с токеном
+    url_variants = [
+        f"{API_BASE_URL}/admin/appeals/consultations?access_token={TOKEN}",
+        f"{API_BASE_URL}/admin/appeals/consultations?token={TOKEN}",
+        f"{API_BASE_URL}/admin/appeals/consultations?auth_token={TOKEN}",
+        f"{API_BASE_URL}/admin/appeals/consultations?api_key={TOKEN}",
+    ]
+    
+    for i, url in enumerate(url_variants, 1):
+        print(f"\n{i}. URL: {url[:100]}...")
+        
+        try:
+            response = requests.get(
+                url,
+                params={'page': 1, 'per': 2},
+                proxies=proxies,
+                verify=False,
+                timeout=30
+            )
+            
+            print(f"Status: {response.status_code}")
+            
+            if response.status_code == 200:
+                print("УСПЕХ!")
+                data = response.json()
+                print(f"Получено {len(data.get('data', []))} обращений")
+            else:
+                print(f"Ошибка: {response.status_code}")
+                
+        except Exception as e:
+            print(f"Ошибка: {e}")
+
+def check_token_validity():
+    """Проверяем валидность токена"""
+    print("\n" + "=" * 70)
+    print("ПРОВЕРКА ТОКЕНА")
+    print("=" * 70)
+    
+    # Анализируем JWT токен
+    try:
+        parts = TOKEN.split('.')
+        if len(parts) == 3:
+            header, payload, signature = parts
+            
+            # Декодируем payload
+            padding = 4 - len(payload) % 4
+            if padding != 4:
+                payload += '=' * padding
+                
+            payload_json = base64.b64decode(payload).decode('utf-8')
+            payload_data = json.loads(payload_json)
+            
+            print("JWT Token Analysis:")
+            print(f"  Subject (sub): {payload_data.get('sub')}")
+            print(f"  Scope (scp): {payload_data.get('scp')}")
+            
+            # Проверяем срок действия
+            if 'exp' in payload_data:
+                exp_time = datetime.fromtimestamp(payload_data['exp'])
+                now = datetime.now()
+                print(f"  Expires: {exp_time}")
+                print(f"  Valid: {exp_time > now}")
+            else:
+                print("  Expiration: Not specified")
+                
         else:
-            print("Срок действия токена не указан")
-            return True
+            print("Токен не в JWT формате")
             
     except Exception as e:
         print(f"Ошибка анализа токена: {e}")
-        return False
-
-# Функция для проверки сетевых настроек
-def check_network_settings():
-    """Проверка сетевых настроек"""
-    print("\nПроверка сетевых настроек...")
-    
-    # Проверяем переменные окружения прокси
-    proxy_vars = ['HTTP_PROXY', 'HTTPS_PROXY', 'http_proxy', 'https_proxy']
-    for var in proxy_vars:
-        if var in os.environ:
-            print(f"Обнаружена переменная прокси {var}: {os.environ[var]}")
-        else:
-            print(f"Переменная прокси {var}: не установлена")
 
 # Основная программа
 if __name__ == "__main__":
-    print("=" * 60)
-    print("ПРОГРАММА ДЛЯ ПОЛУЧЕНИЯ ОБРАЩЕНИЙ ИЗ API")
-    print("=" * 60)
+    # Проверяем токен
+    check_token_validity()
     
-    # Проверяем сетевые настройки
-    check_network_settings()
+    # Тестируем разные методы авторизации
+    test_different_auth_methods()
     
-    # Анализируем токен
-    print("\n1. Анализ токена...")
-    is_token_valid = analyze_token(TOKEN)
+    # Тестируем токен в URL
+    test_with_token_in_url()
     
-    if not is_token_valid:
-        print("ВНИМАНИЕ: Токен может быть недействителен!")
-        print("Рекомендуется получить новый токен авторизации.")
-    
-    # Создаем клиент API
-    print("\n2. Создание API клиента...")
-    api_client = AppealsAPI(API_BASE_URL, TOKEN)
-    
-    # Тестируем подключение
-    print("\n3. Тестирование подключения к API...")
-    success, message = api_client.test_connection()
-    print(f"Результат: {message}")
-    
-    if success:
-        # Получаем данные
-        print("\n4. Получение обращений...")
-        
-        # Для теста получаем ограниченное количество
-        appeals = api_client.get_all_appeals(per_page=10, max_pages=2)
-        
-        if appeals:
-            print(f"Успешно получено {len(appeals)} обращений")
-            
-            # Сохраняем данные в файл
-            output_file = 'appeals_data.json'
-            with open(output_file, 'w', encoding='utf-8') as f:
-                json.dump(appeals, f, ensure_ascii=False, indent=2)
-            print(f"Данные сохранены в файл: {output_file}")
-            
-            # Выводим статистику
-            print("\nСтатистика:")
-            print(f"Всего обращений: {len(appeals)}")
-            
-            # Пример первого обращения
-            if appeals:
-                first_appeal = appeals[0]
-                attributes = first_appeal.get('attributes', {})
-                print(f"\nПример первого обращения:")
-                print(f"ID: {first_appeal.get('id')}")
-                print(f"Email: {attributes.get('email')}")
-                print(f"Телефон: {attributes.get('phone')}")
-                print(f"Дата создания: {attributes.get('created_at')}")
-                
-        else:
-            print("Не удалось получить обращения")
-    else:
-        print("\nНе удалось подключиться к API.")
-    
-    print("\n" + "=" * 60)
-    print("ЗАВЕРШЕНО")
-    print("=" * 60)
+    print("\n" + "=" * 70)
+    print("ТЕСТИРОВАНИЕ ЗАВЕРШЕНО")
+    print("=" * 70)
