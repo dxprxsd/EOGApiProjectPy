@@ -1,0 +1,9 @@
+{
+  "errors": [
+    {
+      "title": "unauthorized",
+      "detail": "No verification key available",
+      "code": 401
+    }
+  ]
+}
