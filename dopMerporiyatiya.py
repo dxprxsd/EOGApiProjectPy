@@ -64,11 +64,11 @@ def get_additional_activities(service_id=3):
     """
     Получает список дополнительных мероприятий из API
     
-    Args:
-        service_id (int): ID услуги (по умолчанию 3)
-    
-    Returns:
-        dict: Ответ от API или None в случае ошибки
+        Args:
+            service_id (int): ID услуги (по умолчанию 3)
+        
+        Returns:
+            dict: Ответ от API или None в случае ошибки
     """
     try:
         # Формируем URL запроса
@@ -199,10 +199,7 @@ def main():
     # Тестируем прокси
     if not test_proxy_connection():
         print("Предупреждение: прокси не работает, продолжаем без него...")
-    
-    # Тестируем SQL соединение (опционально)
-    # test_sql_connection()
-    
+        
     # Получаем данные из API
     print("\n" + "="*50)
     print("ПОЛУЧЕНИЕ ДАННЫХ ИЗ API")
