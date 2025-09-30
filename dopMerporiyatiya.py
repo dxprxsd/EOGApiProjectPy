@@ -8,7 +8,7 @@ import os
 import urllib3
 import pymssql
 
-# ОСНОВНАЯ ПРОГРАММА
+# ОСНОВНАЯ ПРОГРАММА (функиция получения записей о мероприятиях)
 
 # Отключаем предупреждения SSL
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -34,7 +34,7 @@ API_BASE_URL = "https://tpsg.etpgpb.ru/v1"
 API_AUTH_TOKEN = "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODQiLCJzY3AiOiJ2MV9hZG1pbiIsImF1ZCI6bnVsbCwiaWF0IjoxNzU3MDU3OTIwLCJleHAiOjE3NTk2ODc2NjYsImp0aSI6ImE1M2MyZjgwLWNhNWEtNDczMy1iMmYwLWVkMWM3MGZlMmE4OSJ9.pD4u28LZkxaC7gf7jocrZmYfp1V8TwgnG7_tIYqB70w"
 
 def setup_proxy():
-    """Настраиваем прокси для системы"""
+    # Настраиваем прокси для системы
     os.environ['HTTP_PROXY'] = PROXY_URL
     os.environ['HTTPS_PROXY'] = PROXY_URL
     os.environ['NO_PROXY'] = 'localhost,127.0.0.1'
@@ -43,7 +43,7 @@ def setup_proxy():
     print(f"Пользователь: {PROXY_USER}")
 
 def test_proxy_connection():
-    """Тестируем соединение через прокси"""
+    # Тестируем соединение через прокси
     try:
         test_url = 'http://httpbin.org/ip'
         response = requests.get(
@@ -61,15 +61,9 @@ def test_proxy_connection():
         return False
 
 def get_additional_activities(service_id=3):
-    """
-    Получает список дополнительных мероприятий из API
-    
-        Args:
-            service_id (int): ID услуги (по умолчанию 3)
-        
-        Returns:
-            dict: Ответ от API или None в случае ошибки
-    """
+    # Получает список дополнительных мероприятий из API
+    # Args: service_id (int): ID услуги (по умолчанию 3)   
+    # Returns: dict: Ответ от API или None в случае ошибки
     try:
         # Формируем URL запроса
         url = f"{API_BASE_URL}/additional_activities"
@@ -131,7 +125,7 @@ def get_additional_activities(service_id=3):
         return None
 
 def display_activities_data(data):
-    """Красиво отображает данные о мероприятиях"""
+    # Красиво отображает данные о мероприятиях
     if not data or 'data' not in data:
         print("Нет данных для отображения")
         return
@@ -153,7 +147,7 @@ def display_activities_data(data):
         print(f"   {'-'*50}")
 
 def save_to_file(data, filename=None):
-    """Сохраняет данные в JSON файл"""
+    # Сохраняет данные в JSON файл
     if not filename:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"additional_activities_{timestamp}.json"
@@ -168,7 +162,7 @@ def save_to_file(data, filename=None):
         return None
 
 def test_sql_connection():
-    """Тестирует подключение к SQL Server"""
+    # Тестирует подключение к SQL Server
     try:
         conn = pymssql.connect(
             server=SQL_SERVER,
@@ -189,7 +183,7 @@ def test_sql_connection():
         return False
 
 def main():
-    """Основная функция программы"""
+    # Основная функция программы 
     print("ЗАПУСК ПРОГРАММЫ ПОЛУЧЕНИЯ ДАННЫХ ИЗ API")
     print("=" * 50)
     
