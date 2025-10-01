@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 821387",
+        "description": "Объект из pto_obj_adr. ID: 821387",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 821387,
+          "p2": 85,
+          "p3": 199,
+          "street": 10178,
+          "dom": 49,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Спасский",
+              "settlement": "Базлово",
+              "area": "Нижегородская область район",
+              "zip_code": "606280",
+              "street": "ул. Карла Маркса",
+              "house": "49",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "settlement_fias_id": "8A568264-16E7-4584-B5E8-CE8319D07010",
+              "area_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "house_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "street_fias_id": null,
+              "extra": "Original: p2=85, p3=199, street=10178",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Карла Маркса 49",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 821387,
+    "template_number": 410569,
+    "created_at": "2025-10-01T08:12:38.567930"
+  }
+}

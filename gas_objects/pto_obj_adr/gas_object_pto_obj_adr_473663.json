@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 473663",
+        "description": "Объект из pto_obj_adr. ID: 473663",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 473663,
+          "p2": 85,
+          "p3": 117,
+          "street": 10175,
+          "dom": 13,
+          "korpus": 2
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Спасский",
+              "settlement": "Антоново",
+              "area": "Нижегородская область район",
+              "zip_code": "606280",
+              "street": "ул. Молодежная",
+              "house": "13",
+              "block": "2",
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "settlement_fias_id": "0739C65D-D8F9-4291-B11B-D857594AB082",
+              "area_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "house_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "street_fias_id": null,
+              "extra": "Original: p2=85, p3=117, street=10175",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Молодежная 13",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 473663,
+    "created_at": "2025-10-01T08:31:42.117657",
+    "batch_processed": false
+  }
+}

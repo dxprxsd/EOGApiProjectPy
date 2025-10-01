@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП № 74",
+        "description": "Объект газификации из базы данных. ID: 5875",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 5875,
+          "original_address": "Шатковский р-н, сп. Знаменский"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Шатковский",
+              "settlement": "Шатковский",
+              "area": "Нижегородская область район",
+              "zip_code": "607700",
+              "street": "сп. Знаменский",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+              "settlement_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+              "area_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+              "house_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+              "street_fias_id": "27FB2E63-8269-46D5-A358-66B779527709",
+              "extra": "Шатковский р-н, сп. Знаменский",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Знаменский 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 5875,
+    "created_at": "2025-10-01T08:25:34.999702",
+    "batch_processed": false
+  }
+}

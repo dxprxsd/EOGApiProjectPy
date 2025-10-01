@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 471436",
+        "description": "Объект из pto_obj_adr. ID: 471436",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 471436,
+          "p2": 55,
+          "p3": 1482,
+          "street": 0,
+          "dom": 119,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Кстовский",
+              "settlement": "Зелецино",
+              "area": "Нижегородская область район",
+              "zip_code": "607650",
+              "street": "ул. Не указана",
+              "house": "119",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "settlement_fias_id": "41815222-29C4-44A5-BB2F-9F3BE621A22F",
+              "area_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "house_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "street_fias_id": null,
+              "extra": "Original: p2=55, p3=1482, street=0",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул None 119",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 471436,
+    "created_at": "2025-10-01T08:31:32.990763",
+    "batch_processed": false
+  }
+}

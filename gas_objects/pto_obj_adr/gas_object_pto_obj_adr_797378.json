@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 797378",
+        "description": "Объект из pto_obj_adr. ID: 797378",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 797378,
+          "p2": 85,
+          "p3": 4498,
+          "street": 9966,
+          "dom": 10,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Спасский",
+              "settlement": "Татарское Маклаково",
+              "area": "Нижегородская область район",
+              "zip_code": "606280",
+              "street": "ул. Московская",
+              "house": "10",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "settlement_fias_id": "FD00DF66-419F-43F2-87D1-B0DA8959F41D",
+              "area_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "house_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "street_fias_id": null,
+              "extra": "Original: p2=85, p3=4498, street=9966",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Московская 10",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 797378,
+    "created_at": "2025-10-01T09:24:35.331386",
+    "batch_processed": false
+  }
+}

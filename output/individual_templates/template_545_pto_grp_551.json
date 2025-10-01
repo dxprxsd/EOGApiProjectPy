@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "01-40-0-0025",
+        "description": "Объект газификации из базы данных. ID: 551",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 551,
+          "original_address": "г. Бор, мкр. Прибрежный"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Бор",
+              "settlement": "Бор",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "мкр. Прибрежный",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "settlement_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "area_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "house_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "street_fias_id": "D51DDF9B-773F-4651-B3A6-BDC97CFF9835",
+              "extra": "г. Бор, мкр. Прибрежный",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Прибрежный 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 551,
+    "template_number": 545,
+    "created_at": "2025-10-01T08:12:17.682404"
+  }
+}

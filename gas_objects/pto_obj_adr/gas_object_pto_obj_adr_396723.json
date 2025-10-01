@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 396723",
+        "description": "Объект из pto_obj_adr. ID: 396723",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 396723,
+          "p2": 102,
+          "p3": 5454,
+          "street": 0,
+          "dom": 4,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Нижний Новгород",
+              "settlement": "Ст. Мыза",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "ул. Не указана",
+              "house": "4",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "555E7D61-D9A7-4BA6-9770-6CAA8198C483",
+              "settlement_fias_id": "E8AA3CC3-7AC8-4559-91DD-D41B2B7E289E",
+              "area_fias_id": "555E7D61-D9A7-4BA6-9770-6CAA8198C483",
+              "house_fias_id": "555E7D61-D9A7-4BA6-9770-6CAA8198C483",
+              "street_fias_id": null,
+              "extra": "Original: p2=102, p3=5454, street=0",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул None 4",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 396723,
+    "created_at": "2025-10-01T08:26:34.393061",
+    "batch_processed": false
+  }
+}

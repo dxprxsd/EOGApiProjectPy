@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ГРУ № 57",
+        "description": "Объект газификации из базы данных. ID: 6607",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 6607,
+          "original_address": "г. Арзамас, с. Морозовка, Юго-западнее с. Морозовка промзона [к котельной ООО \"Сен-Гобен\"]"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Арзамас",
+              "settlement": "Арзамас",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "с. Морозовка",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "settlement_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "area_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "house_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "street_fias_id": "1FD90FF6-4FEC-40D7-B6D5-F02934946101",
+              "extra": "г. Арзамас, с. Морозовка, Юго-западнее с. Морозовка промзона [к котельной ООО \"Сен-Гобен\"]",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Морозовка 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 6607,
+    "created_at": "2025-10-01T08:25:35.087081",
+    "batch_processed": false
+  }
+}

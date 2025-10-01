@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 519403",
+        "description": "Объект из pto_obj_adr. ID: 519403",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 519403,
+          "p2": 81,
+          "p3": 975,
+          "street": 18031,
+          "dom": 11,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Сокольский",
+              "settlement": "Георгиевское",
+              "area": "Нижегородская область район",
+              "zip_code": "606670",
+              "street": "ул. Цветочная",
+              "house": "11",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "A50632F1-48A4-401C-8B4C-03128AA29D97",
+              "settlement_fias_id": "73E8CD39-9DEA-4643-BEB8-E7280039648E",
+              "area_fias_id": "A50632F1-48A4-401C-8B4C-03128AA29D97",
+              "house_fias_id": "A50632F1-48A4-401C-8B4C-03128AA29D97",
+              "street_fias_id": null,
+              "extra": "Original: p2=81, p3=975, street=18031",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Цветочная 11",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 519403,
+    "created_at": "2025-10-01T08:36:43.673521",
+    "batch_processed": false
+  }
+}

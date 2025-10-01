@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП-74ВязЛугБал",
+        "description": "Объект газификации из базы данных. ID: 7711",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 7711,
+          "original_address": "Кстовский р-н, с. Вязовка, ул. Луговая [ШРП-74 на 2дома в Вяз и 2д.в Митино]"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Кстовский",
+              "settlement": "Кстовский",
+              "area": "Нижегородская область район",
+              "zip_code": "607650",
+              "street": "с. Вязовка",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "settlement_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "area_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "house_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "street_fias_id": "1C3672D5-C394-420E-91B1-77956E5651A3",
+              "extra": "Кстовский р-н, с. Вязовка, ул. Луговая [ШРП-74 на 2дома в Вяз и 2д.в Митино]",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Вязовка 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 7711,
+    "template_number": 6837,
+    "created_at": "2025-10-01T08:12:17.768474"
+  }
+}

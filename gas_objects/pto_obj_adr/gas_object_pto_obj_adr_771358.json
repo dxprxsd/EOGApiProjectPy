@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 771358",
+        "description": "Объект из pto_obj_adr. ID: 771358",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 771358,
+          "p2": 40,
+          "p3": 626,
+          "street": 0,
+          "dom": 2,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Городецкий",
+              "settlement": "Буревестник",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "ул. Не указана",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "8E694803-5CAF-4913-AB04-37E692792E6B",
+              "settlement_fias_id": "29439AD6-1041-4636-9F48-9D76D48209ED",
+              "area_fias_id": "8E694803-5CAF-4913-AB04-37E692792E6B",
+              "house_fias_id": "8E694803-5CAF-4913-AB04-37E692792E6B",
+              "street_fias_id": null,
+              "extra": "Original: p2=40, p3=626, street=0",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул None 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 771358,
+    "created_at": "2025-10-01T09:20:46.049298",
+    "batch_processed": false
+  }
+}

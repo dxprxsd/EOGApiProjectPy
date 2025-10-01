@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "03-40-0-0043",
+        "description": "Объект газификации из базы данных. ID: 1267",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 1267,
+          "original_address": "г. Бор, д. Хрущево (Ситниковский с/с)"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Бор",
+              "settlement": "Бор",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "д. Хрущево (Ситниковский с/с)",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "settlement_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "area_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "house_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "street_fias_id": "DF0DA81D-68C5-4CA5-B487-04CD38C4C470",
+              "extra": "г. Бор, д. Хрущево (Ситниковский с/с)",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Хрущево (Ситниковский с/с) 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 1267,
+    "template_number": 1239,
+    "created_at": "2025-10-01T08:12:17.688591"
+  }
+}

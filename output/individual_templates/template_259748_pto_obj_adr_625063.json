@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 625063",
+        "description": "Объект из pto_obj_adr. ID: 625063",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 625063,
+          "p2": 71,
+          "p3": 2065,
+          "street": 9073,
+          "dom": 19,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Пильнинский",
+              "settlement": "Красная Горка",
+              "area": "Нижегородская область район",
+              "zip_code": "607491",
+              "street": "ул. Гагарина",
+              "house": "19",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+              "settlement_fias_id": "B51BC598-0860-47D2-B3B7-0C765F353BFE",
+              "area_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+              "house_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+              "street_fias_id": null,
+              "extra": "Original: p2=71, p3=2065, street=9073",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Гагарина 19",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 625063,
+    "template_number": 259748,
+    "created_at": "2025-10-01T08:12:35.203492"
+  }
+}

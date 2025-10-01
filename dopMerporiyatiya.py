@@ -1,4 +1,3 @@
-
 import json
 import requests
 import socket
@@ -8,7 +7,7 @@ import os
 import urllib3
 import pymssql
 
-# ОСНОВНАЯ ПРОГРАММА (функиция получения записей о мероприятиях)
+# ОСНОВНАЯ ПРОГРАММА (функция получения записей о мероприятиях)
 
 # Отключаем предупреждения SSL
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -31,7 +30,9 @@ SQL_PASSWORD = '76543210'
 
 # Настройки API
 API_BASE_URL = "https://tpsg.etpgpb.ru/v1"
-API_AUTH_TOKEN = "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODQiLCJzY3AiOiJ2MV9hZG1pbiIsImF1ZCI6bnVsbCwiaWF0IjoxNzU3MDU3OTIwLCJleHAiOjE3NTk2ODc2NjYsImp0aSI6ImE1M2MyZjgwLWNhNWEtNDczMy1iMmYwLWVkMWM3MGZlMmE4OSJ9.pD4u28LZkxaC7gf7jocrZmYfp1V8TwgnG7_tIYqB70w"
+
+# Глобальная переменная для токена
+API_AUTH_TOKEN = None
 
 def setup_proxy():
     # Настраиваем прокси для системы
@@ -60,10 +61,94 @@ def test_proxy_connection():
         print(f"Ошибка прокси: {e}")
         return False
 
-def get_additional_activities(service_id=3):
+def get_auth_token():
+    # Получает токен авторизации из API
+    # Returns: str: Токен или None в случае ошибки
+    
+    global API_AUTH_TOKEN
+    
+    try:
+        # Читаем данные авторизации из файла
+        auth_file = "authdata.json"
+        if not os.path.exists(auth_file):
+            print(f"Файл авторизации {auth_file} не найден!")
+            return None
+            
+        with open(auth_file, 'r', encoding='utf-8') as f:
+            auth_data = json.load(f)
+        
+        # Формируем URL для авторизации
+        url = f"{API_BASE_URL}/admin/token"
+        
+        # Заголовки запроса
+        headers = {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        }
+        
+        print(f"Отправка запроса авторизации...")
+        print(f"URL: {url}")
+        print(f"Email: {auth_data.get('auth', {}).get('email', 'N/A')}")
+        
+        # Отправляем POST запрос через прокси
+        response = requests.post(
+            url,
+            json=auth_data,
+            headers=headers,
+            proxies={
+                "http": PROXY_URL,
+                "https": PROXY_URL
+            },
+            timeout=30,
+            verify=False  # Игнорируем SSL проверки
+        )
+        
+        print(f"Статус ответа авторизации: {response.status_code}")
+        
+        # Пытаемся получить JSON ответ
+        try:
+            result = response.json()
+        except json.JSONDecodeError as e:
+            print(f"Ошибка декодирования JSON: {e}")
+            print(f"Текст ответа: {response.text[:500]}...")
+            return None
+        
+        # Проверяем статус ответа
+        if response.status_code == 201:
+            jwt_token = result.get('jwt')
+            if jwt_token:
+                API_AUTH_TOKEN = f"Bearer {jwt_token}"
+                print("Авторизация успешна!")
+                print(f"Токен получен: {jwt_token[:50]}...")
+                return API_AUTH_TOKEN
+            else:
+                print("В ответе отсутствует JWT токен")
+                print(f"Полный ответ: {result}")
+                return None
+        else:
+            print(f"Ошибка авторизации: {response.status_code}")
+            print(f"Полный ответ: {result}")
+            return None
+            
+    except requests.exceptions.RequestException as e:
+        print(f"Ошибка сетевого запроса при авторизации: {e}")
+        return None
+    except Exception as e:
+        print(f"Неожиданная ошибка при авторизации: {e}")
+        return None
+
+def get_additional_activities(service_id=29):
     # Получает список дополнительных мероприятий из API
-    # Args: service_id (int): ID услуги (по умолчанию 3)   
+    # Args: service_id (int): ID услуги (по умолчанию 29)   
     # Returns: dict: Ответ от API или None в случае ошибки
+    
+    global API_AUTH_TOKEN
+    
+    if not API_AUTH_TOKEN:
+        print("Токен авторизации не получен. Сначала выполните авторизацию.")
+        return None
+        
     try:
         # Формируем URL запроса
         url = f"{API_BASE_URL}/additional_activities"
@@ -95,7 +180,6 @@ def get_additional_activities(service_id=3):
         )
         
         print(f"Статус ответа: {response.status_code}")
-        print(f"Заголовки ответа: {dict(response.headers)}")
         
         # Пытаемся получить JSON ответ
         try:
@@ -112,10 +196,8 @@ def get_additional_activities(service_id=3):
             return result
         else:
             print(f"Ошибка API: {response.status_code}")
-            if 'errors' in result:
-                for error in result['errors']:
-                    print(f"  - {error.get('title', 'Unknown')}: {error.get('detail', 'No details')}")
-            return result
+            print(f"Полный ответ: {result}")
+            return None
             
     except requests.exceptions.RequestException as e:
         print(f"Ошибка сетевого запроса: {e}")
@@ -193,7 +275,17 @@ def main():
     # Тестируем прокси
     if not test_proxy_connection():
         print("Предупреждение: прокси не работает, продолжаем без него...")
-        
+    
+    # АВТОРИЗАЦИЯ
+    print("\n" + "="*50)
+    print("АВТОРИЗАЦИЯ В API")
+    print("="*50)
+    
+    token = get_auth_token()
+    if not token:
+        print("Не удалось выполнить авторизацию. Программа завершена.")
+        return
+    
     # Получаем данные из API
     print("\n" + "="*50)
     print("ПОЛУЧЕНИЕ ДАННЫХ ИЗ API")
@@ -213,13 +305,13 @@ def main():
         # Дополнительная информация
         print(f"\n{'='*50}")
         print("СВОДКА:")
-        print(f"  • Статус: Успешно")
-        print(f"  • Количество мероприятий: {len(data.get('data', []))}")
-        print(f"  • Service ID: {service_id}")
-        print(f"  • Файл с данными: {saved_file}")
-        print(f"  • Время выполнения: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"• Статус: Успешно")
+        print(f"• Количество мероприятий: {len(data.get('data', []))}")
+        print(f"• Service ID: {service_id}")
+        print(f"• Файл с данными: {saved_file}")
+        print(f"• Время выполнения: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     else:
-        print(f"\n✗ Не удалось получить данные из API")
+        print(f"\nНе удалось получить данные из API")
         
     print(f"\nПрограмма завершена.")
 

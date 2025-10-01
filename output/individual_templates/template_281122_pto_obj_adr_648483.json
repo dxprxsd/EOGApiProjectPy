@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 648483",
+        "description": "Объект из pto_obj_adr. ID: 648483",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 648483,
+          "p2": 65,
+          "p3": 4906,
+          "street": 16985,
+          "dom": 16,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Павловский",
+              "settlement": "Чернеево",
+              "area": "Нижегородская область район",
+              "zip_code": "606100",
+              "street": "ул. Озерная",
+              "house": "16",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+              "settlement_fias_id": "9A5BC054-72D3-4B86-9908-B8C2288F3A1B",
+              "area_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+              "house_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+              "street_fias_id": null,
+              "extra": "Original: p2=65, p3=4906, street=16985",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Озерная 16",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 648483,
+    "template_number": 281122,
+    "created_at": "2025-10-01T08:12:35.525099"
+  }
+}

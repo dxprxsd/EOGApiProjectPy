@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП №34",
+        "description": "Объект газификации из базы данных. ID: 1362",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 1362,
+          "original_address": "Павловский р-н, д. Лаптево, ул. Школьная"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Павловский",
+              "settlement": "Павловский",
+              "area": "Нижегородская область район",
+              "zip_code": "606100",
+              "street": "д. Лаптево",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+              "settlement_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+              "area_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+              "house_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+              "street_fias_id": "6388A642-6A1E-4E9D-810C-7219247676B9",
+              "extra": "Павловский р-н, д. Лаптево, ул. Школьная",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Лаптево 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 1362,
+    "template_number": 1323,
+    "created_at": "2025-10-01T08:12:17.689306"
+  }
+}

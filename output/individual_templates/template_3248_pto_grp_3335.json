@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ГРУ",
+        "description": "Объект газификации из базы данных. ID: 3335",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 3335,
+          "original_address": "Городецкий р-н, с. Бриляково"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Городецкий",
+              "settlement": "Городецкий",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "с. Бриляково",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "8E694803-5CAF-4913-AB04-37E692792E6B",
+              "settlement_fias_id": "8E694803-5CAF-4913-AB04-37E692792E6B",
+              "area_fias_id": "8E694803-5CAF-4913-AB04-37E692792E6B",
+              "house_fias_id": "8E694803-5CAF-4913-AB04-37E692792E6B",
+              "street_fias_id": "CA1F5A42-D94A-494A-8568-C39C407E5E36",
+              "extra": "Городецкий р-н, с. Бриляково",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Бриляково 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 3335,
+    "template_number": 3248,
+    "created_at": "2025-10-01T08:12:17.712876"
+  }
+}

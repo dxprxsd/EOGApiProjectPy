@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 453236",
+        "description": "Объект из pto_obj_adr. ID: 453236",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 453236,
+          "p2": 16,
+          "p3": 5234,
+          "street": 11412,
+          "dom": 0,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Бутурлинский",
+              "settlement": "Яковлево",
+              "area": "Нижегородская область район",
+              "zip_code": "607440",
+              "street": "ул. Мира",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "settlement_fias_id": "6C297317-3768-4E4A-9D3E-1B25C33F2DB8",
+              "area_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "house_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "street_fias_id": null,
+              "extra": "Original: p2=16, p3=5234, street=11412",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Мира 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 453236,
+    "template_number": 107274,
+    "created_at": "2025-10-01T08:12:31.788926"
+  }
+}

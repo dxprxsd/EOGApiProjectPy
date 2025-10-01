@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ГРПБ № 73",
+        "description": "Объект газификации из базы данных. ID: 6763",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 6763,
+          "original_address": "г. Арзамас, д. Успенское 1-е"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Арзамас",
+              "settlement": "Арзамас",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "д. Успенское 1-е",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "settlement_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "area_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "house_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "street_fias_id": "A29ABAA2-6124-4F2E-BB31-5E828ADBC27B",
+              "extra": "г. Арзамас, д. Успенское 1-е",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Успенское 1-е 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 6763,
+    "created_at": "2025-10-01T08:25:35.364485",
+    "batch_processed": false
+  }
+}

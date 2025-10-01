@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 792984",
+        "description": "Объект из pto_obj_adr. ID: 792984",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 792984,
+          "p2": 68,
+          "p3": 1635,
+          "street": 8986,
+          "dom": 53,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Перевоз",
+              "settlement": "Ичалки",
+              "area": "Нижегородская область район",
+              "zip_code": "607400",
+              "street": "ул. Советская",
+              "house": "53",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "E3FF7EF2-92B6-4AB7-B2FF-4D58CAB73DBC",
+              "settlement_fias_id": "C1B04E62-3356-48B6-9677-B74AB1C15373",
+              "area_fias_id": "E3FF7EF2-92B6-4AB7-B2FF-4D58CAB73DBC",
+              "house_fias_id": "E3FF7EF2-92B6-4AB7-B2FF-4D58CAB73DBC",
+              "street_fias_id": null,
+              "extra": "Original: p2=68, p3=1635, street=8986",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Советская 53",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 792984,
+    "created_at": "2025-10-01T09:24:08.476627",
+    "batch_processed": false
+  }
+}

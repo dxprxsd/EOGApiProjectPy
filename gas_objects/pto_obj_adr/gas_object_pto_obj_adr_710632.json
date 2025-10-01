@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 710632",
+        "description": "Объект из pto_obj_adr. ID: 710632",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 710632,
+          "p2": 25,
+          "p3": 3626,
+          "street": 4392,
+          "dom": 14,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Вознесенский",
+              "settlement": "Полховский Майдан",
+              "area": "Нижегородская область район",
+              "zip_code": "607340",
+              "street": "ул. Зеленая",
+              "house": "14",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+              "settlement_fias_id": "F7661F0F-9A52-46C4-813C-10330A97B2F2",
+              "area_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+              "house_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+              "street_fias_id": null,
+              "extra": "Original: p2=25, p3=3626, street=4392",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Зеленая 14",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 710632,
+    "created_at": "2025-10-01T09:08:18.166800",
+    "batch_processed": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 812237",
+        "description": "Объект из pto_obj_adr. ID: 812237",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 812237,
+          "p2": 3,
+          "p3": 3129,
+          "street": 19835,
+          "dom": 53,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Арзамас",
+              "settlement": "Новинки",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "ул. Полевая",
+              "house": "53",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "settlement_fias_id": "D674F88E-6C23-4BFE-8727-7B32886183B9",
+              "area_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "house_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "street_fias_id": null,
+              "extra": "Original: p2=3, p3=3129, street=19835",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Полевая 53",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 812237,
+    "created_at": "2025-10-01T09:26:11.830010",
+    "batch_processed": false
+  }
+}

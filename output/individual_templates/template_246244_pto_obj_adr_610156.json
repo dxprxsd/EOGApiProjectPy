@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 610156",
+        "description": "Объект из pto_obj_adr. ID: 610156",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 610156,
+          "p2": 43,
+          "p3": 184,
+          "street": 14720,
+          "dom": 1,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Дзержинск",
+              "settlement": "Бабушкино",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "ул. Железнодорожная",
+              "house": "1",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "1D5A97D5-9BDF-44C9-AC42-E201833E7F28",
+              "settlement_fias_id": "3A12F5EC-9648-49D0-9F76-784BAE2A277B",
+              "area_fias_id": "1D5A97D5-9BDF-44C9-AC42-E201833E7F28",
+              "house_fias_id": "1D5A97D5-9BDF-44C9-AC42-E201833E7F28",
+              "street_fias_id": null,
+              "extra": "Original: p2=43, p3=184, street=14720",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Железнодорожная 1",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 610156,
+    "template_number": 246244,
+    "created_at": "2025-10-01T08:12:34.996922"
+  }
+}

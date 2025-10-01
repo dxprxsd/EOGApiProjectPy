@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 642208",
+        "description": "Объект из pto_obj_adr. ID: 642208",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 642208,
+          "p2": 16,
+          "p3": 4645,
+          "street": 3735,
+          "dom": 3,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Бутурлинский",
+              "settlement": "Уварово",
+              "area": "Нижегородская область район",
+              "zip_code": "607440",
+              "street": "ул. Школьная",
+              "house": "3",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "settlement_fias_id": "D734A1A0-5DF2-4B73-8F71-15392639C5C2",
+              "area_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "house_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "street_fias_id": null,
+              "extra": "Original: p2=16, p3=4645, street=3735",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Школьная 3",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 642208,
+    "template_number": 275484,
+    "created_at": "2025-10-01T08:12:35.438751"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 729023",
+        "description": "Объект из pto_obj_adr. ID: 729023",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 729023,
+          "p2": 55,
+          "p3": 3880,
+          "street": 0,
+          "dom": 124,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Кстовский",
+              "settlement": "Ройка",
+              "area": "Нижегородская область район",
+              "zip_code": "607650",
+              "street": "ул. Не указана",
+              "house": "124",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "settlement_fias_id": "DDEBD409-2743-4ECD-B54E-BC18D563B7E2",
+              "area_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "house_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "street_fias_id": null,
+              "extra": "Original: p2=55, p3=3880, street=0",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул None 124",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 729023,
+    "template_number": 336265,
+    "created_at": "2025-10-01T08:12:36.857446"
+  }
+}

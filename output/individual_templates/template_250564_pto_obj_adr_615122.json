@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 615122",
+        "description": "Объект из pto_obj_adr. ID: 615122",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 615122,
+          "p2": 71,
+          "p3": 2882,
+          "street": 17224,
+          "dom": 83,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Пильнинский",
+              "settlement": "Можаров Майдан",
+              "area": "Нижегородская область район",
+              "zip_code": "607491",
+              "street": "ул. Красная Новь",
+              "house": "83",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+              "settlement_fias_id": "AD616561-0AD0-4A70-9FBF-835570F7485B",
+              "area_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+              "house_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+              "street_fias_id": null,
+              "extra": "Original: p2=71, p3=2882, street=17224",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Красная Новь 83",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 615122,
+    "template_number": 250564,
+    "created_at": "2025-10-01T08:12:35.062196"
+  }
+}

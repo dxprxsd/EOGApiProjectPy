@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП № 070",
+        "description": "Объект газификации из базы данных. ID: 1792",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 1792,
+          "original_address": "Городецкий р-н, д. Калинкино"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Городецкий",
+              "settlement": "Городецкий",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "д. Калинкино",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "8E694803-5CAF-4913-AB04-37E692792E6B",
+              "settlement_fias_id": "8E694803-5CAF-4913-AB04-37E692792E6B",
+              "area_fias_id": "8E694803-5CAF-4913-AB04-37E692792E6B",
+              "house_fias_id": "8E694803-5CAF-4913-AB04-37E692792E6B",
+              "street_fias_id": "26FC3B1D-80BC-453E-82C4-37BB31C95F88",
+              "extra": "Городецкий р-н, д. Калинкино",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Калинкино 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 1792,
+    "created_at": "2025-10-01T08:25:33.342139",
+    "batch_processed": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП 4700045",
+        "description": "Объект газификации из базы данных. ID: 3375",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 3375,
+          "original_address": "г. Семенов, ул. Чернышевского, д. 2а"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Семенов",
+              "settlement": "Семенов",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "ул. Не указана",
+              "house": "2",
+              "block": "а",
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "DACC69B0-38DF-462E-B346-26541CB9C0B8",
+              "settlement_fias_id": "DACC69B0-38DF-462E-B346-26541CB9C0B8",
+              "area_fias_id": "DACC69B0-38DF-462E-B346-26541CB9C0B8",
+              "house_fias_id": "DACC69B0-38DF-462E-B346-26541CB9C0B8",
+              "street_fias_id": null,
+              "extra": "г. Семенов, ул. Чернышевского, д. 2а",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул None 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 3375,
+    "created_at": "2025-10-01T08:25:34.142217",
+    "batch_processed": false
+  }
+}

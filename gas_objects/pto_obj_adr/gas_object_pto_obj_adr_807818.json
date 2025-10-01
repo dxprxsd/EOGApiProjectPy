@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 807818",
+        "description": "Объект из pto_obj_adr. ID: 807818",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 807818,
+          "p2": 15,
+          "p3": 0,
+          "street": 3643,
+          "dom": 21,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Бутурлино",
+              "settlement": "Бутурлино",
+              "area": "Нижегородская область район",
+              "zip_code": "607440",
+              "street": "ул. Спортивная",
+              "house": "21",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "880C35B8-4AFB-45DC-AF30-B7A36142402B",
+              "settlement_fias_id": "880C35B8-4AFB-45DC-AF30-B7A36142402B",
+              "area_fias_id": "880C35B8-4AFB-45DC-AF30-B7A36142402B",
+              "house_fias_id": "880C35B8-4AFB-45DC-AF30-B7A36142402B",
+              "street_fias_id": null,
+              "extra": "Original: p2=15, p3=0, street=3643",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Спортивная 21",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 807818,
+    "created_at": "2025-10-01T09:25:44.295497",
+    "batch_processed": false
+  }
+}

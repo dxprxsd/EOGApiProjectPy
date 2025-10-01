@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 851905",
+        "description": "Объект из pto_obj_adr. ID: 851905",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 851905,
+          "p2": 13,
+          "p3": 4307,
+          "street": 3341,
+          "dom": 25,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Бор",
+              "settlement": "Спасское (Линдовский с/с)",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "ул. Центральная",
+              "house": "25",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "settlement_fias_id": "3963B3FC-F08A-4678-BAE4-8D6058535AC4",
+              "area_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "house_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "street_fias_id": null,
+              "extra": "Original: p2=13, p3=4307, street=3341",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Центральная 25",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 851905,
+    "created_at": "2025-10-01T09:32:49.613788",
+    "batch_processed": false
+  }
+}

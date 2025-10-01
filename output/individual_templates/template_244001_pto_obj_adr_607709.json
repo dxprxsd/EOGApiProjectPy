@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 607709",
+        "description": "Объект из pto_obj_adr. ID: 607709",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 607709,
+          "p2": 48,
+          "p3": 4678,
+          "street": 6380,
+          "dom": 156,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Княгининский",
+              "settlement": "Урга",
+              "area": "Нижегородская область район",
+              "zip_code": "606340",
+              "street": "ул. Центральная",
+              "house": "156",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+              "settlement_fias_id": "BFE851FF-FD76-456F-8B6B-59563C025168",
+              "area_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+              "house_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+              "street_fias_id": null,
+              "extra": "Original: p2=48, p3=4678, street=6380",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Центральная 156",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 607709,
+    "template_number": 244001,
+    "created_at": "2025-10-01T08:12:34.955251"
+  }
+}

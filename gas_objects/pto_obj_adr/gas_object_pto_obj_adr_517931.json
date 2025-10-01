@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 517931",
+        "description": "Объект из pto_obj_adr. ID: 517931",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 517931,
+          "p2": 73,
+          "p3": 4650,
+          "street": 9403,
+          "dom": 12,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Починковский",
+              "settlement": "Ужовка",
+              "area": "Нижегородская область район",
+              "zip_code": "607911",
+              "street": "ул. Дачная",
+              "house": "12",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+              "settlement_fias_id": "6C1639DD-EE7C-46AE-9DD4-A45EA81A18F4",
+              "area_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+              "house_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+              "street_fias_id": null,
+              "extra": "Original: p2=73, p3=4650, street=9403",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Дачная 12",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 517931,
+    "created_at": "2025-10-01T08:36:39.521772",
+    "batch_processed": false
+  }
+}

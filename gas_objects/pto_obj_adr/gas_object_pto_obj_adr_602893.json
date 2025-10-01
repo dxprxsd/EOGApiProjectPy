@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 602893",
+        "description": "Объект из pto_obj_adr. ID: 602893",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 602893,
+          "p2": 68,
+          "p3": 3385,
+          "street": 9006,
+          "dom": 21,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Перевоз",
+              "settlement": "Палец",
+              "area": "Нижегородская область район",
+              "zip_code": "607400",
+              "street": "ул. Шиянова",
+              "house": "21",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "E3FF7EF2-92B6-4AB7-B2FF-4D58CAB73DBC",
+              "settlement_fias_id": "EDCEB1C7-DE45-40EC-B9C7-0941CD98F35B",
+              "area_fias_id": "E3FF7EF2-92B6-4AB7-B2FF-4D58CAB73DBC",
+              "house_fias_id": "E3FF7EF2-92B6-4AB7-B2FF-4D58CAB73DBC",
+              "street_fias_id": null,
+              "extra": "Original: p2=68, p3=3385, street=9006",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Шиянова 21",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 602893,
+    "created_at": "2025-10-01T08:47:14.549025",
+    "batch_processed": false
+  }
+}

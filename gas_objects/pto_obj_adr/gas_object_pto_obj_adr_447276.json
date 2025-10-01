@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 447276",
+        "description": "Объект из pto_obj_adr. ID: 447276",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 447276,
+          "p2": 42,
+          "p3": 573,
+          "street": 6028,
+          "dom": 89,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Дальнеконстантиновский",
+              "settlement": "Борцово",
+              "area": "Нижегородская область район",
+              "zip_code": "606310",
+              "street": "ул. Озерная",
+              "house": "89",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "B933CEEA-DC46-4B0D-9DF6-7C9D175580F8",
+              "settlement_fias_id": "DA7D8815-7F38-49DE-87BD-46C84AAF1992",
+              "area_fias_id": "B933CEEA-DC46-4B0D-9DF6-7C9D175580F8",
+              "house_fias_id": "B933CEEA-DC46-4B0D-9DF6-7C9D175580F8",
+              "street_fias_id": null,
+              "extra": "Original: p2=42, p3=573, street=6028",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Озерная 89",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 447276,
+    "created_at": "2025-10-01T08:29:42.112097",
+    "batch_processed": false
+  }
+}

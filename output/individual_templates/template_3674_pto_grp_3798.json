@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП-22",
+        "description": "Объект газификации из базы данных. ID: 3798",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 3798,
+          "original_address": "Краснооктябрьский р-н, с. Большое Рыбушкино, ул. Кооперативная"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Краснооктябрьский",
+              "settlement": "Краснооктябрьский",
+              "area": "Нижегородская область район",
+              "zip_code": "607530",
+              "street": "с. Большое Рыбушкино",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "BA4799A8-7A74-4168-BA7E-A231FABC8995",
+              "settlement_fias_id": "BA4799A8-7A74-4168-BA7E-A231FABC8995",
+              "area_fias_id": "BA4799A8-7A74-4168-BA7E-A231FABC8995",
+              "house_fias_id": "BA4799A8-7A74-4168-BA7E-A231FABC8995",
+              "street_fias_id": "80C627D4-738B-47A7-AFB1-2F6D4CCEECE4",
+              "extra": "Краснооктябрьский р-н, с. Большое Рыбушкино, ул. Кооперативная",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Большое Рыбушкино 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 3798,
+    "template_number": 3674,
+    "created_at": "2025-10-01T08:12:17.717230"
+  }
+}

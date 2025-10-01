@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 785757",
+        "description": "Объект из pto_obj_adr. ID: 785757",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 785757,
+          "p2": 81,
+          "p3": 1171,
+          "street": 18026,
+          "dom": 1,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Сокольский",
+              "settlement": "Добрыниха",
+              "area": "Нижегородская область район",
+              "zip_code": "606670",
+              "street": "ул. Полевая",
+              "house": "1",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "A50632F1-48A4-401C-8B4C-03128AA29D97",
+              "settlement_fias_id": "875964CF-C654-4D3F-8121-35178CE02388",
+              "area_fias_id": "A50632F1-48A4-401C-8B4C-03128AA29D97",
+              "house_fias_id": "A50632F1-48A4-401C-8B4C-03128AA29D97",
+              "street_fias_id": null,
+              "extra": "Original: p2=81, p3=1171, street=18026",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Полевая 1",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 785757,
+    "template_number": 376959,
+    "created_at": "2025-10-01T08:12:38.045926"
+  }
+}

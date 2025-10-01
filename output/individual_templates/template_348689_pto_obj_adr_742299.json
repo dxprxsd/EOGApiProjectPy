@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 742299",
+        "description": "Объект из pto_obj_adr. ID: 742299",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 742299,
+          "p2": 80,
+          "p3": 700,
+          "street": 17734,
+          "dom": 1,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Сеченовский",
+              "settlement": "Васильевка",
+              "area": "Нижегородская область район",
+              "zip_code": "607580",
+              "street": "ул. Заречная",
+              "house": "1",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+              "settlement_fias_id": "1EE2FB34-5728-464E-AD75-B39F5B350777",
+              "area_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+              "house_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+              "street_fias_id": null,
+              "extra": "Original: p2=80, p3=700, street=17734",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Заречная 1",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 742299,
+    "template_number": 348689,
+    "created_at": "2025-10-01T08:12:37.046751"
+  }
+}

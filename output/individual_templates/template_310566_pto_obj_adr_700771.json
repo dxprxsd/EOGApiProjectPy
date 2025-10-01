@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 700771",
+        "description": "Объект из pto_obj_adr. ID: 700771",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 700771,
+          "p2": 66,
+          "p3": 3478,
+          "street": 8756,
+          "dom": 65,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Первомайск",
+              "settlement": "Петровка",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "ул. Центральная",
+              "house": "65",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "A72A0367-92A4-4EC3-9AA2-2397039A3D70",
+              "settlement_fias_id": "C825EFA7-E690-4B91-A15F-C276B2D1E26F",
+              "area_fias_id": "A72A0367-92A4-4EC3-9AA2-2397039A3D70",
+              "house_fias_id": "A72A0367-92A4-4EC3-9AA2-2397039A3D70",
+              "street_fias_id": null,
+              "extra": "Original: p2=66, p3=3478, street=8756",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Центральная 65",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 700771,
+    "template_number": 310566,
+    "created_at": "2025-10-01T08:12:36.457460"
+  }
+}

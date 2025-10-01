@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 733096",
+        "description": "Объект из pto_obj_adr. ID: 733096",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 733096,
+          "p2": 24,
+          "p3": 0,
+          "street": 0,
+          "dom": 0,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Ветлужский",
+              "settlement": "Ветлужский",
+              "area": "Нижегородская область район",
+              "zip_code": "606860",
+              "street": "ул. Не указана",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "E63DDAB7-4AF7-49CE-B229-484C5B70EAB9",
+              "settlement_fias_id": "E63DDAB7-4AF7-49CE-B229-484C5B70EAB9",
+              "area_fias_id": "E63DDAB7-4AF7-49CE-B229-484C5B70EAB9",
+              "house_fias_id": "E63DDAB7-4AF7-49CE-B229-484C5B70EAB9",
+              "street_fias_id": null,
+              "extra": "Original: p2=24, p3=0, street=0",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул None 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 733096,
+    "template_number": 340123,
+    "created_at": "2025-10-01T08:12:36.916864"
+  }
+}

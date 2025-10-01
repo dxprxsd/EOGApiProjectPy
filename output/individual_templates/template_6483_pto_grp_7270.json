@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ГРУ",
+        "description": "Объект газификации из базы данных. ID: 7270",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 7270,
+          "original_address": "Лукояновский р-н, с. Тольский Майдан, ул. Свердлова, д. 101А"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Лукояновский",
+              "settlement": "Лукояновский",
+              "area": "Нижегородская область район",
+              "zip_code": "607800",
+              "street": "с. Тольский Майдан",
+              "house": "101",
+              "block": "А",
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+              "settlement_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+              "area_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+              "house_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+              "street_fias_id": "6EBA183F-5F50-4A6C-A4C8-C53D87F0164B",
+              "extra": "Лукояновский р-н, с. Тольский Майдан, ул. Свердлова, д. 101А",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Тольский Майдан 101",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 7270,
+    "template_number": 6483,
+    "created_at": "2025-10-01T08:12:17.764982"
+  }
+}

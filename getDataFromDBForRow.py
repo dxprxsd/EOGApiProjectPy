@@ -8,8 +8,9 @@ import urllib3
 import pymssql
 import decimal
 import uuid
+import time
 
-# ОСНОВНАЯ ПРОГРАММА
+# ПРОГРАММА ДЛЯ ПОЛУЧЕНИЯ ДАННЫХ ИЗ БД (таблицы pto_grp, pto_obj_adr)
 
 # Отключаем предупреждения SSL
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -29,6 +30,9 @@ SQL_PORT = 1433
 SQL_DATABASE = 'master'
 SQL_USERNAME = 'kuzmin'
 SQL_PASSWORD = '76543210'
+
+# Настройки пагинации
+BATCH_SIZE = 10000  # Количество записей за один запрос к БД
 
 def setup_proxy():
     """Настраиваем прокси для системы"""
@@ -70,15 +74,14 @@ def get_sql_connection():
             database=SQL_DATABASE,
             as_dict=True
         )
-        print("Успешное подключение к SQL Server!")
         return conn
         
     except pymssql.Error as e:
         print(f"Ошибка подключения к SQL Server: {e}")
         return None
 
-def get_complete_address_data(limit=100):
-    """Получение полных данных об адресах из связанных таблиц - ИСПРАВЛЕННЫЙ ЗАПРОС"""
+def get_complete_address_data_batch(offset=0, batch_size=BATCH_SIZE):
+    """Получение данных об адресах пачками - ИСПРАВЛЕННЫЙ ЗАПРОС"""
     conn = get_sql_connection()
     if not conn:
         return None
@@ -86,9 +89,8 @@ def get_complete_address_data(limit=100):
     try:
         cursor = conn.cursor()
         
-        # ИСПРАВЛЕННЫЙ ЗАПРОС - конвертируем UUID в строку
         query = f"""
-        SELECT TOP ({limit})
+        SELECT
             pg.id AS object_id,
             pg.descr AS object_name,
             pg.a_dom AS house_number,
@@ -96,10 +98,10 @@ def get_complete_address_data(limit=100):
             pg.adr AS full_address,
             p2.NAME AS settlement_name,
             p2.[INDEX] AS zip_code,
-            CAST(p2.aoguid AS VARCHAR(36)) AS settlement_fias_id,  -- Конвертируем UUID в строку
+            CAST(p2.aoguid AS VARCHAR(36)) AS settlement_fias_id,
             p3.NAME AS street_name,
             p3.SOCR AS street_type,
-            CAST(p3.aoguid AS VARCHAR(36)) AS street_fias_id,  -- Конвертируем UUID в строку
+            CAST(p3.aoguid AS VARCHAR(36)) AS street_fias_id,
             r.NAMEREG AS region_name,
             r.kladr_reg AS region_code
         FROM [dog].[dbo].[pto_grp] pg
@@ -108,23 +110,22 @@ def get_complete_address_data(limit=100):
         LEFT JOIN [dog].[dbo].[region] r ON p2.IDREGION = r.IDR
         WHERE pg.a_dom IS NOT NULL
         ORDER BY pg.id
+        OFFSET {offset} ROWS
+        FETCH NEXT {batch_size} ROWS ONLY
         """
         
-        print("Выполняем запрос для получения полных данных об адресах...")
         cursor.execute(query)
-        
         results = cursor.fetchall()
-        print(f"Получено {len(results)} записей с полными адресными данными")
         return results
             
     except Exception as e:
-        print(f"Ошибка при выполнении запроса: {e}")
+        print(f"Ошибка при выполнении запроса pto_grp: {e}")
         return None
     finally:
         conn.close()
 
-def get_pto_obj_adr_data(limit=100):
-    """Получение данных из таблицы pto_obj_adr с полной адресной информацией - ИСПРАВЛЕННЫЙ ЗАПРОС"""
+def get_pto_obj_adr_data_batch(offset=0, batch_size=BATCH_SIZE):
+    """Получение данных из pto_obj_adr пачками - ИСПРАВЛЕННЫЙ ЗАПРОС"""
     conn = get_sql_connection()
     if not conn:
         return None
@@ -132,18 +133,17 @@ def get_pto_obj_adr_data(limit=100):
     try:
         cursor = conn.cursor()
         
-        # ИСПРАВЛЕННЫЙ ЗАПРОС - конвертируем UUID в строку
         query = f"""
-        SELECT TOP ({limit})
+        SELECT
             poa.*,
             p2.NAME AS p2_name,
             p2.SOCR AS p2_socr,
             p2.[INDEX] AS p2_index,
-            CAST(p2.aoguid AS VARCHAR(36)) AS p2_fias_id,  -- Конвертируем UUID в строку
+            CAST(p2.aoguid AS VARCHAR(36)) AS p2_fias_id,
             p3.NAME AS p3_name,
             p3.SOCR AS p3_socr,
             p3.[INDEX] AS p3_index,
-            CAST(p3.aoguid AS VARCHAR(36)) AS p3_fias_id,  -- Конвертируем UUID в строку
+            CAST(p3.aoguid AS VARCHAR(36)) AS p3_fias_id,
             s.NAME AS street_name,
             s.SOCR AS street_socr,
             s.CODE AS street_code,
@@ -156,18 +156,41 @@ def get_pto_obj_adr_data(limit=100):
         LEFT JOIN [dog].[dbo].[region] r ON p2.IDREGION = r.IDR
         WHERE poa.dom IS NOT NULL
         ORDER BY poa.id
+        OFFSET {offset} ROWS
+        FETCH NEXT {batch_size} ROWS ONLY
         """
         
-        print("Выполняем запрос для получения данных pto_obj_adr...")
         cursor.execute(query)
-        
         results = cursor.fetchall()
-        print(f"Получено {len(results)} записей из pto_obj_adr")
         return results
             
     except Exception as e:
         print(f"Ошибка при выполнении запроса pto_obj_adr: {e}")
         return None
+    finally:
+        conn.close()
+
+def get_total_count(table_name):
+    """Получение общего количества записей в таблице"""
+    conn = get_sql_connection()
+    if not conn:
+        return 0
+    
+    try:
+        cursor = conn.cursor()
+        
+        if table_name == "pto_grp":
+            query = "SELECT COUNT(*) as total FROM [dog].[dbo].[pto_grp] WHERE a_dom IS NOT NULL"
+        else:  # pto_obj_adr
+            query = "SELECT COUNT(*) as total FROM [dog].[dbo].[pto_obj_adr] WHERE dom IS NOT NULL"
+        
+        cursor.execute(query)
+        result = cursor.fetchone()
+        return result['total'] if result else 0
+            
+    except Exception as e:
+        print(f"Ошибка при получении количества записей: {e}")
+        return 0
     finally:
         conn.close()
 
@@ -192,7 +215,7 @@ def format_street_name(street_type, street_name):
     return f"{street_type}. {street_name}"
 
 def prepare_gas_object_template(row, template_type="pto_obj_adr"):
-    """Подготовка шаблона данных для API на основе данных из БД - ИСПРАВЛЕННАЯ ВЕРСИЯ"""
+    """Подготовка шаблона данных для API на основе данных из БД"""
     
     # Очищаем все значения
     cleaned_row = {key: clean_value(value) for key, value in row.items()}
@@ -351,70 +374,20 @@ def prepare_gas_object_template(row, template_type="pto_obj_adr"):
             }
         }
     
-    # Добавляем метаданные ОТДЕЛЬНО
+    # Добавляем метаданные
     metadata = {
         'source': template_type,
         'source_id': cleaned_row.get('object_id') if template_type == 'pto_grp' else cleaned_row.get('id'),
-        'template_number': 0,
-        'created_at': datetime.now().isoformat()
+        'created_at': datetime.now().isoformat(),
+        'batch_processed': False
     }
     
     return template, metadata
 
-def create_api_templates_from_db(limit=10):
-    """Создание шаблонов API из данных базы данных"""
-    
-    print("\n" + "=" * 60)
-    print("СОЗДАНИЕ ШАБЛОНОВ API ИЗ БАЗЫ ДАННЫХ")
-    print("=" * 60)
-    
-    all_templates = []
-    all_metadata = []
-    
-    # 1. Получаем данные из pto_grp
-    print("\n1. Получаем данные из pto_grp...")
-    pto_grp_data = get_complete_address_data(limit=limit)
-    
-    if pto_grp_data:
-        print(f"Создаем шаблоны для {len(pto_grp_data)} объектов из pto_grp...")
-        
-        for i, row in enumerate(pto_grp_data, 1):
-            print(f"  Создание шаблона {i}/{len(pto_grp_data)}...")
-            
-            template, metadata = prepare_gas_object_template(row, "pto_grp")
-            metadata['template_number'] = i
-            
-            all_templates.append(template)
-            all_metadata.append(metadata)
-    else:
-        print("  Не удалось получить данные из pto_grp")
-    
-    # 2. Получаем данные из pto_obj_adr
-    print("\n2. Получаем данные из pto_obj_adr...")
-    pto_obj_adr_data = get_pto_obj_adr_data(limit=limit)
-    
-    if pto_obj_adr_data:
-        print(f"Создаем шаблоны для {len(pto_obj_adr_data)} объектов из pto_obj_adr...")
-        
-        start_number = len(all_templates) + 1
-        
-        for i, row in enumerate(pto_obj_adr_data, start_number):
-            print(f"  Создание шаблона {i}/{len(pto_obj_adr_data) + start_number - 1}...")
-            
-            template, metadata = prepare_gas_object_template(row, "pto_obj_adr")
-            metadata['template_number'] = i
-            
-            all_templates.append(template)
-            all_metadata.append(metadata)
-    else:
-        print("  Не удалось получить данные из pto_obj_adr")
-    
-    return all_templates, all_metadata
-
 # ========== ФУНКЦИИ ДЛЯ СОХРАНЕНИЯ ДАННЫХ ==========
 
 class JSONEncoder(json.JSONEncoder):
-    """Кастомный JSON encoder для обработки сложных объектов - ИСПРАВЛЕННЫЙ"""
+    """Кастомный JSON encoder для обработки сложных объектов"""
     def default(self, obj):
         if isinstance(obj, (datetime, pymssql.Date)):
             return obj.isoformat()
@@ -422,7 +395,7 @@ class JSONEncoder(json.JSONEncoder):
             return obj.isoformat()
         elif isinstance(obj, (decimal.Decimal)):
             return float(obj)
-        elif isinstance(obj, (uuid.UUID)):  # Добавляем обработку UUID
+        elif isinstance(obj, (uuid.UUID)):
             return str(obj)
         elif isinstance(obj, bytes):
             return obj.decode('utf-8', errors='ignore')
@@ -431,101 +404,150 @@ class JSONEncoder(json.JSONEncoder):
         else:
             return super().default(obj)
 
-def save_api_templates_to_file(templates, metadata, filename="api_templates.json"):
-    """Сохранение шаблонов API в JSON файл"""
+def ensure_directory(base_path, subfolder):
+    """Создание и обеспечение существования директории"""
+    directory = Path(base_path) / subfolder
+    directory.mkdir(exist_ok=True, parents=True)
+    return directory
+
+def save_single_template(template, metadata, base_directory="gas_objects"):
+    """Сохранение одного шаблона в отдельный JSON файл"""
     try:
-        output_dir = Path("output")
-        output_dir.mkdir(exist_ok=True)
+        source = metadata['source']
+        source_id = metadata['source_id']
         
+        # Создаем папку для источника данных
+        output_dir = ensure_directory(base_directory, source)
+        
+        # Создаем имя файла
+        filename = f"gas_object_{source}_{source_id}.json"
         filepath = output_dir / filename
         
-        # Сохраняем шаблоны и метаданные отдельно
+        # Подготавливаем данные для сохранения
         data_to_save = {
-            "templates": templates,
-            "metadata": metadata,
-            "summary": {
-                "total_templates": len(templates),
-                "created_at": datetime.now().isoformat()
-            }
+            "template": template,
+            "metadata": metadata
         }
         
+        # Сохраняем в файл
         with open(filepath, 'w', encoding='utf-8') as file:
             json.dump(data_to_save, file, ensure_ascii=False, indent=2, cls=JSONEncoder)
         
-        print(f"Успешно: Шаблоны API сохранены в файл: {filepath}")
-        print(f"Успешно: Всего шаблонов: {len(templates)}")
-        
         return True
         
     except Exception as e:
-        print(f"Ошибка: Ошибка при сохранении шаблонов: {e}")
+        print(f"Ошибка при сохранении шаблона {source_id}: {e}")
         return False
 
-def save_individual_templates(templates, metadata):
-    """Сохранение каждого шаблона в отдельный файл"""
-    try:
-        output_dir = Path("output") / "individual_templates"
-        output_dir.mkdir(exist_ok=True, parents=True)
+def process_table_data(table_name, base_directory="gas_objects"):
+    """Обработка всех данных из таблицы и сохранение в отдельные файлы"""
+    print(f"\nОбработка таблицы: {table_name}")
+    print("=" * 50)
+    
+    # Получаем общее количество записей
+    total_count = get_total_count(table_name)
+    print(f"Всего записей в таблице {table_name}: {total_count}")
+    
+    if total_count == 0:
+        print(f"В таблице {table_name} нет данных для обработки")
+        return 0
+    
+    processed_count = 0
+    offset = 0
+    
+    # Создаем основную папку для таблицы
+    table_dir = ensure_directory(base_directory, table_name)
+    print(f"Папка для сохранения: {table_dir}")
+    
+    start_time = time.time()
+    
+    # Обрабатываем данные пачками
+    while offset < total_count:
+        print(f"Загрузка пачки {offset//BATCH_SIZE + 1}... ({offset}-{min(offset+BATCH_SIZE, total_count)})")
         
-        for i, (template, meta) in enumerate(zip(templates, metadata), 1):
-            source = meta['source']
-            source_id = meta['source_id']
-            
-            filename = f"template_{i:03d}_{source}_{source_id}.json"
-            filepath = output_dir / filename
-            
-            data_to_save = {
-                "template": template,
-                "metadata": meta
-            }
-            
-            with open(filepath, 'w', encoding='utf-8') as file:
-                json.dump(data_to_save, file, ensure_ascii=False, indent=2, cls=JSONEncoder)
+        # Получаем данные пачкой
+        if table_name == "pto_grp":
+            batch_data = get_complete_address_data_batch(offset, BATCH_SIZE)
+        else:
+            batch_data = get_pto_obj_adr_data_batch(offset, BATCH_SIZE)
         
-        print(f"Успешно: Индивидуальные шаблоны сохранены в папку: {output_dir}")
-        return True
+        if not batch_data:
+            print(f"Ошибка при загрузке пачки {offset}-{offset+BATCH_SIZE}")
+            break
         
-    except Exception as e:
-        print(f"Ошибка: Ошибка при сохранении индивидуальных шаблонов: {e}")
-        return False
+        # Обрабатываем каждую запись в пачке
+        batch_processed = 0
+        for row in batch_data:
+            try:
+                # Создаем шаблон
+                template, metadata = prepare_gas_object_template(row, table_name)
+                
+                # Сохраняем в отдельный файл
+                if save_single_template(template, metadata, base_directory):
+                    batch_processed += 1
+                    processed_count += 1
+                
+                # Выводим прогресс каждые 100 записей
+                if processed_count % 100 == 0:
+                    print(f"Обработано: {processed_count}/{total_count} записей")
+                    
+            except Exception as e:
+                print(f"Ошибка при обработке записи: {e}")
+                continue
+        
+        print(f"Пачка {offset//BATCH_SIZE + 1} обработана: {batch_processed} записей")
+        
+        # Увеличиваем смещение для следующей пачки
+        offset += BATCH_SIZE
+        
+        # Небольшая пауза между пачками чтобы не нагружать БД
+        time.sleep(0.1)
+    
+    end_time = time.time()
+    processing_time = end_time - start_time
+    
+    print(f"\nОбработка таблицы {table_name} завершена!")
+    print(f"Успешно обработано: {processed_count}/{total_count} записей")
+    print(f"Время обработки: {processing_time:.2f} секунд")
+    print(f"Средняя скорость: {processed_count/processing_time:.2f} записей/секунду")
+    
+    return processed_count
 
-def save_template_samples(templates, metadata, sample_size=5):
-    """Сохранение примеров шаблонов для ознакомления"""
+def create_summary_file(base_directory="gas_objects", total_processed=0):
+    """Создание файла с общей статистикой"""
     try:
-        output_dir = Path("output")
-        output_dir.mkdir(exist_ok=True)
-        
-        samples = list(zip(templates[:min(sample_size, len(templates))], 
-                          metadata[:min(sample_size, len(metadata))]))
-        
-        data_to_save = {
-            "samples": [
-                {"template": template, "metadata": meta} 
-                for template, meta in samples
-            ],
-            "sample_count": len(samples),
-            "created_at": datetime.now().isoformat()
+        summary = {
+            "processing_summary": {
+                "total_objects_processed": total_processed,
+                "processing_date": datetime.now().isoformat(),
+                "base_directory": base_directory,
+                "tables_processed": ["pto_grp", "pto_obj_adr"]
+            },
+            "file_structure": {
+                "pto_grp": "Папка с объектами из таблицы pto_grp",
+                "pto_obj_adr": "Папка с объектами из таблицы pto_obj_adr"
+            },
+            "notes": "Каждый объект сохранен в отдельном JSON файле"
         }
         
-        filepath = output_dir / "api_templates_samples.json"
-        with open(filepath, 'w', encoding='utf-8') as file:
-            json.dump(data_to_save, file, ensure_ascii=False, indent=2, cls=JSONEncoder)
+        summary_path = Path(base_directory) / "processing_summary.json"
+        with open(summary_path, 'w', encoding='utf-8') as file:
+            json.dump(summary, file, ensure_ascii=False, indent=2)
         
-        print(f"Успешно: Примеры шаблонов сохранены в: {filepath}")
-        print(f"Успешно: Сохранено примеров: {len(samples)}")
-        
-        return True
+        print(f"\nФайл статистики создан: {summary_path}")
         
     except Exception as e:
-        print(f"Ошибка: Ошибка при сохранении примеров: {e}")
-        return False
+        print(f"Ошибка при создании файла статистики: {e}")
 
 # ========== ОСНОВНАЯ ФУНКЦИЯ ==========
 
 def main():
-    print("=" * 60)
-    print("ГЕНЕРАТОР ШАБЛОНОВ API ИЗ БАЗЫ ДАННЫХ")
-    print("=" * 60)
+    print("=" * 70)
+    print("МАССОВЫЙ ГЕНЕРАТОР ШАБЛОНОВ API - СОХРАНЕНИЕ В ОТДЕЛЬНЫЕ ФАЙЛЫ")
+    print("=" * 70)
+    
+    print(f"\nНастройки пагинации: размер пачки = {BATCH_SIZE} записей")
+    print(f"Базовая директория: gas_objects/")
     
     print("\nНастройка прокси...")
     setup_proxy()
@@ -534,45 +556,31 @@ def main():
     if not test_proxy_connection():
         print("Прокси не работает. Продолжаем без прокси?")
     
-    # Создаем шаблоны API из данных базы данных
-    templates, metadata = create_api_templates_from_db(limit=20)
+    # Обрабатываем обе таблицы
+    total_processed = 0
     
-    if templates:
-        print(f"\nУспешно: Успешно создано {len(templates)} шаблонов API!")
-        
-        # Сохраняем все шаблоны в один файл
-        save_api_templates_to_file(templates, metadata, "api_templates_complete.json")
-        
-        # Сохраняем примеры для ознакомления
-        save_template_samples(templates, metadata, 5)
-        
-        # Сохраняем каждый шаблон отдельно
-        save_individual_templates(templates, metadata)
-        
-        # Выводим статистику
-        print("\n" + "=" * 50)
-        print("СТАТИСТИКА СОЗДАННЫХ ШАБЛОНОВ")
-        print("=" * 50)
-        
-        sources = {}
-        for meta in metadata:
-            source = meta['source']
-            if source in sources:
-                sources[source] += 1
-            else:
-                sources[source] = 1
-        
-        for source, count in sources.items():
-            print(f"{source}: {count} шаблонов")
-        
-        print(f"Всего: {len(templates)} шаблонов")
-        
-    else:
-        print("\nОшибка: Не удалось создать шаблоны API. Проверьте подключение к базе данных.")
+    # 1. Обрабатываем таблицу pto_grp
+    processed_pto_grp = process_table_data("pto_grp")
+    total_processed += processed_pto_grp
     
-    print("\n" + "=" * 60)
+    # 2. Обрабатываем таблицу pto_obj_adr
+    processed_pto_obj_adr = process_table_data("pto_obj_adr")
+    total_processed += processed_pto_obj_adr
+    
+    # Создаем файл статистики
+    create_summary_file("gas_objects", total_processed)
+    
+    # Выводим итоговую статистику
+    print("\n" + "=" * 70)
+    print("ИТОГОВАЯ СТАТИСТИКА")
+    print("=" * 70)
+    print(f"Всего обработано объектов: {total_processed}")
+    print(f"Из таблицы pto_grp: {processed_pto_grp}")
+    print(f"Из таблицы pto_obj_adr: {processed_pto_obj_adr}")
+    print(f"\nВсе файлы сохранены в папке: gas_objects/")
+    print("\n" + "=" * 70)
     print("ВЫПОЛНЕНИЕ ЗАВЕРШЕНО!")
-    print("=" * 60)
+    print("=" * 70)
 
 if __name__ == "__main__":
     main()

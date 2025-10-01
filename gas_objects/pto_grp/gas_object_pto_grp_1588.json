@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП",
+        "description": "Объект газификации из базы данных. ID: 1588",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 1588,
+          "original_address": "Княгининский р-н, с. Спешнево [№11]"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Княгининский",
+              "settlement": "Княгининский",
+              "area": "Нижегородская область район",
+              "zip_code": "606340",
+              "street": "с. Спешнево",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+              "settlement_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+              "area_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+              "house_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+              "street_fias_id": "8B6FCD39-F99A-4716-B6D5-F0912FDA3EED",
+              "extra": "Княгининский р-н, с. Спешнево [№11]",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Спешнево 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 1588,
+    "created_at": "2025-10-01T08:25:33.310424",
+    "batch_processed": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 851571",
+        "description": "Объект из pto_obj_adr. ID: 851571",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 851571,
+          "p2": 50,
+          "p3": 101,
+          "street": 0,
+          "dom": 48,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Ковернинский",
+              "settlement": "Анисимово",
+              "area": "Нижегородская область район",
+              "zip_code": "606570",
+              "street": "ул. Не указана",
+              "house": "48",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+              "settlement_fias_id": "9913F2FA-18C4-408B-BD93-664B578DD736",
+              "area_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+              "house_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+              "street_fias_id": null,
+              "extra": "Original: p2=50, p3=101, street=0",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул None 48",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 851571,
+    "template_number": 434196,
+    "created_at": "2025-10-01T08:12:38.920691"
+  }
+}

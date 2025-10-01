@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 829230",
+        "description": "Объект из pto_obj_adr. ID: 829230",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 829230,
+          "p2": 48,
+          "p3": 5110,
+          "street": 6383,
+          "dom": 53,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Княгининский",
+              "settlement": "Шишковердь",
+              "area": "Нижегородская область район",
+              "zip_code": "606340",
+              "street": "ул. Люкина",
+              "house": "53",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+              "settlement_fias_id": "B1164B7E-718E-4E0A-9291-5C27382AE677",
+              "area_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+              "house_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+              "street_fias_id": null,
+              "extra": "Original: p2=48, p3=5110, street=6383",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Люкина 53",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 829230,
+    "template_number": 416254,
+    "created_at": "2025-10-01T08:12:38.654865"
+  }
+}

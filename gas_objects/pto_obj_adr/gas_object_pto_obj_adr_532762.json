@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 532762",
+        "description": "Объект из pto_obj_adr. ID: 532762",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 532762,
+          "p2": 73,
+          "p3": 3059,
+          "street": 9305,
+          "dom": 21,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Починковский",
+              "settlement": "Никитино",
+              "area": "Нижегородская область район",
+              "zip_code": "607911",
+              "street": "ул. 1 Мая",
+              "house": "21",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+              "settlement_fias_id": "AA7276FE-650B-4B5B-9691-E3DC660DB436",
+              "area_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+              "house_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+              "street_fias_id": null,
+              "extra": "Original: p2=73, p3=3059, street=9305",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул 1 Мая 21",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 532762,
+    "created_at": "2025-10-01T08:38:10.891928",
+    "batch_processed": false
+  }
+}

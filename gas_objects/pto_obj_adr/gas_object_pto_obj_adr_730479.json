@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 730479",
+        "description": "Объект из pto_obj_adr. ID: 730479",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 730479,
+          "p2": 3,
+          "p3": 3777,
+          "street": 11286,
+          "dom": 54,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Арзамас",
+              "settlement": "Пустынь",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "ул. Советская",
+              "house": "54",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "settlement_fias_id": "E3146D19-D79C-48D8-AF55-48908C892AC9",
+              "area_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "house_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "street_fias_id": null,
+              "extra": "Original: p2=3, p3=3777, street=11286",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Советская 54",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 730479,
+    "created_at": "2025-10-01T09:12:22.156466",
+    "batch_processed": false
+  }
+}

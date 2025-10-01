@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ПГБ №006",
+        "description": "Объект газификации из базы данных. ID: 3214",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 3214,
+          "original_address": "Сокольский р-н, д. Слободки [ул. Полевая]"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Сокольский",
+              "settlement": "Сокольский",
+              "area": "Нижегородская область район",
+              "zip_code": "606670",
+              "street": "д. Слободки",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "A50632F1-48A4-401C-8B4C-03128AA29D97",
+              "settlement_fias_id": "A50632F1-48A4-401C-8B4C-03128AA29D97",
+              "area_fias_id": "A50632F1-48A4-401C-8B4C-03128AA29D97",
+              "house_fias_id": "A50632F1-48A4-401C-8B4C-03128AA29D97",
+              "street_fias_id": "3B86B097-A08B-4E29-9AA0-F5BCFC5A6E2D",
+              "extra": "Сокольский р-н, д. Слободки [ул. Полевая]",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Слободки 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 3214,
+    "created_at": "2025-10-01T08:25:34.118313",
+    "batch_processed": false
+  }
+}

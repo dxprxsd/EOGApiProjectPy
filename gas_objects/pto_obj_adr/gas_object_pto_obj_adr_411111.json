@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 411111",
+        "description": "Объект из pto_obj_adr. ID: 411111",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 411111,
+          "p2": 10,
+          "p3": 4210,
+          "street": 0,
+          "dom": 11,
+          "korpus": 7
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Большемурашкинский",
+              "settlement": "Советский",
+              "area": "Нижегородская область район",
+              "zip_code": "606360",
+              "street": "ул. Не указана",
+              "house": "11",
+              "block": "7",
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+              "settlement_fias_id": "5E022EE9-0C28-4769-8FD2-1DF3C792ABB1",
+              "area_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+              "house_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+              "street_fias_id": null,
+              "extra": "Original: p2=10, p3=4210, street=0",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул None 11",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 411111,
+    "created_at": "2025-10-01T08:27:25.909077",
+    "batch_processed": false
+  }
+}

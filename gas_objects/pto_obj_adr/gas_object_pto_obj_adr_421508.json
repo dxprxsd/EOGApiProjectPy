@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 421508",
+        "description": "Объект из pto_obj_adr. ID: 421508",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 421508,
+          "p2": 43,
+          "p3": 1578,
+          "street": 1328,
+          "dom": 21,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Дзержинск",
+              "settlement": "Игумново",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "ул. 40 лет Октября",
+              "house": "21",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "1D5A97D5-9BDF-44C9-AC42-E201833E7F28",
+              "settlement_fias_id": "77E271EB-8973-4BB0-B177-079834594E4C",
+              "area_fias_id": "1D5A97D5-9BDF-44C9-AC42-E201833E7F28",
+              "house_fias_id": "1D5A97D5-9BDF-44C9-AC42-E201833E7F28",
+              "street_fias_id": null,
+              "extra": "Original: p2=43, p3=1578, street=1328",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул 40 лет Октября 21",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 421508,
+    "created_at": "2025-10-01T08:27:52.375838",
+    "batch_processed": false
+  }
+}

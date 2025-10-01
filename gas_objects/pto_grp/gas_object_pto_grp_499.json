@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ГРП-01-4500002",
+        "description": "Объект газификации из базы данных. ID: 499",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 499,
+          "original_address": "Ковернинский р-н, д. Гавриловка"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Ковернинский",
+              "settlement": "Ковернинский",
+              "area": "Нижегородская область район",
+              "zip_code": "606570",
+              "street": "д. Гавриловка",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+              "settlement_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+              "area_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+              "house_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+              "street_fias_id": "54185F91-7B80-4CA3-A7B8-3168136E34A7",
+              "extra": "Ковернинский р-н, д. Гавриловка",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Гавриловка 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 499,
+    "created_at": "2025-10-01T08:25:32.969290",
+    "batch_processed": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 365072",
+        "description": "Объект из pto_obj_adr. ID: 365072",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 365072,
+          "p2": 45,
+          "p3": 4854,
+          "street": 6303,
+          "dom": 8,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Дивеевский",
+              "settlement": "Цыгановка",
+              "area": "Нижегородская область район",
+              "zip_code": "607320",
+              "street": "ул. Дорожная",
+              "house": "8",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "0E8F2A8C-F27F-4889-A6CC-3351F0A2A923",
+              "settlement_fias_id": "5A89E8B9-8D7E-4649-ADB2-1249EAD596B2",
+              "area_fias_id": "0E8F2A8C-F27F-4889-A6CC-3351F0A2A923",
+              "house_fias_id": "0E8F2A8C-F27F-4889-A6CC-3351F0A2A923",
+              "street_fias_id": null,
+              "extra": "Original: p2=45, p3=4854, street=6303",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Дорожная 8",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 365072,
+    "created_at": "2025-10-01T08:26:00.819686",
+    "batch_processed": false
+  }
+}

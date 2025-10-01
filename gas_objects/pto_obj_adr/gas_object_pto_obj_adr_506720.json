@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 506720",
+        "description": "Объект из pto_obj_adr. ID: 506720",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 506720,
+          "p2": 72,
+          "p3": 0,
+          "street": 9124,
+          "dom": 4,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Починки",
+              "settlement": "Починки",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "ул. Красная",
+              "house": "4",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "4BCE6592-C562-4F72-91EA-915D9F128306",
+              "settlement_fias_id": "4BCE6592-C562-4F72-91EA-915D9F128306",
+              "area_fias_id": "4BCE6592-C562-4F72-91EA-915D9F128306",
+              "house_fias_id": "4BCE6592-C562-4F72-91EA-915D9F128306",
+              "street_fias_id": null,
+              "extra": "Original: p2=72, p3=0, street=9124",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Красная 4",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 506720,
+    "created_at": "2025-10-01T08:35:05.334192",
+    "batch_processed": false
+  }
+}

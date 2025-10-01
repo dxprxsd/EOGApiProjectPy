@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 608187",
+        "description": "Объект из pto_obj_adr. ID: 608187",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 608187,
+          "p2": 65,
+          "p3": 2319,
+          "street": 8231,
+          "dom": 2,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Павловский",
+              "settlement": "Лаптево",
+              "area": "Нижегородская область район",
+              "zip_code": "606100",
+              "street": "ул. Школьная",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+              "settlement_fias_id": "6388A642-6A1E-4E9D-810C-7219247676B9",
+              "area_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+              "house_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+              "street_fias_id": null,
+              "extra": "Original: p2=65, p3=2319, street=8231",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Школьная 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 608187,
+    "created_at": "2025-10-01T08:47:46.278458",
+    "batch_processed": false
+  }
+}

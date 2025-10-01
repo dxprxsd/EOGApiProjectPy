@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 406214",
+        "description": "Объект из pto_obj_adr. ID: 406214",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 406214,
+          "p2": 28,
+          "p3": 3842,
+          "street": 4212,
+          "dom": 0,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Володарский",
+              "settlement": "Решетиха",
+              "area": "Нижегородская область район",
+              "zip_code": "606072",
+              "street": "ул. Старый Рабочий поселок",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "28AA39A2-9D75-407F-B015-CC778D79F293",
+              "settlement_fias_id": "9F4D25BA-5B84-4432-B40E-DDB756D6267D",
+              "area_fias_id": "28AA39A2-9D75-407F-B015-CC778D79F293",
+              "house_fias_id": "28AA39A2-9D75-407F-B015-CC778D79F293",
+              "street_fias_id": null,
+              "extra": "Original: p2=28, p3=3842, street=4212",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Старый Рабочий поселок 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 406214,
+    "template_number": 66005,
+    "created_at": "2025-10-01T08:12:30.790261"
+  }
+}

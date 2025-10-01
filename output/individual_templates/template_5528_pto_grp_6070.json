@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ГРПШ-05-2У1",
+        "description": "Объект газификации из базы данных. ID: 6070",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 6070,
+          "original_address": "Воротынский р-н, с. Шокино [№74]"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Воротынский",
+              "settlement": "Воротынский",
+              "area": "Нижегородская область район",
+              "zip_code": "606260",
+              "street": "с. Шокино",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+              "settlement_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+              "area_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+              "house_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+              "street_fias_id": "F96FD870-F0AB-46AD-B7E4-F58D21937707",
+              "extra": "Воротынский р-н, с. Шокино [№74]",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Шокино 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 6070,
+    "template_number": 5528,
+    "created_at": "2025-10-01T08:12:17.753200"
+  }
+}

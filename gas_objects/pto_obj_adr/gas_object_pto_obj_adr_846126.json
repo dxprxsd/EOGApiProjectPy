@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 846126",
+        "description": "Объект из pto_obj_adr. ID: 846126",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 846126,
+          "p2": 95,
+          "p3": 3768,
+          "street": 10617,
+          "dom": 24,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Чкаловский",
+              "settlement": "Пурех",
+              "area": "Нижегородская область район",
+              "zip_code": "606540",
+              "street": "ул. Речная",
+              "house": "24",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "D68CE670-1E96-44E6-A1E2-ACFEC9916EDB",
+              "settlement_fias_id": "A47459FE-8C45-42A7-9421-295C9CB1DD8C",
+              "area_fias_id": "D68CE670-1E96-44E6-A1E2-ACFEC9916EDB",
+              "house_fias_id": "D68CE670-1E96-44E6-A1E2-ACFEC9916EDB",
+              "street_fias_id": null,
+              "extra": "Original: p2=95, p3=3768, street=10617",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Речная 24",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 846126,
+    "created_at": "2025-10-01T09:31:59.125509",
+    "batch_processed": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 475921",
+        "description": "Объект из pto_obj_adr. ID: 475921",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 475921,
+          "p2": 9,
+          "p3": 4938,
+          "street": 3045,
+          "dom": 31,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Большеболдинский",
+              "settlement": "Чертас",
+              "area": "Нижегородская область район",
+              "zip_code": "607940",
+              "street": "ул. Молодежная",
+              "house": "31",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "948A3C29-A387-4DD3-A9B6-8D39D5F4A7A7",
+              "settlement_fias_id": "FD948B41-E2CE-464D-A8FE-68792BF52AEB",
+              "area_fias_id": "948A3C29-A387-4DD3-A9B6-8D39D5F4A7A7",
+              "house_fias_id": "948A3C29-A387-4DD3-A9B6-8D39D5F4A7A7",
+              "street_fias_id": null,
+              "extra": "Original: p2=9, p3=4938, street=3045",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Молодежная 31",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 475921,
+    "template_number": 127065,
+    "created_at": "2025-10-01T08:12:32.286472"
+  }
+}

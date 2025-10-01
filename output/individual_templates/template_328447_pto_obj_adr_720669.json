@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 720669",
+        "description": "Объект из pto_obj_adr. ID: 720669",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 720669,
+          "p2": 95,
+          "p3": 3131,
+          "street": 10607,
+          "dom": 49,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Чкаловский",
+              "settlement": "Новинки",
+              "area": "Нижегородская область район",
+              "zip_code": "606540",
+              "street": "ул. Кооперативная",
+              "house": "49",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "D68CE670-1E96-44E6-A1E2-ACFEC9916EDB",
+              "settlement_fias_id": "B5B4637B-1E00-4F63-812D-6FD0C98BC5C7",
+              "area_fias_id": "D68CE670-1E96-44E6-A1E2-ACFEC9916EDB",
+              "house_fias_id": "D68CE670-1E96-44E6-A1E2-ACFEC9916EDB",
+              "street_fias_id": null,
+              "extra": "Original: p2=95, p3=3131, street=10607",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Кооперативная 49",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 720669,
+    "template_number": 328447,
+    "created_at": "2025-10-01T08:12:36.738935"
+  }
+}

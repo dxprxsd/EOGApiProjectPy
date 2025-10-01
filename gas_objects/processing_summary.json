@@ -1,0 +1,16 @@
+{
+  "processing_summary": {
+    "total_objects_processed": 438896,
+    "processing_date": "2025-10-01T09:35:09.758078",
+    "base_directory": "gas_objects",
+    "tables_processed": [
+      "pto_grp",
+      "pto_obj_adr"
+    ]
+  },
+  "file_structure": {
+    "pto_grp": "Папка с объектами из таблицы pto_grp",
+    "pto_obj_adr": "Папка с объектами из таблицы pto_obj_adr"
+  },
+  "notes": "Каждый объект сохранен в отдельном JSON файле"
+}

@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП №1",
+        "description": "Объект газификации из базы данных. ID: 5708",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 5708,
+          "original_address": "Сосновский р-н, д. Макасово"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Сосновский",
+              "settlement": "Сосновский",
+              "area": "Нижегородская область район",
+              "zip_code": "606170",
+              "street": "д. Макасово",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+              "settlement_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+              "area_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+              "house_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+              "street_fias_id": "41BF8D53-6001-4ABF-9482-DD312647A342",
+              "extra": "Сосновский р-н, д. Макасово",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Макасово 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 5708,
+    "template_number": 5255,
+    "created_at": "2025-10-01T08:12:17.750681"
+  }
+}

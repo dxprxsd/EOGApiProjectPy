@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 772509",
+        "description": "Объект из pto_obj_adr. ID: 772509",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 772509,
+          "p2": 8,
+          "p3": 3292,
+          "street": 2430,
+          "dom": 15,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Богородский",
+              "settlement": "Оранки",
+              "area": "Нижегородская область район",
+              "zip_code": "607600",
+              "street": "ул. Колхозная",
+              "house": "15",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+              "settlement_fias_id": "009A5616-7357-4405-B779-FA73645DEBDA",
+              "area_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+              "house_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+              "street_fias_id": null,
+              "extra": "Original: p2=8, p3=3292, street=2430",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Колхозная 15",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 772509,
+    "created_at": "2025-10-01T09:20:53.814619",
+    "batch_processed": false
+  }
+}

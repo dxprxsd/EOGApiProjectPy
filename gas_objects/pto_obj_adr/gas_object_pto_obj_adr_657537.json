@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 657537",
+        "description": "Объект из pto_obj_adr. ID: 657537",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 657537,
+          "p2": 27,
+          "p3": 0,
+          "street": 4351,
+          "dom": 6,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Володарск",
+              "settlement": "Володарск",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "ул. Кирова",
+              "house": "6",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "B92C9E2B-161D-4043-87EF-ED255529F7C6",
+              "settlement_fias_id": "B92C9E2B-161D-4043-87EF-ED255529F7C6",
+              "area_fias_id": "B92C9E2B-161D-4043-87EF-ED255529F7C6",
+              "house_fias_id": "B92C9E2B-161D-4043-87EF-ED255529F7C6",
+              "street_fias_id": null,
+              "extra": "Original: p2=27, p3=0, street=4351",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Кирова 6",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 657537,
+    "created_at": "2025-10-01T09:01:44.017898",
+    "batch_processed": false
+  }
+}

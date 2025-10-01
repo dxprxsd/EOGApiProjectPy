@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 546540",
+        "description": "Объект из pto_obj_adr. ID: 546540",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 546540,
+          "p2": 8,
+          "p3": 1201,
+          "street": 2614,
+          "dom": 44,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Богородский",
+              "settlement": "Доскино",
+              "area": "Нижегородская область район",
+              "zip_code": "607600",
+              "street": "ул. Магистральная",
+              "house": "44",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+              "settlement_fias_id": "D9040210-32FC-449D-97E7-9B984CCBE347",
+              "area_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+              "house_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+              "street_fias_id": null,
+              "extra": "Original: p2=8, p3=1201, street=2614",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Магистральная 44",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 546540,
+    "template_number": 190674,
+    "created_at": "2025-10-01T08:12:33.770915"
+  }
+}

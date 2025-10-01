@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 423442",
+        "description": "Объект из pto_obj_adr. ID: 423442",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 423442,
+          "p2": 10,
+          "p3": 1713,
+          "street": 11387,
+          "dom": 3,
+          "korpus": 3
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Большемурашкинский",
+              "settlement": "Карабатово",
+              "area": "Нижегородская область район",
+              "zip_code": "606360",
+              "street": "ул. Молодежная",
+              "house": "3",
+              "block": "3",
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+              "settlement_fias_id": "0385054A-A1FE-41AD-AD50-DBDA4EDEEDDD",
+              "area_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+              "house_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+              "street_fias_id": null,
+              "extra": "Original: p2=10, p3=1713, street=11387",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Молодежная 3",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 423442,
+    "template_number": 81134,
+    "created_at": "2025-10-01T08:12:31.178744"
+  }
+}

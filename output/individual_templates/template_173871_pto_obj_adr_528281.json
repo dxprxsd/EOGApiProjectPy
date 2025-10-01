@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 528281",
+        "description": "Объект из pto_obj_adr. ID: 528281",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 528281,
+          "p2": 65,
+          "p3": 508,
+          "street": 16939,
+          "dom": 25,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Павловский",
+              "settlement": "Большое Мартово",
+              "area": "Нижегородская область район",
+              "zip_code": "606100",
+              "street": "ул. Зеленая",
+              "house": "25",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+              "settlement_fias_id": "2E64CA8C-F6C0-48D6-83DC-798FF38D33A1",
+              "area_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+              "house_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+              "street_fias_id": null,
+              "extra": "Original: p2=65, p3=508, street=16939",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Зеленая 25",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 528281,
+    "template_number": 173871,
+    "created_at": "2025-10-01T08:12:33.241223"
+  }
+}

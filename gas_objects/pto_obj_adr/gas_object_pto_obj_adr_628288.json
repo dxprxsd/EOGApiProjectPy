@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 628288",
+        "description": "Объект из pto_obj_adr. ID: 628288",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 628288,
+          "p2": 9,
+          "p3": 1589,
+          "street": 3005,
+          "dom": 8,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Большеболдинский",
+              "settlement": "Илларионово",
+              "area": "Нижегородская область район",
+              "zip_code": "607940",
+              "street": "ул. Центральная",
+              "house": "8",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "948A3C29-A387-4DD3-A9B6-8D39D5F4A7A7",
+              "settlement_fias_id": "115B55F3-FC5E-48B8-A9A2-2EC5E1E4DD36",
+              "area_fias_id": "948A3C29-A387-4DD3-A9B6-8D39D5F4A7A7",
+              "house_fias_id": "948A3C29-A387-4DD3-A9B6-8D39D5F4A7A7",
+              "street_fias_id": null,
+              "extra": "Original: p2=9, p3=1589, street=3005",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Центральная 8",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 628288,
+    "created_at": "2025-10-01T08:50:04.618910",
+    "batch_processed": false
+  }
+}

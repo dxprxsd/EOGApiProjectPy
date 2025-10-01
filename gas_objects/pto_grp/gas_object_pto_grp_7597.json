@@ -1,0 +1,58 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП №26",
+        "description": "Объект газификации из базы данных. ID: 7597",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_grp",
+          "source_id": 7597,
+          "original_address": "Вознесенский р-н, с. Криуша"
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Арзамас",
+              "settlement": "Арзамас",
+              "area": "Нижегородская область район",
+              "zip_code": "606000",
+              "street": "с. Криуша",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "settlement_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "area_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "house_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "street_fias_id": "01D12CAB-248D-4AE0-823A-667E7B507BC0",
+              "extra": "Вознесенский р-н, с. Криуша",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Криуша 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_grp",
+    "source_id": 7597,
+    "created_at": "2025-10-01T08:25:35.474084",
+    "batch_processed": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 467564",
+        "description": "Объект из pto_obj_adr. ID: 467564",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 467564,
+          "p2": 91,
+          "p3": 0,
+          "street": 6725,
+          "dom": 14,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Уразовка",
+              "settlement": "Уразовка",
+              "area": "Нижегородская область район",
+              "zip_code": "607530",
+              "street": "пер. Нагорный",
+              "house": "14",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "48B19B3B-8F5A-4C05-9EAD-A656C65CD3F0",
+              "settlement_fias_id": "48B19B3B-8F5A-4C05-9EAD-A656C65CD3F0",
+              "area_fias_id": "48B19B3B-8F5A-4C05-9EAD-A656C65CD3F0",
+              "house_fias_id": "48B19B3B-8F5A-4C05-9EAD-A656C65CD3F0",
+              "street_fias_id": null,
+              "extra": "Original: p2=91, p3=0, street=6725",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Нагорный 14",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 467564,
+    "created_at": "2025-10-01T08:31:19.305446",
+    "batch_processed": false
+  }
+}

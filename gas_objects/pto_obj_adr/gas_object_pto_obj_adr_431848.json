@@ -1,0 +1,62 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 431848",
+        "description": "Объект из pto_obj_adr. ID: 431848",
+        "status": "active",
+        "custom_data": {
+          "source_database": "dog",
+          "source_table": "pto_obj_adr",
+          "source_id": 431848,
+          "p2": 80,
+          "p3": 4559,
+          "street": 17895,
+          "dom": 0,
+          "korpus": 0
+        }
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Сеченовский",
+              "settlement": "Торговое Талызино",
+              "area": "Нижегородская область район",
+              "zip_code": "607580",
+              "street": "ул. Зыбинская",
+              "house": "2",
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+              "settlement_fias_id": "32680873-CF3C-4D5D-9003-0086F66D4ABD",
+              "area_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+              "house_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+              "street_fias_id": null,
+              "extra": "Original: p2=80, p3=4559, street=17895",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул Зыбинская 0",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 431848,
+    "created_at": "2025-10-01T08:28:26.747707",
+    "batch_processed": false
+  }
+}
