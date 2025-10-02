@@ -1,0 +1,366 @@
+{
+  "data": [
+    {
+      "id": "17",
+      "type": "additional_activity",
+      "attributes": {
+        "id": 17,
+        "name": "Выполнение мероприятий по строительству газопровода от границ земельного участка до объекта капитального строительства",
+        "slug": "construction_internal_gas_pipeline_capital_construction",
+        "active": true,
+        "roles": [
+          "senior_manager",
+          "etp_admin",
+          "operator",
+          "eog",
+          "mfc",
+          "mfc_admin",
+          "mfc_operator",
+          "user"
+        ],
+        "kind": "in_bounds",
+        "main": false
+      },
+      "relationships": {
+        "services": {
+          "data": [
+            {
+              "id": "25",
+              "type": "service"
+            },
+            {
+              "id": "24",
+              "type": "service"
+            },
+            {
+              "id": "29",
+              "type": "service"
+            },
+            {
+              "id": "30",
+              "type": "service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "1",
+      "type": "additional_activity",
+      "attributes": {
+        "id": 1,
+        "name": "Дополнительно выполнить мероприятия по подключению (технологическому присоединению) в пределах границ земельного участка",
+        "slug": "add_connection",
+        "active": true,
+        "roles": [
+          "etp_admin",
+          "senior_manager",
+          "operator",
+          "eog",
+          "auditor",
+          "mfc",
+          "mfc_admin",
+          "mfc_operator",
+          "user"
+        ],
+        "kind": "in_bounds",
+        "main": true
+      },
+      "relationships": {
+        "services": {
+          "data": [
+            {
+              "id": "25",
+              "type": "service"
+            },
+            {
+              "id": "24",
+              "type": "service"
+            },
+            {
+              "id": "29",
+              "type": "service"
+            },
+            {
+              "id": "30",
+              "type": "service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "7",
+      "type": "additional_activity",
+      "attributes": {
+        "id": 7,
+        "name": "Дополнительно выполнить мероприятия по поставке прибора учёта газа",
+        "slug": "add_supply_metering",
+        "active": true,
+        "roles": [
+          "etp_admin",
+          "senior_manager",
+          "operator",
+          "eog",
+          "auditor",
+          "mfc",
+          "mfc_admin",
+          "mfc_operator",
+          "user"
+        ],
+        "kind": "in_bounds",
+        "main": false
+      },
+      "relationships": {
+        "services": {
+          "data": [
+            {
+              "id": "25",
+              "type": "service"
+            },
+            {
+              "id": "24",
+              "type": "service"
+            },
+            {
+              "id": "29",
+              "type": "service"
+            },
+            {
+              "id": "30",
+              "type": "service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "4",
+      "type": "additional_activity",
+      "attributes": {
+        "id": 4,
+        "name": "Дополнительно выполнить мероприятия по проектированию сети газопотребления",
+        "slug": "design_gas_network",
+        "active": true,
+        "roles": [
+          "etp_admin",
+          "senior_manager",
+          "operator",
+          "eog",
+          "auditor",
+          "mfc",
+          "mfc_admin",
+          "mfc_operator",
+          "user"
+        ],
+        "kind": "in_bounds",
+        "main": false
+      },
+      "relationships": {
+        "services": {
+          "data": [
+            {
+              "id": "25",
+              "type": "service"
+            },
+            {
+              "id": "24",
+              "type": "service"
+            },
+            {
+              "id": "29",
+              "type": "service"
+            },
+            {
+              "id": "30",
+              "type": "service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "6",
+      "type": "additional_activity",
+      "attributes": {
+        "id": 6,
+        "name": "Дополнительно выполнить мероприятия поставки газоиспользующего оборудования",
+        "slug": "add_supply",
+        "active": true,
+        "roles": [
+          "etp_admin",
+          "senior_manager",
+          "operator",
+          "eog",
+          "auditor",
+          "mfc",
+          "mfc_admin",
+          "mfc_operator",
+          "user"
+        ],
+        "kind": "in_bounds",
+        "main": false
+      },
+      "relationships": {
+        "services": {
+          "data": [
+            {
+              "id": "25",
+              "type": "service"
+            },
+            {
+              "id": "24",
+              "type": "service"
+            },
+            {
+              "id": "29",
+              "type": "service"
+            },
+            {
+              "id": "30",
+              "type": "service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "5",
+      "type": "additional_activity",
+      "attributes": {
+        "id": 5,
+        "name": "Дополнительно выполнить мероприятия по установке газоиспользующего оборудования",
+        "slug": "add_equipment_install",
+        "active": true,
+        "roles": [
+          "etp_admin",
+          "senior_manager",
+          "operator",
+          "eog",
+          "auditor",
+          "mfc",
+          "mfc_admin",
+          "mfc_operator",
+          "user"
+        ],
+        "kind": "in_bounds",
+        "main": false
+      },
+      "relationships": {
+        "services": {
+          "data": [
+            {
+              "id": "25",
+              "type": "service"
+            },
+            {
+              "id": "24",
+              "type": "service"
+            },
+            {
+              "id": "29",
+              "type": "service"
+            },
+            {
+              "id": "30",
+              "type": "service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "3",
+      "type": "additional_activity",
+      "attributes": {
+        "id": 3,
+        "name": "Дополнительно выполнить мероприятия по установке прибора учета газа",
+        "slug": "add_meter_install",
+        "active": true,
+        "roles": [
+          "etp_admin",
+          "senior_manager",
+          "operator",
+          "eog",
+          "auditor",
+          "mfc",
+          "mfc_admin",
+          "mfc_operator",
+          "user"
+        ],
+        "kind": "in_bounds",
+        "main": false
+      },
+      "relationships": {
+        "services": {
+          "data": [
+            {
+              "id": "25",
+              "type": "service"
+            },
+            {
+              "id": "24",
+              "type": "service"
+            },
+            {
+              "id": "29",
+              "type": "service"
+            },
+            {
+              "id": "30",
+              "type": "service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "2",
+      "type": "additional_activity",
+      "attributes": {
+        "id": 2,
+        "name": "Дополнительно выполнить мероприятия строительства либо реконструкции внутреннего газопровода объекта капитального строительства",
+        "slug": "add_construction",
+        "active": true,
+        "roles": [
+          "etp_admin",
+          "senior_manager",
+          "operator",
+          "eog",
+          "auditor",
+          "mfc",
+          "mfc_admin",
+          "mfc_operator",
+          "user"
+        ],
+        "kind": "in_bounds",
+        "main": false
+      },
+      "relationships": {
+        "services": {
+          "data": [
+            {
+              "id": "25",
+              "type": "service"
+            },
+            {
+              "id": "24",
+              "type": "service"
+            },
+            {
+              "id": "29",
+              "type": "service"
+            },
+            {
+              "id": "30",
+              "type": "service"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "meta": {
+    "total_pages": 1
+  }
+}

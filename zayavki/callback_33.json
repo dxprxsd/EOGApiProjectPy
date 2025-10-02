@@ -1,0 +1,18 @@
+{
+  "data": {
+    "id": "33",
+    "type": "callback",
+    "attributes": {
+      "id": 33,
+      "name": "Тест",
+      "email": "test@test.ru",
+      "message": "тестовое сообщение",
+      "created_at": "2022-04-13T10:10:52.845+03:00"
+    },
+    "relationships": {
+      "admin": {
+        "data": null
+      }
+    }
+  }
+}

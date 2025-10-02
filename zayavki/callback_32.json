@@ -1,0 +1,18 @@
+{
+  "data": {
+    "id": "32",
+    "type": "callback",
+    "attributes": {
+      "id": 32,
+      "name": "цуккуцукуцк",
+      "email": "1@gmail.com",
+      "message": "Chdhqhwehoiwejqwe2eq",
+      "created_at": "2022-03-14T15:52:28.105+03:00"
+    },
+    "relationships": {
+      "admin": {
+        "data": null
+      }
+    }
+  }
+}

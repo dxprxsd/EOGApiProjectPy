@@ -1,0 +1,18 @@
+{
+  "data": {
+    "id": "27",
+    "type": "callback",
+    "attributes": {
+      "id": 27,
+      "name": "Тест",
+      "email": "1@gmail.com",
+      "message": "Тестовое обращение для Газпром Газификации от неавторизованного заявителя",
+      "created_at": "2022-03-02T15:16:59.062+03:00"
+    },
+    "relationships": {
+      "admin": {
+        "data": null
+      }
+    }
+  }
+}

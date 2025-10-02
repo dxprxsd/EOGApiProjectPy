@@ -1,0 +1,18 @@
+{
+  "data": {
+    "id": "5",
+    "type": "callback",
+    "attributes": {
+      "id": 5,
+      "name": "Тестовый",
+      "email": "testing@mail.com",
+      "message": "Тестовое сообщение авторизованного заявителя ",
+      "created_at": "2021-06-09T11:23:55.052+03:00"
+    },
+    "relationships": {
+      "admin": {
+        "data": null
+      }
+    }
+  }
+}

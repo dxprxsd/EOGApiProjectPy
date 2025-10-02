@@ -1,0 +1,18 @@
+{
+  "data": {
+    "id": "15",
+    "type": "callback",
+    "attributes": {
+      "id": 15,
+      "name": "Петров",
+      "email": "test.ksu01@gmail.com",
+      "message": "Тестовое письмо",
+      "created_at": "2022-02-14T15:04:08.353+03:00"
+    },
+    "relationships": {
+      "admin": {
+        "data": null
+      }
+    }
+  }
+}

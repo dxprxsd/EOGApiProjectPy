@@ -1,0 +1,18 @@
+{
+  "data": {
+    "id": "14",
+    "type": "callback",
+    "attributes": {
+      "id": 14,
+      "name": "Денис",
+      "email": "izosin@gazprom-lenobl.ru",
+      "message": "не могу создать заявку от Юр. лица или ИП пишет страница не найдена",
+      "created_at": "2021-08-11T13:42:56.204+03:00"
+    },
+    "relationships": {
+      "admin": {
+        "data": null
+      }
+    }
+  }
+}

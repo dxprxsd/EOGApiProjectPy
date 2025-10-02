@@ -1,0 +1,18 @@
+{
+  "data": {
+    "id": "24",
+    "type": "callback",
+    "attributes": {
+      "id": 24,
+      "name": "Максим",
+      "email": "qweqweq@mail.co1m",
+      "message": "sdfdscsdc@mail.ru\n",
+      "created_at": "2022-02-21T09:43:49.349+03:00"
+    },
+    "relationships": {
+      "admin": {
+        "data": null
+      }
+    }
+  }
+}

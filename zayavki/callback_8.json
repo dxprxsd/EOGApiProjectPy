@@ -1,0 +1,18 @@
+{
+  "data": {
+    "id": "8",
+    "type": "callback",
+    "attributes": {
+      "id": 8,
+      "name": "Тестовый",
+      "email": "fdsf@mail.com",
+      "message": "fdsfdsfdsfd",
+      "created_at": "2021-07-09T09:28:38.716+03:00"
+    },
+    "relationships": {
+      "admin": {
+        "data": null
+      }
+    }
+  }
+}

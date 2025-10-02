@@ -1,0 +1,18 @@
+{
+  "data": {
+    "id": "12",
+    "type": "callback",
+    "attributes": {
+      "id": 12,
+      "name": "asd",
+      "email": "sdv@masd.asd",
+      "message": "sdvsdv",
+      "created_at": "2021-07-30T17:49:53.024+03:00"
+    },
+    "relationships": {
+      "admin": {
+        "data": null
+      }
+    }
+  }
+}

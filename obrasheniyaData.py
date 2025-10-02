@@ -8,7 +8,7 @@ import urllib3
 import pymssql
 import time
 
-# ОСНОВНАЯ ПРОГРАММА (функция получения записей о мероприятиях)
+# ОСНОВНАЯ ПРОГРАММА (функция получения заявок) //заявки из функции GET /v1/admin/callbacks/{id} Просмотр заявки
 
 # Отключаем предупреждения SSL
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -139,11 +139,10 @@ def get_auth_token():
         print(f"Неожиданная ошибка при авторизации: {e}")
         return None
 
-def get_additional_activities(service_id=29, active=True):
-    # Получает список дополнительных мероприятий из API
+def get_callback_by_id(callback_id):
+    # Получает заявку по ID из API
     # Args: 
-    #   service_id (int): ID услуги (по умолчанию 29)
-    #   active (bool): фильтр по активности (по умолчанию True)
+    #   callback_id (int): ID заявки
     # Returns: dict: Ответ от API или None в случае ошибки
     
     global API_AUTH_TOKEN
@@ -153,12 +152,8 @@ def get_additional_activities(service_id=29, active=True):
         return None
         
     try:
-        # Формируем URL запроса - ИСПРАВЛЕНО: правильный endpoint
-        url = f"{API_BASE_URL}/admin/additional_activities"
-        params = {
-            "service_id": service_id,
-            "active": str(active).lower()
-        }
+        # Формируем URL запроса
+        url = f"{API_BASE_URL}/admin/callbacks/{callback_id}"
         
         # Заголовки запроса
         headers = {
@@ -167,12 +162,11 @@ def get_additional_activities(service_id=29, active=True):
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
         }
         
-        print(f"Запрос для service_id={service_id}, active={active}")
+        print(f"Запрос заявки с ID: {callback_id}")
         
         # Отправляем запрос через прокси
         response = requests.get(
             url,
-            params=params,
             headers=headers,
             proxies={
                 "http": PROXY_URL,
@@ -182,132 +176,153 @@ def get_additional_activities(service_id=29, active=True):
             verify=False  # Игнорируем SSL проверки
         )
         
-        print(f"Статус ответа для service_id {service_id}: {response.status_code}")
+        print(f"Статус ответа для ID {callback_id}: {response.status_code}")
         
         # Пытаемся получить JSON ответ
         try:
             result = response.json()
         except json.JSONDecodeError as e:
-            print(f"Ошибка декодирования JSON для service_id {service_id}: {e}")
+            print(f"Ошибка декодирования JSON для ID {callback_id}: {e}")
             print(f"Текст ответа: {response.text[:200]}...")
             return None
         
         # Проверяем статус ответа
         if response.status_code == 200:
-            activities_count = len(result.get('data', []))
-            print(f"Успешно! Найдено мероприятий: {activities_count}")
+            print(f"Успешно! Заявка с ID {callback_id} найдена")
             return result
         elif response.status_code == 401:
-            print(f"Ошибка авторизации для service_id {service_id}")
+            print(f"Ошибка авторизации для ID {callback_id}")
+            return None
+        elif response.status_code == 403:
+            print(f"Недостаточно прав для доступа к заявке ID {callback_id}")
+            return None
+        elif response.status_code == 404:
+            print(f"Заявка с ID {callback_id} не найдена")
             return None
         else:
-            print(f"Ошибка API для service_id {service_id}: {response.status_code}")
+            print(f"Ошибка API для ID {callback_id}: {response.status_code}")
             return None
             
     except requests.exceptions.RequestException as e:
-        print(f"Ошибка сетевого запроса для service_id {service_id}: {e}")
+        print(f"Ошибка сетевого запроса для ID {callback_id}: {e}")
         return None
     except Exception as e:
-        print(f"Неожиданная ошибка для service_id {service_id}: {e}")
+        print(f"Неожиданная ошибка для ID {callback_id}: {e}")
         return None
 
-def display_activities_data(data, service_id):
-    # Красиво отображает данные о мероприятиях
+def display_callback_data(data, callback_id):
+    # Красиво отображает данные о заявке
     if not data or 'data' not in data:
-        print(f"Нет данных для service_id {service_id}")
+        print(f"Нет данных для заявки ID {callback_id}")
         return
     
-    activities = data['data']
+    callback = data['data']
+    attrs = callback.get('attributes', {})
+    
     print(f"\n{'='*80}")
-    print(f"ДОПОЛНИТЕЛЬНЫЕ МЕРОПРИЯТИЯ для service_id {service_id} (всего: {len(activities)})")
+    print(f"ЗАЯВКА ID: {callback_id}")
     print(f"{'='*80}")
     
-    for i, activity in enumerate(activities, 1):
-        attrs = activity.get('attributes', {})
-        print(f"\n{i}. {attrs.get('name', 'Нет названия')}")
-        print(f"   ID: {attrs.get('id', 'N/A')}")
-        print(f"   Slug: {attrs.get('slug', 'N/A')}")
-        print(f"   Активно: {'Да' if attrs.get('active') else 'Нет'}")
-        print(f"   Тип: {attrs.get('kind', 'N/A')}")
-        print(f"   Основное: {'Да' if attrs.get('main') else 'Нет'}")
-        print(f"   Роли: {', '.join(attrs.get('roles', []))}")
-        print(f"   {'-'*50}")
+    print(f"ID: {attrs.get('id', 'N/A')}")
+    print(f"Имя: {attrs.get('name', 'N/A')}")
+    print(f"Email: {attrs.get('email', 'N/A')}")
+    print(f"Сообщение: {attrs.get('message', 'N/A')}")
+    print(f"Дата создания: {attrs.get('created_at', 'N/A')}")
+    
+    # Отображаем информацию об администраторе
+    relationships = callback.get('relationships', {})
+    admin_data = relationships.get('admin', {}).get('data')
+    if admin_data:
+        print(f"Администратор: ID {admin_data.get('id', 'N/A')}")
+    else:
+        print(f"Администратор: не назначен")
+    
+    print(f"{'='*80}")
 
-def save_to_file(data, service_id, folder="dopMeropriyatiyaData"):
-    # Сохраняет данные в JSON файл в указанную папку
+def save_callback_to_file(data, callback_id, folder="zayavki"):
+    # Сохраняет данные заявки в JSON файл в указанную папку
     try:
         # Создаем папку если не существует
         Path(folder).mkdir(exist_ok=True)
         
-        filename = f"{folder}/additional_activities_service_{service_id}.json"
+        filename = f"{folder}/callback_{callback_id}.json"
         
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        print(f"Данные для service_id {service_id} сохранены в файл: {filename}")
+        print(f"Данные заявки ID {callback_id} сохранены в файл: {filename}")
         return filename
     except Exception as e:
-        print(f"Ошибка сохранения файла для service_id {service_id}: {e}")
+        print(f"Ошибка сохранения файла для заявки ID {callback_id}: {e}")
         return None
 
-def scan_all_service_ids(start_id=1, end_id=100, active=True):
-    # Сканирует все service_id в указанном диапазоне
+def scan_all_callbacks(start_id=1, end_id=300):
+    # Сканирует все callback_id в указанном диапазоне
     # Args:
     #   start_id (int): начальный ID
     #   end_id (int): конечный ID
-    #   active (bool): фильтр по активности
     
     print(f"\n{'='*80}")
-    print(f"СКАНИРОВАНИЕ SERVICE_ID ОТ {start_id} ДО {end_id}")
+    print(f"СКАНИРОВАНИЕ ЗАЯВОК ОТ ID {start_id} ДО {end_id}")
     print(f"{'='*80}")
     
     successful_requests = 0
     found_data_count = 0
+    error_403_count = 0
+    not_found_count = 0
     
-    for service_id in range(start_id, end_id + 1):
-        print(f"\n--- Проверка service_id: {service_id} ---")
+    for callback_id in range(start_id, end_id + 1):
+        print(f"\n--- Проверка заявки ID: {callback_id} ---")
         
-        # Получаем данные для текущего service_id
-        data = get_additional_activities(service_id, active)
+        # Получаем данные для текущего callback_id
+        data = get_callback_by_id(callback_id)
         
-        if data and 'data' in data and len(data['data']) > 0:
-            # Если есть данные, отображаем и сохраняем
-            display_activities_data(data, service_id)
-            save_to_file(data, service_id)
-            found_data_count += 1
-            successful_requests += 1
-        elif data:
-            # Если ответ успешный, но данных нет
-            print(f"Для service_id {service_id} нет дополнительных мероприятий")
-            successful_requests += 1
+        if data:
+            if 'data' in data and data['data'] is not None:
+                # Если есть данные, отображаем и сохраняем
+                display_callback_data(data, callback_id)
+                save_callback_to_file(data, callback_id)
+                found_data_count += 1
+                successful_requests += 1
+            else:
+                # Если структура данных не соответствует ожидаемой
+                print(f"Неожиданная структура данных для ID {callback_id}")
+                successful_requests += 1
+        else:
+            # Увеличиваем счетчики ошибок
+            if data is None:
+                not_found_count += 1
+            # Для других ошибок (401, 403 и т.д.) счетчики уже обработаны в get_callback_by_id
         
         # Небольшая задержка чтобы не перегружать API
-        time.sleep(0.5)
+        time.sleep(0.3)
     
     # Выводим итоговую статистику
     print(f"\n{'='*80}")
-    print("ИТОГИ СКАНИРОВАНИЯ:")
-    print(f"• Проверено service_id: {end_id - start_id + 1}")
+    print("ИТОГИ СКАНИРОВАНИЯ ЗАЯВОК:")
+    print(f"• Проверено ID: {end_id - start_id + 1}")
     print(f"• Успешных запросов: {successful_requests}")
-    print(f"• Найдено service_id с данными: {found_data_count}")
-    print(f"• Данные сохранены в папку: dopMeropriyatiyaData/")
+    print(f"• Найдено заявок: {found_data_count}")
+    print(f"• Не найдено (404): {not_found_count}")
+    print(f"• Ошибок доступа (403): {error_403_count}")
+    print(f"• Данные сохранены в папку: zayavki/")
     print(f"{'='*80}")
     
     return successful_requests, found_data_count
 
-def test_specific_service_id(service_id=29, active=True):
-    # Тестирует конкретный service_id для отладки
+def test_specific_callback_id(callback_id=29):
+    # Тестирует конкретный callback_id для отладки
     print(f"\n{'='*80}")
-    print(f"ТЕСТИРОВАНИЕ КОНКРЕТНОГО SERVICE_ID: {service_id}")
+    print(f"ТЕСТИРОВАНИЕ КОНКРЕТНОЙ ЗАЯВКИ ID: {callback_id}")
     print(f"{'='*80}")
     
-    data = get_additional_activities(service_id, active)
+    data = get_callback_by_id(callback_id)
     
-    if data:
-        display_activities_data(data, service_id)
-        save_to_file(data, service_id)
+    if data and 'data' in data:
+        display_callback_data(data, callback_id)
+        save_callback_to_file(data, callback_id)
         return True
     else:
-        print(f"Не удалось получить данные для service_id {service_id}")
+        print(f"Не удалось получить данные для заявки ID {callback_id}")
         return False
 
 def test_sql_connection():
@@ -331,10 +346,10 @@ def test_sql_connection():
         print(f"Ошибка подключения к SQL Server: {e}")
         return False
 
-def main():
-    # Основная функция программы 
-    print("ЗАПУСК ПРОГРАММЫ ПОЛУЧЕНИЯ ДАННЫХ ИЗ API")
-    print("=" * 50)
+def main_callbacks():
+    # Основная функция программы для работы с заявками
+    print("ЗАПУСК ПРОГРАММЫ ПОЛУЧЕНИЯ ДАННЫХ О ЗАЯВКАХ ИЗ API")
+    print("=" * 60)
     
     # Настраиваем прокси
     setup_proxy()
@@ -355,23 +370,45 @@ def main():
     
     # Меню выбора режима работы
     print("\n" + "="*50)
-    print("ВЫБЕРИТЕ РЕЖИМ РАБОТЫ:")
-    print("1. Тестирование конкретного service_id (29)")
-    print("2. Сканирование всех service_id от 1 до 100")
+    print("ВЫБЕРИТЕ РЕЖИМ РАБОТЫ С ЗАЯВКАМИ:")
+    print("1. Тестирование конкретной заявки (ID 29)")
+    print("2. Сканирование всех заявок от ID 1 до 300")
+    print("3. Сканирование в пользовательском диапазоне")
     print("="*50)
     
-    choice = input("Введите номер режима (1 или 2): ").strip()
+    choice = input("Введите номер режима (1, 2 или 3): ").strip()
     
     if choice == "1":
-        # Тестируем конкретный service_id
-        test_specific_service_id(29, True)
-    elif choice == "2":
-        # Сканируем все service_id от 1 до 300
-        successful, found = scan_all_service_ids(1, 300, True)
+        # Тестируем конкретную заявку
+        callback_id = input("Введите ID заявки (по умолчанию 29): ").strip()
+        if not callback_id:
+            callback_id = 29
+        else:
+            callback_id = int(callback_id)
+        test_specific_callback_id(callback_id)
         
-        print(f"\nРезультат сканирования:")
+    elif choice == "2":
+        # Сканируем все заявки от 1 до 300
+        successful, found = scan_all_callbacks(1, 300)
+        
+        print(f"\nРезультат сканирования заявок:")
         print(f"Успешно обработано: {successful} запросов")
-        print(f"Найдено service_id с данными: {found}")
+        print(f"Найдено заявок: {found}")
+        
+    elif choice == "3":
+        # Пользовательский диапазон
+        start_id = input("Введите начальный ID (по умолчанию 1): ").strip()
+        end_id = input("Введите конечный ID (по умолчанию 300): ").strip()
+        
+        start_id = int(start_id) if start_id else 1
+        end_id = int(end_id) if end_id else 300
+        
+        successful, found = scan_all_callbacks(start_id, end_id)
+        
+        print(f"\nРезультат сканирования заявок:")
+        print(f"Диапазон: от {start_id} до {end_id}")
+        print(f"Успешно обработано: {successful} запросов")
+        print(f"Найдено заявок: {found}")
     else:
         print("Неверный выбор. Завершение программы.")
         return
@@ -380,4 +417,4 @@ def main():
 
 # Запуск программы
 if __name__ == "__main__":
-    main()
+    main_callbacks()
