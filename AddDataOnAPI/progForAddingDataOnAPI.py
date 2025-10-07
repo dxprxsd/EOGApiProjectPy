@@ -538,9 +538,9 @@ def main():
             # print("Отправляем данные в API...")
             # result = send_gas_object_to_api(gas_object_data, API_AUTH_TOKEN)
             # if result:
-            #     print("✓ Успешно отправлено в API")
+            #     print("Успешно отправлено в API")
             # else:
-            #     print("✗ Ошибка отправки")
+            #     print("Ошибка отправки")
     else:
         print("Не удалось получить адресные данные для создания объектов")
     
