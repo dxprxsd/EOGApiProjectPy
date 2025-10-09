@@ -12,6 +12,7 @@ import threading
 from typing import List, Dict, Any
 
 # ОСНОВНАЯ ПРОГРАММА (функция получения заявок) //заявки из функции GET /v1/admin/callbacks/{id} Просмотр заявки
+# Данная версия имеет возможность повторять выргузку данных с указанным интервалом (например 10 минут)
 
 # Отключаем предупреждения SSL
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
