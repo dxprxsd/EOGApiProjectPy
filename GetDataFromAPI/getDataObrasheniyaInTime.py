@@ -272,24 +272,27 @@ def save_callback_to_file(data, callback_id, folder="zayavki"):
         print(f"Ошибка сохранения файла для заявки ID {callback_id}: {e}")
         return None
 
-def monitor_callbacks_repeated(batch_size=200, interval_minutes=10):
+def monitor_callbacks_continuous(start_id=1, batch_size=200, interval_minutes=10):
     """
-    Периодически проверяет заявки начиная с ID 1 каждые interval_minutes минут
-    Всегда начинает проверку с ID 1 и проверяет batch_size ID
+    Непрерывно мониторит заявки в режиме реального времени
+    Проверяет batch_size ID каждые interval_minutes минут
     
     Args:
+        start_id (int): начальный ID для мониторинга
         batch_size (int): количество ID для проверки за один цикл
         interval_minutes (int): интервал между проверками в минутах
     """
-    global MONITORING_ACTIVE
+    global MONITORING_ACTIVE, LAST_CHECKED_IDS
     
     print(f"\n{'='*80}")
-    print(f"ЗАПУСК ПЕРИОДИЧЕСКОГО МОНИТОРИНГА ЗАЯВОК")
+    print(f"ЗАПУСК НЕПРЕРЫВНОГО МОНИТОРИНГА ЗАЯВОК")
     print(f"Проверка {batch_size} ID каждые {interval_minutes} минут")
-    print(f"Начальный ID всегда: 1")
+    print(f"Начальный ID: {start_id}")
     print(f"{'='*80}")
     
     MONITORING_ACTIVE = True
+    current_start_id = start_id
+    
     cycle_count = 0
     
     while MONITORING_ACTIVE:
@@ -299,21 +302,24 @@ def monitor_callbacks_repeated(batch_size=200, interval_minutes=10):
         print(f"\n\n{'='*80}")
         print(f"ЦИКЛ МОНИТОРИНГА #{cycle_count}")
         print(f"Время начала: {current_time}")
-        print(f"Диапазон ID: 1 - {batch_size}")
+        print(f"Диапазон ID: {current_start_id} - {current_start_id + batch_size - 1}")
         print(f"{'='*80}")
         
-        # Всегда начинаем с ID 1
-        start_id = 1
-        end_id = batch_size
-        
+        # Проверяем batch_size ID
         successful_requests = 0
         found_data_count = 0
+        new_ids_found = 0
         
-        for callback_id in range(start_id, end_id + 1):
+        for callback_id in range(current_start_id, current_start_id + batch_size):
             if not MONITORING_ACTIVE:
                 break
                 
             print(f"\n--- Проверка заявки ID: {callback_id} ---")
+            
+            # Проверяем, не проверяли ли мы уже этот ID
+            if callback_id in LAST_CHECKED_IDS:
+                print(f"ID {callback_id} уже проверялся ранее, пропускаем")
+                continue
             
             # Получаем данные для текущего callback_id
             data = get_callback_by_id(callback_id)
@@ -324,6 +330,8 @@ def monitor_callbacks_repeated(batch_size=200, interval_minutes=10):
                     display_callback_data(data, callback_id)
                     save_callback_to_file(data, callback_id)
                     found_data_count += 1
+                    new_ids_found += 1
+                    LAST_CHECKED_IDS.add(callback_id)
                 successful_requests += 1
             else:
                 successful_requests += 1
@@ -337,21 +345,20 @@ def monitor_callbacks_repeated(batch_size=200, interval_minutes=10):
         print(f"* Проверено ID: {batch_size}")
         print(f"* Успешных запросов: {successful_requests}")
         print(f"* Найдено заявок: {found_data_count}")
-        print(f"* Время завершения: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"* Новых заявок: {new_ids_found}")
+        print(f"* Всего проверенных ID: {len(LAST_CHECKED_IDS)}")
         print(f"{'='*80}")
         
         # Сохраняем статистику в файл
-        save_monitoring_stats(cycle_count, start_id, batch_size, successful_requests, found_data_count)
+        save_monitoring_stats(cycle_count, current_start_id, batch_size, successful_requests, found_data_count, new_ids_found)
+        
+        # Сдвигаем диапазон для следующего цикла
+        current_start_id += batch_size
         
         # Если мониторинг еще активен, ждем перед следующим циклом
         if MONITORING_ACTIVE:
             wait_seconds = interval_minutes * 60
-            next_check_time = datetime.now().timestamp() + wait_seconds
-            next_check_str = datetime.fromtimestamp(next_check_time).strftime('%Y-%m-%d %H:%M:%S')
-            
-            print(f"\nОжидание следующего цикла...")
-            print(f"Следующая проверка в: {next_check_str}")
-            print(f"Интервал: {interval_minutes} минут ({wait_seconds} секунд)")
+            print(f"\nОжидание следующего цикла... ({interval_minutes} минут)")
             
             # Отсчет времени с прогресс-баром
             for i in range(wait_seconds):
@@ -359,13 +366,12 @@ def monitor_callbacks_repeated(batch_size=200, interval_minutes=10):
                     break
                 if i % 60 == 0:  # Выводим сообщение каждую минуту
                     minutes_left = (wait_seconds - i) // 60
-                    seconds_left = (wait_seconds - i) % 60
-                    print(f"До следующей проверки: {minutes_left:02d}:{seconds_left:02d}")
+                    print(f"До следующего цикла: {minutes_left} минут...")
                 time.sleep(1)
     
-    print("Периодический мониторинг остановлен")
+    print("Мониторинг остановлен")
 
-def save_monitoring_stats(cycle_count, start_id, batch_size, successful_requests, found_data_count):
+def save_monitoring_stats(cycle_count, start_id, batch_size, successful_requests, found_data_count, new_ids_found):
     """Сохраняет статистику мониторинга в файл"""
     try:
         stats_file = "monitoring_stats.json"
@@ -385,7 +391,8 @@ def save_monitoring_stats(cycle_count, start_id, batch_size, successful_requests
             "batch_size": batch_size,
             "successful_requests": successful_requests,
             "found_data_count": found_data_count,
-            "total_cycles": cycle_count
+            "new_ids_found": new_ids_found,
+            "total_checked_ids": len(LAST_CHECKED_IDS)
         }
         
         # Сохраняем обновленную статистику
@@ -397,8 +404,8 @@ def save_monitoring_stats(cycle_count, start_id, batch_size, successful_requests
     except Exception as e:
         print(f"Ошибка сохранения статистики: {e}")
 
-def start_periodic_monitoring(batch_size=200, interval_minutes=10):
-    """Запускает периодический мониторинг в отдельном потоке"""
+def start_monitoring(start_id=1, batch_size=200, interval_minutes=10):
+    """Запускает мониторинг в отдельном потоке"""
     global MONITORING_ACTIVE, CURRENT_MONITORING_THREAD
     
     if MONITORING_ACTIVE:
@@ -407,15 +414,15 @@ def start_periodic_monitoring(batch_size=200, interval_minutes=10):
     
     MONITORING_ACTIVE = True
     CURRENT_MONITORING_THREAD = threading.Thread(
-        target=monitor_callbacks_repeated,
-        args=(batch_size, interval_minutes),
+        target=monitor_callbacks_continuous,
+        args=(start_id, batch_size, interval_minutes),
         daemon=True
     )
     CURRENT_MONITORING_THREAD.start()
     
-    print(f"Периодический мониторинг запущен в отдельном потоке")
+    print(f"Мониторинг запущен в отдельном потоке")
     print(f"Проверка {batch_size} ID каждые {interval_minutes} минут")
-    print(f"Начальный ID всегда: 1")
+    print(f"Начальный ID: {start_id}")
     print("Для остановки мониторинга выберите соответствующий пункт в меню")
     
     return True
@@ -440,11 +447,12 @@ def stop_monitoring():
 
 def get_monitoring_status():
     """Возвращает статус мониторинга"""
-    global MONITORING_ACTIVE
+    global MONITORING_ACTIVE, LAST_CHECKED_IDS
     
     status = {
         "active": MONITORING_ACTIVE,
-        "last_check_time": datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        "total_checked_ids": len(LAST_CHECKED_IDS),
+        "last_check_time": datetime.now().strftime('%Y-%m-%d %H:%M:%S') if LAST_CHECKED_IDS else "N/A"
     }
     
     return status
@@ -899,7 +907,7 @@ def main_callbacks():
         print("4. Преобразовать JSON в CSV (из папки zayavki)")
         print("5. Создать CSV версию для печати")
         print("6. Создать текстовый отчет")
-        print("7. ЗАПУСТИТЬ ПЕРИОДИЧЕСКИЙ МОНИТОРИНГ (200 ID каждые 10 мин, начиная с ID 1)")
+        print("7. ЗАПУСТИТЬ НЕПРЕРЫВНЫЙ МОНИТОРИНГ (200 ID каждые 10 мин)")
         print("8. Статус мониторинга")
         print("9. ОСТАНОВИТЬ мониторинг")
         print("0. Выход из программы")
@@ -998,16 +1006,18 @@ def main_callbacks():
                 print("\nНе удалось создать текстовый отчет")
         
         elif choice == "7":
-            # Запуск периодического мониторинга
+            # Запуск непрерывного мониторинга
+            start_id = input("Введите начальный ID (по умолчанию 1): ").strip()
             batch_size = input("Введите количество ID за цикл (по умолчанию 200): ").strip()
             interval = input("Введите интервал в минутах (по умолчанию 10): ").strip()
             
+            start_id = int(start_id) if start_id else 1
             batch_size = int(batch_size) if batch_size else 200
             interval = int(interval) if interval else 10
             
-            if start_periodic_monitoring(batch_size, interval):
-                print("Периодический мониторинг успешно запущен!")
-                print("Программа будет проверять ID 1-200 каждые 10 минут.")
+            if start_monitoring(start_id, batch_size, interval):
+                print("Мониторинг успешно запущен!")
+                print("Программа продолжит работу в фоновом режиме.")
                 print("Вы можете проверять статус или остановить мониторинг через меню.")
         
         elif choice == "8":
@@ -1015,6 +1025,7 @@ def main_callbacks():
             status = get_monitoring_status()
             print(f"\nСТАТУС МОНИТОРИНГА:")
             print(f"Активен: {'ДА' if status['active'] else 'НЕТ'}")
+            print(f"Проверено ID: {status['total_checked_ids']}")
             print(f"Время последней проверки: {status['last_check_time']}")
         
         elif choice == "9":

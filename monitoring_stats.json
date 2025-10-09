@@ -1,0 +1,20 @@
+{
+  "cycle_1": {
+    "timestamp": "2025-10-09T11:22:11.381620",
+    "start_id": 1,
+    "end_id": 200,
+    "batch_size": 200,
+    "successful_requests": 200,
+    "found_data_count": 33,
+    "total_cycles": 1
+  },
+  "cycle_2": {
+    "timestamp": "2025-10-09T11:34:09.630438",
+    "start_id": 1,
+    "end_id": 200,
+    "batch_size": 200,
+    "successful_requests": 200,
+    "found_data_count": 33,
+    "total_cycles": 2
+  }
+}
