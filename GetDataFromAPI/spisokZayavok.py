@@ -7,6 +7,8 @@ import os
 import urllib3
 import pymssql
 import time
+import csv
+from typing import List, Dict, Any
 
 # ОСНОВНАЯ ПРОГРАММА (функция получения списка заявок)
 
@@ -343,11 +345,11 @@ def get_all_leads(per_page=100, max_pages=None, **filters):
     # Выводим итоговую статистику
     print(f"\n{'='*80}")
     print("ИТОГИ ПОЛУЧЕНИЯ ЗАЯВОК:")
-    print(f"• Всего страниц в системе: {meta.get('total_pages', 'N/A')}")
-    print(f"• Всего заявок в системе: {meta.get('total_count', 'N/A')}")
-    print(f"• Успешно получено страниц: {successful_pages}")
-    print(f"• Получено заявок: {all_leads_count}")
-    print(f"• Данные сохранены в папку: zayavki_spisok/")
+    print(f"* Всего страниц в системе: {meta.get('total_pages', 'N/A')}")
+    print(f"* Всего заявок в системе: {meta.get('total_count', 'N/A')}")
+    print(f"* Успешно получено страниц: {successful_pages}")
+    print(f"* Получено заявок: {all_leads_count}")
+    print(f"* Данные сохранены в папку: zayavki_spisok/")
     print(f"{'='*80}")
     
     return successful_pages, all_leads_count, total_pages
@@ -439,6 +441,135 @@ def export_leads_to_single_file(folder="zayavki_spisok", output_file="all_leads_
         print(f"Ошибка объединения файлов: {e}")
         return None
 
+def json_to_csv(folder="zayavki_spisok", output_file="leads_export.csv"):
+    """
+    Преобразует все JSON файлы из папки в один CSV файл
+    
+    Args:
+        folder (str): Папка с JSON файлами
+        output_file (str): Имя выходного CSV файла
+    
+    Returns:
+        str: Путь к созданному CSV файлу или None в случае ошибки
+    """
+    try:
+        print(f"\n{'='*80}")
+        print("ПРЕОБРАЗОВАНИЕ JSON В CSV")
+        print(f"{'='*80}")
+        
+        folder_path = Path(folder)
+        if not folder_path.exists():
+            print(f"Папка {folder} не существует!")
+            return None
+        
+        # Находим все JSON файлы
+        json_files = list(folder_path.glob("leads_page_*.json"))
+        if not json_files:
+            print("JSON файлы не найдены в указанной папке!")
+            return None
+        
+        print(f"Найдено JSON файлов: {len(json_files)}")
+        
+        # Собираем все заявки
+        all_leads = []
+        for json_file in sorted(json_files):
+            print(f"Обработка файла: {json_file.name}")
+            try:
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                # Извлекаем заявки из data массива
+                leads = data.get('data', [])
+                all_leads.extend(leads)
+                print(f"  - Заявок в файле: {len(leads)}")
+                
+            except Exception as e:
+                print(f"  - Ошибка чтения файла {json_file}: {e}")
+                continue
+        
+        if not all_leads:
+            print("Не найдено заявок для экспорта!")
+            return None
+        
+        print(f"Всего заявок для экспорта: {len(all_leads)}")
+        
+        # Собираем все возможные поля из всех заявок
+        all_fields = set()
+        for lead in all_leads:
+            # Основные поля
+            all_fields.update(lead.keys())
+            # Поля из attributes
+            if 'attributes' in lead and isinstance(lead['attributes'], dict):
+                all_fields.update([f"attributes.{key}" for key in lead['attributes'].keys()])
+        
+        # Преобразуем в список и сортируем
+        fieldnames = sorted(all_fields)
+        
+        # Убедимся, что имя файла имеет расширение .csv
+        if not output_file.endswith('.csv'):
+            output_file += '.csv'
+        
+        print(f"Создание CSV файла: {output_file}")
+        
+        # Создаем CSV файл с правильными параметрами
+        with open(output_file, 'w', newline='', encoding='utf-8-sig') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            
+            # Записываем заголовок
+            writer.writeheader()
+            
+            # Записываем данные
+            rows_written = 0
+            for lead in all_leads:
+                row_data = {}
+                
+                # Копируем основные поля
+                for key, value in lead.items():
+                    if key != 'attributes':
+                        # Преобразуем сложные структуры в строку JSON
+                        if isinstance(value, (dict, list)):
+                            row_data[key] = json.dumps(value, ensure_ascii=False)
+                        elif value is None:
+                            row_data[key] = ''
+                        else:
+                            row_data[key] = value
+                
+                # Копируем поля из attributes
+                if 'attributes' in lead and isinstance(lead['attributes'], dict):
+                    for attr_key, attr_value in lead['attributes'].items():
+                        field_name = f"attributes.{attr_key}"
+                        if isinstance(attr_value, (dict, list)):
+                            row_data[field_name] = json.dumps(attr_value, ensure_ascii=False)
+                        elif attr_value is None:
+                            row_data[field_name] = ''
+                        else:
+                            row_data[field_name] = attr_value
+                
+                writer.writerow(row_data)
+                rows_written += 1
+        
+        print(f"\nЭКСПОРТ ЗАВЕРШЕН!")
+        print(f"Создан файл: {output_file}")
+        print(f"Всего строк записано: {rows_written}")
+        print(f"Количество полей: {len(fieldnames)}")
+        print(f"\nПервые 10 полей: {fieldnames[:10]}...")
+        
+        # Проверяем, что файл действительно создался
+        if Path(output_file).exists():
+            file_size = Path(output_file).stat().st_size
+            print(f"Размер файла: {file_size} байт")
+        else:
+            print("ВНИМАНИЕ: Файл не был создан!")
+            return None
+            
+        return output_file
+        
+    except Exception as e:
+        print(f"Ошибка при преобразовании в CSV: {e}")
+        import traceback
+        traceback.print_exc()
+        return None
+
 def test_sql_connection():
     # Тестирует подключение к SQL Server
     try:
@@ -489,9 +620,10 @@ def main_leads():
     print("2. Тестирование с фильтрами")
     print("3. Объединить сохраненные страницы в один файл")
     print("4. Настроить параметры запроса")
+    print("5. Преобразовать JSON в CSV")
     print("="*50)
     
-    choice = input("Введите номер режима (1-4): ").strip()
+    choice = input("Введите номер режима (1-5): ").strip()
     
     if choice == "1":
         # Получаем все заявки
@@ -535,6 +667,17 @@ def main_leads():
             filters["date_to"] = date_to
             
         successful, count, pages = get_all_leads(per_page=50, max_pages=5, **filters)
+        
+    elif choice == "5":
+        # Преобразуем JSON в CSV
+        folder = input("Папка с JSON файлами (по умолчанию zayavki_spisok): ").strip() or "zayavki_spisok"
+        output_file = input("Имя CSV файла (по умолчанию leads_export.csv): ").strip() or "leads_export.csv"
+        
+        result = json_to_csv(folder, output_file)
+        if result:
+            print(f"Успешно создан CSV файл: {result}")
+        else:
+            print("Не удалось создать CSV файл")
         
     else:
         print("Неверный выбор. Завершение программы.")

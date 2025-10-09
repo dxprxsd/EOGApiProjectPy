@@ -693,7 +693,7 @@ def main_callbacks():
     print("\n" + "="*50)
     print("ВЫБЕРИТЕ РЕЖИМ РАБОТЫ С ЗАЯВКАМИ:")
     print("1. Тестирование конкретной заявки (ID 29)")
-    print("2. Сканирование всех заявок от ID 1 до 300")
+    print("2. Сканирование всех заявок от ID 1 до 500")
     print("3. Сканирование в пользовательском диапазоне")
     print("4. Преобразовать JSON в CSV (из папки zayavki)")
     print("5. Создать CSV версию для печати")
@@ -712,8 +712,8 @@ def main_callbacks():
         test_specific_callback_id(callback_id)
         
     elif choice == "2":
-        # Сканируем все заявки от 1 до 300
-        successful, found = scan_all_callbacks(1, 300)
+        # Сканируем все заявки от 1 до 500
+        successful, found = scan_all_callbacks(1, 500)
         
         print(f"\nРезультат сканирования заявок:")
         print(f"Успешно обработано: {successful} запросов")
@@ -722,10 +722,10 @@ def main_callbacks():
     elif choice == "3":
         # Пользовательский диапазон
         start_id = input("Введите начальный ID (по умолчанию 1): ").strip()
-        end_id = input("Введите конечный ID (по умолчанию 300): ").strip()
+        end_id = input("Введите конечный ID (по умолчанию 500): ").strip()
         
         start_id = int(start_id) if start_id else 1
-        end_id = int(end_id) if end_id else 300
+        end_id = int(end_id) if end_id else 500
         
         successful, found = scan_all_callbacks(start_id, end_id)
         
