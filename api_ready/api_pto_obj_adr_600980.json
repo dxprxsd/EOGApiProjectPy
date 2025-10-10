@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 600980"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Пильнинский",
+            "settlement": "Беловка",
+            "area": "Нижегородская область район",
+            "zip_code": 607491,
+            "street": "ул. Ливанова",
+            "house": 37,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+            "settlement_fias_id": "B8A8A11C-05CA-44A1-9CCC-40AE598E4AF3",
+            "area_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+            "house_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+            "street_fias_id": null,
+            "extra": "Original: p2=71, p3=281, street=17091",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Ливанова 37",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

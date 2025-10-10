@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 787897"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Вознесенский",
+            "settlement": "Бутаково",
+            "area": "Нижегородская область район",
+            "zip_code": 607340,
+            "street": "ул. Молодежная",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+            "settlement_fias_id": "2847273C-6A2B-4110-80BB-A4E42663713B",
+            "area_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+            "house_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+            "street_fias_id": null,
+            "extra": "Original: p2=25, p3=640, street=4265",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Молодежная 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

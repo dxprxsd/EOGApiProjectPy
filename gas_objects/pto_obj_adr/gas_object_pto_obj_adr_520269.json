@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 520269",
-        "description": "Объект из pto_obj_adr. ID: 520269",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 520269,
-          "p2": 22,
-          "p3": 132,
-          "street": 11935,
-          "dom": 6,
-          "korpus": 0
-        }
+        "name": "Объект 520269"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Вачский",
               "settlement": "Арефино",
               "area": "Нижегородская область район",
-              "zip_code": "606150",
+              "zip_code": 606150,
               "street": "ул. Первомайская",
-              "house": "6",
+              "house": 6,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Первомайская 6",
+              "title": "Нижегородская область, ул. Первомайская 6",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 520269,
-    "created_at": "2025-10-01T08:36:47.353378",
+    "created_at": "2025-10-10T09:05:09.892454",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 520269"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Вачский",
+              "settlement": "Арефино",
+              "area": "Нижегородская область район",
+              "zip_code": 606150,
+              "street": "ул. Первомайская",
+              "house": 6,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "7FB15EF9-7A81-401A-81EF-4D46F0582983",
+              "settlement_fias_id": "B017F547-5E84-44FE-8DA5-16AACC677093",
+              "area_fias_id": "7FB15EF9-7A81-401A-81EF-4D46F0582983",
+              "house_fias_id": "7FB15EF9-7A81-401A-81EF-4D46F0582983",
+              "street_fias_id": null,
+              "extra": "Original: p2=22, p3=132, street=11935",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Первомайская 6",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

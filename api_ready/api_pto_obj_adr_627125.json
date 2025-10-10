@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 627125"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Воротынский",
+            "settlement": "Покров-Майдан",
+            "area": "Нижегородская область район",
+            "zip_code": 606260,
+            "street": "ул. Школьная",
+            "house": 104,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+            "settlement_fias_id": "02868F8A-32A3-4E9C-8181-C122B7076372",
+            "area_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+            "house_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+            "street_fias_id": null,
+            "extra": "Original: p2=30, p3=3587, street=12971",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Школьная 104",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

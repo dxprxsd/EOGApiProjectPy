@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 733096"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Ветлужский",
+            "settlement": "Ветлужский",
+            "area": "Нижегородская область район",
+            "zip_code": 606860,
+            "street": "ул. Не указана",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "E63DDAB7-4AF7-49CE-B229-484C5B70EAB9",
+            "settlement_fias_id": "E63DDAB7-4AF7-49CE-B229-484C5B70EAB9",
+            "area_fias_id": "E63DDAB7-4AF7-49CE-B229-484C5B70EAB9",
+            "house_fias_id": "E63DDAB7-4AF7-49CE-B229-484C5B70EAB9",
+            "street_fias_id": null,
+            "extra": "Original: p2=24, p3=0, street=0",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Не указана 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

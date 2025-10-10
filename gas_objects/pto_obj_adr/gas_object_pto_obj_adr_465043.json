@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 465043",
-        "description": "Объект из pto_obj_adr. ID: 465043",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 465043,
-          "p2": 6,
-          "p3": 2040,
-          "street": 0,
-          "dom": 65,
-          "korpus": 0
-        }
+        "name": "Объект 465043"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Балахнинский",
               "settlement": "Кочергино",
               "area": "Нижегородская область район",
-              "zip_code": "606407",
+              "zip_code": 606407,
               "street": "ул. Не указана",
-              "house": "65",
+              "house": 65,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул None 65",
+              "title": "Нижегородская область, ул. Не указана 65",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 465043,
-    "created_at": "2025-10-01T08:31:06.609590",
+    "created_at": "2025-10-10T09:04:21.814467",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 465043"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Балахнинский",
+              "settlement": "Кочергино",
+              "area": "Нижегородская область район",
+              "zip_code": 606407,
+              "street": "ул. Не указана",
+              "house": 65,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "7E39F886-DA1D-41AE-A4CF-52B588024BD4",
+              "settlement_fias_id": "FC8486CB-9082-4AB1-942E-8CF13505658B",
+              "area_fias_id": "7E39F886-DA1D-41AE-A4CF-52B588024BD4",
+              "house_fias_id": "7E39F886-DA1D-41AE-A4CF-52B588024BD4",
+              "street_fias_id": null,
+              "extra": "Original: p2=6, p3=2040, street=0",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Не указана 65",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

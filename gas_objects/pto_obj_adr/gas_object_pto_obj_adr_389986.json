@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 389986",
-        "description": "Объект из pto_obj_adr. ID: 389986",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 389986,
-          "p2": 94,
-          "p3": 0,
-          "street": 10656,
-          "dom": 21,
-          "korpus": 0
-        }
+        "name": "Объект 389986"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Чкаловск",
               "settlement": "Чкаловск",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Инженерная",
-              "house": "21",
+              "house": 21,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Инженерная 21",
+              "title": "Нижегородская область, ул. Инженерная 21",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 389986,
-    "created_at": "2025-10-01T08:26:21.906769",
+    "created_at": "2025-10-10T09:03:39.907951",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 389986"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Чкаловск",
+              "settlement": "Чкаловск",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Инженерная",
+              "house": 21,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "46659847-4FED-4981-BDAF-D260874864EE",
+              "settlement_fias_id": "46659847-4FED-4981-BDAF-D260874864EE",
+              "area_fias_id": "46659847-4FED-4981-BDAF-D260874864EE",
+              "house_fias_id": "46659847-4FED-4981-BDAF-D260874864EE",
+              "street_fias_id": null,
+              "extra": "Original: p2=94, p3=0, street=10656",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Инженерная 21",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 144756",
-        "description": "Объект из pto_obj_adr. ID: 144756",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 144756,
-          "p2": 13,
-          "p3": 3020,
-          "street": 3242,
-          "dom": 0,
-          "korpus": 0
-        }
+        "name": "Объект 144756"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Бор",
               "settlement": "Неклюдово",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Школьная",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Школьная 0",
+              "title": "Нижегородская область, ул. Школьная 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 144756,
-    "created_at": "2025-10-01T08:25:43.360686",
+    "created_at": "2025-10-10T09:03:26.818986",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 144756"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Бор",
+              "settlement": "Неклюдово",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Школьная",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "settlement_fias_id": "82AA055C-E0C8-470F-92C1-B53F46E6BB6A",
+              "area_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "house_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "street_fias_id": null,
+              "extra": "Original: p2=13, p3=3020, street=3242",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Школьная 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

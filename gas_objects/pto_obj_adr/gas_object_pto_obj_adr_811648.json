@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 811648",
-        "description": "Объект из pto_obj_adr. ID: 811648",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 811648,
-          "p2": 3,
-          "p3": 1782,
-          "street": 1945,
-          "dom": 38,
-          "korpus": 0
-        }
+        "name": "Объект 811648"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Арзамас",
               "settlement": "Кирилловка",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Лесничество",
-              "house": "38",
+              "house": 38,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Лесничество 38",
+              "title": "Нижегородская область, ул. Лесничество 38",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 811648,
-    "created_at": "2025-10-01T09:26:07.034783",
+    "created_at": "2025-10-10T09:09:07.199976",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 811648"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Арзамас",
+              "settlement": "Кирилловка",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Лесничество",
+              "house": 38,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "settlement_fias_id": "FADC3011-2E28-4379-AE0A-C7BC9D7185FA",
+              "area_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "house_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "street_fias_id": null,
+              "extra": "Original: p2=3, p3=1782, street=1945",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Лесничество 38",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

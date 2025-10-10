@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 342552"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Арзамас",
+            "settlement": "Малое Туманово",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ул. 9 Мая",
+            "house": 6,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+            "settlement_fias_id": "365CD34E-AE94-4013-8E1D-801AC5CDB7A4",
+            "area_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+            "house_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+            "street_fias_id": null,
+            "extra": "Original: p2=3, p3=2672, street=14861",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. 9 Мая 6",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

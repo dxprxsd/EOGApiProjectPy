@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 304231",
-        "description": "Объект из pto_obj_adr. ID: 304231",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 304231,
-          "p2": 3,
-          "p3": 887,
-          "street": 1657,
-          "dom": 89,
-          "korpus": 0
-        }
+        "name": "Объект 304231"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Арзамас",
               "settlement": "Выездное",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Красноармейская",
-              "house": "89",
+              "house": 89,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Красноармейская 89",
+              "title": "Нижегородская область, ул. Красноармейская 89",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 304231,
-    "created_at": "2025-10-01T08:25:52.464316",
+    "created_at": "2025-10-10T09:03:30.695082",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 304231"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Арзамас",
+              "settlement": "Выездное",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Красноармейская",
+              "house": 89,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "settlement_fias_id": "151B3423-1F87-440A-A7FB-658F050E2C53",
+              "area_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "house_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "street_fias_id": null,
+              "extra": "Original: p2=3, p3=887, street=1657",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Красноармейская 89",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

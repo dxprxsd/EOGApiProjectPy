@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 811457",
-        "description": "Объект из pto_obj_adr. ID: 811457",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 811457,
-          "p2": 85,
-          "p3": 1301,
-          "street": 10195,
-          "dom": 41,
-          "korpus": 0
-        }
+        "name": "Объект 811457"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Спасский",
               "settlement": "Елховка",
               "area": "Нижегородская область район",
-              "zip_code": "606280",
+              "zip_code": 606280,
               "street": "ул. Дружбы",
-              "house": "41",
+              "house": 41,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Дружбы 41",
+              "title": "Нижегородская область, ул. Дружбы 41",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 811457,
-    "created_at": "2025-10-01T09:26:06.997211",
+    "created_at": "2025-10-10T09:09:07.152530",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 811457"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Спасский",
+              "settlement": "Елховка",
+              "area": "Нижегородская область район",
+              "zip_code": 606280,
+              "street": "ул. Дружбы",
+              "house": 41,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "settlement_fias_id": "A2B17FDC-6B9B-436C-AFD1-E80BDE8952A4",
+              "area_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "house_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "street_fias_id": null,
+              "extra": "Original: p2=85, p3=1301, street=10195",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Дружбы 41",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

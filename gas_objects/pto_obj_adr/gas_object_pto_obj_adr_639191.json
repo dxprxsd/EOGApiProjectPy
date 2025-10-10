@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 639191",
-        "description": "Объект из pto_obj_adr. ID: 639191",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 639191,
-          "p2": 13,
-          "p3": 5314,
-          "street": 18774,
-          "dom": 14,
-          "korpus": 0
-        }
+        "name": "Объект 639191"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Бор",
               "settlement": "Боталово-2",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Губернская",
-              "house": "14",
+              "house": 14,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Губернская 14",
+              "title": "Нижегородская область, ул. Губернская 14",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 639191,
-    "created_at": "2025-10-01T08:52:27.867394",
+    "created_at": "2025-10-10T09:07:02.388006",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 639191"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Бор",
+              "settlement": "Боталово-2",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Губернская",
+              "house": 14,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "settlement_fias_id": "D311BDD9-11D3-4465-837D-4C95E0629CE3",
+              "area_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "house_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "street_fias_id": null,
+              "extra": "Original: p2=13, p3=5314, street=18774",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Губернская 14",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

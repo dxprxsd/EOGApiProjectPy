@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 425300",
-        "description": "Объект из pto_obj_adr. ID: 425300",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 425300,
-          "p2": 59,
-          "p3": 3093,
-          "street": 7665,
-          "dom": 23,
-          "korpus": 0
-        }
+        "name": "Объект 425300"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Лукояновский",
               "settlement": "Никулино",
               "area": "Нижегородская область район",
-              "zip_code": "607800",
+              "zip_code": 607800,
               "street": "ул. Советская",
-              "house": "23",
+              "house": 23,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Советская 23",
+              "title": "Нижегородская область, ул. Советская 23",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 425300,
-    "created_at": "2025-10-01T08:28:05.318641",
+    "created_at": "2025-10-10T09:03:58.045967",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 425300"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Лукояновский",
+              "settlement": "Никулино",
+              "area": "Нижегородская область район",
+              "zip_code": 607800,
+              "street": "ул. Советская",
+              "house": 23,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+              "settlement_fias_id": "07598708-00B4-4F0C-9755-E3D8A16C1DB6",
+              "area_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+              "house_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+              "street_fias_id": null,
+              "extra": "Original: p2=59, p3=3093, street=7665",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Советская 23",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

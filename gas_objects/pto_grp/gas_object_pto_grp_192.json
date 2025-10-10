@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ГРПБ № 58",
-        "description": "Объект газификации из базы данных. ID: 192",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 192,
-          "original_address": "Шатковский р-н, с. Вечкусово, ул. Верхняя"
-        }
+        "name": "ГРПБ № 58"
       },
       "relationships": {
         "address": {
@@ -23,9 +15,9 @@
               "city": "Шатковский",
               "settlement": "Шатковский",
               "area": "Нижегородская область район",
-              "zip_code": "607700",
+              "zip_code": 607700,
               "street": "с. Вечкусово",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Вечкусово 0",
+              "title": "Нижегородская область, с. Вечкусово 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 192,
-    "created_at": "2025-10-01T08:25:32.919194",
+    "created_at": "2025-10-10T09:03:20.044357",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ГРПБ № 58"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Шатковский",
+              "settlement": "Шатковский",
+              "area": "Нижегородская область район",
+              "zip_code": 607700,
+              "street": "с. Вечкусово",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+              "settlement_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+              "area_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+              "house_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+              "street_fias_id": "81F94A1F-06D9-433D-9B8D-5416784C46EA",
+              "extra": "Шатковский р-н, с. Вечкусово, ул. Верхняя",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, с. Вечкусово 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

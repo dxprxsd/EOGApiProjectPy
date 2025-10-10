@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ШРП",
-        "description": "Объект газификации из базы данных. ID: 2884",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 2884,
-          "original_address": "Бутурлинский р-н, с. Крутец"
-        }
+        "name": "ШРП"
       },
       "relationships": {
         "address": {
@@ -23,9 +15,9 @@
               "city": "Бутурлинский",
               "settlement": "Бутурлинский",
               "area": "Нижегородская область район",
-              "zip_code": "607440",
+              "zip_code": 607440,
               "street": "с. Крутец",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Крутец 0",
+              "title": "Нижегородская область, с. Крутец 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 2884,
-    "created_at": "2025-10-01T08:25:33.782832",
+    "created_at": "2025-10-10T09:03:20.690327",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Бутурлинский",
+              "settlement": "Бутурлинский",
+              "area": "Нижегородская область район",
+              "zip_code": 607440,
+              "street": "с. Крутец",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "settlement_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "area_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "house_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "street_fias_id": "758B3255-995D-4D84-B0FC-583779F34E55",
+              "extra": "Бутурлинский р-н, с. Крутец",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, с. Крутец 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

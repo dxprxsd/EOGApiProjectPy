@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 521081",
-        "description": "Объект из pto_obj_adr. ID: 521081",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 521081,
-          "p2": 73,
-          "p3": 3847,
-          "street": 9379,
-          "dom": 100,
-          "korpus": 0
-        }
+        "name": "Объект 521081"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Починковский",
               "settlement": "Ризоватово",
               "area": "Нижегородская область район",
-              "zip_code": "607911",
+              "zip_code": 607911,
               "street": "ул. 1 Мая",
-              "house": "100",
+              "house": 100,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул 1 Мая 100",
+              "title": "Нижегородская область, ул. 1 Мая 100",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 521081,
-    "created_at": "2025-10-01T08:36:53.794659",
+    "created_at": "2025-10-10T09:05:10.149195",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 521081"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Починковский",
+              "settlement": "Ризоватово",
+              "area": "Нижегородская область район",
+              "zip_code": 607911,
+              "street": "ул. 1 Мая",
+              "house": 100,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+              "settlement_fias_id": "21E305C2-CB8C-47A3-96A9-67AAE503D701",
+              "area_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+              "house_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+              "street_fias_id": null,
+              "extra": "Original: p2=73, p3=3847, street=9379",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. 1 Мая 100",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

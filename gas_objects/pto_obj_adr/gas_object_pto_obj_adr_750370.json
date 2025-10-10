@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 750370",
-        "description": "Объект из pto_obj_adr. ID: 750370",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 750370,
-          "p2": 3,
-          "p3": 246,
-          "street": 14833,
-          "dom": 16,
-          "korpus": 0
-        }
+        "name": "Объект 750370"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Арзамас",
               "settlement": "Бебяево",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Садовая",
-              "house": "16",
+              "house": 16,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Садовая 16",
+              "title": "Нижегородская область, ул. Садовая 16",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 750370,
-    "created_at": "2025-10-01T09:18:30.833848",
+    "created_at": "2025-10-10T09:08:15.545830",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 750370"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Арзамас",
+              "settlement": "Бебяево",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Садовая",
+              "house": 16,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "settlement_fias_id": "6B9ED893-328F-4A13-9915-DD7C2C23D0C6",
+              "area_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "house_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "street_fias_id": null,
+              "extra": "Original: p2=3, p3=246, street=14833",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Садовая 16",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

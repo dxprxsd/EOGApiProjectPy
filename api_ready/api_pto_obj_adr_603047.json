@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 603047"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Кстовский",
+            "settlement": "Голошубиха",
+            "area": "Нижегородская область район",
+            "zip_code": 607650,
+            "street": "тер. СНТ. Пятигорье",
+            "house": 20,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+            "settlement_fias_id": "56B36FB6-BD1B-4391-AD55-2C2F2F8FE25B",
+            "area_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+            "house_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+            "street_fias_id": null,
+            "extra": "Original: p2=55, p3=1006, street=27594",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, тер. СНТ. Пятигорье 20",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

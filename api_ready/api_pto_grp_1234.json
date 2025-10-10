@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "ПГБ- Ройка"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Кстовский",
+            "settlement": "Кстовский",
+            "area": "Нижегородская область район",
+            "zip_code": 607650,
+            "street": "д. Ройка",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+            "settlement_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+            "area_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+            "house_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+            "street_fias_id": "DDEBD409-2743-4ECD-B54E-BC18D563B7E2",
+            "extra": "Кстовский р-н, д. Ройка [ГРПБ-07-2У1]",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, д. Ройка 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

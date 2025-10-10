@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 771875"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Выкса",
+            "settlement": "Ближне-Песочное",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "пер. Песчаный",
+            "house": 5,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "D89942E8-E06B-46BD-A805-7CEC8F77417E",
+            "settlement_fias_id": "9642696C-1DB5-4EC3-85A1-CC8FB673D2BC",
+            "area_fias_id": "D89942E8-E06B-46BD-A805-7CEC8F77417E",
+            "house_fias_id": "D89942E8-E06B-46BD-A805-7CEC8F77417E",
+            "street_fias_id": null,
+            "extra": "Original: p2=34, p3=370, street=19228",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, пер. Песчаный 5",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

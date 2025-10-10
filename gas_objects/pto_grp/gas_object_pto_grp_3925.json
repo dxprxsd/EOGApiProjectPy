@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ШРП",
-        "description": "Объект газификации из базы данных. ID: 3925",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 3925,
-          "original_address": "Лысковский р-н, с. Бармино [АВМ]"
-        }
+        "name": "ШРП"
       },
       "relationships": {
         "address": {
@@ -23,9 +15,9 @@
               "city": "Лысковский",
               "settlement": "Лысковский",
               "area": "Нижегородская область район",
-              "zip_code": "606212",
+              "zip_code": 606212,
               "street": "с. Бармино",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Бармино 0",
+              "title": "Нижегородская область, с. Бармино 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 3925,
-    "created_at": "2025-10-01T08:25:34.224379",
+    "created_at": "2025-10-10T09:03:20.939540",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Лысковский",
+              "settlement": "Лысковский",
+              "area": "Нижегородская область район",
+              "zip_code": 606212,
+              "street": "с. Бармино",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "2DD692C1-FC95-41A2-86A1-6A83F47914FE",
+              "settlement_fias_id": "2DD692C1-FC95-41A2-86A1-6A83F47914FE",
+              "area_fias_id": "2DD692C1-FC95-41A2-86A1-6A83F47914FE",
+              "house_fias_id": "2DD692C1-FC95-41A2-86A1-6A83F47914FE",
+              "street_fias_id": "F9E80CE7-67FA-4166-AD30-0A9BAAE1E685",
+              "extra": "Лысковский р-н, с. Бармино [АВМ]",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, с. Бармино 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

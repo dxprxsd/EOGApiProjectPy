@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 610734"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Сеченовский",
+            "settlement": "Шуваловка",
+            "area": "Нижегородская область район",
+            "zip_code": 607580,
+            "street": "ул. Кооперативная",
+            "house": 51,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+            "settlement_fias_id": "0E45B2E7-F294-4F4F-A86C-CB253058B904",
+            "area_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+            "house_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+            "street_fias_id": null,
+            "extra": "Original: p2=80, p3=5137, street=17899",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Кооперативная 51",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "03-40-0-0286",
-        "description": "Объект газификации из базы данных. ID: 6503",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 6503,
-          "original_address": "г. Бор, д. Кольцово (Краснослободский с/с), д. 111"
-        }
+        "name": "03-40-0-0286"
       },
       "relationships": {
         "address": {
@@ -23,9 +15,9 @@
               "city": "Бор",
               "settlement": "Бор",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "д. Кольцово (Краснослободский с/с)",
-              "house": "111",
+              "house": 111,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Кольцово (Краснослободский с/с) 111",
+              "title": "Нижегородская область, д. Кольцово (Краснослободский с/с) 111",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 6503,
-    "created_at": "2025-10-01T08:25:35.074235",
+    "created_at": "2025-10-10T09:03:21.464524",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "03-40-0-0286"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Бор",
+              "settlement": "Бор",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "д. Кольцово (Краснослободский с/с)",
+              "house": 111,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "settlement_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "area_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "house_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "street_fias_id": "3849D3D2-35EB-4354-AE64-ECD0816DE0FD",
+              "extra": "г. Бор, д. Кольцово (Краснослободский с/с), д. 111",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, д. Кольцово (Краснослободский с/с) 111",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

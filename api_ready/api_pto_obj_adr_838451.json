@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 838451"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Навашино",
+            "settlement": "Левино",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ул. Сережная",
+            "house": 90,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "87F58CE7-8BAD-4B33-9654-907BBD18D36A",
+            "settlement_fias_id": "C93ACF36-B53F-45BA-A2A8-6E80D3116B90",
+            "area_fias_id": "87F58CE7-8BAD-4B33-9654-907BBD18D36A",
+            "house_fias_id": "87F58CE7-8BAD-4B33-9654-907BBD18D36A",
+            "street_fias_id": null,
+            "extra": "Original: p2=62, p3=2342, street=8016",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Сережная 90",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 672841",
-        "description": "Объект из pto_obj_adr. ID: 672841",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 672841,
-          "p2": 8,
-          "p3": 1074,
-          "street": 19601,
-          "dom": 73,
-          "korpus": 0
-        }
+        "name": "Объект 672841"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Богородский",
               "settlement": "Гремячки",
               "area": "Нижегородская область район",
-              "zip_code": "607600",
+              "zip_code": 607600,
               "street": "ул. Новая",
-              "house": "73",
+              "house": 73,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Новая 73",
+              "title": "Нижегородская область, ул. Новая 73",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 672841,
-    "created_at": "2025-10-01T09:05:23.799897",
+    "created_at": "2025-10-10T09:07:31.614898",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 672841"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Богородский",
+              "settlement": "Гремячки",
+              "area": "Нижегородская область район",
+              "zip_code": 607600,
+              "street": "ул. Новая",
+              "house": 73,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+              "settlement_fias_id": "02F53704-F738-422D-A42F-DCDB3B3C40B4",
+              "area_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+              "house_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+              "street_fias_id": null,
+              "extra": "Original: p2=8, p3=1074, street=19601",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Новая 73",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

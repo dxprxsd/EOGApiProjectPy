@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 796381"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Перевоз",
+            "settlement": "Чепас",
+            "area": "Нижегородская область район",
+            "zip_code": 607400,
+            "street": "ул. Полевая",
+            "house": 16,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "E3FF7EF2-92B6-4AB7-B2FF-4D58CAB73DBC",
+            "settlement_fias_id": "F10916DB-FDF8-4471-9755-684FD60A733D",
+            "area_fias_id": "E3FF7EF2-92B6-4AB7-B2FF-4D58CAB73DBC",
+            "house_fias_id": "E3FF7EF2-92B6-4AB7-B2FF-4D58CAB73DBC",
+            "street_fias_id": null,
+            "extra": "Original: p2=68, p3=4881, street=17057",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Полевая 16",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ШРП",
-        "description": "Объект газификации из базы данных. ID: 1589",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 1589,
-          "original_address": "Княгининский р-н, с. Рубское [№21]"
-        }
+        "name": "ШРП"
       },
       "relationships": {
         "address": {
@@ -23,9 +15,9 @@
               "city": "Княгининский",
               "settlement": "Княгининский",
               "area": "Нижегородская область район",
-              "zip_code": "606340",
+              "zip_code": 606340,
               "street": "с. Рубское",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Рубское 0",
+              "title": "Нижегородская область, с. Рубское 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 1589,
-    "created_at": "2025-10-01T08:25:33.310565",
+    "created_at": "2025-10-10T09:03:20.357159",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Княгининский",
+              "settlement": "Княгининский",
+              "area": "Нижегородская область район",
+              "zip_code": 606340,
+              "street": "с. Рубское",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+              "settlement_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+              "area_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+              "house_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+              "street_fias_id": "2A359923-9397-45EC-8970-E9ED361BBEC5",
+              "extra": "Княгининский р-н, с. Рубское [№21]",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, с. Рубское 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

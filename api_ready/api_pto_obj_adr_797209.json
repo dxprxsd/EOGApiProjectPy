@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 797209"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Володарский",
+            "settlement": "Золино",
+            "area": "Нижегородская область район",
+            "zip_code": 606072,
+            "street": "ул. Комсомольская",
+            "house": 38,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "28AA39A2-9D75-407F-B015-CC778D79F293",
+            "settlement_fias_id": "CBF0B6EB-1AFF-4A8C-B2D0-58A7F5BED551",
+            "area_fias_id": "28AA39A2-9D75-407F-B015-CC778D79F293",
+            "house_fias_id": "28AA39A2-9D75-407F-B015-CC778D79F293",
+            "street_fias_id": null,
+            "extra": "Original: p2=28, p3=1508, street=4578",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Комсомольская 38",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

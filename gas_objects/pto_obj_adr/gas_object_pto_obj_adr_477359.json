@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 477359",
-        "description": "Объект из pto_obj_adr. ID: 477359",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 477359,
-          "p2": 34,
-          "p3": 2930,
-          "street": 5244,
-          "dom": 96,
-          "korpus": 0
-        }
+        "name": "Объект 477359"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Выкса",
               "settlement": "Мотмос",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Советская",
-              "house": "96",
+              "house": 96,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Советская 96",
+              "title": "Нижегородская область, ул. Советская 96",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 477359,
-    "created_at": "2025-10-01T08:32:11.161984",
+    "created_at": "2025-10-10T09:04:29.791716",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 477359"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Выкса",
+              "settlement": "Мотмос",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Советская",
+              "house": 96,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "D89942E8-E06B-46BD-A805-7CEC8F77417E",
+              "settlement_fias_id": "1464B834-F1AB-4452-BE5B-56F2666EC2A3",
+              "area_fias_id": "D89942E8-E06B-46BD-A805-7CEC8F77417E",
+              "house_fias_id": "D89942E8-E06B-46BD-A805-7CEC8F77417E",
+              "street_fias_id": null,
+              "extra": "Original: p2=34, p3=2930, street=5244",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Советская 96",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

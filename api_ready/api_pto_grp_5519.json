@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "ШРП 4700059"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Семенов",
+            "settlement": "Семенов",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "д. Ларионово",
+            "house": 137,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "DACC69B0-38DF-462E-B346-26541CB9C0B8",
+            "settlement_fias_id": "DACC69B0-38DF-462E-B346-26541CB9C0B8",
+            "area_fias_id": "DACC69B0-38DF-462E-B346-26541CB9C0B8",
+            "house_fias_id": "DACC69B0-38DF-462E-B346-26541CB9C0B8",
+            "street_fias_id": "BE8D0015-702C-4F5D-A58B-3E99195271A0",
+            "extra": "г. Семенов, д. Ларионово, ул. Колхозная, д. 137",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, д. Ларионово 137",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

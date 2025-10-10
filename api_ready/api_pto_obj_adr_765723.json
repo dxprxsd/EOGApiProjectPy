@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 765723"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Семенов",
+            "settlement": "Овсянка",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ул. Не указана",
+            "house": 48,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "DACC69B0-38DF-462E-B346-26541CB9C0B8",
+            "settlement_fias_id": "BA25C23A-3DB3-4304-9747-BB7FDCDC9C03",
+            "area_fias_id": "DACC69B0-38DF-462E-B346-26541CB9C0B8",
+            "house_fias_id": "DACC69B0-38DF-462E-B346-26541CB9C0B8",
+            "street_fias_id": null,
+            "extra": "Original: p2=75, p3=3238, street=0",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Не указана 48",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

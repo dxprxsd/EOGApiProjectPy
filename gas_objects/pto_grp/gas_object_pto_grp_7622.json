@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ПГБ 400-У1",
-        "description": "Объект газификации из базы данных. ID: 7622",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 7622,
-          "original_address": "Бутурлинский р-н, д. Кеславь, ул. Первомайская"
-        }
+        "name": "ПГБ 400-У1"
       },
       "relationships": {
         "address": {
@@ -23,9 +15,9 @@
               "city": "Бутурлинский",
               "settlement": "Бутурлинский",
               "area": "Нижегородская область район",
-              "zip_code": "607440",
+              "zip_code": 607440,
               "street": "д. Кеславь",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Кеславь 0",
+              "title": "Нижегородская область, д. Кеславь 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 7622,
-    "created_at": "2025-10-01T08:25:35.477154",
+    "created_at": "2025-10-10T09:03:21.687505",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ПГБ 400-У1"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Бутурлинский",
+              "settlement": "Бутурлинский",
+              "area": "Нижегородская область район",
+              "zip_code": 607440,
+              "street": "д. Кеславь",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "settlement_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "area_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "house_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "street_fias_id": "E628ECB0-ADB1-4F25-A70C-8DB0A6398B40",
+              "extra": "Бутурлинский р-н, д. Кеславь, ул. Первомайская",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, д. Кеславь 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

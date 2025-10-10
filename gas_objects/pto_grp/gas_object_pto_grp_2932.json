@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ШРП №43",
-        "description": "Объект газификации из базы данных. ID: 2932",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 2932,
-          "original_address": "Вадский р-н, с. Дубенское"
-        }
+        "name": "ШРП №43"
       },
       "relationships": {
         "address": {
@@ -23,9 +15,9 @@
               "city": "Вадский",
               "settlement": "Вадский",
               "area": "Нижегородская область район",
-              "zip_code": "606380",
+              "zip_code": 606380,
               "street": "с. Дубенское",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Дубенское 0",
+              "title": "Нижегородская область, с. Дубенское 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 2932,
-    "created_at": "2025-10-01T08:25:33.790224",
+    "created_at": "2025-10-10T09:03:20.707314",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП №43"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Вадский",
+              "settlement": "Вадский",
+              "area": "Нижегородская область район",
+              "zip_code": 606380,
+              "street": "с. Дубенское",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "F094D1FD-709B-4D74-8AD9-3BD85C05AE6F",
+              "settlement_fias_id": "F094D1FD-709B-4D74-8AD9-3BD85C05AE6F",
+              "area_fias_id": "F094D1FD-709B-4D74-8AD9-3BD85C05AE6F",
+              "house_fias_id": "F094D1FD-709B-4D74-8AD9-3BD85C05AE6F",
+              "street_fias_id": "C55E5CBE-1C65-4528-8126-547F481695D2",
+              "extra": "Вадский р-н, с. Дубенское",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, с. Дубенское 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

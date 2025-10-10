@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 429559"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Вознесенский",
+            "settlement": "Сарминский Майдан",
+            "area": "Нижегородская область район",
+            "zip_code": 607340,
+            "street": "ул. Куйбышева",
+            "house": 68,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+            "settlement_fias_id": "E02B355E-3D2F-4907-B688-6C6F63674B40",
+            "area_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+            "house_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+            "street_fias_id": null,
+            "extra": "Original: p2=25, p3=3995, street=4403",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Куйбышева 68",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

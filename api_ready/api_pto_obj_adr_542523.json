@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 542523"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Кстовский",
+            "settlement": "Прокошево",
+            "area": "Нижегородская область район",
+            "zip_code": 607650,
+            "street": "ул. Быкова",
+            "house": 74,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+            "settlement_fias_id": "2EEC09B2-CA39-4FF7-82E1-C013176DEC9C",
+            "area_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+            "house_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+            "street_fias_id": null,
+            "extra": "Original: p2=55, p3=3722, street=12199",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Быкова 74",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

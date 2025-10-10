@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 377921",
-        "description": "Объект из pto_obj_adr. ID: 377921",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 377921,
-          "p2": 66,
-          "p3": 3998,
-          "street": 8790,
-          "dom": 66,
-          "korpus": 0
-        }
+        "name": "Объект 377921"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Первомайск",
               "settlement": "Сатис",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Фабричная",
-              "house": "66",
+              "house": 66,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Фабричная 66",
+              "title": "Нижегородская область, ул. Фабричная 66",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 377921,
-    "created_at": "2025-10-01T08:26:07.201232",
+    "created_at": "2025-10-10T09:03:35.775675",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 377921"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Первомайск",
+              "settlement": "Сатис",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Фабричная",
+              "house": 66,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "A72A0367-92A4-4EC3-9AA2-2397039A3D70",
+              "settlement_fias_id": "9ECA7FA2-36E1-4930-8701-B219B44D35E8",
+              "area_fias_id": "A72A0367-92A4-4EC3-9AA2-2397039A3D70",
+              "house_fias_id": "A72A0367-92A4-4EC3-9AA2-2397039A3D70",
+              "street_fias_id": null,
+              "extra": "Original: p2=66, p3=3998, street=8790",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Фабричная 66",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

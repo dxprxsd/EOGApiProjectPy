@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 838104"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Краснобаковский",
+            "settlement": "Дмитриевское",
+            "area": "Нижегородская область район",
+            "zip_code": 606710,
+            "street": "ул. Новая",
+            "house": 1,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "DCD0FC48-CEB9-4818-9FE4-A63D4FA55AAD",
+            "settlement_fias_id": "0E0BC1CA-3A50-4D78-BCBD-D96556D3D82E",
+            "area_fias_id": "DCD0FC48-CEB9-4818-9FE4-A63D4FA55AAD",
+            "house_fias_id": "DCD0FC48-CEB9-4818-9FE4-A63D4FA55AAD",
+            "street_fias_id": null,
+            "extra": "Original: p2=51, p3=1168, street=6666",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Новая 1",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

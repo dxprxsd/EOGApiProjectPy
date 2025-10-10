@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 361909",
-        "description": "Объект из pto_obj_adr. ID: 361909",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 361909,
-          "p2": 99,
-          "p3": 5021,
-          "street": 13141,
-          "dom": 9,
-          "korpus": 0
-        }
+        "name": "Объект 361909"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Шатковский",
               "settlement": "Шарапово",
               "area": "Нижегородская область район",
-              "zip_code": "607700",
+              "zip_code": 607700,
               "street": "ул. Завражная",
-              "house": "9",
+              "house": 9,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Завражная 9",
+              "title": "Нижегородская область, ул. Завражная 9",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 361909,
-    "created_at": "2025-10-01T08:26:00.694930",
+    "created_at": "2025-10-10T09:03:35.079700",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 361909"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Шатковский",
+              "settlement": "Шарапово",
+              "area": "Нижегородская область район",
+              "zip_code": 607700,
+              "street": "ул. Завражная",
+              "house": 9,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+              "settlement_fias_id": "BCABC32B-5D94-47A2-948B-76F6B5D3B5DF",
+              "area_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+              "house_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+              "street_fias_id": null,
+              "extra": "Original: p2=99, p3=5021, street=13141",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Завражная 9",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

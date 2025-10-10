@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 402750"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Лукояновский",
+            "settlement": "Кудеярово",
+            "area": "Нижегородская область район",
+            "zip_code": 607800,
+            "street": "ул. Деманова",
+            "house": 36,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+            "settlement_fias_id": "5EEC7F2D-1D11-48A0-88AF-C1FB007955CE",
+            "area_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+            "house_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+            "street_fias_id": null,
+            "extra": "Original: p2=59, p3=2215, street=7563",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Деманова 36",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

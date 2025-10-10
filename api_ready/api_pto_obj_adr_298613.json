@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 298613"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Шатковский",
+            "settlement": "Пасьяново",
+            "area": "Нижегородская область район",
+            "zip_code": 607700,
+            "street": "ул. Молодежная",
+            "house": 69,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+            "settlement_fias_id": "14450F4F-A4F1-4BC1-AAD9-A4A9873086D1",
+            "area_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+            "house_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+            "street_fias_id": null,
+            "extra": "Original: p2=99, p3=3412, street=13233",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Молодежная 69",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

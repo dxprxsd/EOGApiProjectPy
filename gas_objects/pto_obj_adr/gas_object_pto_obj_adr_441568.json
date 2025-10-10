@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 441568",
-        "description": "Объект из pto_obj_adr. ID: 441568",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 441568,
-          "p2": 18,
-          "p3": 421,
-          "street": 0,
-          "dom": 77,
-          "korpus": 0
-        }
+        "name": "Объект 441568"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Вадский",
               "settlement": "Болтино",
               "area": "Нижегородская область район",
-              "zip_code": "606380",
+              "zip_code": 606380,
               "street": "ул. Не указана",
-              "house": "77",
+              "house": 77,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул None 77",
+              "title": "Нижегородская область, ул. Не указана 77",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 441568,
-    "created_at": "2025-10-01T08:29:06.147719",
+    "created_at": "2025-10-10T09:04:07.776471",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 441568"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Вадский",
+              "settlement": "Болтино",
+              "area": "Нижегородская область район",
+              "zip_code": 606380,
+              "street": "ул. Не указана",
+              "house": 77,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "F094D1FD-709B-4D74-8AD9-3BD85C05AE6F",
+              "settlement_fias_id": "586003A9-18C2-41DE-A7E4-543F0F6B97C8",
+              "area_fias_id": "F094D1FD-709B-4D74-8AD9-3BD85C05AE6F",
+              "house_fias_id": "F094D1FD-709B-4D74-8AD9-3BD85C05AE6F",
+              "street_fias_id": null,
+              "extra": "Original: p2=18, p3=421, street=0",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Не указана 77",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

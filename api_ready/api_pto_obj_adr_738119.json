@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 738119"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Сеченовский",
+            "settlement": "Кочетовка",
+            "area": "Нижегородская область район",
+            "zip_code": 607580,
+            "street": "ул. Большая",
+            "house": 32,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+            "settlement_fias_id": "7DE1CD3A-4B27-488A-8D93-3A78EA63BFFD",
+            "area_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+            "house_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+            "street_fias_id": null,
+            "extra": "Original: p2=80, p3=2042, street=17768",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Большая 32",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

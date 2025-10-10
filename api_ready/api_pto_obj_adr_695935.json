@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 695935"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Ковернинский",
+            "settlement": "Анисимово",
+            "area": "Нижегородская область район",
+            "zip_code": 606570,
+            "street": "ул. Полевая",
+            "house": 36,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+            "settlement_fias_id": "9913F2FA-18C4-408B-BD93-664B578DD736",
+            "area_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+            "house_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+            "street_fias_id": null,
+            "extra": "Original: p2=50, p3=101, street=11420",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Полевая 36",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 608415",
-        "description": "Объект из pto_obj_adr. ID: 608415",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 608415,
-          "p2": 9,
-          "p3": 3510,
-          "street": 3032,
-          "dom": 21,
-          "korpus": 0
-        }
+        "name": "Объект 608415"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Большеболдинский",
               "settlement": "Пикшень",
               "area": "Нижегородская область район",
-              "zip_code": "607940",
+              "zip_code": 607940,
               "street": "ул. Мира",
-              "house": "21",
+              "house": 21,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Мира 21",
+              "title": "Нижегородская область, ул. Мира 21",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 608415,
-    "created_at": "2025-10-01T08:47:57.972607",
+    "created_at": "2025-10-10T09:06:34.350757",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 608415"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Большеболдинский",
+              "settlement": "Пикшень",
+              "area": "Нижегородская область район",
+              "zip_code": 607940,
+              "street": "ул. Мира",
+              "house": 21,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "948A3C29-A387-4DD3-A9B6-8D39D5F4A7A7",
+              "settlement_fias_id": "334621E6-F839-4D4A-926E-3D1999BC4788",
+              "area_fias_id": "948A3C29-A387-4DD3-A9B6-8D39D5F4A7A7",
+              "house_fias_id": "948A3C29-A387-4DD3-A9B6-8D39D5F4A7A7",
+              "street_fias_id": null,
+              "extra": "Original: p2=9, p3=3510, street=3032",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Мира 21",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

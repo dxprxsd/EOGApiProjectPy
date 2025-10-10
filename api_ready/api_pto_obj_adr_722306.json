@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 722306"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Первомайск",
+            "settlement": "Кошелиха",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ул. Чкалова",
+            "house": 31,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "A72A0367-92A4-4EC3-9AA2-2397039A3D70",
+            "settlement_fias_id": "1624DD05-0F78-42F9-AA2A-40CBCD80EDC9",
+            "area_fias_id": "A72A0367-92A4-4EC3-9AA2-2397039A3D70",
+            "house_fias_id": "A72A0367-92A4-4EC3-9AA2-2397039A3D70",
+            "street_fias_id": null,
+            "extra": "Original: p2=66, p3=2052, street=8730",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Чкалова 31",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

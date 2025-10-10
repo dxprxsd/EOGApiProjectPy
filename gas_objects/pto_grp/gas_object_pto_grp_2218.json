@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ГРП -7",
-        "description": "Объект газификации из базы данных. ID: 2218",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 2218,
-          "original_address": "Балахнинский р-н, рп. Гидроторф, ул. Космонавтов"
-        }
+        "name": "ГРП -7"
       },
       "relationships": {
         "address": {
@@ -23,9 +15,9 @@
               "city": "Балахнинский",
               "settlement": "Балахнинский",
               "area": "Нижегородская область район",
-              "zip_code": "606407",
+              "zip_code": 606407,
               "street": "рп. Гидроторф",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Гидроторф 0",
+              "title": "Нижегородская область, рп. Гидроторф 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 2218,
-    "created_at": "2025-10-01T08:25:33.678175",
+    "created_at": "2025-10-10T09:03:20.499967",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ГРП -7"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Балахнинский",
+              "settlement": "Балахнинский",
+              "area": "Нижегородская область район",
+              "zip_code": 606407,
+              "street": "рп. Гидроторф",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "7E39F886-DA1D-41AE-A4CF-52B588024BD4",
+              "settlement_fias_id": "7E39F886-DA1D-41AE-A4CF-52B588024BD4",
+              "area_fias_id": "7E39F886-DA1D-41AE-A4CF-52B588024BD4",
+              "house_fias_id": "7E39F886-DA1D-41AE-A4CF-52B588024BD4",
+              "street_fias_id": "D1D28F0B-8436-4B92-BFD4-ADA6FD02D158",
+              "extra": "Балахнинский р-н, рп. Гидроторф, ул. Космонавтов",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, рп. Гидроторф 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

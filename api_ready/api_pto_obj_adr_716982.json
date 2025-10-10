@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 716982"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Спасский",
+            "settlement": "Масловка",
+            "area": "Нижегородская область район",
+            "zip_code": 606280,
+            "street": "ул. Свободы",
+            "house": 3,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+            "settlement_fias_id": "541F6C88-D8A9-4EF7-A33D-427B06B4360B",
+            "area_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+            "house_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+            "street_fias_id": null,
+            "extra": "Original: p2=85, p3=2754, street=10222",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Свободы 3",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

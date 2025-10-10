@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "ПГБ №12"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Вознесенский",
+            "settlement": "Вознесенский",
+            "area": "Нижегородская область район",
+            "zip_code": 607340,
+            "street": "д. Починки",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+            "settlement_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+            "area_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+            "house_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+            "street_fias_id": "A070A13C-B5E2-4FF5-8B38-E35EC145C4DF",
+            "extra": "Вознесенский р-н, д. Починки, ул. Молодежная",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, д. Починки 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

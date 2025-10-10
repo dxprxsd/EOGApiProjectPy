@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 699291"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Навашино",
+            "settlement": "Большое Окулово",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ул. Ленина",
+            "house": 7,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "87F58CE7-8BAD-4B33-9654-907BBD18D36A",
+            "settlement_fias_id": "AD2707E1-C256-40E1-943F-8A910C36BB48",
+            "area_fias_id": "87F58CE7-8BAD-4B33-9654-907BBD18D36A",
+            "house_fias_id": "87F58CE7-8BAD-4B33-9654-907BBD18D36A",
+            "street_fias_id": null,
+            "extra": "Original: p2=62, p3=514, street=7977",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Ленина 7",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

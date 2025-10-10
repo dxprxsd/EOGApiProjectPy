@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ГРПБ 02-4900006",
-        "description": "Объект газификации из базы данных. ID: 5635",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 5635,
-          "original_address": "г. Урень, ул. Хозцентр [ГРПБ №4]"
-        }
+        "name": "ГРПБ 02-4900006"
       },
       "relationships": {
         "address": {
@@ -23,9 +15,9 @@
               "city": "Урень",
               "settlement": "Урень",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Не указана",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул None 0",
+              "title": "Нижегородская область, ул. Не указана 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 5635,
-    "created_at": "2025-10-01T08:25:34.968025",
+    "created_at": "2025-10-10T09:03:21.296113",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ГРПБ 02-4900006"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Урень",
+              "settlement": "Урень",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Не указана",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "0E7E2D6E-7217-4624-857A-67B2300C0952",
+              "settlement_fias_id": "0E7E2D6E-7217-4624-857A-67B2300C0952",
+              "area_fias_id": "0E7E2D6E-7217-4624-857A-67B2300C0952",
+              "house_fias_id": "0E7E2D6E-7217-4624-857A-67B2300C0952",
+              "street_fias_id": null,
+              "extra": "г. Урень, ул. Хозцентр [ГРПБ №4]",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Не указана 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

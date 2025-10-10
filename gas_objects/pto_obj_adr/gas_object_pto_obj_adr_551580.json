@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 551580",
-        "description": "Объект из pto_obj_adr. ID: 551580",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 551580,
-          "p2": 37,
-          "p3": 3585,
-          "street": 16261,
-          "dom": 30,
-          "korpus": 0
-        }
+        "name": "Объект 551580"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Гагинский",
               "settlement": "Покров",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Запрудная",
-              "house": "30",
+              "house": 30,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Запрудная 30",
+              "title": "Нижегородская область, ул. Запрудная 30",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 551580,
-    "created_at": "2025-10-01T08:40:08.121204",
+    "created_at": "2025-10-10T09:05:33.635078",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 551580"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Гагинский",
+              "settlement": "Покров",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Запрудная",
+              "house": 30,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "E763B10E-27C8-4995-B39E-55823AA4FFEF",
+              "settlement_fias_id": "300CF0BB-942B-4C03-8C8B-72797D14C13D",
+              "area_fias_id": "E763B10E-27C8-4995-B39E-55823AA4FFEF",
+              "house_fias_id": "E763B10E-27C8-4995-B39E-55823AA4FFEF",
+              "street_fias_id": null,
+              "extra": "Original: p2=37, p3=3585, street=16261",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Запрудная 30",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

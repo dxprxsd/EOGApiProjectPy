@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 706536",
-        "description": "Объект из pto_obj_adr. ID: 706536",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 706536,
-          "p2": 86,
-          "p3": 0,
-          "street": 10158,
-          "dom": 0,
-          "korpus": 0
-        }
+        "name": "Объект 706536"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Спасское",
               "settlement": "Спасское",
               "area": "Нижегородская область район",
-              "zip_code": "606280",
+              "zip_code": 606280,
               "street": "ул. Молодежная",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Молодежная 0",
+              "title": "Нижегородская область, ул. Молодежная 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 706536,
-    "created_at": "2025-10-01T09:07:54.271268",
+    "created_at": "2025-10-10T09:07:39.967382",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 706536"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Спасское",
+              "settlement": "Спасское",
+              "area": "Нижегородская область район",
+              "zip_code": 606280,
+              "street": "ул. Молодежная",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "6E5FC52D-2633-44FD-AC2A-38E9DC578913",
+              "settlement_fias_id": "6E5FC52D-2633-44FD-AC2A-38E9DC578913",
+              "area_fias_id": "6E5FC52D-2633-44FD-AC2A-38E9DC578913",
+              "house_fias_id": "6E5FC52D-2633-44FD-AC2A-38E9DC578913",
+              "street_fias_id": null,
+              "extra": "Original: p2=86, p3=0, street=10158",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Молодежная 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

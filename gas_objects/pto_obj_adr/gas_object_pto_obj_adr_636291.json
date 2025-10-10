@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 636291",
-        "description": "Объект из pto_obj_adr. ID: 636291",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 636291,
-          "p2": 71,
-          "p3": 2285,
-          "street": 17157,
-          "dom": 44,
-          "korpus": 0
-        }
+        "name": "Объект 636291"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Пильнинский",
               "settlement": "Курмыш",
               "area": "Нижегородская область район",
-              "zip_code": "607491",
+              "zip_code": 607491,
               "street": "ул. Стрелецкая",
-              "house": "44",
+              "house": 44,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Стрелецкая 44",
+              "title": "Нижегородская область, ул. Стрелецкая 44",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 636291,
-    "created_at": "2025-10-01T08:51:28.993244",
+    "created_at": "2025-10-10T09:06:54.284701",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 636291"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Пильнинский",
+              "settlement": "Курмыш",
+              "area": "Нижегородская область район",
+              "zip_code": 607491,
+              "street": "ул. Стрелецкая",
+              "house": 44,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+              "settlement_fias_id": "CB0E1A5B-B2F9-4929-B174-81EADDB18204",
+              "area_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+              "house_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+              "street_fias_id": null,
+              "extra": "Original: p2=71, p3=2285, street=17157",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Стрелецкая 44",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

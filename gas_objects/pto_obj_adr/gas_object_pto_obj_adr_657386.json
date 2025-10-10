@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 657386",
-        "description": "Объект из pto_obj_adr. ID: 657386",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 657386,
-          "p2": 83,
-          "p3": 797,
-          "street": 9954,
-          "dom": 12,
-          "korpus": 2
-        }
+        "name": "Объект 657386"
       },
       "relationships": {
         "address": {
@@ -27,10 +15,10 @@
               "city": "Сосновский",
               "settlement": "Виткулово",
               "area": "Нижегородская область район",
-              "zip_code": "606170",
+              "zip_code": 606170,
               "street": "ул. Попкова",
-              "house": "12",
-              "block": "2",
+              "house": 12,
+              "block": 2,
               "flat": 123,
               "room": 3,
               "region_fias_id": "region_52",
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Попкова 12",
+              "title": "Нижегородская область, ул. Попкова 12",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 657386,
-    "created_at": "2025-10-01T08:59:44.054956",
+    "created_at": "2025-10-10T09:07:13.895659",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 657386"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Сосновский",
+              "settlement": "Виткулово",
+              "area": "Нижегородская область район",
+              "zip_code": 606170,
+              "street": "ул. Попкова",
+              "house": 12,
+              "block": 2,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+              "settlement_fias_id": "70C145E3-5090-41AC-8BAB-9B1FB1E4F1E7",
+              "area_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+              "house_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+              "street_fias_id": null,
+              "extra": "Original: p2=83, p3=797, street=9954",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Попкова 12",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

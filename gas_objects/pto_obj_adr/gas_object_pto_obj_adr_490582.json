@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 490582",
-        "description": "Объект из pto_obj_adr. ID: 490582",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 490582,
-          "p2": 5,
-          "p3": 0,
-          "street": 2406,
-          "dom": 21,
-          "korpus": 0
-        }
+        "name": "Объект 490582"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Балахна",
               "settlement": "Балахна",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Кавказ",
-              "house": "21",
+              "house": 21,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Кавказ 21",
+              "title": "Нижегородская область, ул. Кавказ 21",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 490582,
-    "created_at": "2025-10-01T08:33:57.666142",
+    "created_at": "2025-10-10T09:04:48.764121",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 490582"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Балахна",
+              "settlement": "Балахна",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Кавказ",
+              "house": 21,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "275737A6-DEE6-493B-82BB-CA5C3C97B24E",
+              "settlement_fias_id": "275737A6-DEE6-493B-82BB-CA5C3C97B24E",
+              "area_fias_id": "275737A6-DEE6-493B-82BB-CA5C3C97B24E",
+              "house_fias_id": "275737A6-DEE6-493B-82BB-CA5C3C97B24E",
+              "street_fias_id": null,
+              "extra": "Original: p2=5, p3=0, street=2406",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Кавказ 21",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

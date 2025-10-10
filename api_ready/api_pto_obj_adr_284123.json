@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 284123"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Арзамас",
+            "settlement": "Красное",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ул. Курмыш",
+            "house": 82,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+            "settlement_fias_id": "253A011D-D46E-4384-80D7-8FEDE6B6F486",
+            "area_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+            "house_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+            "street_fias_id": null,
+            "extra": "Original: p2=3, p3=2099, street=1762",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Курмыш 82",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

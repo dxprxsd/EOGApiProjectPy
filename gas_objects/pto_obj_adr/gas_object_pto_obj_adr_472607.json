@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 472607",
-        "description": "Объект из pto_obj_adr. ID: 472607",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 472607,
-          "p2": 86,
-          "p3": 0,
-          "street": 10168,
-          "dom": 29,
-          "korpus": 3
-        }
+        "name": "Объект 472607"
       },
       "relationships": {
         "address": {
@@ -27,10 +15,10 @@
               "city": "Спасское",
               "settlement": "Спасское",
               "area": "Нижегородская область район",
-              "zip_code": "606280",
+              "zip_code": 606280,
               "street": "пл. Революции",
-              "house": "29",
-              "block": "3",
+              "house": 29,
+              "block": 3,
               "flat": 123,
               "room": 3,
               "region_fias_id": "region_52",
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Революции 29",
+              "title": "Нижегородская область, пл. Революции 29",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 472607,
-    "created_at": "2025-10-01T08:31:37.450980",
+    "created_at": "2025-10-10T09:04:28.722969",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 472607"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Спасское",
+              "settlement": "Спасское",
+              "area": "Нижегородская область район",
+              "zip_code": 606280,
+              "street": "пл. Революции",
+              "house": 29,
+              "block": 3,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "6E5FC52D-2633-44FD-AC2A-38E9DC578913",
+              "settlement_fias_id": "6E5FC52D-2633-44FD-AC2A-38E9DC578913",
+              "area_fias_id": "6E5FC52D-2633-44FD-AC2A-38E9DC578913",
+              "house_fias_id": "6E5FC52D-2633-44FD-AC2A-38E9DC578913",
+              "street_fias_id": null,
+              "extra": "Original: p2=86, p3=0, street=10168",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, пл. Революции 29",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

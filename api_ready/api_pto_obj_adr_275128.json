@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 275128"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Дивеево",
+            "settlement": "Дивеево",
+            "area": "Нижегородская область район",
+            "zip_code": 607320,
+            "street": "ул. Гагарина",
+            "house": 16,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "427F608D-A204-4A76-BCDD-6C869D248A06",
+            "settlement_fias_id": "427F608D-A204-4A76-BCDD-6C869D248A06",
+            "area_fias_id": "427F608D-A204-4A76-BCDD-6C869D248A06",
+            "house_fias_id": "427F608D-A204-4A76-BCDD-6C869D248A06",
+            "street_fias_id": null,
+            "extra": "Original: p2=44, p3=0, street=6134",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Гагарина 16",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

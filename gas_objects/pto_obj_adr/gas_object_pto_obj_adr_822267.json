@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 822267",
-        "description": "Объект из pto_obj_adr. ID: 822267",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 822267,
-          "p2": 50,
-          "p3": 3646,
-          "street": 11516,
-          "dom": 3,
-          "korpus": 0
-        }
+        "name": "Объект 822267"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Ковернинский",
               "settlement": "Понурово",
               "area": "Нижегородская область район",
-              "zip_code": "606570",
+              "zip_code": 606570,
               "street": "ул. Юбилейная",
-              "house": "3",
+              "house": 3,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Юбилейная 3",
+              "title": "Нижегородская область, ул. Юбилейная 3",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 822267,
-    "created_at": "2025-10-01T09:29:01.005585",
+    "created_at": "2025-10-10T09:09:41.875131",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 822267"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Ковернинский",
+              "settlement": "Понурово",
+              "area": "Нижегородская область район",
+              "zip_code": 606570,
+              "street": "ул. Юбилейная",
+              "house": 3,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+              "settlement_fias_id": "0AB10C85-1D95-4E15-B02E-85B7A2C8ABBE",
+              "area_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+              "house_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+              "street_fias_id": null,
+              "extra": "Original: p2=50, p3=3646, street=11516",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Юбилейная 3",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "ШРП № 12"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Ардатовский",
+            "settlement": "Ардатовский",
+            "area": "Нижегородская область район",
+            "zip_code": 607130,
+            "street": "с. Голяткино",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+            "settlement_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+            "area_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+            "house_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+            "street_fias_id": "EDAE997D-8F6B-49EE-AF18-221757C1EE6D",
+            "extra": "Ардатовский р-н, с. Голяткино",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, с. Голяткино 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

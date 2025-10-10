@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 779437",
-        "description": "Объект из pto_obj_adr. ID: 779437",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 779437,
-          "p2": 50,
-          "p3": 2725,
-          "street": 11508,
-          "dom": 25,
-          "korpus": 0
-        }
+        "name": "Объект 779437"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Ковернинский",
               "settlement": "Марково",
               "area": "Нижегородская область район",
-              "zip_code": "606570",
+              "zip_code": 606570,
               "street": "ул. Заречная",
-              "house": "25",
+              "house": 25,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Заречная 25",
+              "title": "Нижегородская область, ул. Заречная 25",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 779437,
-    "created_at": "2025-10-01T09:21:33.935225",
+    "created_at": "2025-10-10T09:08:29.473099",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 779437"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Ковернинский",
+              "settlement": "Марково",
+              "area": "Нижегородская область район",
+              "zip_code": 606570,
+              "street": "ул. Заречная",
+              "house": 25,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+              "settlement_fias_id": "B593F0F7-FD03-49AF-934F-0FB15BB9C758",
+              "area_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+              "house_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+              "street_fias_id": null,
+              "extra": "Original: p2=50, p3=2725, street=11508",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Заречная 25",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

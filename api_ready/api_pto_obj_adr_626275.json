@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 626275"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Княгининский",
+            "settlement": "Новая",
+            "area": "Нижегородская область район",
+            "zip_code": 606340,
+            "street": "ул. Центральная",
+            "house": 47,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+            "settlement_fias_id": "BB4B70D4-E563-4C07-BBAE-DE3186AB46B4",
+            "area_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+            "house_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+            "street_fias_id": null,
+            "extra": "Original: p2=48, p3=3102, street=13308",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Центральная 47",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

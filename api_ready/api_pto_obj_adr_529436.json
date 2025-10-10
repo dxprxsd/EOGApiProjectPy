@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 529436"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Ардатовский",
+            "settlement": "Туркуши",
+            "area": "Нижегородская область район",
+            "zip_code": 607130,
+            "street": "ул. Молодежная",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+            "settlement_fias_id": "B1D12DB3-A507-4132-9B3A-A54FB8D2CBE4",
+            "area_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+            "house_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+            "street_fias_id": null,
+            "extra": "Original: p2=2, p3=4626, street=14816",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Молодежная 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

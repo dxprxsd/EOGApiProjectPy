@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 613807"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Пильнинский",
+            "settlement": "Можаров Майдан",
+            "area": "Нижегородская область район",
+            "zip_code": 607491,
+            "street": "ул. 1 Мая",
+            "house": 23,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+            "settlement_fias_id": "AD616561-0AD0-4A70-9FBF-835570F7485B",
+            "area_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+            "house_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+            "street_fias_id": null,
+            "extra": "Original: p2=71, p3=2882, street=17216",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. 1 Мая 23",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

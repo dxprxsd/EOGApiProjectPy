@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 457221",
-        "description": "Объект из pto_obj_adr. ID: 457221",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 457221,
-          "p2": 59,
-          "p3": 2059,
-          "street": 7581,
-          "dom": 84,
-          "korpus": 0
-        }
+        "name": "Объект 457221"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Лукояновский",
               "settlement": "Крапивка",
               "area": "Нижегородская область район",
-              "zip_code": "607800",
+              "zip_code": 607800,
               "street": "ул. Крапивская",
-              "house": "84",
+              "house": 84,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Крапивская 84",
+              "title": "Нижегородская область, ул. Крапивская 84",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 457221,
-    "created_at": "2025-10-01T08:30:33.575609",
+    "created_at": "2025-10-10T09:04:19.617728",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 457221"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Лукояновский",
+              "settlement": "Крапивка",
+              "area": "Нижегородская область район",
+              "zip_code": 607800,
+              "street": "ул. Крапивская",
+              "house": 84,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+              "settlement_fias_id": "F2EA9B40-7AE9-47F2-AF0C-E84B16560E6C",
+              "area_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+              "house_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+              "street_fias_id": null,
+              "extra": "Original: p2=59, p3=2059, street=7581",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Крапивская 84",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

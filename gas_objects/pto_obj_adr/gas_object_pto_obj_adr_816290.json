@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 816290",
-        "description": "Объект из pto_obj_adr. ID: 816290",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 816290,
-          "p2": 95,
-          "p3": 4088,
-          "street": 0,
-          "dom": 0,
-          "korpus": 0
-        }
+        "name": "Объект 816290"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Чкаловский",
               "settlement": "Сивцево",
               "area": "Нижегородская область район",
-              "zip_code": "606540",
+              "zip_code": 606540,
               "street": "ул. Не указана",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул None 0",
+              "title": "Нижегородская область, ул. Не указана 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 816290,
-    "created_at": "2025-10-01T09:27:21.255313",
+    "created_at": "2025-10-10T09:09:08.380098",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 816290"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Чкаловский",
+              "settlement": "Сивцево",
+              "area": "Нижегородская область район",
+              "zip_code": 606540,
+              "street": "ул. Не указана",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "D68CE670-1E96-44E6-A1E2-ACFEC9916EDB",
+              "settlement_fias_id": "64F9D766-EE1A-4872-AEED-DF28AF1BE26C",
+              "area_fias_id": "D68CE670-1E96-44E6-A1E2-ACFEC9916EDB",
+              "house_fias_id": "D68CE670-1E96-44E6-A1E2-ACFEC9916EDB",
+              "street_fias_id": null,
+              "extra": "Original: p2=95, p3=4088, street=0",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Не указана 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

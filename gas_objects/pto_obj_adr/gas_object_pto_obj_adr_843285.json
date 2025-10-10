@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 843285",
-        "description": "Объект из pto_obj_adr. ID: 843285",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 843285,
-          "p2": 42,
-          "p3": 3196,
-          "street": 0,
-          "dom": 35,
-          "korpus": 0
-        }
+        "name": "Объект 843285"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Дальнеконстантиновский",
               "settlement": "Новые Березники",
               "area": "Нижегородская область район",
-              "zip_code": "606310",
+              "zip_code": 606310,
               "street": "ул. Не указана",
-              "house": "35",
+              "house": 35,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул None 35",
+              "title": "Нижегородская область, ул. Не указана 35",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 843285,
-    "created_at": "2025-10-01T09:31:13.411395",
+    "created_at": "2025-10-10T09:09:52.469346",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 843285"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Дальнеконстантиновский",
+              "settlement": "Новые Березники",
+              "area": "Нижегородская область район",
+              "zip_code": 606310,
+              "street": "ул. Не указана",
+              "house": 35,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "B933CEEA-DC46-4B0D-9DF6-7C9D175580F8",
+              "settlement_fias_id": "B0A48E07-A88B-4EB5-B282-545625D60BC9",
+              "area_fias_id": "B933CEEA-DC46-4B0D-9DF6-7C9D175580F8",
+              "house_fias_id": "B933CEEA-DC46-4B0D-9DF6-7C9D175580F8",
+              "street_fias_id": null,
+              "extra": "Original: p2=42, p3=3196, street=0",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Не указана 35",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

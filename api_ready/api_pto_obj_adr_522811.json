@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 522811"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Лысковский",
+            "settlement": "Просек",
+            "area": "Нижегородская область район",
+            "zip_code": 606212,
+            "street": "ул. Школьная",
+            "house": 46,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "2DD692C1-FC95-41A2-86A1-6A83F47914FE",
+            "settlement_fias_id": "D4819896-5A79-4EE3-BCBC-3543CEB73EEA",
+            "area_fias_id": "2DD692C1-FC95-41A2-86A1-6A83F47914FE",
+            "house_fias_id": "2DD692C1-FC95-41A2-86A1-6A83F47914FE",
+            "street_fias_id": null,
+            "extra": "Original: p2=61, p3=3728, street=16869",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Школьная 46",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

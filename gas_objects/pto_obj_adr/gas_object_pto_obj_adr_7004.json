@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 7004",
-        "description": "Объект из pto_obj_adr. ID: 7004",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 7004,
-          "p2": 60,
-          "p3": 0,
-          "street": 7851,
-          "dom": 2,
-          "korpus": 9
-        }
+        "name": "Объект 7004"
       },
       "relationships": {
         "address": {
@@ -27,10 +15,10 @@
               "city": "Лысково",
               "settlement": "Лысково",
               "area": "Нижегородская область район",
-              "zip_code": "606210",
+              "zip_code": 606210,
               "street": "ул. Мичурина",
-              "house": "2",
-              "block": "9",
+              "house": 2,
+              "block": 9,
               "flat": 123,
               "room": 3,
               "region_fias_id": "region_52",
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Мичурина 2",
+              "title": "Нижегородская область, ул. Мичурина 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 7004,
-    "created_at": "2025-10-01T08:25:38.737800",
+    "created_at": "2025-10-10T09:03:24.055457",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 7004"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Лысково",
+              "settlement": "Лысково",
+              "area": "Нижегородская область район",
+              "zip_code": 606210,
+              "street": "ул. Мичурина",
+              "house": 2,
+              "block": 9,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "978C4D8C-F724-43B1-AA95-0C1FC49DC6B7",
+              "settlement_fias_id": "978C4D8C-F724-43B1-AA95-0C1FC49DC6B7",
+              "area_fias_id": "978C4D8C-F724-43B1-AA95-0C1FC49DC6B7",
+              "house_fias_id": "978C4D8C-F724-43B1-AA95-0C1FC49DC6B7",
+              "street_fias_id": null,
+              "extra": "Original: p2=60, p3=0, street=7851",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Мичурина 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

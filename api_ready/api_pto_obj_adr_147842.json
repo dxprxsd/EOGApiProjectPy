@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 147842"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Сергачский",
+            "settlement": "Шубино",
+            "area": "Нижегородская область район",
+            "zip_code": 607510,
+            "street": "ул. Ленина",
+            "house": 114,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "22D4D9B6-F15F-4D2E-A183-EA4A4CC21D77",
+            "settlement_fias_id": "702E8F14-F75F-48C1-85EF-5E7F37E65C53",
+            "area_fias_id": "22D4D9B6-F15F-4D2E-A183-EA4A4CC21D77",
+            "house_fias_id": "22D4D9B6-F15F-4D2E-A183-EA4A4CC21D77",
+            "street_fias_id": null,
+            "extra": "Original: p2=78, p3=5133, street=19467",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Ленина 114",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

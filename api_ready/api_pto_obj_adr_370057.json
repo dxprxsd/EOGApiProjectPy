@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 370057"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Дивеевский",
+            "settlement": "Елизарьево",
+            "area": "Нижегородская область район",
+            "zip_code": 607320,
+            "street": "ул. Садовая",
+            "house": 38,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "0E8F2A8C-F27F-4889-A6CC-3351F0A2A923",
+            "settlement_fias_id": "3EC7BFAE-C432-406F-985F-7624DB99478E",
+            "area_fias_id": "0E8F2A8C-F27F-4889-A6CC-3351F0A2A923",
+            "house_fias_id": "0E8F2A8C-F27F-4889-A6CC-3351F0A2A923",
+            "street_fias_id": null,
+            "extra": "Original: p2=45, p3=1287, street=6216",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Садовая 38",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

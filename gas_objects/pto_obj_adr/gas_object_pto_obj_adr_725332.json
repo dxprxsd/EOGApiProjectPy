@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 725332",
-        "description": "Объект из pto_obj_adr. ID: 725332",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 725332,
-          "p2": 83,
-          "p3": 3392,
-          "street": 10068,
-          "dom": 73,
-          "korpus": 0
-        }
+        "name": "Объект 725332"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Сосновский",
               "settlement": "Панино",
               "area": "Нижегородская область район",
-              "zip_code": "606170",
+              "zip_code": 606170,
               "street": "ул. Советская",
-              "house": "73",
+              "house": 73,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Советская 73",
+              "title": "Нижегородская область, ул. Советская 73",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 725332,
-    "created_at": "2025-10-01T09:11:25.541238",
+    "created_at": "2025-10-10T09:07:56.958052",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 725332"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Сосновский",
+              "settlement": "Панино",
+              "area": "Нижегородская область район",
+              "zip_code": 606170,
+              "street": "ул. Советская",
+              "house": 73,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+              "settlement_fias_id": "34FCEB4C-0DEE-4FFF-A527-1F78C0FA4B07",
+              "area_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+              "house_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+              "street_fias_id": null,
+              "extra": "Original: p2=83, p3=3392, street=10068",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Советская 73",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

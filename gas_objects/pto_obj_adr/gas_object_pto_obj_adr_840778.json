@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 840778",
-        "description": "Объект из pto_obj_adr. ID: 840778",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 840778,
-          "p2": 42,
-          "p3": 4813,
-          "street": 27966,
-          "dom": 0,
-          "korpus": 0
-        }
+        "name": "Объект 840778"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Дальнеконстантиновский",
               "settlement": "Хмелевая Поляна",
               "area": "Нижегородская область район",
-              "zip_code": "606310",
+              "zip_code": 606310,
               "street": "ул. Удачная",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Удачная 0",
+              "title": "Нижегородская область, ул. Удачная 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 840778,
-    "created_at": "2025-10-01T09:30:59.706603",
+    "created_at": "2025-10-10T09:09:51.470678",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 840778"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Дальнеконстантиновский",
+              "settlement": "Хмелевая Поляна",
+              "area": "Нижегородская область район",
+              "zip_code": 606310,
+              "street": "ул. Удачная",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "B933CEEA-DC46-4B0D-9DF6-7C9D175580F8",
+              "settlement_fias_id": "D0240619-7199-48F6-85F0-A212FFC45155",
+              "area_fias_id": "B933CEEA-DC46-4B0D-9DF6-7C9D175580F8",
+              "house_fias_id": "B933CEEA-DC46-4B0D-9DF6-7C9D175580F8",
+              "street_fias_id": null,
+              "extra": "Original: p2=42, p3=4813, street=27966",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Удачная 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -229,29 +229,36 @@ def prepare_gas_object_template(row, template_type="pto_obj_adr"):
         street_name = cleaned_row.get('street_name', 'Не указана')
         street_full = format_street_name(street_type, street_name)
         
-        zip_code = cleaned_row.get('zip_code', '606000')
-        if zip_code is None:
-            zip_code = '606000'
+        zip_code = cleaned_row.get('zip_code', 606000)
+        try:
+            zip_code = int(zip_code) if zip_code else 606000
+        except (ValueError, TypeError):
+            zip_code = 606000
         
         # Получаем значения для недостающих полей с безопасной обработкой
-        house_number = cleaned_row.get('house_number', '')
+        house_number = cleaned_row.get('house_number', 2)
+        try:
+            house_number = int(house_number) if house_number else 2
+        except (ValueError, TypeError):
+            house_number = 2
+            
         block = cleaned_row.get('block')
+        try:
+            block = int(block) if block else None
+        except (ValueError, TypeError):
+            block = None
+            
         region_name = cleaned_row.get('region_name', 'Нижегородская область')
-        area = f"{region_name} район" if region_name else "Октябрьский район"
+        area = f"{region_name} район" if region_name else "Октябрьский"
+        
+        # Формируем заголовок адреса
+        address_title = f"{region_name}, {street_full} {house_number}"
         
         template = {
             "data": {
                 "type": "gas_object",
                 "attributes": {
-                    "name": object_name,
-                    "description": f"Объект газификации из базы данных. ID: {cleaned_row.get('object_id', 'N/A')}",
-                    "status": "active",
-                    "custom_data": {
-                        "source_database": "dog",
-                        "source_table": "pto_grp",
-                        "source_id": cleaned_row.get('object_id'),
-                        "original_address": cleaned_row.get('full_address', '')
-                    }
+                    "name": object_name
                 },
                 "relationships": {
                     "address": {
@@ -263,15 +270,15 @@ def prepare_gas_object_template(row, template_type="pto_obj_adr"):
                                 "city": cleaned_row.get('settlement_name', 'Не указан'),
                                 "settlement": cleaned_row.get('settlement_name', 'Не указан'),
                                 "area": area,
-                                "zip_code": str(zip_code),
+                                "zip_code": zip_code,
                                 "street": street_full,
-                                "house": str(house_number) if house_number else "2",
-                                "block": str(block) if block else None,
+                                "house": house_number,
+                                "block": block,
                                 "flat": 123,
                                 "room": 3,
                                 "region_fias_id": f"region_{cleaned_row.get('region_code', '52')}",
-                                "city_fias_id": cleaned_row.get('settlement_fias_id'),
-                                "settlement_fias_id": cleaned_row.get('settlement_fias_id'),
+                                "city_fias_id": cleaned_row.get('settlement_fias_id') or "f6e148a1-c9d0-4141-a608-93e3bd95e6c4",
+                                "settlement_fias_id": cleaned_row.get('settlement_fias_id') or "f6e148a1-c9d0-4141-a608-93e3bd95e6c4",
                                 "area_fias_id": cleaned_row.get('settlement_fias_id') or "f6e148a1-c9d0-4141-a608-93e3bd95e6c4",
                                 "house_fias_id": cleaned_row.get('settlement_fias_id') or "f6e148a1-c9d0-4141-a608-93e3bd95e6c4",
                                 "street_fias_id": cleaned_row.get('street_fias_id'),
@@ -280,7 +287,7 @@ def prepare_gas_object_template(row, template_type="pto_obj_adr"):
                                 "cadastral_number": "123421W",
                                 "cadastral_home_number": "123421H",
                                 "okato": "123421H",
-                                "title": f"{region_name or 'МСК'}, ул {street_name} {house_number}",
+                                "title": address_title,
                                 "has_capital_construction": True,
                                 "room_type": "apartment_building"
                             }
@@ -305,37 +312,40 @@ def prepare_gas_object_template(row, template_type="pto_obj_adr"):
         
         street_full = format_street_name(cleaned_row.get('street_socr'), street_name)
         
-        zip_code = cleaned_row.get('p2_index', '606000')
-        if zip_code is None:
-            zip_code = '606000'
+        zip_code = cleaned_row.get('p2_index', 606000)
+        try:
+            zip_code = int(zip_code) if zip_code else 606000
+        except (ValueError, TypeError):
+            zip_code = 606000
         
         # Получаем значения для недостающих полей с безопасной обработкой
-        house_number = cleaned_row.get('dom', '2')
+        house_number = cleaned_row.get('dom', 2)
+        try:
+            house_number = int(house_number) if house_number else 2
+        except (ValueError, TypeError):
+            house_number = 2
+            
         block = cleaned_row.get('korpus')
+        try:
+            block = int(block) if block else None
+        except (ValueError, TypeError):
+            block = None
+            
         region_name = cleaned_row.get('region_name', 'Нижегородская область')
-        area = f"{region_name} район" if region_name else "Октябрьский район"
+        area = f"{region_name} район" if region_name else "Октябрьский"
         
         # Безопасное получение FIAS ID
         p2_fias_id = cleaned_row.get('p2_fias_id') or "f6e148a1-c9d0-4141-a608-93e3bd95e6c4"
         p3_fias_id = cleaned_row.get('p3_fias_id') or p2_fias_id
         
+        # Формируем заголовок адреса
+        address_title = f"{region_name}, {street_full} {house_number}"
+        
         template = {
             "data": {
                 "type": "gas_object",
                 "attributes": {
-                    "name": object_name,
-                    "description": f"Объект из pto_obj_adr. ID: {cleaned_row.get('id', 'N/A')}",
-                    "status": "active",
-                    "custom_data": {
-                        "source_database": "dog",
-                        "source_table": "pto_obj_adr",
-                        "source_id": cleaned_row.get('id'),
-                        "p2": cleaned_row.get('p2'),
-                        "p3": cleaned_row.get('p3'),
-                        "street": cleaned_row.get('street'),
-                        "dom": cleaned_row.get('dom'),
-                        "korpus": cleaned_row.get('korpus')
-                    }
+                    "name": object_name
                 },
                 "relationships": {
                     "address": {
@@ -347,10 +357,10 @@ def prepare_gas_object_template(row, template_type="pto_obj_adr"):
                                 "city": p2_name,
                                 "settlement": p3_name,
                                 "area": area,
-                                "zip_code": str(zip_code),
+                                "zip_code": zip_code,
                                 "street": street_full,
-                                "house": str(house_number) if house_number else "2",
-                                "block": str(block) if block else None,
+                                "house": house_number,
+                                "block": block,
                                 "flat": 123,
                                 "room": 3,
                                 "region_fias_id": f"region_{cleaned_row.get('region_code', '52')}",
@@ -364,7 +374,7 @@ def prepare_gas_object_template(row, template_type="pto_obj_adr"):
                                 "cadastral_number": "123421W",
                                 "cadastral_home_number": "123421H",
                                 "okato": "123421H",
-                                "title": f"{region_name or 'МСК'}, ул {street_name} {house_number}",
+                                "title": address_title,
                                 "has_capital_construction": True,
                                 "room_type": "apartment_building"
                             }
@@ -374,7 +384,7 @@ def prepare_gas_object_template(row, template_type="pto_obj_adr"):
             }
         }
     
-    # Добавляем метаданные
+    # Добавляем метаданные для внутреннего использования
     metadata = {
         'source': template_type,
         'source_id': cleaned_row.get('object_id') if template_type == 'pto_grp' else cleaned_row.get('id'),
@@ -423,10 +433,13 @@ def save_single_template(template, metadata, base_directory="gas_objects"):
         filename = f"gas_object_{source}_{source_id}.json"
         filepath = output_dir / filename
         
-        # Подготавливаем данные для сохранения
+        # Сохраняем только данные для API (без метаданных в основном файле)
+        # Для API отправляем только template
+        # Для внутреннего хранения сохраняем с метаданными
         data_to_save = {
-            "template": template,
-            "metadata": metadata
+            "template": template,  # Для внутреннего использования
+            "metadata": metadata,   # Для внутреннего использования
+            "api_data": template    # Для отправки в API
         }
         
         # Сохраняем в файл
@@ -438,6 +451,50 @@ def save_single_template(template, metadata, base_directory="gas_objects"):
     except Exception as e:
         print(f"Ошибка при сохранении шаблона {source_id}: {e}")
         return False
+    
+def create_api_only_files(base_directory="gas_objects", api_directory="api_ready"):
+    """Создание файлов только с данными для API (без метаданных)"""
+    try:
+        api_dir = Path(api_directory)
+        api_dir.mkdir(exist_ok=True, parents=True)
+        
+        # Поиск всех JSON файлов в базовой директории
+        json_files = list(Path(base_directory).rglob("*.json"))
+        
+        api_files_count = 0
+        
+        for json_file in json_files:
+            try:
+                # Загружаем исходный файл
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                # Извлекаем данные для API
+                api_data = data.get('template')  # Используем template как данные для API
+                
+                if api_data:
+                    # Создаем имя файла для API
+                    source = data.get('metadata', {}).get('source', 'unknown')
+                    source_id = data.get('metadata', {}).get('source_id', 'unknown')
+                    api_filename = f"api_{source}_{source_id}.json"
+                    api_filepath = api_dir / api_filename
+                    
+                    # Сохраняем только данные для API
+                    with open(api_filepath, 'w', encoding='utf-8') as f:
+                        json.dump(api_data, f, ensure_ascii=False, indent=2)
+                    
+                    api_files_count += 1
+                    
+            except Exception as e:
+                print(f"Ошибка при обработке файла {json_file}: {e}")
+                continue
+        
+        print(f"Создано {api_files_count} файлов для API в папке: {api_directory}")
+        return api_files_count
+        
+    except Exception as e:
+        print(f"Ошибка при создании файлов для API: {e}")
+        return 0
 
 def process_table_data(table_name, base_directory="gas_objects"):
     """Обработка всех данных из таблицы и сохранение в отдельные файлы"""
@@ -548,6 +605,7 @@ def main():
     
     print(f"\nНастройки пагинации: размер пачки = {BATCH_SIZE} записей")
     print(f"Базовая директория: gas_objects/")
+    print(f"API директория: api_ready/")
     
     print("\nНастройка прокси...")
     setup_proxy()
@@ -567,6 +625,10 @@ def main():
     processed_pto_obj_adr = process_table_data("pto_obj_adr")
     total_processed += processed_pto_obj_adr
     
+    # Создаем файлы только для API
+    print("\nСоздание файлов для API...")
+    api_files_count = create_api_only_files("gas_objects", "api_ready")
+    
     # Создаем файл статистики
     create_summary_file("gas_objects", total_processed)
     
@@ -577,7 +639,10 @@ def main():
     print(f"Всего обработано объектов: {total_processed}")
     print(f"Из таблицы pto_grp: {processed_pto_grp}")
     print(f"Из таблицы pto_obj_adr: {processed_pto_obj_adr}")
-    print(f"\nВсе файлы сохранены в папке: gas_objects/")
+    print(f"Файлов для API создано: {api_files_count}")
+    print(f"\nВсе файлы сохранены в папках:")
+    print(f"- Полные данные: gas_objects/")
+    print(f"- Для отправки в API: api_ready/")
     print("\n" + "=" * 70)
     print("ВЫПОЛНЕНИЕ ЗАВЕРШЕНО!")
     print("=" * 70)

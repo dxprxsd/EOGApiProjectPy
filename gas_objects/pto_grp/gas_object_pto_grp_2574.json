@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ШРП №81",
-        "description": "Объект газификации из базы данных. ID: 2574",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 2574,
-          "original_address": "Лукояновский р-н, д. Орловка"
-        }
+        "name": "ШРП №81"
       },
       "relationships": {
         "address": {
@@ -23,9 +15,9 @@
               "city": "Лукояновский",
               "settlement": "Лукояновский",
               "area": "Нижегородская область район",
-              "zip_code": "607800",
+              "zip_code": 607800,
               "street": "д. Орловка",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Орловка 0",
+              "title": "Нижегородская область, д. Орловка 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 2574,
-    "created_at": "2025-10-01T08:25:33.735074",
+    "created_at": "2025-10-10T09:03:20.595195",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП №81"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Лукояновский",
+              "settlement": "Лукояновский",
+              "area": "Нижегородская область район",
+              "zip_code": 607800,
+              "street": "д. Орловка",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+              "settlement_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+              "area_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+              "house_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+              "street_fias_id": "211DDB3C-5DCF-4ECE-B922-48E4B152DD0E",
+              "extra": "Лукояновский р-н, д. Орловка",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, д. Орловка 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

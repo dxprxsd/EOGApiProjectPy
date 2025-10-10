@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 774099"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Княгинино",
+            "settlement": "Княгинино",
+            "area": "Нижегородская область район",
+            "zip_code": 606340,
+            "street": "ул. Урицкого",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "B3350A67-B3C0-47B2-AFB3-2B308227A89E",
+            "settlement_fias_id": "B3350A67-B3C0-47B2-AFB3-2B308227A89E",
+            "area_fias_id": "B3350A67-B3C0-47B2-AFB3-2B308227A89E",
+            "house_fias_id": "B3350A67-B3C0-47B2-AFB3-2B308227A89E",
+            "street_fias_id": null,
+            "extra": "Original: p2=47, p3=0, street=6412",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Урицкого 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

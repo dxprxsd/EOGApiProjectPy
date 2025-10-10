@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 430767"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Дивеевский",
+            "settlement": "Суворово",
+            "area": "Нижегородская область район",
+            "zip_code": 607320,
+            "street": "ул. Парковая",
+            "house": 74,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "0E8F2A8C-F27F-4889-A6CC-3351F0A2A923",
+            "settlement_fias_id": "A13C132B-16D4-4C49-BDD6-F26C5D9BCD6B",
+            "area_fias_id": "0E8F2A8C-F27F-4889-A6CC-3351F0A2A923",
+            "house_fias_id": "0E8F2A8C-F27F-4889-A6CC-3351F0A2A923",
+            "street_fias_id": null,
+            "extra": "Original: p2=45, p3=4412, street=6273",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Парковая 74",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

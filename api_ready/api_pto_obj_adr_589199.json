@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 589199"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Богородский",
+            "settlement": "Окский",
+            "area": "Нижегородская область район",
+            "zip_code": 607600,
+            "street": "ул. Новожилова",
+            "house": 1,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+            "settlement_fias_id": "664DFF46-12FC-492A-9BB7-0B86A175BA62",
+            "area_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+            "house_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+            "street_fias_id": null,
+            "extra": "Original: p2=8, p3=3269, street=2829",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Новожилова 1",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

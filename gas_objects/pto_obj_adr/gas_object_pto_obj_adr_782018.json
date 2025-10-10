@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 782018",
-        "description": "Объект из pto_obj_adr. ID: 782018",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 782018,
-          "p2": 55,
-          "p3": 3110,
-          "street": 22998,
-          "dom": 0,
-          "korpus": 0
-        }
+        "name": "Объект 782018"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Кстовский",
               "settlement": "Новая Деревня",
               "area": "Нижегородская область район",
-              "zip_code": "607650",
+              "zip_code": 607650,
               "street": "снт. Зеленый Бор",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Зеленый Бор 0",
+              "title": "Нижегородская область, снт. Зеленый Бор 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 782018,
-    "created_at": "2025-10-01T09:21:39.270707",
+    "created_at": "2025-10-10T09:08:29.934194",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 782018"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Кстовский",
+              "settlement": "Новая Деревня",
+              "area": "Нижегородская область район",
+              "zip_code": 607650,
+              "street": "снт. Зеленый Бор",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "settlement_fias_id": "E6735E5C-89C4-47F2-AAD3-1228BF7E021B",
+              "area_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "house_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "street_fias_id": null,
+              "extra": "Original: p2=55, p3=3110, street=22998",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, снт. Зеленый Бор 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

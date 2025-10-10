@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 430778"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Бор",
+            "settlement": "Паново",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ул. Славянская",
+            "house": 18,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+            "settlement_fias_id": "4CBD13DA-01AC-47C1-BE8E-5D8B0CFEACAD",
+            "area_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+            "house_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+            "street_fias_id": null,
+            "extra": "Original: p2=13, p3=5431, street=19769",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Славянская 18",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

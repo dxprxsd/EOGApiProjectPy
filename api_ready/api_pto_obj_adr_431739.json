@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 431739"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Сеченовский",
+            "settlement": "Булдаково",
+            "area": "Нижегородская область район",
+            "zip_code": 607580,
+            "street": "ул. Центральная",
+            "house": 13,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+            "settlement_fias_id": "0D9BEEA1-CE96-4108-A143-CAEA316B0CAD",
+            "area_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+            "house_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+            "street_fias_id": null,
+            "extra": "Original: p2=80, p3=618, street=17731",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Центральная 13",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

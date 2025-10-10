@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 577970"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Большемурашкинский",
+            "settlement": "Малое Мурашкино",
+            "area": "Нижегородская область район",
+            "zip_code": 606360,
+            "street": "ул. Молодежная",
+            "house": 11,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+            "settlement_fias_id": "6D4E0544-FDFF-497B-A66E-E5E35AAAB073",
+            "area_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+            "house_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+            "street_fias_id": null,
+            "extra": "Original: p2=10, p3=2648, street=15323",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Молодежная 11",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

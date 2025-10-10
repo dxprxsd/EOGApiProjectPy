@@ -7,7 +7,7 @@ import os
 import urllib3
 import pymssql
 
-# ОСНОВНАЯ ПРОГРАММА
+# Программа для получения данных из БД и добавления данных в API 
 
 # Отключаем предупреждения SSL
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -58,6 +58,97 @@ def test_proxy_connection():
     except Exception as e:
         print(f"Ошибка прокси: {e}")
         return False
+
+# ========== ФУНКЦИИ АВТОРИЗАЦИИ ==========
+
+def get_auth_token():
+    """Получает токен авторизации из API"""
+    global API_AUTH_TOKEN
+    
+    try:
+        # Читаем данные авторизации из файла
+        auth_file = "authdata.json"
+        if not os.path.exists(auth_file):
+            print(f"Файл авторизации {auth_file} не найден!")
+            return None
+            
+        with open(auth_file, 'r', encoding='utf-8') as f:
+            auth_data = json.load(f)
+        
+        # Формируем URL для авторизации
+        url = f"{API_BASE_URL}/admin/token"
+        
+        # Заголовки запроса
+        headers = {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        }
+        
+        print(f"Отправка запроса авторизации...")
+        print(f"URL: {url}")
+        print(f"Email: {auth_data.get('auth', {}).get('email', 'N/A')}")
+        
+        # Отправляем POST запрос через прокси
+        response = requests.post(
+            url,
+            json=auth_data,
+            headers=headers,
+            proxies={
+                "http": PROXY_URL,
+                "https": PROXY_URL
+            },
+            timeout=30,
+            verify=False  # Игнорируем SSL проверки
+        )
+        
+        print(f"Статус ответа авторизации: {response.status_code}")
+        
+        # Пытаемся получить JSON ответ
+        try:
+            result = response.json()
+        except json.JSONDecodeError as e:
+            print(f"Ошибка декодирования JSON: {e}")
+            print(f"Текст ответа: {response.text[:500]}...")
+            return None
+        
+        # Проверяем статус ответа
+        if response.status_code == 201:
+            jwt_token = result.get('jwt')
+            if jwt_token:
+                API_AUTH_TOKEN = f"Bearer {jwt_token}"
+                print("Авторизация успешна!")
+                print(f"Токен получен: {jwt_token[:50]}...")
+                return API_AUTH_TOKEN
+            else:
+                print("В ответе отсутствует JWT токен")
+                print(f"Полный ответ: {result}")
+                return None
+        else:
+            print(f"Ошибка авторизации: {response.status_code}")
+            print(f"Полный ответ: {result}")
+            return None
+            
+    except requests.exceptions.RequestException as e:
+        print(f"Ошибка сетевого запроса при авторизации: {e}")
+        return None
+    except Exception as e:
+        print(f"Неожиданная ошибка при авторизации: {e}")
+        return None
+
+def refresh_auth_token():
+    """Обновляет токен авторизации"""
+    global API_AUTH_TOKEN
+    print("Обновление токена авторизации...")
+    API_AUTH_TOKEN = None
+    return get_auth_token()
+
+def ensure_auth():
+    """Обеспечивает наличие действительного токена авторизации"""
+    global API_AUTH_TOKEN
+    if not API_AUTH_TOKEN:
+        return get_auth_token()
+    return API_AUTH_TOKEN
 
 # ========== ФУНКЦИИ ДЛЯ РАБОТЫ С API ==========
 
@@ -233,14 +324,45 @@ def get_complete_address_data(limit=100):
     finally:
         conn.close()
 
+def create_gas_objects_from_db_data(db_data, limit=10):
+    """Создание объектов газификации из данных БД в формате API"""
+    gas_objects = []
+    
+    for i, row in enumerate(db_data):
+        if i >= limit:
+            break
+            
+        print(f"Подготовка объекта {i+1} из БД...")
+        
+        # Подготавливаем данные в формате API
+        gas_object = prepare_gas_object_data(row)
+        
+        # Добавляем метаданные
+        gas_object_with_metadata = {
+            "template": gas_object,
+            "metadata": {
+                "source": "pto_grp",
+                "source_id": row.get('object_id', i),
+                "created_at": datetime.now().isoformat(),
+                "batch_processed": False
+            }
+        }
+        
+        gas_objects.append(gas_object_with_metadata)
+    
+    return gas_objects
+
 def prepare_gas_object_data(row):
-    """Подготовка данных для создания объекта газификации"""
+    """Подготовка данных для создания объекта газификации в формате API"""
     
     # Формируем название объекта
     object_name = row['object_name'] or f"Объект {row['house_number']}"
     
     # Формируем полное название улицы
-    street_full = f"{row.get('street_type', 'ул')} {row['street_name']}"
+    street_full = f"{row.get('street_type', 'ул')} {row['street_name']}" if row.get('street_name') else "ул. Не указана"
+    
+    # Формируем заголовок адреса
+    address_title = f"{row['region_name']}, {street_full} {row['house_number']}"
     
     gas_object_data = {
         "data": {
@@ -257,18 +379,27 @@ def prepare_gas_object_data(row):
                             "region": row['region_name'],
                             "city": row['settlement_name'],
                             "settlement": row['settlement_name'],
+                            "area": row.get('region_name', ''),  # Используем регион как район
+                            "zip_code": row.get('zip_code', 0),
                             "street": street_full,
                             "house": row['house_number'],
-                            "block": row['block'] or None,
-                            "flat": 1,  # По умолчанию
+                            "block": row.get('block'),
+                            "flat": 1,  # Значение по умолчанию
                             "room": None,
-                            "zip_code": row['zip_code'],
-                            "region_fias_id": f"region_{row['region_code']}",
-                            "city_fias_id": row['settlement_fias_id'],
-                            "settlement_fias_id": row['settlement_fias_id'],
-                            "street_fias_id": row['street_fias_id'],
+                            "region_fias_id": f"region_{row.get('region_code', '')}",
+                            "city_fias_id": row.get('settlement_fias_id', ''),
+                            "settlement_fias_id": row.get('settlement_fias_id', ''),
+                            "area_fias_id": row.get('settlement_fias_id', ''),  # Используем settlement_fias_id
+                            "house_fias_id": row.get('settlement_fias_id', ''),  # Используем settlement_fias_id
+                            "street_fias_id": row.get('street_fias_id'),
+                            "extra": row.get('full_address', ''),
+                            "oktmo": None,
+                            "cadastral_number": None,
+                            "cadastral_home_number": None,
+                            "okato": None,
+                            "title": address_title,
                             "has_capital_construction": True,
-                            "extra": row.get('full_address', '')
+                            "room_type": "apartment_building"
                         }
                     }
                 }
@@ -276,7 +407,32 @@ def prepare_gas_object_data(row):
         }
     }
     
+    # Обработка числовых значений
+    try:
+        if gas_object_data["data"]["relationships"]["address"]["data"]["attributes"]["zip_code"]:
+            gas_object_data["data"]["relationships"]["address"]["data"]["attributes"]["zip_code"] = int(
+                gas_object_data["data"]["relationships"]["address"]["data"]["attributes"]["zip_code"]
+            )
+    except (ValueError, TypeError):
+        gas_object_data["data"]["relationships"]["address"]["data"]["attributes"]["zip_code"] = 0
+    
+    try:
+        if gas_object_data["data"]["relationships"]["address"]["data"]["attributes"]["house"]:
+            gas_object_data["data"]["relationships"]["address"]["data"]["attributes"]["house"] = int(
+                gas_object_data["data"]["relationships"]["address"]["data"]["attributes"]["house"]
+            )
+    except (ValueError, TypeError):
+        # Если не удалось преобразовать в число, оставляем как строку
+        pass
+    
+    # Очистка None значений для числовых полей
+    numeric_fields = ["oktmo", "flat", "room"]
+    for field in numeric_fields:
+        if gas_object_data["data"]["relationships"]["address"]["data"]["attributes"][field] is None:
+            gas_object_data["data"]["relationships"]["address"]["data"]["attributes"][field] = 0
+    
     return gas_object_data
+
 
 def send_gas_object_to_api(gas_object_data, auth_token=None):
     """Отправка данных об объекте газификации в API"""
@@ -289,7 +445,7 @@ def send_gas_object_to_api(gas_object_data, auth_token=None):
     }
     
     if auth_token:
-        headers["Authorization"] = f"Bearer {auth_token}"
+        headers["Authorization"] = auth_token
     
     try:
         response = requests.post(
@@ -304,16 +460,197 @@ def send_gas_object_to_api(gas_object_data, auth_token=None):
         print(f"Статус отправки: {response.status_code}")
         
         if response.status_code in [200, 201]:
-            print("✓ Объект успешно создан!")
+            print("Объект успешно создан!")
             return response.json()
+        elif response.status_code == 401:
+            print("Ошибка авторизации. Попытка обновить токен...")
+            new_token = refresh_auth_token()
+            if new_token:
+                headers["Authorization"] = new_token
+                response = requests.post(
+                    url,
+                    headers=headers,
+                    json=gas_object_data,
+                    proxies={"http": PROXY_URL, "https": PROXY_URL},
+                    timeout=30,
+                    verify=False
+                )
+                if response.status_code in [200, 201]:
+                    print("Объект успешно создан после обновления токена!")
+                    return response.json()
         else:
-            print(f"✗ Ошибка: {response.status_code}")
+            print(f"Ошибка: {response.status_code}")
             print(f"Ответ: {response.text[:200]}...")
             return None
             
     except Exception as e:
         print(f"Ошибка при отправке в API: {e}")
         return None
+
+# ========== ФУНКЦИИ ДЛЯ ЗАГРУЗКИ ДАННЫХ ИЗ ФАЙЛОВ ==========
+
+def load_data_from_file(file_path):
+    """Загрузка данных из JSON файла"""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+        print(f"Успешно загружен файл: {file_path}")
+        return data
+    except Exception as e:
+        print(f"Ошибка загрузки файла {file_path}: {e}")
+        return None
+
+def upload_single_file_to_api():
+    """Загрузка данных из одного выбранного файла в API"""
+    output_dir = Path("output")
+    if not output_dir.exists():
+        print("Папка 'output' не существует!")
+        return
+    
+    # Получаем список JSON файлов
+    json_files = list(output_dir.glob("*.json"))
+    if not json_files:
+        print("В папке 'output' нет JSON файлов!")
+        return
+    
+    print("\nДоступные файлы для загрузки:")
+    for i, file_path in enumerate(json_files, 1):
+        print(f"{i}. {file_path.name}")
+    
+    try:
+        choice = int(input("\nВыберите номер файла для загрузки: ")) - 1
+        if 0 <= choice < len(json_files):
+            selected_file = json_files[choice]
+            print(f"Выбран файл: {selected_file.name}")
+            
+            # Загружаем данные из файла
+            data = load_data_from_file(selected_file)
+            if data:
+                # Проверяем авторизацию
+                auth_token = ensure_auth()
+                if not auth_token:
+                    print("Ошибка авторизации! Невозможно загрузить данные.")
+                    return
+                
+                # Определяем формат данных и отправляем в API
+                if isinstance(data, list):
+                    # Если это список объектов
+                    print(f"Найдено {len(data)} объектов для загрузки...")
+                    success_count = 0
+                    
+                    for i, item in enumerate(data, 1):
+                        print(f"[{i}/{len(data)}] Загрузка объекта...")
+                        
+                        # Определяем структуру данных
+                        if 'template' in item:
+                            # Формат с метаданными - используем только template
+                            api_data = item['template']
+                        else:
+                            # Прямой формат API
+                            api_data = item
+                        
+                        result = send_gas_object_to_api(api_data, auth_token)
+                        if result:
+                            success_count += 1
+                            print(f"✓ Объект {i} успешно загружен")
+                        else:
+                            print(f"✗ Ошибка загрузки объекта {i}")
+                    
+                    print(f"\nИтоги: Успешно {success_count}/{len(data)}")
+                    
+                else:
+                    # Если это одиночный объект
+                    if 'template' in data:
+                        # Формат с метаданными - используем только template
+                        api_data = data['template']
+                    else:
+                        # Прямой формат API
+                        api_data = data
+                    
+                    print("Отправка данных в API...")
+                    result = send_gas_object_to_api(api_data, auth_token)
+                    if result:
+                        print("Данные успешно загружены в API!")
+                    else:
+                        print("Ошибка загрузки данных в API!")
+        else:
+            print("Неверный выбор!")
+    except ValueError:
+        print("Пожалуйста, введите число!")
+    except Exception as e:
+        print(f"Ошибка при загрузке файла: {e}")
+
+def upload_all_files_from_folder():
+    """Загрузка всех файлов из папки output в API"""
+    output_dir = Path("output")
+    if not output_dir.exists():
+        print("Папка 'output' не существует!")
+        return
+    
+    # Получаем список JSON файлов
+    json_files = list(output_dir.glob("*.json"))
+    if not json_files:
+        print("В папке 'output' нет JSON файлов!")
+        return
+    
+    print(f"Найдено {len(json_files)} файлов для загрузки:")
+    for file_path in json_files:
+        print(f"  - {file_path.name}")
+    
+    # Проверяем авторизацию
+    auth_token = ensure_auth()
+    if not auth_token:
+        print("Ошибка авторизации! Невозможно загрузить данные.")
+        return
+    
+    success_count = 0
+    error_count = 0
+    
+    for i, file_path in enumerate(json_files, 1):
+        print(f"\n[{i}/{len(json_files)}] Загрузка файла: {file_path.name}")
+        
+        # Загружаем данные из файла
+        data = load_data_from_file(file_path)
+        if data:
+            # Отправляем данные в API
+            result = send_gas_object_to_api(data, auth_token)
+            if result:
+                success_count += 1
+                print(f"Файл {file_path.name} успешно загружен")
+            else:
+                error_count += 1
+                print(f"Ошибка загрузки файла {file_path.name}")
+        else:
+            error_count += 1
+            print(f"Ошибка чтения файла {file_path.name}")
+    
+    print(f"\nИтоги загрузки:")
+    print(f"Успешно: {success_count}")
+    print(f"С ошибками: {error_count}")
+    print(f"Всего: {len(json_files)}")
+
+def upload_data_menu():
+    """Меню выбора способа загрузки данных в API"""
+    print("\n" + "=" * 60)
+    print("ЗАГРУЗКА ДАННЫХ В API")
+    print("=" * 60)
+    
+    while True:
+        print("\nВыберите вариант загрузки:")
+        print("1. Загрузить один конкретный файл")
+        print("2. Загрузить все файлы из папки output")
+        print("3. Вернуться в главное меню")
+        
+        choice = input("\nВведите номер варианта: ").strip()
+        
+        if choice == "1":
+            upload_single_file_to_api()
+        elif choice == "2":
+            upload_all_files_from_folder()
+        elif choice == "3":
+            break
+        else:
+            print("Неверный выбор! Пожалуйста, введите 1, 2 или 3.")
 
 # ========== ФУНКЦИИ ДЛЯ СОХРАНЕНИЯ ДАННЫХ ==========
 
@@ -464,6 +801,32 @@ def main():
     if not test_proxy_connection():
         print("Прокси не работает. Продолжаем без прокси?")
     
+    # Основной цикл программы
+    while True:
+        print("\n" + "=" * 60)
+        print("ГЛАВНОЕ МЕНЮ")
+        print("=" * 60)
+        print("1. Сбор данных из API и БД")
+        print("2. Загрузка данных в API")
+        print("3. Тест авторизации")
+        print("4. Выход")
+        
+        choice = input("\nВведите номер варианта: ").strip()
+        
+        if choice == "1":
+            collect_data_mode()
+        elif choice == "2":
+            upload_data_menu()
+        elif choice == "3":
+            test_auth_mode()
+        elif choice == "4":
+            print("Выход из программы...")
+            break
+        else:
+            print("Неверный выбор! Пожалуйста, введите 1, 2, 3 или 4.")
+
+def collect_data_mode():
+    """Режим сбора данных из API и БД"""
     print("\n" + "=" * 60)
     print("ПОЛУЧЕНИЕ ДАННЫХ ИЗ API")
     print("=" * 60)
@@ -516,39 +879,57 @@ def main():
     
     # Получаем полные адресные данные для создания объектов
     print("\n4. Получаем данные для создания объектов газификации...")
-    address_data = get_complete_address_data(limit=5)
+    address_data = get_complete_address_data(limit=10)
     
     if address_data:
         print(f"Успешно получено {len(address_data)} адресных записей!")
         
-        for i, row in enumerate(address_data, 1):
-            print(f"\n--- Подготавливаем объект {i} ---")
-            
-            # Подготавливаем данные для API
-            gas_object_data = prepare_gas_object_data(row)
+        # Создаем объекты газификации в правильном формате
+        gas_objects = create_gas_objects_from_db_data(address_data, limit=5)
+        
+        # Сохраняем подготовленные объекты
+        for i, gas_object in enumerate(gas_objects, 1):
+            print(f"\n--- Объект {i} ---")
+            print(f"Название: {gas_object['template']['data']['attributes']['name']}")
+            print(f"Адрес: {gas_object['template']['data']['relationships']['address']['data']['attributes']['title']}")
             
             # Сохраняем для отладки
-            save_raw_json_to_file(gas_object_data, f"gas_object_{i}_prepared")
+            save_raw_json_to_file(gas_object, f"gas_object_formatted_{i}")
             
-            # Выводим информацию
-            print(f"Объект: {row['object_name']}")
-            print(f"Адрес: {row['region_name']}, {row['settlement_name']}, {row['street_name']}, д. {row['house_number']}")
+            # Для реальной отправки используем только template
+            api_data = gas_object['template']
             
             # РАСКОММЕНТИРУЙТЕ ДЛЯ РЕАЛЬНОЙ ОТПРАВКИ:
             # print("Отправляем данные в API...")
-            # result = send_gas_object_to_api(gas_object_data, API_AUTH_TOKEN)
+            # result = send_gas_object_to_api(api_data, API_AUTH_TOKEN)
             # if result:
             #     print("Успешно отправлено в API")
             # else:
             #     print("Ошибка отправки")
+        
+        # Сохраняем все объекты в один файл
+        save_raw_json_to_file(gas_objects, "all_gas_objects_formatted")
+        
     else:
         print("Не удалось получить адресные данные для создания объектов")
     
     print("\n" + "=" * 60)
-    print("ВЫПОЛНЕНИЕ ЗАВЕРШЕНО!")
+    print("СБОР ДАННЫХ ЗАВЕРШЕН!")
     print("=" * 60)
     print("\nВсе данные сохранены в папке 'output/'")
-    print("Для реальной отправки раскомментируйте код отправки в API")
+    print("Для реальной отправки используйте пункт меню 'Загрузка данных в API'")
+
+def test_auth_mode():
+    """Режим тестирования авторизации"""
+    print("\n" + "=" * 60)
+    print("ТЕСТ АВТОРИЗАЦИИ")
+    print("=" * 60)
+    
+    token = get_auth_token()
+    if token:
+        print("Авторизация успешна!")
+    else:
+        print("Ошибка авторизации!")
 
 if __name__ == "__main__":
     main()

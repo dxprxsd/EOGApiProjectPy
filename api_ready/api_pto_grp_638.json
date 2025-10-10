@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "ГРП № 11"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Ардатовский",
+            "settlement": "Ардатовский",
+            "area": "Нижегородская область район",
+            "zip_code": 607130,
+            "street": "с. Размазлей",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+            "settlement_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+            "area_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+            "house_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+            "street_fias_id": "660B4347-D47C-4119-BA02-E049C4B13C7E",
+            "extra": "Ардатовский р-н, с. Размазлей",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, с. Размазлей 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

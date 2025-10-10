@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 535406"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Сокольское",
+            "settlement": "Сокольское",
+            "area": "Нижегородская область район",
+            "zip_code": 606670,
+            "street": "ул. Ленинградская",
+            "house": 13,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "A8F0480E-2A9B-4951-994F-3438D2A9938A",
+            "settlement_fias_id": "A8F0480E-2A9B-4951-994F-3438D2A9938A",
+            "area_fias_id": "A8F0480E-2A9B-4951-994F-3438D2A9938A",
+            "house_fias_id": "A8F0480E-2A9B-4951-994F-3438D2A9938A",
+            "street_fias_id": null,
+            "extra": "Original: p2=82, p3=0, street=9764",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Ленинградская 13",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

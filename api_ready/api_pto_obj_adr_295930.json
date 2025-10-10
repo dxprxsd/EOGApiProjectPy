@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 295930"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Шатковский",
+            "settlement": "Чапары",
+            "area": "Нижегородская область район",
+            "zip_code": 607700,
+            "street": "ул. Мира",
+            "house": 34,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+            "settlement_fias_id": "E764A542-4C28-4429-89C6-D9818CEE7435",
+            "area_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+            "house_fias_id": "D7C2BCA5-F874-4A3B-8F9E-4098737968C0",
+            "street_fias_id": null,
+            "extra": "Original: p2=99, p3=4864, street=13135",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Мира 34",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

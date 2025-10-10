@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ШРП-288",
-        "description": "Объект газификации из базы данных. ID: 7570",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 7570,
-          "original_address": "г. Нижний Новгород, сл. Верхне-Печерская, д. 147"
-        }
+        "name": "ШРП-288"
       },
       "relationships": {
         "address": {
@@ -23,9 +15,9 @@
               "city": "Нижний Новгород",
               "settlement": "Нижний Новгород",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "сл. Верхне-Печерская",
-              "house": "147",
+              "house": 147,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Верхне-Печерская 147",
+              "title": "Нижегородская область, сл. Верхне-Печерская 147",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 7570,
-    "created_at": "2025-10-01T08:25:35.471805",
+    "created_at": "2025-10-10T09:03:21.676894",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП-288"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Нижний Новгород",
+              "settlement": "Нижний Новгород",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "сл. Верхне-Печерская",
+              "house": 147,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "555E7D61-D9A7-4BA6-9770-6CAA8198C483",
+              "settlement_fias_id": "555E7D61-D9A7-4BA6-9770-6CAA8198C483",
+              "area_fias_id": "555E7D61-D9A7-4BA6-9770-6CAA8198C483",
+              "house_fias_id": "555E7D61-D9A7-4BA6-9770-6CAA8198C483",
+              "street_fias_id": "8CD1AD42-E521-4491-B86C-A74D79A2A447",
+              "extra": "г. Нижний Новгород, сл. Верхне-Печерская, д. 147",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, сл. Верхне-Печерская 147",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 797547"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Княгининский",
+            "settlement": "Спешнево",
+            "area": "Нижегородская область район",
+            "zip_code": 606340,
+            "street": "ул. Мира",
+            "house": 115,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+            "settlement_fias_id": "8B6FCD39-F99A-4716-B6D5-F0912FDA3EED",
+            "area_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+            "house_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+            "street_fias_id": null,
+            "extra": "Original: p2=48, p3=4308, street=16435",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Мира 115",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

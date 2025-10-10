@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 811776",
-        "description": "Объект из pto_obj_adr. ID: 811776",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 811776,
-          "p2": 54,
-          "p3": 7346,
-          "street": 26185,
-          "dom": 22,
-          "korpus": 0
-        }
+        "name": "Объект 811776"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Кстово",
               "settlement": "Престижный",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Вишнёвая",
-              "house": "22",
+              "house": 22,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Вишнёвая 22",
+              "title": "Нижегородская область, ул. Вишнёвая 22",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 811776,
-    "created_at": "2025-10-01T09:26:07.062273",
+    "created_at": "2025-10-10T09:09:07.229474",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 811776"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Кстово",
+              "settlement": "Престижный",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Вишнёвая",
+              "house": 22,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "8D72434A-977F-418B-80E0-F37FF75D52E4",
+              "settlement_fias_id": "ECD14352-2A70-4A9F-8ADF-7A57678F1B4B",
+              "area_fias_id": "8D72434A-977F-418B-80E0-F37FF75D52E4",
+              "house_fias_id": "8D72434A-977F-418B-80E0-F37FF75D52E4",
+              "street_fias_id": null,
+              "extra": "Original: p2=54, p3=7346, street=26185",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Вишнёвая 22",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

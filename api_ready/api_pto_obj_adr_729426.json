@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 729426"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Ардатовский",
+            "settlement": "Мухтолово",
+            "area": "Нижегородская область район",
+            "zip_code": 607130,
+            "street": "ул. Клубная",
+            "house": 29,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+            "settlement_fias_id": "DD1D2D20-F0D8-44D1-93AB-5DA1C97B5072",
+            "area_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+            "house_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+            "street_fias_id": null,
+            "extra": "Original: p2=2, p3=2965, street=1535",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Клубная 29",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

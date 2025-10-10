@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 541333"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Сосновский",
+            "settlement": "Давыдково",
+            "area": "Нижегородская область район",
+            "zip_code": 606170,
+            "street": "ул. Мира",
+            "house": 10,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+            "settlement_fias_id": "94478882-780D-45D4-9DB3-759DBF466E37",
+            "area_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+            "house_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+            "street_fias_id": null,
+            "extra": "Original: p2=83, p3=1123, street=10002",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Мира 10",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

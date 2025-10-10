@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "ШРП"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Воротынский",
+            "settlement": "Воротынский",
+            "area": "Нижегородская область район",
+            "zip_code": 606260,
+            "street": "с. Криуши",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+            "settlement_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+            "area_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+            "house_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+            "street_fias_id": "52D7D4A1-1797-4A4B-8106-31D7D8EF411F",
+            "extra": "Воротынский р-н, с. Криуши [№15]",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, с. Криуши 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

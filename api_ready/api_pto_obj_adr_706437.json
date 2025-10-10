@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 706437"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Сергачский",
+            "settlement": "Богородское",
+            "area": "Нижегородская область район",
+            "zip_code": 607510,
+            "street": "ул. Молодежная",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "22D4D9B6-F15F-4D2E-A183-EA4A4CC21D77",
+            "settlement_fias_id": "CF7E9BDE-022B-4F7D-8FE4-D35844292A24",
+            "area_fias_id": "22D4D9B6-F15F-4D2E-A183-EA4A4CC21D77",
+            "house_fias_id": "22D4D9B6-F15F-4D2E-A183-EA4A4CC21D77",
+            "street_fias_id": null,
+            "extra": "Original: p2=78, p3=403, street=19466",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Молодежная 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

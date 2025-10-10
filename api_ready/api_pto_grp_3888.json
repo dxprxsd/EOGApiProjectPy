@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "ШРП"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Воротынский",
+            "settlement": "Воротынский",
+            "area": "Нижегородская область район",
+            "zip_code": 606260,
+            "street": "сп. Лысая Гора",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+            "settlement_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+            "area_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+            "house_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+            "street_fias_id": "4F81738E-3797-438D-B522-888A0FEC8284",
+            "extra": "Воротынский р-н, сп. Лысая Гора [№44]",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, сп. Лысая Гора 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

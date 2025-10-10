@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 714221",
-        "description": "Объект из pto_obj_adr. ID: 714221",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 714221,
-          "p2": 10,
-          "p3": 766,
-          "street": 15319,
-          "dom": 24,
-          "korpus": 0
-        }
+        "name": "Объект 714221"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Большемурашкинский",
               "settlement": "Вершинино",
               "area": "Нижегородская область район",
-              "zip_code": "606360",
+              "zip_code": 606360,
               "street": "ул. Заречная",
-              "house": "24",
+              "house": 24,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Заречная 24",
+              "title": "Нижегородская область, ул. Заречная 24",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 714221,
-    "created_at": "2025-10-01T09:09:13.100268",
+    "created_at": "2025-10-10T09:07:46.749104",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 714221"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Большемурашкинский",
+              "settlement": "Вершинино",
+              "area": "Нижегородская область район",
+              "zip_code": 606360,
+              "street": "ул. Заречная",
+              "house": 24,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+              "settlement_fias_id": "E06DD807-2169-4B4E-B797-87C76253AB32",
+              "area_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+              "house_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+              "street_fias_id": null,
+              "extra": "Original: p2=10, p3=766, street=15319",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Заречная 24",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

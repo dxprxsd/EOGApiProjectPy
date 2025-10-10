@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 484816",
-        "description": "Объект из pto_obj_adr. ID: 484816",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 484816,
-          "p2": 61,
-          "p3": 2502,
-          "street": 16827,
-          "dom": 22,
-          "korpus": 0
-        }
+        "name": "Объект 484816"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Лысковский",
               "settlement": "Лысая Гора",
               "area": "Нижегородская область район",
-              "zip_code": "606212",
+              "zip_code": 606212,
               "street": "ул. Заречная",
-              "house": "22",
+              "house": 22,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Заречная 22",
+              "title": "Нижегородская область, ул. Заречная 22",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 484816,
-    "created_at": "2025-10-01T08:33:34.584448",
+    "created_at": "2025-10-10T09:04:47.021147",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 484816"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Лысковский",
+              "settlement": "Лысая Гора",
+              "area": "Нижегородская область район",
+              "zip_code": 606212,
+              "street": "ул. Заречная",
+              "house": 22,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "2DD692C1-FC95-41A2-86A1-6A83F47914FE",
+              "settlement_fias_id": "BB2F29A9-E35D-4E49-B780-E533748AC9B5",
+              "area_fias_id": "2DD692C1-FC95-41A2-86A1-6A83F47914FE",
+              "house_fias_id": "2DD692C1-FC95-41A2-86A1-6A83F47914FE",
+              "street_fias_id": null,
+              "extra": "Original: p2=61, p3=2502, street=16827",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Заречная 22",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

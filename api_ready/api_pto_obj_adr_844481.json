@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 844481"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Ковернинский",
+            "settlement": "Протазаново",
+            "area": "Нижегородская область район",
+            "zip_code": 606570,
+            "street": "ул. Не указана",
+            "house": 15,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+            "settlement_fias_id": "D82ACB9A-67A5-4728-AA0E-E4F0AAF508AA",
+            "area_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+            "house_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+            "street_fias_id": null,
+            "extra": "Original: p2=50, p3=3731, street=0",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Не указана 15",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

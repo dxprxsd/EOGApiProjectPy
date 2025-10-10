@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 533535"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Починковский",
+            "settlement": "Василевка",
+            "area": "Нижегородская область район",
+            "zip_code": 607911,
+            "street": "ул. Курмыш",
+            "house": 13,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+            "settlement_fias_id": "154EBE1D-D67A-4C90-BEDF-5F5A2B8E499D",
+            "area_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+            "house_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+            "street_fias_id": null,
+            "extra": "Original: p2=73, p3=697, street=13077",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Курмыш 13",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 853754"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Володарский",
+            "settlement": "Фролищи",
+            "area": "Нижегородская область район",
+            "zip_code": 606072,
+            "street": "ул. Новая",
+            "house": 16,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "28AA39A2-9D75-407F-B015-CC778D79F293",
+            "settlement_fias_id": "6F3A3AF0-2B03-4FC2-AA17-D8618A13ACF3",
+            "area_fias_id": "28AA39A2-9D75-407F-B015-CC778D79F293",
+            "house_fias_id": "28AA39A2-9D75-407F-B015-CC778D79F293",
+            "street_fias_id": null,
+            "extra": "Original: p2=28, p3=4780, street=4242",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Новая 16",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

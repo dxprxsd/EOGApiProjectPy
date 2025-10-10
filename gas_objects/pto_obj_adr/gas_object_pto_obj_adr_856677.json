@@ -1,0 +1,92 @@
+{
+  "template": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 856677"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Ветлуга",
+              "settlement": "Ветлуга",
+              "area": "Нижегородская область район",
+              "zip_code": 606860,
+              "street": "ул. М. Горького",
+              "house": 112,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "AA1E00F2-A813-4F3D-B74A-9F9D73BFB1FF",
+              "settlement_fias_id": "AA1E00F2-A813-4F3D-B74A-9F9D73BFB1FF",
+              "area_fias_id": "AA1E00F2-A813-4F3D-B74A-9F9D73BFB1FF",
+              "house_fias_id": "AA1E00F2-A813-4F3D-B74A-9F9D73BFB1FF",
+              "street_fias_id": null,
+              "extra": "Original: p2=23, p3=0, street=4029",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. М. Горького 112",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "source": "pto_obj_adr",
+    "source_id": 856677,
+    "created_at": "2025-10-10T09:10:05.353266",
+    "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 856677"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Ветлуга",
+              "settlement": "Ветлуга",
+              "area": "Нижегородская область район",
+              "zip_code": 606860,
+              "street": "ул. М. Горького",
+              "house": 112,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "AA1E00F2-A813-4F3D-B74A-9F9D73BFB1FF",
+              "settlement_fias_id": "AA1E00F2-A813-4F3D-B74A-9F9D73BFB1FF",
+              "area_fias_id": "AA1E00F2-A813-4F3D-B74A-9F9D73BFB1FF",
+              "house_fias_id": "AA1E00F2-A813-4F3D-B74A-9F9D73BFB1FF",
+              "street_fias_id": null,
+              "extra": "Original: p2=23, p3=0, street=4029",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. М. Горького 112",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
+  }
+}

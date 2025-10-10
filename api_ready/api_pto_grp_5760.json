@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "03-40-0-0214"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Бор",
+            "settlement": "Бор",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ж/р. Боталово-4",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+            "settlement_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+            "area_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+            "house_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+            "street_fias_id": "2514AAE8-71B3-49B4-8DD5-DEA5FABA1425",
+            "extra": "г. Бор, ж/р. Боталово-4 [у ж.д.22 ул Псковская]",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ж/р. Боталово-4 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

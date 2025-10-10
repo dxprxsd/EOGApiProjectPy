@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 760472",
-        "description": "Объект из pto_obj_adr. ID: 760472",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 760472,
-          "p2": 18,
-          "p3": 4380,
-          "street": 3816,
-          "dom": 84,
-          "korpus": 0
-        }
+        "name": "Объект 760472"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Вадский",
               "settlement": "Стрелка",
               "area": "Нижегородская область район",
-              "zip_code": "606380",
+              "zip_code": 606380,
               "street": "ул. Пешелань",
-              "house": "84",
+              "house": 84,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Пешелань 84",
+              "title": "Нижегородская область, ул. Пешелань 84",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 760472,
-    "created_at": "2025-10-01T09:19:32.290309",
+    "created_at": "2025-10-10T09:08:21.696225",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 760472"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Вадский",
+              "settlement": "Стрелка",
+              "area": "Нижегородская область район",
+              "zip_code": 606380,
+              "street": "ул. Пешелань",
+              "house": 84,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "F094D1FD-709B-4D74-8AD9-3BD85C05AE6F",
+              "settlement_fias_id": "9BECD614-E3AB-44AD-B695-DCB968E528B5",
+              "area_fias_id": "F094D1FD-709B-4D74-8AD9-3BD85C05AE6F",
+              "house_fias_id": "F094D1FD-709B-4D74-8AD9-3BD85C05AE6F",
+              "street_fias_id": null,
+              "extra": "Original: p2=18, p3=4380, street=3816",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Пешелань 84",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

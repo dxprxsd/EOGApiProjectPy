@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ШРП №19",
-        "description": "Объект газификации из базы данных. ID: 5421",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 5421,
-          "original_address": "Вознесенский р-н, с. Полховский Майдан, ул. Молодежная, д. 116 [школа]"
-        }
+        "name": "ШРП №19"
       },
       "relationships": {
         "address": {
@@ -23,9 +15,9 @@
               "city": "Вознесенский",
               "settlement": "Вознесенский",
               "area": "Нижегородская область район",
-              "zip_code": "607340",
+              "zip_code": 607340,
               "street": "с. Полховский Майдан",
-              "house": "116",
+              "house": 116,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Полховский Майдан 116",
+              "title": "Нижегородская область, с. Полховский Майдан 116",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 5421,
-    "created_at": "2025-10-01T08:25:34.941681",
+    "created_at": "2025-10-10T09:03:21.256452",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП №19"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Вознесенский",
+              "settlement": "Вознесенский",
+              "area": "Нижегородская область район",
+              "zip_code": 607340,
+              "street": "с. Полховский Майдан",
+              "house": 116,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+              "settlement_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+              "area_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+              "house_fias_id": "151E7B90-3FFD-4AB7-A64A-088B79FA2BEF",
+              "street_fias_id": "F7661F0F-9A52-46C4-813C-10330A97B2F2",
+              "extra": "Вознесенский р-н, с. Полховский Майдан, ул. Молодежная, д. 116 [школа]",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, с. Полховский Майдан 116",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

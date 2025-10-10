@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 798715"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Чкаловский",
+            "settlement": "Гребнево",
+            "area": "Нижегородская область район",
+            "zip_code": 606540,
+            "street": "ул. Не указана",
+            "house": 7,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "D68CE670-1E96-44E6-A1E2-ACFEC9916EDB",
+            "settlement_fias_id": "10EBD1B2-DCE4-4B11-AACB-4D8234BE687E",
+            "area_fias_id": "D68CE670-1E96-44E6-A1E2-ACFEC9916EDB",
+            "house_fias_id": "D68CE670-1E96-44E6-A1E2-ACFEC9916EDB",
+            "street_fias_id": null,
+            "extra": "Original: p2=95, p3=1068, street=0",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Не указана 7",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

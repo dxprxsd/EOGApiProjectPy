@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 777851"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Краснобаковский",
+            "settlement": "Ветлужский",
+            "area": "Нижегородская область район",
+            "zip_code": 606710,
+            "street": "ул. Полевая",
+            "house": 33,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "DCD0FC48-CEB9-4818-9FE4-A63D4FA55AAD",
+            "settlement_fias_id": "AE189DFF-044B-439D-9ABA-9B79FAC142A1",
+            "area_fias_id": "DCD0FC48-CEB9-4818-9FE4-A63D4FA55AAD",
+            "house_fias_id": "DCD0FC48-CEB9-4818-9FE4-A63D4FA55AAD",
+            "street_fias_id": null,
+            "extra": "Original: p2=51, p3=774, street=6635",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Полевая 33",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

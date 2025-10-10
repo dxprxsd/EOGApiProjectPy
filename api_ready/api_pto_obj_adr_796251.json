@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 796251"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Уренский",
+            "settlement": "Заливная усадьба",
+            "area": "Нижегородская область район",
+            "zip_code": 606803,
+            "street": "ул. Береговая",
+            "house": 5,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "20A7D573-3461-484D-A0B5-CD9A12CFA7E4",
+            "settlement_fias_id": "168099CE-4DF5-4C22-9A82-2E626DFF30E0",
+            "area_fias_id": "20A7D573-3461-484D-A0B5-CD9A12CFA7E4",
+            "house_fias_id": "20A7D573-3461-484D-A0B5-CD9A12CFA7E4",
+            "street_fias_id": null,
+            "extra": "Original: p2=92, p3=1409, street=18393",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Береговая 5",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

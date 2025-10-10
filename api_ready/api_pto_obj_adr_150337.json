@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 150337"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Бор",
+            "settlement": "Ямново (Ямновский с/с)",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ул. Восточная",
+            "house": 36,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+            "settlement_fias_id": "D07980D8-0324-4FC0-AE94-5C0E83D5DC33",
+            "area_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+            "house_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+            "street_fias_id": null,
+            "extra": "Original: p2=13, p3=5246, street=15520",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Восточная 36",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 603142"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Сергач",
+            "settlement": "Радужный",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ул. Свободы",
+            "house": 4,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "EF4D5A83-C574-48D9-86EC-386F18BEC524",
+            "settlement_fias_id": "54E3B571-70FF-4BBC-997F-076FBB325A4A",
+            "area_fias_id": "EF4D5A83-C574-48D9-86EC-386F18BEC524",
+            "house_fias_id": "EF4D5A83-C574-48D9-86EC-386F18BEC524",
+            "street_fias_id": null,
+            "extra": "Original: p2=77, p3=5466, street=21792",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Свободы 4",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

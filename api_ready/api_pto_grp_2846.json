@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "ГРП"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Бутурлинский",
+            "settlement": "Бутурлинский",
+            "area": "Нижегородская область район",
+            "zip_code": 607440,
+            "street": "с. Большие Бакалды",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+            "settlement_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+            "area_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+            "house_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+            "street_fias_id": "9714B903-9E6C-482A-B994-058EDC0445F6",
+            "extra": "Бутурлинский р-н, с. Большие Бакалды",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, с. Большие Бакалды 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

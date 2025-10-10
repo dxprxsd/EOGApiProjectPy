@@ -1,7 +1,7 @@
 {
   "processing_summary": {
-    "total_objects_processed": 438896,
-    "processing_date": "2025-10-01T09:35:09.758078",
+    "total_objects_processed": 439472,
+    "processing_date": "2025-10-10T09:12:14.113348",
     "base_directory": "gas_objects",
     "tables_processed": [
       "pto_grp",

@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 597588",
-        "description": "Объект из pto_obj_adr. ID: 597588",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 597588,
-          "p2": 6,
-          "p3": 979,
-          "street": 2189,
-          "dom": 10,
-          "korpus": 0
-        }
+        "name": "Объект 597588"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Балахнинский",
               "settlement": "Гидроторф",
               "area": "Нижегородская область район",
-              "zip_code": "606407",
+              "zip_code": 606407,
               "street": "ул. Пушкина",
-              "house": "10",
+              "house": 10,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Пушкина 10",
+              "title": "Нижегородская область, ул. Пушкина 10",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 597588,
-    "created_at": "2025-10-01T08:45:35.925957",
+    "created_at": "2025-10-10T09:06:25.544464",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 597588"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Балахнинский",
+              "settlement": "Гидроторф",
+              "area": "Нижегородская область район",
+              "zip_code": 606407,
+              "street": "ул. Пушкина",
+              "house": 10,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "7E39F886-DA1D-41AE-A4CF-52B588024BD4",
+              "settlement_fias_id": "D1D28F0B-8436-4B92-BFD4-ADA6FD02D158",
+              "area_fias_id": "7E39F886-DA1D-41AE-A4CF-52B588024BD4",
+              "house_fias_id": "7E39F886-DA1D-41AE-A4CF-52B588024BD4",
+              "street_fias_id": null,
+              "extra": "Original: p2=6, p3=979, street=2189",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Пушкина 10",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

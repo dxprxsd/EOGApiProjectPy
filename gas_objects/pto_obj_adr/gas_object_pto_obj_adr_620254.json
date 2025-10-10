@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 620254",
-        "description": "Объект из pto_obj_adr. ID: 620254",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 620254,
-          "p2": 34,
-          "p3": 370,
-          "street": 5122,
-          "dom": 164,
-          "korpus": 0
-        }
+        "name": "Объект 620254"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Выкса",
               "settlement": "Ближне-Песочное",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Московская",
-              "house": "164",
+              "house": 164,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Московская 164",
+              "title": "Нижегородская область, ул. Московская 164",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 620254,
-    "created_at": "2025-10-01T08:49:08.426000",
+    "created_at": "2025-10-10T09:06:44.049629",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 620254"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Выкса",
+              "settlement": "Ближне-Песочное",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Московская",
+              "house": 164,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "D89942E8-E06B-46BD-A805-7CEC8F77417E",
+              "settlement_fias_id": "9642696C-1DB5-4EC3-85A1-CC8FB673D2BC",
+              "area_fias_id": "D89942E8-E06B-46BD-A805-7CEC8F77417E",
+              "house_fias_id": "D89942E8-E06B-46BD-A805-7CEC8F77417E",
+              "street_fias_id": null,
+              "extra": "Original: p2=34, p3=370, street=5122",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Московская 164",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

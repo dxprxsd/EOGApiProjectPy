@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 416774"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Большое Мурашкино",
+            "settlement": "Большое Мурашкино",
+            "area": "Нижегородская область район",
+            "zip_code": 606360,
+            "street": "ул. 1 Мая",
+            "house": 88,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "99B48D75-5CCC-434D-B4F6-19636A9A0428",
+            "settlement_fias_id": "99B48D75-5CCC-434D-B4F6-19636A9A0428",
+            "area_fias_id": "99B48D75-5CCC-434D-B4F6-19636A9A0428",
+            "house_fias_id": "99B48D75-5CCC-434D-B4F6-19636A9A0428",
+            "street_fias_id": null,
+            "extra": "Original: p2=12, p3=0, street=3053",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. 1 Мая 88",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

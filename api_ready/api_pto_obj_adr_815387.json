@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 815387"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Ворсма",
+            "settlement": "Сад N7 Надежда",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ул. Не указана",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "CD695C84-0B68-4D4C-8068-76E9BBA1228A",
+            "settlement_fias_id": "F64939EF-E533-47E1-A2F8-60A5F9A9B970",
+            "area_fias_id": "CD695C84-0B68-4D4C-8068-76E9BBA1228A",
+            "house_fias_id": "CD695C84-0B68-4D4C-8068-76E9BBA1228A",
+            "street_fias_id": null,
+            "extra": "Original: p2=31, p3=7104, street=0",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Не указана 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

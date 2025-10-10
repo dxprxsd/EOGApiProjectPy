@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 847247",
-        "description": "Объект из pto_obj_adr. ID: 847247",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 847247,
-          "p2": 42,
-          "p3": 1518,
-          "street": 6036,
-          "dom": 70,
-          "korpus": 0
-        }
+        "name": "Объект 847247"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Дальнеконстантиновский",
               "settlement": "Зубаниха",
               "area": "Нижегородская область район",
-              "zip_code": "606310",
+              "zip_code": 606310,
               "street": "ул. Дачная",
-              "house": "70",
+              "house": 70,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Дачная 70",
+              "title": "Нижегородская область, ул. Дачная 70",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 847247,
-    "created_at": "2025-10-01T09:32:05.402396",
+    "created_at": "2025-10-10T09:09:53.836203",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 847247"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Дальнеконстантиновский",
+              "settlement": "Зубаниха",
+              "area": "Нижегородская область район",
+              "zip_code": 606310,
+              "street": "ул. Дачная",
+              "house": 70,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "B933CEEA-DC46-4B0D-9DF6-7C9D175580F8",
+              "settlement_fias_id": "C9CD6F40-44CE-4F1F-B851-6502EC524529",
+              "area_fias_id": "B933CEEA-DC46-4B0D-9DF6-7C9D175580F8",
+              "house_fias_id": "B933CEEA-DC46-4B0D-9DF6-7C9D175580F8",
+              "street_fias_id": null,
+              "extra": "Original: p2=42, p3=1518, street=6036",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Дачная 70",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

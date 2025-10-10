@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 786580",
-        "description": "Объект из pto_obj_adr. ID: 786580",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 786580,
-          "p2": 33,
-          "p3": 0,
-          "street": 4653,
-          "dom": 89,
-          "korpus": 0
-        }
+        "name": "Объект 786580"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Воскресенское",
               "settlement": "Воскресенское",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Ленина",
-              "house": "89",
+              "house": 89,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Ленина 89",
+              "title": "Нижегородская область, ул. Ленина 89",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 786580,
-    "created_at": "2025-10-01T09:23:15.021148",
+    "created_at": "2025-10-10T09:08:31.196352",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 786580"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Воскресенское",
+              "settlement": "Воскресенское",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Ленина",
+              "house": 89,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "6CACA32E-A066-43C5-AA81-A03903708D89",
+              "settlement_fias_id": "6CACA32E-A066-43C5-AA81-A03903708D89",
+              "area_fias_id": "6CACA32E-A066-43C5-AA81-A03903708D89",
+              "house_fias_id": "6CACA32E-A066-43C5-AA81-A03903708D89",
+              "street_fias_id": null,
+              "extra": "Original: p2=33, p3=0, street=4653",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Ленина 89",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

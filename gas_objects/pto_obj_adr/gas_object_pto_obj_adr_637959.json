@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 637959",
-        "description": "Объект из pto_obj_adr. ID: 637959",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 637959,
-          "p2": 17,
-          "p3": 0,
-          "street": 14525,
-          "dom": 6,
-          "korpus": 1
-        }
+        "name": "Объект 637959"
       },
       "relationships": {
         "address": {
@@ -27,10 +15,10 @@
               "city": "Вад",
               "settlement": "Вад",
               "area": "Нижегородская область район",
-              "zip_code": "606380",
+              "zip_code": 606380,
               "street": "ул. Подводника Горбунова",
-              "house": "6",
-              "block": "1",
+              "house": 6,
+              "block": 1,
               "flat": 123,
               "room": 3,
               "region_fias_id": "region_52",
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Подводника Горбунова 6",
+              "title": "Нижегородская область, ул. Подводника Горбунова 6",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 637959,
-    "created_at": "2025-10-01T08:52:08.805998",
+    "created_at": "2025-10-10T09:07:02.006642",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 637959"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Вад",
+              "settlement": "Вад",
+              "area": "Нижегородская область район",
+              "zip_code": 606380,
+              "street": "ул. Подводника Горбунова",
+              "house": 6,
+              "block": 1,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "A1F1042C-D385-4D66-A06C-C5027F9ED1FB",
+              "settlement_fias_id": "A1F1042C-D385-4D66-A06C-C5027F9ED1FB",
+              "area_fias_id": "A1F1042C-D385-4D66-A06C-C5027F9ED1FB",
+              "house_fias_id": "A1F1042C-D385-4D66-A06C-C5027F9ED1FB",
+              "street_fias_id": null,
+              "extra": "Original: p2=17, p3=0, street=14525",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Подводника Горбунова 6",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

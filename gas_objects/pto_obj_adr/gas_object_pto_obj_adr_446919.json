@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 446919",
-        "description": "Объект из pto_obj_adr. ID: 446919",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 446919,
-          "p2": 71,
-          "p3": 3494,
-          "street": 17264,
-          "dom": 41,
-          "korpus": 0
-        }
+        "name": "Объект 446919"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Пильнинский",
               "settlement": "Петряксы",
               "area": "Нижегородская область район",
-              "zip_code": "607491",
+              "zip_code": 607491,
               "street": "ул. Комсомольская",
-              "house": "41",
+              "house": 41,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Комсомольская 41",
+              "title": "Нижегородская область, ул. Комсомольская 41",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 446919,
-    "created_at": "2025-10-01T08:29:42.055240",
+    "created_at": "2025-10-10T09:04:13.061670",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 446919"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Пильнинский",
+              "settlement": "Петряксы",
+              "area": "Нижегородская область район",
+              "zip_code": 607491,
+              "street": "ул. Комсомольская",
+              "house": 41,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+              "settlement_fias_id": "D1EEE939-3D00-4B8C-AD80-57FE04DE38F6",
+              "area_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+              "house_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+              "street_fias_id": null,
+              "extra": "Original: p2=71, p3=3494, street=17264",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Комсомольская 41",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

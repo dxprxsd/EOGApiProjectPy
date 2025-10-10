@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 811684",
-        "description": "Объект из pto_obj_adr. ID: 811684",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 811684,
-          "p2": 16,
-          "p3": 2062,
-          "street": 3683,
-          "dom": 1,
-          "korpus": 0
-        }
+        "name": "Объект 811684"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Бутурлинский",
               "settlement": "Красная Глинка",
               "area": "Нижегородская область район",
-              "zip_code": "607440",
+              "zip_code": 607440,
               "street": "ул. Залесная",
-              "house": "1",
+              "house": 1,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Залесная 1",
+              "title": "Нижегородская область, ул. Залесная 1",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 811684,
-    "created_at": "2025-10-01T09:26:07.043220",
+    "created_at": "2025-10-10T09:09:07.208040",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 811684"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Бутурлинский",
+              "settlement": "Красная Глинка",
+              "area": "Нижегородская область район",
+              "zip_code": 607440,
+              "street": "ул. Залесная",
+              "house": 1,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "settlement_fias_id": "FA72A2BF-429C-4DE5-8B46-945571715370",
+              "area_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "house_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "street_fias_id": null,
+              "extra": "Original: p2=16, p3=2062, street=3683",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Залесная 1",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

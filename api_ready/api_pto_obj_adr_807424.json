@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 807424"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Починковский",
+            "settlement": "Пенькозавода",
+            "area": "Нижегородская область район",
+            "zip_code": 607911,
+            "street": "ул. Заводская",
+            "house": 1,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+            "settlement_fias_id": "9927C6B9-62DC-40D7-BA09-E6311F7C1DB9",
+            "area_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+            "house_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+            "street_fias_id": null,
+            "extra": "Original: p2=73, p3=3430, street=13069",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Заводская 1",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

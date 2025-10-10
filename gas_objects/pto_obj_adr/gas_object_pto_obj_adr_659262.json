@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 659262",
-        "description": "Объект из pto_obj_adr. ID: 659262",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 659262,
-          "p2": 61,
-          "p3": 3265,
-          "street": 16864,
-          "dom": 11,
-          "korpus": 0
-        }
+        "name": "Объект 659262"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Лысковский",
               "settlement": "Окинино",
               "area": "Нижегородская область район",
-              "zip_code": "606212",
+              "zip_code": 606212,
               "street": "ул. Венецкая",
-              "house": "11",
+              "house": 11,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Венецкая 11",
+              "title": "Нижегородская область, ул. Венецкая 11",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 659262,
-    "created_at": "2025-10-01T09:01:56.086432",
+    "created_at": "2025-10-10T09:07:22.653679",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 659262"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Лысковский",
+              "settlement": "Окинино",
+              "area": "Нижегородская область район",
+              "zip_code": 606212,
+              "street": "ул. Венецкая",
+              "house": 11,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "2DD692C1-FC95-41A2-86A1-6A83F47914FE",
+              "settlement_fias_id": "7583D601-A66A-4845-854E-4DF849DB87F3",
+              "area_fias_id": "2DD692C1-FC95-41A2-86A1-6A83F47914FE",
+              "house_fias_id": "2DD692C1-FC95-41A2-86A1-6A83F47914FE",
+              "street_fias_id": null,
+              "extra": "Original: p2=61, p3=3265, street=16864",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Венецкая 11",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

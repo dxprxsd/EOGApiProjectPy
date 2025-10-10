@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 513958",
-        "description": "Объект из pto_obj_adr. ID: 513958",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 513958,
-          "p2": 31,
-          "p3": 0,
-          "street": 14087,
-          "dom": 0,
-          "korpus": 0
-        }
+        "name": "Объект 513958"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Ворсма",
               "settlement": "Ворсма",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. 2-я Пятилетка",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул 2-я Пятилетка 0",
+              "title": "Нижегородская область, ул. 2-я Пятилетка 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 513958,
-    "created_at": "2025-10-01T08:36:07.656467",
+    "created_at": "2025-10-10T09:05:08.009291",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 513958"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Ворсма",
+              "settlement": "Ворсма",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. 2-я Пятилетка",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "CD695C84-0B68-4D4C-8068-76E9BBA1228A",
+              "settlement_fias_id": "CD695C84-0B68-4D4C-8068-76E9BBA1228A",
+              "area_fias_id": "CD695C84-0B68-4D4C-8068-76E9BBA1228A",
+              "house_fias_id": "CD695C84-0B68-4D4C-8068-76E9BBA1228A",
+              "street_fias_id": null,
+              "extra": "Original: p2=31, p3=0, street=14087",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. 2-я Пятилетка 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

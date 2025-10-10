@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 789699",
-        "description": "Объект из pto_obj_adr. ID: 789699",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 789699,
-          "p2": 50,
-          "p3": 3168,
-          "street": 0,
-          "dom": 27,
-          "korpus": 0
-        }
+        "name": "Объект 789699"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Ковернинский",
               "settlement": "Новопокровское",
               "area": "Нижегородская область район",
-              "zip_code": "606570",
+              "zip_code": 606570,
               "street": "ул. Не указана",
-              "house": "27",
+              "house": 27,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул None 27",
+              "title": "Нижегородская область, ул. Не указана 27",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 789699,
-    "created_at": "2025-10-01T09:23:41.907791",
+    "created_at": "2025-10-10T09:08:40.104974",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 789699"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Ковернинский",
+              "settlement": "Новопокровское",
+              "area": "Нижегородская область район",
+              "zip_code": 606570,
+              "street": "ул. Не указана",
+              "house": 27,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+              "settlement_fias_id": "BC11CE18-3928-45D2-91C1-476FEAF723AF",
+              "area_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+              "house_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+              "street_fias_id": null,
+              "extra": "Original: p2=50, p3=3168, street=0",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Не указана 27",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

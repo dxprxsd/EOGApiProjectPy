@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 715737"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Починковский",
+            "settlement": "Пеля-Хованская",
+            "area": "Нижегородская область район",
+            "zip_code": 607911,
+            "street": "ул. Центральная",
+            "house": 4,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+            "settlement_fias_id": "9FFF4D7A-22F5-4636-AE1E-FA2DD240CF0C",
+            "area_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+            "house_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+            "street_fias_id": null,
+            "extra": "Original: p2=73, p3=3428, street=9352",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Центральная 4",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

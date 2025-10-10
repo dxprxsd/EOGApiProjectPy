@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 443821"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Лукояновский",
+            "settlement": "Елфимово",
+            "area": "Нижегородская область район",
+            "zip_code": 607800,
+            "street": "ул. Советская",
+            "house": 129,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+            "settlement_fias_id": "D8515BA5-B90B-46D9-82D7-6687D6A4BC81",
+            "area_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+            "house_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+            "street_fias_id": null,
+            "extra": "Original: p2=59, p3=1295, street=7496",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Советская 129",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

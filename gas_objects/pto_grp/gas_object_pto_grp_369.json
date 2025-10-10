@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ПШ-04-05-00-00",
-        "description": "Объект газификации из базы данных. ID: 369",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 369,
-          "original_address": "Богородский р-н, д. Полец, ул. 40 лет Победы [ШРП №105]"
-        }
+        "name": "ПШ-04-05-00-00"
       },
       "relationships": {
         "address": {
@@ -23,9 +15,9 @@
               "city": "Богородский",
               "settlement": "Богородский",
               "area": "Нижегородская область район",
-              "zip_code": "607600",
+              "zip_code": 607600,
               "street": "д. Полец",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Полец 0",
+              "title": "Нижегородская область, д. Полец 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 369,
-    "created_at": "2025-10-01T08:25:32.947718",
+    "created_at": "2025-10-10T09:03:20.087074",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ПШ-04-05-00-00"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Богородский",
+              "settlement": "Богородский",
+              "area": "Нижегородская область район",
+              "zip_code": 607600,
+              "street": "д. Полец",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+              "settlement_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+              "area_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+              "house_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+              "street_fias_id": "2C29592E-CEB9-4391-92F4-88B35EACE213",
+              "extra": "Богородский р-н, д. Полец, ул. 40 лет Победы [ШРП №105]",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, д. Полец 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 633223"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Спасский",
+            "settlement": "Турбанка",
+            "area": "Нижегородская область район",
+            "zip_code": 606280,
+            "street": "ул. Нагорная",
+            "house": 87,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+            "settlement_fias_id": "0BA2EE84-B0A3-4123-A459-0C30E652BB8B",
+            "area_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+            "house_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+            "street_fias_id": null,
+            "extra": "Original: p2=85, p3=4623, street=18142",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Нагорная 87",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

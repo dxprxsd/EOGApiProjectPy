@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 540079"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Гагинский",
+            "settlement": "Ушаково",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ул. Галкина",
+            "house": 159,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "E763B10E-27C8-4995-B39E-55823AA4FFEF",
+            "settlement_fias_id": "642BEEFA-3B45-4531-A0E0-FDAEDE3F3A03",
+            "area_fias_id": "E763B10E-27C8-4995-B39E-55823AA4FFEF",
+            "house_fias_id": "E763B10E-27C8-4995-B39E-55823AA4FFEF",
+            "street_fias_id": null,
+            "extra": "Original: p2=37, p3=4715, street=16316",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Галкина 159",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

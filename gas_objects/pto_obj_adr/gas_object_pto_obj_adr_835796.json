@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 835796",
-        "description": "Объект из pto_obj_adr. ID: 835796",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 835796,
-          "p2": 16,
-          "p3": 4491,
-          "street": 15595,
-          "dom": 0,
-          "korpus": 0
-        }
+        "name": "Объект 835796"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Бутурлинский",
               "settlement": "Тарталей",
               "area": "Нижегородская область район",
-              "zip_code": "607440",
+              "zip_code": 607440,
               "street": "ул. Отвод",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Отвод 0",
+              "title": "Нижегородская область, ул. Отвод 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 835796,
-    "created_at": "2025-10-01T09:30:42.376631",
+    "created_at": "2025-10-10T09:09:50.582752",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 835796"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Бутурлинский",
+              "settlement": "Тарталей",
+              "area": "Нижегородская область район",
+              "zip_code": 607440,
+              "street": "ул. Отвод",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "settlement_fias_id": "D99516CF-3C9E-43DA-9F3C-5382C1FBAF40",
+              "area_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "house_fias_id": "6CA8B9BE-573C-4F46-81BF-0A80A02D7FAF",
+              "street_fias_id": null,
+              "extra": "Original: p2=16, p3=4491, street=15595",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Отвод 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

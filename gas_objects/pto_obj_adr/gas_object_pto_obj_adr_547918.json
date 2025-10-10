@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 547918",
-        "description": "Объект из pto_obj_adr. ID: 547918",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 547918,
-          "p2": 2,
-          "p3": 1371,
-          "street": 12455,
-          "dom": 0,
-          "korpus": 0
-        }
+        "name": "Объект 547918"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Ардатовский",
               "settlement": "Журелейка",
               "area": "Нижегородская область район",
-              "zip_code": "607130",
+              "zip_code": 607130,
               "street": "ул. Садовая",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Садовая 0",
+              "title": "Нижегородская область, ул. Садовая 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 547918,
-    "created_at": "2025-10-01T08:39:50.205163",
+    "created_at": "2025-10-10T09:05:32.804601",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 547918"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Ардатовский",
+              "settlement": "Журелейка",
+              "area": "Нижегородская область район",
+              "zip_code": 607130,
+              "street": "ул. Садовая",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+              "settlement_fias_id": "13C46DAD-F641-4CFC-8F0E-4088E53E8F0B",
+              "area_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+              "house_fias_id": "DAB8EBDF-5F74-480A-809E-FCA52235CEEF",
+              "street_fias_id": null,
+              "extra": "Original: p2=2, p3=1371, street=12455",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Садовая 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

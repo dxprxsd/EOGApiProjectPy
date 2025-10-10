@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 621691"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Воротынский",
+            "settlement": "Фокино",
+            "area": "Нижегородская область район",
+            "zip_code": 606260,
+            "street": "ул. К. Маркса",
+            "house": 18,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+            "settlement_fias_id": "874D7DA2-636F-4D96-BE7A-A9DE9E5B30E8",
+            "area_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+            "house_fias_id": "ADE15287-F6FF-42D2-9A77-34015F62E812",
+            "street_fias_id": null,
+            "extra": "Original: p2=30, p3=4769, street=4548",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. К. Маркса 18",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

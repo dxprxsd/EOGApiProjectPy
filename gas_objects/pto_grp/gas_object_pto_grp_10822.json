@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ГРПШ- 290",
-        "description": "Объект газификации из базы данных. ID: 10822",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 10822,
-          "original_address": "г. Городец, ул. Коммунальная [кад. 52:15:0080105:1594, ..1595,..1596,..1597,..1599,..1602,..1603,..1604,..1605,..1606,..1610,..161]"
-        }
+        "name": "ГРПШ- 290"
       },
       "relationships": {
         "address": {
@@ -22,16 +14,16 @@
               "region": null,
               "city": null,
               "settlement": null,
-              "area": "Октябрьский район",
-              "zip_code": "0",
+              "area": "Октябрьский",
+              "zip_code": 0,
               "street": "ул. Не указана",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
               "region_fias_id": "region_0",
-              "city_fias_id": null,
-              "settlement_fias_id": null,
+              "city_fias_id": "f6e148a1-c9d0-4141-a608-93e3bd95e6c4",
+              "settlement_fias_id": "f6e148a1-c9d0-4141-a608-93e3bd95e6c4",
               "area_fias_id": "f6e148a1-c9d0-4141-a608-93e3bd95e6c4",
               "house_fias_id": "f6e148a1-c9d0-4141-a608-93e3bd95e6c4",
               "street_fias_id": null,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "МСК, ул None 0",
+              "title": "None, ул. Не указана 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 10822,
-    "created_at": "2025-10-01T08:25:36.812615",
+    "created_at": "2025-10-10T09:03:22.237271",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ГРПШ- 290"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": null,
+              "city": null,
+              "settlement": null,
+              "area": "Октябрьский",
+              "zip_code": 0,
+              "street": "ул. Не указана",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_0",
+              "city_fias_id": "f6e148a1-c9d0-4141-a608-93e3bd95e6c4",
+              "settlement_fias_id": "f6e148a1-c9d0-4141-a608-93e3bd95e6c4",
+              "area_fias_id": "f6e148a1-c9d0-4141-a608-93e3bd95e6c4",
+              "house_fias_id": "f6e148a1-c9d0-4141-a608-93e3bd95e6c4",
+              "street_fias_id": null,
+              "extra": "г. Городец, ул. Коммунальная [кад. 52:15:0080105:1594, ..1595,..1596,..1597,..1599,..1602,..1603,..1604,..1605,..1606,..1610,..161]",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "None, ул. Не указана 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 485352",
-        "description": "Объект из pto_obj_adr. ID: 485352",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 485352,
-          "p2": 6,
-          "p3": 5050,
-          "street": 0,
-          "dom": 101,
-          "korpus": 0
-        }
+        "name": "Объект 485352"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Балахнинский",
               "settlement": "Шеляухово",
               "area": "Нижегородская область район",
-              "zip_code": "606407",
+              "zip_code": 606407,
               "street": "ул. Не указана",
-              "house": "101",
+              "house": 101,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул None 101",
+              "title": "Нижегородская область, ул. Не указана 101",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 485352,
-    "created_at": "2025-10-01T08:33:34.673489",
+    "created_at": "2025-10-10T09:04:47.141256",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 485352"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Балахнинский",
+              "settlement": "Шеляухово",
+              "area": "Нижегородская область район",
+              "zip_code": 606407,
+              "street": "ул. Не указана",
+              "house": 101,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "7E39F886-DA1D-41AE-A4CF-52B588024BD4",
+              "settlement_fias_id": "7510BDB8-DB6D-4996-8E61-3FCD8D955D17",
+              "area_fias_id": "7E39F886-DA1D-41AE-A4CF-52B588024BD4",
+              "house_fias_id": "7E39F886-DA1D-41AE-A4CF-52B588024BD4",
+              "street_fias_id": null,
+              "extra": "Original: p2=6, p3=5050, street=0",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Не указана 101",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

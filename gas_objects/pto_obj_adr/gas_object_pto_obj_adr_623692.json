@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 623692",
-        "description": "Объект из pto_obj_adr. ID: 623692",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 623692,
-          "p2": 10,
-          "p3": 3871,
-          "street": 11866,
-          "dom": 15,
-          "korpus": 0
-        }
+        "name": "Объект 623692"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Большемурашкинский",
               "settlement": "Рождествено",
               "area": "Нижегородская область район",
-              "zip_code": "606360",
+              "zip_code": 606360,
               "street": "ул. Рождественская",
-              "house": "15",
+              "house": 15,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Рождественская 15",
+              "title": "Нижегородская область, ул. Рождественская 15",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 623692,
-    "created_at": "2025-10-01T08:49:24.040039",
+    "created_at": "2025-10-10T09:06:45.004067",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 623692"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Большемурашкинский",
+              "settlement": "Рождествено",
+              "area": "Нижегородская область район",
+              "zip_code": 606360,
+              "street": "ул. Рождественская",
+              "house": 15,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+              "settlement_fias_id": "98DC2412-CC41-4D8B-AF3C-FBA1C93EECEA",
+              "area_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+              "house_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+              "street_fias_id": null,
+              "extra": "Original: p2=10, p3=3871, street=11866",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Рождественская 15",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

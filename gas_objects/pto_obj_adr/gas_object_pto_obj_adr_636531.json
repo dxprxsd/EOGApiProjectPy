@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 636531",
-        "description": "Объект из pto_obj_adr. ID: 636531",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 636531,
-          "p2": 22,
-          "p3": 308,
-          "street": 11886,
-          "dom": 3,
-          "korpus": 0
-        }
+        "name": "Объект 636531"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Вачский",
               "settlement": "Беляйково",
               "area": "Нижегородская область район",
-              "zip_code": "606150",
+              "zip_code": 606150,
               "street": "ул. Молодежная",
-              "house": "3",
+              "house": 3,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Молодежная 3",
+              "title": "Нижегородская область, ул. Молодежная 3",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 636531,
-    "created_at": "2025-10-01T08:51:29.034794",
+    "created_at": "2025-10-10T09:06:54.342699",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 636531"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Вачский",
+              "settlement": "Беляйково",
+              "area": "Нижегородская область район",
+              "zip_code": 606150,
+              "street": "ул. Молодежная",
+              "house": 3,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "7FB15EF9-7A81-401A-81EF-4D46F0582983",
+              "settlement_fias_id": "0F30341F-9869-49C9-B03A-7608A54A8BFD",
+              "area_fias_id": "7FB15EF9-7A81-401A-81EF-4D46F0582983",
+              "house_fias_id": "7FB15EF9-7A81-401A-81EF-4D46F0582983",
+              "street_fias_id": null,
+              "extra": "Original: p2=22, p3=308, street=11886",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Молодежная 3",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

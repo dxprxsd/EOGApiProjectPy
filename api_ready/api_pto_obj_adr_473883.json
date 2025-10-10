@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 473883"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Гагинский",
+            "settlement": "Моисеевка",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ул. Школьная",
+            "house": 4,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "E763B10E-27C8-4995-B39E-55823AA4FFEF",
+            "settlement_fias_id": "13A1EC1C-F08D-4AE7-B123-138B7E6AA9D8",
+            "area_fias_id": "E763B10E-27C8-4995-B39E-55823AA4FFEF",
+            "house_fias_id": "E763B10E-27C8-4995-B39E-55823AA4FFEF",
+            "street_fias_id": null,
+            "extra": "Original: p2=37, p3=2884, street=16228",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Школьная 4",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

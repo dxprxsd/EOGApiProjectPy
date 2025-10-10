@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 588094",
-        "description": "Объект из pto_obj_adr. ID: 588094",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 588094,
-          "p2": 29,
-          "p3": 0,
-          "street": 4443,
-          "dom": 24,
-          "korpus": 0
-        }
+        "name": "Объект 588094"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Воротынец",
               "settlement": "Воротынец",
               "area": "Нижегородская область район",
-              "zip_code": "606260",
+              "zip_code": 606260,
               "street": "ул. Малова",
-              "house": "24",
+              "house": 24,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Малова 24",
+              "title": "Нижегородская область, ул. Малова 24",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 588094,
-    "created_at": "2025-10-01T08:44:55.224064",
+    "created_at": "2025-10-10T09:06:18.874709",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 588094"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Воротынец",
+              "settlement": "Воротынец",
+              "area": "Нижегородская область район",
+              "zip_code": 606260,
+              "street": "ул. Малова",
+              "house": 24,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "C6773A1A-6F19-4C29-9CCA-77BF293F351E",
+              "settlement_fias_id": "C6773A1A-6F19-4C29-9CCA-77BF293F351E",
+              "area_fias_id": "C6773A1A-6F19-4C29-9CCA-77BF293F351E",
+              "house_fias_id": "C6773A1A-6F19-4C29-9CCA-77BF293F351E",
+              "street_fias_id": null,
+              "extra": "Original: p2=29, p3=0, street=4443",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Малова 24",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

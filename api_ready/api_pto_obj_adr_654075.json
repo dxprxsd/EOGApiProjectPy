@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 654075"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Дальнеконстантиновский",
+            "settlement": "Румянцево",
+            "area": "Нижегородская область район",
+            "zip_code": 606310,
+            "street": "ул. Зеленая",
+            "house": 6,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "B933CEEA-DC46-4B0D-9DF6-7C9D175580F8",
+            "settlement_fias_id": "3411FA9F-3471-4447-BCE8-064B52044733",
+            "area_fias_id": "B933CEEA-DC46-4B0D-9DF6-7C9D175580F8",
+            "house_fias_id": "B933CEEA-DC46-4B0D-9DF6-7C9D175580F8",
+            "street_fias_id": null,
+            "extra": "Original: p2=42, p3=3905, street=6078",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Зеленая 6",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

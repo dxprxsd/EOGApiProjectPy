@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 639469",
-        "description": "Объект из pto_obj_adr. ID: 639469",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 639469,
-          "p2": 10,
-          "p3": 4102,
-          "street": 12884,
-          "dom": 34,
-          "korpus": 1
-        }
+        "name": "Объект 639469"
       },
       "relationships": {
         "address": {
@@ -27,10 +15,10 @@
               "city": "Большемурашкинский",
               "settlement": "Синцово",
               "area": "Нижегородская область район",
-              "zip_code": "606360",
+              "zip_code": 606360,
               "street": "ул. Лесная",
-              "house": "34",
-              "block": "1",
+              "house": 34,
+              "block": 1,
               "flat": 123,
               "room": 3,
               "region_fias_id": "region_52",
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Лесная 34",
+              "title": "Нижегородская область, ул. Лесная 34",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 639469,
-    "created_at": "2025-10-01T08:52:27.914146",
+    "created_at": "2025-10-10T09:07:02.467185",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 639469"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Большемурашкинский",
+              "settlement": "Синцово",
+              "area": "Нижегородская область район",
+              "zip_code": 606360,
+              "street": "ул. Лесная",
+              "house": 34,
+              "block": 1,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+              "settlement_fias_id": "7D8FB8AD-3EE3-4519-AE5E-00F800CD2117",
+              "area_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+              "house_fias_id": "172CF232-35D8-4893-9455-C18D7A4E7CBE",
+              "street_fias_id": null,
+              "extra": "Original: p2=10, p3=4102, street=12884",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Лесная 34",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

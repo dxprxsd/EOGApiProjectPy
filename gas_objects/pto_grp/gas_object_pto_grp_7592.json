@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "04-40-0-0009",
-        "description": "Объект газификации из базы данных. ID: 7592",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 7592,
-          "original_address": "г. Бор, Стеклозаводское ш., д. 1 корп. 10"
-        }
+        "name": "04-40-0-0009"
       },
       "relationships": {
         "address": {
@@ -23,10 +15,10 @@
               "city": "Бор",
               "settlement": "Бор",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Не указана",
-              "house": "1",
-              "block": "10",
+              "house": 1,
+              "block": 10,
               "flat": 123,
               "room": 3,
               "region_fias_id": "region_52",
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул None 1",
+              "title": "Нижегородская область, ул. Не указана 1",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 7592,
-    "created_at": "2025-10-01T08:25:35.473501",
+    "created_at": "2025-10-10T09:03:21.679566",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "04-40-0-0009"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Бор",
+              "settlement": "Бор",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Не указана",
+              "house": 1,
+              "block": 10,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "settlement_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "area_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "house_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+              "street_fias_id": null,
+              "extra": "г. Бор, Стеклозаводское ш., д. 1 корп. 10",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Не указана 1",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

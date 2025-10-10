@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 659084",
-        "description": "Объект из pto_obj_adr. ID: 659084",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 659084,
-          "p2": 36,
-          "p3": 0,
-          "street": 5477,
-          "dom": 13,
-          "korpus": 0
-        }
+        "name": "Объект 659084"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Гагино",
               "settlement": "Гагино",
               "area": "Нижегородская область район",
-              "zip_code": "607870",
+              "zip_code": 607870,
               "street": "ул. Коммунистическая",
-              "house": "13",
+              "house": 13,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Коммунистическая 13",
+              "title": "Нижегородская область, ул. Коммунистическая 13",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 659084,
-    "created_at": "2025-10-01T09:01:56.056207",
+    "created_at": "2025-10-10T09:07:22.605842",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 659084"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Гагино",
+              "settlement": "Гагино",
+              "area": "Нижегородская область район",
+              "zip_code": 607870,
+              "street": "ул. Коммунистическая",
+              "house": 13,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "9B53CE62-EA75-45BA-A6F1-FD51B2F6F192",
+              "settlement_fias_id": "9B53CE62-EA75-45BA-A6F1-FD51B2F6F192",
+              "area_fias_id": "9B53CE62-EA75-45BA-A6F1-FD51B2F6F192",
+              "house_fias_id": "9B53CE62-EA75-45BA-A6F1-FD51B2F6F192",
+              "street_fias_id": null,
+              "extra": "Original: p2=36, p3=0, street=5477",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Коммунистическая 13",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

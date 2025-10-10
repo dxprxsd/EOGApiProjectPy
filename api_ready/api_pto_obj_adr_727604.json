@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 727604"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Вадский",
+            "settlement": "Анненковский Карьер",
+            "area": "Нижегородская область район",
+            "zip_code": 606380,
+            "street": "ул. Центральная",
+            "house": 3,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "F094D1FD-709B-4D74-8AD9-3BD85C05AE6F",
+            "settlement_fias_id": "53A104F4-7C84-4744-886F-D34099DB9E18",
+            "area_fias_id": "F094D1FD-709B-4D74-8AD9-3BD85C05AE6F",
+            "house_fias_id": "F094D1FD-709B-4D74-8AD9-3BD85C05AE6F",
+            "street_fias_id": null,
+            "extra": "Original: p2=18, p3=107, street=3779",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Центральная 3",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

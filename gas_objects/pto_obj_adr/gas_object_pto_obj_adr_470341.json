@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 470341",
-        "description": "Объект из pto_obj_adr. ID: 470341",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 470341,
-          "p2": 85,
-          "p3": 3207,
-          "street": 10225,
-          "dom": 1,
-          "korpus": 1
-        }
+        "name": "Объект 470341"
       },
       "relationships": {
         "address": {
@@ -27,10 +15,10 @@
               "city": "Спасский",
               "settlement": "Новый Усад",
               "area": "Нижегородская область район",
-              "zip_code": "606280",
+              "zip_code": 606280,
               "street": "ул. Школьная",
-              "house": "1",
-              "block": "1",
+              "house": 1,
+              "block": 1,
               "flat": 123,
               "room": 3,
               "region_fias_id": "region_52",
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Школьная 1",
+              "title": "Нижегородская область, ул. Школьная 1",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 470341,
-    "created_at": "2025-10-01T08:31:27.927538",
+    "created_at": "2025-10-10T09:04:28.078535",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 470341"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Спасский",
+              "settlement": "Новый Усад",
+              "area": "Нижегородская область район",
+              "zip_code": 606280,
+              "street": "ул. Школьная",
+              "house": 1,
+              "block": 1,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "settlement_fias_id": "33FFD270-0523-4BF4-94FD-2CB03D857300",
+              "area_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "house_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "street_fias_id": null,
+              "extra": "Original: p2=85, p3=3207, street=10225",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Школьная 1",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

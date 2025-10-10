@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 386366"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Сергачский",
+            "settlement": "Андреевка",
+            "area": "Нижегородская область район",
+            "zip_code": 607510,
+            "street": "ул. М. Саберова",
+            "house": 24,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "22D4D9B6-F15F-4D2E-A183-EA4A4CC21D77",
+            "settlement_fias_id": "F27A8E03-F573-47D2-A55D-FFE7858D4415",
+            "area_fias_id": "22D4D9B6-F15F-4D2E-A183-EA4A4CC21D77",
+            "house_fias_id": "22D4D9B6-F15F-4D2E-A183-EA4A4CC21D77",
+            "street_fias_id": null,
+            "extra": "Original: p2=78, p3=85, street=17506",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. М. Саберова 24",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

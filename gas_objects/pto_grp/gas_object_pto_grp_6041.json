@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ШРП-30Слоп.Прих",
-        "description": "Объект газификации из базы данных. ID: 6041",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 6041,
-          "original_address": "Кстовский р-н, д. Слопинец, д. 4Б [ШРП №30 к ж.д.4-Б Приходько Г.Г.]"
-        }
+        "name": "ШРП-30Слоп.Прих"
       },
       "relationships": {
         "address": {
@@ -23,10 +15,10 @@
               "city": "Кстовский",
               "settlement": "Кстовский",
               "area": "Нижегородская область район",
-              "zip_code": "607650",
+              "zip_code": 607650,
               "street": "д. Слопинец",
-              "house": "4",
-              "block": "-Б",
+              "house": 4,
+              "block": null,
               "flat": 123,
               "room": 3,
               "region_fias_id": "region_52",
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Слопинец 4",
+              "title": "Нижегородская область, д. Слопинец 4",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 6041,
-    "created_at": "2025-10-01T08:25:35.017825",
+    "created_at": "2025-10-10T09:03:21.377316",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП-30Слоп.Прих"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Кстовский",
+              "settlement": "Кстовский",
+              "area": "Нижегородская область район",
+              "zip_code": 607650,
+              "street": "д. Слопинец",
+              "house": 4,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "settlement_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "area_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "house_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "street_fias_id": "8733A89D-4385-4E70-BA87-B632857F7B06",
+              "extra": "Кстовский р-н, д. Слопинец, д. 4Б [ШРП №30 к ж.д.4-Б Приходько Г.Г.]",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, д. Слопинец 4",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

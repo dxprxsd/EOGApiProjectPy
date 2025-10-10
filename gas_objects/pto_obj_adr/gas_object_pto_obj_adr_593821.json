@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 593821",
-        "description": "Объект из pto_obj_adr. ID: 593821",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 593821,
-          "p2": 75,
-          "p3": 4439,
-          "street": 9460,
-          "dom": 14,
-          "korpus": 0
-        }
+        "name": "Объект 593821"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Семенов",
               "settlement": "Сухобезводное",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Лесная",
-              "house": "14",
+              "house": 14,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Лесная 14",
+              "title": "Нижегородская область, ул. Лесная 14",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 593821,
-    "created_at": "2025-10-01T08:45:21.329570",
+    "created_at": "2025-10-10T09:06:24.506793",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 593821"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Семенов",
+              "settlement": "Сухобезводное",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Лесная",
+              "house": 14,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "DACC69B0-38DF-462E-B346-26541CB9C0B8",
+              "settlement_fias_id": "8FE0E901-0313-4EE6-84D9-C6E7A5EA1F85",
+              "area_fias_id": "DACC69B0-38DF-462E-B346-26541CB9C0B8",
+              "house_fias_id": "DACC69B0-38DF-462E-B346-26541CB9C0B8",
+              "street_fias_id": null,
+              "extra": "Original: p2=75, p3=4439, street=9460",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Лесная 14",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

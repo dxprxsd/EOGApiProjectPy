@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 796238",
-        "description": "Объект из pto_obj_adr. ID: 796238",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 796238,
-          "p2": 61,
-          "p3": 4928,
-          "street": 7898,
-          "dom": 25,
-          "korpus": 0
-        }
+        "name": "Объект 796238"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Лысковский",
               "settlement": "Чернуха",
               "area": "Нижегородская область район",
-              "zip_code": "606212",
+              "zip_code": 606212,
               "street": "ул. Буренино",
-              "house": "25",
+              "house": 25,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Буренино 25",
+              "title": "Нижегородская область, ул. Буренино 25",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 796238,
-    "created_at": "2025-10-01T09:24:25.051625",
+    "created_at": "2025-10-10T09:08:41.899646",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 796238"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Лысковский",
+              "settlement": "Чернуха",
+              "area": "Нижегородская область район",
+              "zip_code": 606212,
+              "street": "ул. Буренино",
+              "house": 25,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "2DD692C1-FC95-41A2-86A1-6A83F47914FE",
+              "settlement_fias_id": "1B90A560-54AD-41EF-8802-D3F325F73084",
+              "area_fias_id": "2DD692C1-FC95-41A2-86A1-6A83F47914FE",
+              "house_fias_id": "2DD692C1-FC95-41A2-86A1-6A83F47914FE",
+              "street_fias_id": null,
+              "extra": "Original: p2=61, p3=4928, street=7898",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Буренино 25",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

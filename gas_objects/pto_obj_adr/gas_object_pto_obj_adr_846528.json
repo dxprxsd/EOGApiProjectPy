@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 846528",
-        "description": "Объект из pto_obj_adr. ID: 846528",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 846528,
-          "p2": 102,
-          "p3": 3996,
-          "street": 15247,
-          "dom": 153,
-          "korpus": 0
-        }
+        "name": "Объект 846528"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Нижний Новгород",
               "settlement": "Сартаково",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Серебряный ключ",
-              "house": "153",
+              "house": 153,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Серебряный ключ 153",
+              "title": "Нижегородская область, ул. Серебряный ключ 153",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 846528,
-    "created_at": "2025-10-01T09:31:59.196160",
+    "created_at": "2025-10-10T09:09:53.589902",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 846528"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Нижний Новгород",
+              "settlement": "Сартаково",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Серебряный ключ",
+              "house": 153,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "555E7D61-D9A7-4BA6-9770-6CAA8198C483",
+              "settlement_fias_id": "9E505813-160C-49BC-9A80-BEF510D1D71E",
+              "area_fias_id": "555E7D61-D9A7-4BA6-9770-6CAA8198C483",
+              "house_fias_id": "555E7D61-D9A7-4BA6-9770-6CAA8198C483",
+              "street_fias_id": null,
+              "extra": "Original: p2=102, p3=3996, street=15247",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Серебряный ключ 153",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ШРП-1ЗапрудЗаме",
-        "description": "Объект газификации из базы данных. ID: 1168",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 1168,
-          "original_address": "Кстовский р-н, с. Запрудное [ШРП № 1 ПОСЛЕ ЗАМЕНЫ 2019]"
-        }
+        "name": "ШРП-1ЗапрудЗаме"
       },
       "relationships": {
         "address": {
@@ -23,9 +15,9 @@
               "city": "Кстовский",
               "settlement": "Кстовский",
               "area": "Нижегородская область район",
-              "zip_code": "607650",
+              "zip_code": 607650,
               "street": "с. Запрудное",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Запрудное 0",
+              "title": "Нижегородская область, с. Запрудное 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 1168,
-    "created_at": "2025-10-01T08:25:33.247753",
+    "created_at": "2025-10-10T09:03:20.265750",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП-1ЗапрудЗаме"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Кстовский",
+              "settlement": "Кстовский",
+              "area": "Нижегородская область район",
+              "zip_code": 607650,
+              "street": "с. Запрудное",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "settlement_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "area_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "house_fias_id": "4D78CAC3-3718-4BFB-BB83-9F34FAC76E42",
+              "street_fias_id": "E9DF3896-0345-4501-8AC4-15D473E1EB80",
+              "extra": "Кстовский р-н, с. Запрудное [ШРП № 1 ПОСЛЕ ЗАМЕНЫ 2019]",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, с. Запрудное 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

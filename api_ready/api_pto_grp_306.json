@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "ШРП № 47"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Починковский",
+            "settlement": "Починковский",
+            "area": "Нижегородская область район",
+            "zip_code": 607911,
+            "street": "с. Василев Майдан",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+            "settlement_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+            "area_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+            "house_fias_id": "A09E91D5-FCE0-4904-9F57-C1C5C0669BD8",
+            "street_fias_id": "AFB10042-5B06-451F-AEA3-BE6D7AC97950",
+            "extra": "Починковский р-н, с. Василев Майдан [в поле]",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, с. Василев Майдан 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

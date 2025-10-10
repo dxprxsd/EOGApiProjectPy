@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "ГРУ № 52"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Арзамас",
+            "settlement": "Арзамас",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "с. Ломовка",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+            "settlement_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+            "area_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+            "house_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+            "street_fias_id": "72B07B0B-28DD-45EE-9FC1-6FF27AF236F2",
+            "extra": "г. Арзамас, с. Ломовка [к котельной]",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, с. Ломовка 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

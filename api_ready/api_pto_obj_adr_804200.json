@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 804200"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Ковернинский",
+            "settlement": "Большие Мосты",
+            "area": "Нижегородская область район",
+            "zip_code": 606570,
+            "street": "ул. Октябрьская",
+            "house": 20,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+            "settlement_fias_id": "2C9C55E0-C0E7-4799-B8A5-1E86FFE85656",
+            "area_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+            "house_fias_id": "ECAABD87-ED28-403B-B734-47ABE1A919DF",
+            "street_fias_id": null,
+            "extra": "Original: p2=50, p3=478, street=16444",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Октябрьская 20",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

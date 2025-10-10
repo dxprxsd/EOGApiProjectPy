@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "ШРП"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Княгининский",
+            "settlement": "Княгининский",
+            "area": "Нижегородская область район",
+            "zip_code": 606340,
+            "street": "с. Белка",
+            "house": 2,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+            "settlement_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+            "area_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+            "house_fias_id": "716D1733-E7CA-452A-9A38-A682DF8CFB8E",
+            "street_fias_id": "B2A5B481-495D-4F1A-A270-9FC5D7B3D1E3",
+            "extra": "Княгининский р-н, с. Белка [№22]",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, с. Белка 2",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

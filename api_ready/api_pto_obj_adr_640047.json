@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 640047"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Сосновский",
+            "settlement": "Глядково",
+            "area": "Нижегородская область район",
+            "zip_code": 606170,
+            "street": "ул. Ворошилова",
+            "house": 44,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+            "settlement_fias_id": "9BE4FCAF-BB33-45C4-A6A4-631C725CC851",
+            "area_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+            "house_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+            "street_fias_id": null,
+            "extra": "Original: p2=83, p3=996, street=9995",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Ворошилова 44",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

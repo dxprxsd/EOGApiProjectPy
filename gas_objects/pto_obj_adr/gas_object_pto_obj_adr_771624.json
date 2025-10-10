@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 771624",
-        "description": "Объект из pto_obj_adr. ID: 771624",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 771624,
-          "p2": 3,
-          "p3": 3941,
-          "street": 11297,
-          "dom": 43,
-          "korpus": 0
-        }
+        "name": "Объект 771624"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Арзамас",
               "settlement": "Саблуково",
               "area": "Нижегородская область район",
-              "zip_code": "606000",
+              "zip_code": 606000,
               "street": "ул. Новая Линия",
-              "house": "43",
+              "house": 43,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Новая Линия 43",
+              "title": "Нижегородская область, ул. Новая Линия 43",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 771624,
-    "created_at": "2025-10-01T09:20:46.095219",
+    "created_at": "2025-10-10T09:08:22.992931",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 771624"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Арзамас",
+              "settlement": "Саблуково",
+              "area": "Нижегородская область район",
+              "zip_code": 606000,
+              "street": "ул. Новая Линия",
+              "house": 43,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "settlement_fias_id": "839B4EB2-83D3-410A-8626-D8DF0A45DC89",
+              "area_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "house_fias_id": "7E42F157-87D6-4111-A406-17432E814723",
+              "street_fias_id": null,
+              "extra": "Original: p2=3, p3=3941, street=11297",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Новая Линия 43",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

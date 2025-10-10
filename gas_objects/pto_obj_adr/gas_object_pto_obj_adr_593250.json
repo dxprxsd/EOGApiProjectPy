@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 593250",
-        "description": "Объект из pto_obj_adr. ID: 593250",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 593250,
-          "p2": 91,
-          "p3": 0,
-          "street": 6734,
-          "dom": 43,
-          "korpus": 0
-        }
+        "name": "Объект 593250"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Уразовка",
               "settlement": "Уразовка",
               "area": "Нижегородская область район",
-              "zip_code": "607530",
+              "zip_code": 607530,
               "street": "ул. Советская",
-              "house": "43",
+              "house": 43,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Советская 43",
+              "title": "Нижегородская область, ул. Советская 43",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 593250,
-    "created_at": "2025-10-01T08:45:16.156317",
+    "created_at": "2025-10-10T09:06:24.362169",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 593250"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Уразовка",
+              "settlement": "Уразовка",
+              "area": "Нижегородская область район",
+              "zip_code": 607530,
+              "street": "ул. Советская",
+              "house": 43,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "48B19B3B-8F5A-4C05-9EAD-A656C65CD3F0",
+              "settlement_fias_id": "48B19B3B-8F5A-4C05-9EAD-A656C65CD3F0",
+              "area_fias_id": "48B19B3B-8F5A-4C05-9EAD-A656C65CD3F0",
+              "house_fias_id": "48B19B3B-8F5A-4C05-9EAD-A656C65CD3F0",
+              "street_fias_id": null,
+              "extra": "Original: p2=91, p3=0, street=6734",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Советская 43",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

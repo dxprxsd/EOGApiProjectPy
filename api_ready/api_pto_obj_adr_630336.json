@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 630336"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Балахнинский",
+            "settlement": "Малые Могильцы",
+            "area": "Нижегородская область район",
+            "zip_code": 606407,
+            "street": "ул. Не указана",
+            "house": 78,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "7E39F886-DA1D-41AE-A4CF-52B588024BD4",
+            "settlement_fias_id": "48F7DD9A-D007-48C9-8273-F040C4D32095",
+            "area_fias_id": "7E39F886-DA1D-41AE-A4CF-52B588024BD4",
+            "house_fias_id": "7E39F886-DA1D-41AE-A4CF-52B588024BD4",
+            "street_fias_id": null,
+            "extra": "Original: p2=6, p3=2693, street=0",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Не указана 78",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

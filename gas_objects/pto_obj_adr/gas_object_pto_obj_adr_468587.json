@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 468587",
-        "description": "Объект из pto_obj_adr. ID: 468587",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 468587,
-          "p2": 85,
-          "p3": 2123,
-          "street": 10207,
-          "dom": 33,
-          "korpus": 0
-        }
+        "name": "Объект 468587"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Спасский",
               "settlement": "Красный Ватрас",
               "area": "Нижегородская область район",
-              "zip_code": "606280",
+              "zip_code": 606280,
               "street": "ул. Дальняя",
-              "house": "33",
+              "house": 33,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Дальняя 33",
+              "title": "Нижегородская область, ул. Дальняя 33",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 468587,
-    "created_at": "2025-10-01T08:31:23.530343",
+    "created_at": "2025-10-10T09:04:27.582333",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 468587"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Спасский",
+              "settlement": "Красный Ватрас",
+              "area": "Нижегородская область район",
+              "zip_code": 606280,
+              "street": "ул. Дальняя",
+              "house": 33,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "settlement_fias_id": "1AD7F186-F165-4725-A58E-627CB5B3128F",
+              "area_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "house_fias_id": "D6E45418-3DB6-441F-9DC7-40DCA8EEE02C",
+              "street_fias_id": null,
+              "extra": "Original: p2=85, p3=2123, street=10207",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Дальняя 33",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 415851"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Бор",
+            "settlement": "2-й",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ул. Не указана",
+            "house": 15,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+            "settlement_fias_id": "07AA4222-4E87-4957-BA2B-E185844175A3",
+            "area_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+            "house_fias_id": "E736E903-6BC3-450B-B8AF-7909213DC9EF",
+            "street_fias_id": null,
+            "extra": "Original: p2=13, p3=6375, street=0",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Не указана 15",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 820573"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Пильнинский",
+            "settlement": "Жданово",
+            "area": "Нижегородская область район",
+            "zip_code": 607491,
+            "street": "ул. Мира",
+            "house": 47,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+            "settlement_fias_id": "AC670848-31FA-4A9C-9678-5D941FF710F2",
+            "area_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+            "house_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+            "street_fias_id": null,
+            "extra": "Original: p2=71, p3=1341, street=17119",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Мира 47",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

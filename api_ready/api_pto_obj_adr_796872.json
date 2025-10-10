@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 796872"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Пильнинский",
+            "settlement": "Козловка",
+            "area": "Нижегородская область район",
+            "zip_code": 607491,
+            "street": "ул. Речная",
+            "house": 52,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+            "settlement_fias_id": "AABD6D95-8F06-440A-A226-4825B6094ACC",
+            "area_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+            "house_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+            "street_fias_id": null,
+            "extra": "Original: p2=71, p3=1881, street=17129",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Речная 52",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

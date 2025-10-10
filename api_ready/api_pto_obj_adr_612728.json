@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 612728"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Воскресенский",
+            "settlement": "Бараново",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ул. Советская",
+            "house": 33,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "69497DB6-AD81-4D6B-9F61-2F5ABE92BE16",
+            "settlement_fias_id": "653930BA-8D62-4790-B0DA-EEB4A12EE987",
+            "area_fias_id": "69497DB6-AD81-4D6B-9F61-2F5ABE92BE16",
+            "house_fias_id": "69497DB6-AD81-4D6B-9F61-2F5ABE92BE16",
+            "street_fias_id": null,
+            "extra": "Original: p2=32, p3=221, street=4734",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Советская 33",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 547054",
-        "description": "Объект из pto_obj_adr. ID: 547054",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 547054,
-          "p2": 8,
-          "p3": 68,
-          "street": 2537,
-          "dom": 28,
-          "korpus": 0
-        }
+        "name": "Объект 547054"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Богородский",
               "settlement": "Алешково",
               "area": "Нижегородская область район",
-              "zip_code": "607600",
+              "zip_code": 607600,
               "street": "ул. Новая",
-              "house": "28",
+              "house": 28,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Новая 28",
+              "title": "Нижегородская область, ул. Новая 28",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 547054,
-    "created_at": "2025-10-01T08:39:43.742703",
+    "created_at": "2025-10-10T09:05:32.618784",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 547054"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Богородский",
+              "settlement": "Алешково",
+              "area": "Нижегородская область район",
+              "zip_code": 607600,
+              "street": "ул. Новая",
+              "house": 28,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+              "settlement_fias_id": "01BD72DA-D21D-4C22-83F0-CF18EA4B393C",
+              "area_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+              "house_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+              "street_fias_id": null,
+              "extra": "Original: p2=8, p3=68, street=2537",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Новая 28",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

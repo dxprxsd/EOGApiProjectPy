@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 666473"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Сосновский",
+            "settlement": "Малахово",
+            "area": "Нижегородская область район",
+            "zip_code": 606170,
+            "street": "ул. Лесная",
+            "house": 19,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+            "settlement_fias_id": "C114CB32-2B4B-416E-AE94-1F85107F1AEB",
+            "area_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+            "house_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+            "street_fias_id": null,
+            "extra": "Original: p2=83, p3=2562, street=10040",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Лесная 19",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

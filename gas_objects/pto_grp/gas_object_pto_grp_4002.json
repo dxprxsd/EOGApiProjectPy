@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ШРП",
-        "description": "Объект газификации из базы данных. ID: 4002",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 4002,
-          "original_address": "Сеченовский р-н, д. Баженовка, ул. Зеленая [№0916700115ГРПШ]"
-        }
+        "name": "ШРП"
       },
       "relationships": {
         "address": {
@@ -23,9 +15,9 @@
               "city": "Сеченовский",
               "settlement": "Сеченовский",
               "area": "Нижегородская область район",
-              "zip_code": "607580",
+              "zip_code": 607580,
               "street": "д. Баженовка",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Баженовка 0",
+              "title": "Нижегородская область, д. Баженовка 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 4002,
-    "created_at": "2025-10-01T08:25:34.237653",
+    "created_at": "2025-10-10T09:03:20.959672",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Сеченовский",
+              "settlement": "Сеченовский",
+              "area": "Нижегородская область район",
+              "zip_code": 607580,
+              "street": "д. Баженовка",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+              "settlement_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+              "area_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+              "house_fias_id": "47031F9C-C3D5-483B-A0F9-6E3DB7641F76",
+              "street_fias_id": "0854699C-3CD3-48DB-B426-D9D8DC474310",
+              "extra": "Сеченовский р-н, д. Баженовка, ул. Зеленая [№0916700115ГРПШ]",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, д. Баженовка 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 545900"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Богородский",
+            "settlement": "Баркино",
+            "area": "Нижегородская область район",
+            "zip_code": 607600,
+            "street": "пер. Полевой",
+            "house": 3,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+            "settlement_fias_id": "74AE40AE-8892-4D15-AD83-B29AD179346F",
+            "area_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+            "house_fias_id": "FA0D2B5B-A614-41CD-92B9-555DA9CA46B8",
+            "street_fias_id": null,
+            "extra": "Original: p2=8, p3=224, street=20250",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, пер. Полевой 3",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

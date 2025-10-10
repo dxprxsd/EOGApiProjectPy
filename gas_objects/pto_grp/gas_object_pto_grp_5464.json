@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ГРПШ400-01-У1",
-        "description": "Объект газификации из базы данных. ID: 5464",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 5464,
-          "original_address": "г. Лысково, ул. Казанская, д. 1Г"
-        }
+        "name": "ГРПШ400-01-У1"
       },
       "relationships": {
         "address": {
@@ -23,10 +15,10 @@
               "city": "Лысково",
               "settlement": "Лысково",
               "area": "Нижегородская область район",
-              "zip_code": "606210",
+              "zip_code": 606210,
               "street": "ул. Не указана",
-              "house": "1",
-              "block": "Г",
+              "house": 1,
+              "block": null,
               "flat": 123,
               "room": 3,
               "region_fias_id": "region_52",
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул None 1",
+              "title": "Нижегородская область, ул. Не указана 1",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 5464,
-    "created_at": "2025-10-01T08:25:34.946610",
+    "created_at": "2025-10-10T09:03:21.262796",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ГРПШ400-01-У1"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Лысково",
+              "settlement": "Лысково",
+              "area": "Нижегородская область район",
+              "zip_code": 606210,
+              "street": "ул. Не указана",
+              "house": 1,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "978C4D8C-F724-43B1-AA95-0C1FC49DC6B7",
+              "settlement_fias_id": "978C4D8C-F724-43B1-AA95-0C1FC49DC6B7",
+              "area_fias_id": "978C4D8C-F724-43B1-AA95-0C1FC49DC6B7",
+              "house_fias_id": "978C4D8C-F724-43B1-AA95-0C1FC49DC6B7",
+              "street_fias_id": null,
+              "extra": "г. Лысково, ул. Казанская, д. 1Г",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Не указана 1",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

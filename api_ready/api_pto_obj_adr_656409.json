@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 656409"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Кулебаки",
+            "settlement": "Кулебаки",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "пл. Лесорубов",
+            "house": 26,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "A963A64C-29CF-4342-BDC7-D998017AA4CD",
+            "settlement_fias_id": "A963A64C-29CF-4342-BDC7-D998017AA4CD",
+            "area_fias_id": "A963A64C-29CF-4342-BDC7-D998017AA4CD",
+            "house_fias_id": "A963A64C-29CF-4342-BDC7-D998017AA4CD",
+            "street_fias_id": null,
+            "extra": "Original: p2=56, p3=0, street=7313",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, пл. Лесорубов 26",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

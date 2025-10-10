@@ -3,15 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "ШРП-35",
-        "description": "Объект газификации из базы данных. ID: 3766",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_grp",
-          "source_id": 3766,
-          "original_address": "Краснооктябрьский р-н, с. Чембилей, ул. Советская"
-        }
+        "name": "ШРП-35"
       },
       "relationships": {
         "address": {
@@ -23,9 +15,9 @@
               "city": "Краснооктябрьский",
               "settlement": "Краснооктябрьский",
               "area": "Нижегородская область район",
-              "zip_code": "607530",
+              "zip_code": 607530,
               "street": "с. Чембилей",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -40,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Чембилей 0",
+              "title": "Нижегородская область, с. Чембилей 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -52,7 +44,49 @@
   "metadata": {
     "source": "pto_grp",
     "source_id": 3766,
-    "created_at": "2025-10-01T08:25:34.199336",
+    "created_at": "2025-10-10T09:03:20.901120",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "ШРП-35"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Краснооктябрьский",
+              "settlement": "Краснооктябрьский",
+              "area": "Нижегородская область район",
+              "zip_code": 607530,
+              "street": "с. Чембилей",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "BA4799A8-7A74-4168-BA7E-A231FABC8995",
+              "settlement_fias_id": "BA4799A8-7A74-4168-BA7E-A231FABC8995",
+              "area_fias_id": "BA4799A8-7A74-4168-BA7E-A231FABC8995",
+              "house_fias_id": "BA4799A8-7A74-4168-BA7E-A231FABC8995",
+              "street_fias_id": "BD8159E0-DD58-4F52-B8E3-F114D9B86A27",
+              "extra": "Краснооктябрьский р-н, с. Чембилей, ул. Советская",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, с. Чембилей 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

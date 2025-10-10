@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 550147",
-        "description": "Объект из pto_obj_adr. ID: 550147",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 550147,
-          "p2": 68,
-          "p3": 0,
-          "street": 8944,
-          "dom": 29,
-          "korpus": 0
-        }
+        "name": "Объект 550147"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Перевоз",
               "settlement": "Перевоз",
               "area": "Нижегородская область район",
-              "zip_code": "607400",
+              "zip_code": 607400,
               "street": "ул. Чкалова",
-              "house": "29",
+              "house": 29,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Чкалова 29",
+              "title": "Нижегородская область, ул. Чкалова 29",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 550147,
-    "created_at": "2025-10-01T08:40:03.725763",
+    "created_at": "2025-10-10T09:05:33.296157",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 550147"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Перевоз",
+              "settlement": "Перевоз",
+              "area": "Нижегородская область район",
+              "zip_code": 607400,
+              "street": "ул. Чкалова",
+              "house": 29,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "E3FF7EF2-92B6-4AB7-B2FF-4D58CAB73DBC",
+              "settlement_fias_id": "E3FF7EF2-92B6-4AB7-B2FF-4D58CAB73DBC",
+              "area_fias_id": "E3FF7EF2-92B6-4AB7-B2FF-4D58CAB73DBC",
+              "house_fias_id": "E3FF7EF2-92B6-4AB7-B2FF-4D58CAB73DBC",
+              "street_fias_id": null,
+              "extra": "Original: p2=68, p3=0, street=8944",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Чкалова 29",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

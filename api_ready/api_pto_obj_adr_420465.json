@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 420465"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Лукояновский",
+            "settlement": "Лопатино",
+            "area": "Нижегородская область район",
+            "zip_code": 607800,
+            "street": "ул. Вилкова",
+            "house": 110,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+            "settlement_fias_id": "AD04EBEE-EC8E-45B2-BFD9-2C547DB43CBF",
+            "area_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+            "house_fias_id": "EB787249-C038-44D7-8D87-E2977244DEA2",
+            "street_fias_id": null,
+            "extra": "Original: p2=59, p3=2450, street=7582",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Вилкова 110",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

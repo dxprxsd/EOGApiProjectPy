@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 651164",
-        "description": "Объект из pto_obj_adr. ID: 651164",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 651164,
-          "p2": 71,
-          "p3": 416,
-          "street": 17069,
-          "dom": 22,
-          "korpus": 1
-        }
+        "name": "Объект 651164"
       },
       "relationships": {
         "address": {
@@ -27,10 +15,10 @@
               "city": "Пильнинский",
               "settlement": "Болобоново",
               "area": "Нижегородская область район",
-              "zip_code": "607491",
+              "zip_code": 607491,
               "street": "ул. Колхозная",
-              "house": "22",
-              "block": "1",
+              "house": 22,
+              "block": 1,
               "flat": 123,
               "room": 3,
               "region_fias_id": "region_52",
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Колхозная 22",
+              "title": "Нижегородская область, ул. Колхозная 22",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 651164,
-    "created_at": "2025-10-01T08:54:03.646406",
+    "created_at": "2025-10-10T09:07:12.008818",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 651164"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Пильнинский",
+              "settlement": "Болобоново",
+              "area": "Нижегородская область район",
+              "zip_code": 607491,
+              "street": "ул. Колхозная",
+              "house": 22,
+              "block": 1,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+              "settlement_fias_id": "04986CF7-B4F6-47FD-8BE8-D825863F8624",
+              "area_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+              "house_fias_id": "B5F73D96-C7B0-45DB-BA64-649A4B43A8E4",
+              "street_fias_id": null,
+              "extra": "Original: p2=71, p3=416, street=17069",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Колхозная 22",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

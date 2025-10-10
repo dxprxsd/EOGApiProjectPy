@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 789250"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Павловский",
+            "settlement": "Большое Давыдово",
+            "area": "Нижегородская область район",
+            "zip_code": 606100,
+            "street": "ул. Огородная",
+            "house": 76,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+            "settlement_fias_id": "E7DC9993-06A2-4DF3-88D1-EFAEC29B9C59",
+            "area_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+            "house_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+            "street_fias_id": null,
+            "extra": "Original: p2=65, p3=491, street=8210",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Огородная 76",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

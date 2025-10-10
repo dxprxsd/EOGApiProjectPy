@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 531127"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Ворсма",
+            "settlement": "Ворсма",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ул. Селькоровская",
+            "house": 18,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "CD695C84-0B68-4D4C-8068-76E9BBA1228A",
+            "settlement_fias_id": "CD695C84-0B68-4D4C-8068-76E9BBA1228A",
+            "area_fias_id": "CD695C84-0B68-4D4C-8068-76E9BBA1228A",
+            "house_fias_id": "CD695C84-0B68-4D4C-8068-76E9BBA1228A",
+            "street_fias_id": null,
+            "extra": "Original: p2=31, p3=0, street=14088",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Селькоровская 18",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

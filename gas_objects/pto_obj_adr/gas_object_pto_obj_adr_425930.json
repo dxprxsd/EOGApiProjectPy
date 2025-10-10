@@ -3,19 +3,7 @@
     "data": {
       "type": "gas_object",
       "attributes": {
-        "name": "Объект 425930",
-        "description": "Объект из pto_obj_adr. ID: 425930",
-        "status": "active",
-        "custom_data": {
-          "source_database": "dog",
-          "source_table": "pto_obj_adr",
-          "source_id": 425930,
-          "p2": 65,
-          "p3": 5,
-          "street": 12211,
-          "dom": 0,
-          "korpus": 0
-        }
+        "name": "Объект 425930"
       },
       "relationships": {
         "address": {
@@ -27,9 +15,9 @@
               "city": "Павловский",
               "settlement": "Абабково",
               "area": "Нижегородская область район",
-              "zip_code": "606100",
+              "zip_code": 606100,
               "street": "ул. Полевая",
-              "house": "2",
+              "house": 2,
               "block": null,
               "flat": 123,
               "room": 3,
@@ -44,7 +32,7 @@
               "cadastral_number": "123421W",
               "cadastral_home_number": "123421H",
               "okato": "123421H",
-              "title": "Нижегородская область, ул Полевая 0",
+              "title": "Нижегородская область, ул. Полевая 2",
               "has_capital_construction": true,
               "room_type": "apartment_building"
             }
@@ -56,7 +44,49 @@
   "metadata": {
     "source": "pto_obj_adr",
     "source_id": 425930,
-    "created_at": "2025-10-01T08:28:05.430938",
+    "created_at": "2025-10-10T09:03:58.194583",
     "batch_processed": false
+  },
+  "api_data": {
+    "data": {
+      "type": "gas_object",
+      "attributes": {
+        "name": "Объект 425930"
+      },
+      "relationships": {
+        "address": {
+          "data": {
+            "type": "address",
+            "attributes": {
+              "country": "Россия",
+              "region": "Нижегородская область",
+              "city": "Павловский",
+              "settlement": "Абабково",
+              "area": "Нижегородская область район",
+              "zip_code": 606100,
+              "street": "ул. Полевая",
+              "house": 2,
+              "block": null,
+              "flat": 123,
+              "room": 3,
+              "region_fias_id": "region_52",
+              "city_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+              "settlement_fias_id": "ADF1B540-F253-45A7-9E36-30980279AC71",
+              "area_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+              "house_fias_id": "21CD4118-BBF0-4994-A6D6-0C20CF089BA4",
+              "street_fias_id": null,
+              "extra": "Original: p2=65, p3=5, street=12211",
+              "oktmo": 123456789,
+              "cadastral_number": "123421W",
+              "cadastral_home_number": "123421H",
+              "okato": "123421H",
+              "title": "Нижегородская область, ул. Полевая 2",
+              "has_capital_construction": true,
+              "room_type": "apartment_building"
+            }
+          }
+        }
+      }
+    }
   }
 }

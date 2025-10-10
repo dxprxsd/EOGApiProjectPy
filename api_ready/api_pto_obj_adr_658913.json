@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 658913"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Большеболдинский",
+            "settlement": "Пермеево",
+            "area": "Нижегородская область район",
+            "zip_code": 607940,
+            "street": "ул. Молодежная",
+            "house": 16,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "948A3C29-A387-4DD3-A9B6-8D39D5F4A7A7",
+            "settlement_fias_id": "CB21E8E4-BF70-4B81-AA73-A257263AC51B",
+            "area_fias_id": "948A3C29-A387-4DD3-A9B6-8D39D5F4A7A7",
+            "house_fias_id": "948A3C29-A387-4DD3-A9B6-8D39D5F4A7A7",
+            "street_fias_id": null,
+            "extra": "Original: p2=9, p3=3453, street=3028",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Молодежная 16",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}

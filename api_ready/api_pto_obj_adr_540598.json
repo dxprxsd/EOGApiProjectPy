@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "gas_object",
+    "attributes": {
+      "name": "Объект 540598"
+    },
+    "relationships": {
+      "address": {
+        "data": {
+          "type": "address",
+          "attributes": {
+            "country": "Россия",
+            "region": "Нижегородская область",
+            "city": "Гагинский",
+            "settlement": "Шерстино",
+            "area": "Нижегородская область район",
+            "zip_code": 606000,
+            "street": "ул. Коммунистическая",
+            "house": 65,
+            "block": null,
+            "flat": 123,
+            "room": 3,
+            "region_fias_id": "region_52",
+            "city_fias_id": "E763B10E-27C8-4995-B39E-55823AA4FFEF",
+            "settlement_fias_id": "B763B85F-5FF5-4CEF-A105-E89EF1BDF299",
+            "area_fias_id": "E763B10E-27C8-4995-B39E-55823AA4FFEF",
+            "house_fias_id": "E763B10E-27C8-4995-B39E-55823AA4FFEF",
+            "street_fias_id": null,
+            "extra": "Original: p2=37, p3=5061, street=5521",
+            "oktmo": 123456789,
+            "cadastral_number": "123421W",
+            "cadastral_home_number": "123421H",
+            "okato": "123421H",
+            "title": "Нижегородская область, ул. Коммунистическая 65",
+            "has_capital_construction": true,
+            "room_type": "apartment_building"
+          }
+        }
+      }
+    }
+  }
+}
