@@ -552,9 +552,9 @@ def upload_single_file_to_api():
                         result = send_gas_object_to_api(api_data, auth_token)
                         if result:
                             success_count += 1
-                            print(f"✓ Объект {i} успешно загружен")
+                            print(f"Объект {i} успешно загружен")
                         else:
-                            print(f"✗ Ошибка загрузки объекта {i}")
+                            print(f"Ошибка загрузки объекта {i}")
                     
                     print(f"\nИтоги: Успешно {success_count}/{len(data)}")
                     
@@ -900,12 +900,12 @@ def collect_data_mode():
             api_data = gas_object['template']
             
             # РАСКОММЕНТИРУЙТЕ ДЛЯ РЕАЛЬНОЙ ОТПРАВКИ:
-            # print("Отправляем данные в API...")
-            # result = send_gas_object_to_api(api_data, API_AUTH_TOKEN)
-            # if result:
-            #     print("Успешно отправлено в API")
-            # else:
-            #     print("Ошибка отправки")
+            print("Отправляем данные в API...")
+            result = send_gas_object_to_api(api_data, API_AUTH_TOKEN)
+            if result:
+                print("Успешно отправлено в API")
+            else:
+                print("Ошибка отправки")
         
         # Сохраняем все объекты в один файл
         save_raw_json_to_file(gas_objects, "all_gas_objects_formatted")
