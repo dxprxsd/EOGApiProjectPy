@@ -3,6 +3,7 @@ import requests
 import socket
 from pathlib import Path
 from datetime import datetime
+import time
 import os
 import urllib3
 import pymssql
@@ -30,7 +31,9 @@ SQL_PASSWORD = '76543210'
 
 # Настройки API
 API_BASE_URL = "https://tpsg.etpgpb.ru/v1"
-API_AUTH_TOKEN = None  # Задайте токен авторизации если требуется
+API_AUTH_TOKEN = None  
+AUTH_RETRY_COUNT = 0
+MAX_AUTH_RETRIES = 3
 
 def setup_proxy():
     """Настраиваем прокси для системы"""
@@ -63,9 +66,16 @@ def test_proxy_connection():
 
 def get_auth_token():
     """Получает токен авторизации из API"""
-    global API_AUTH_TOKEN
+    global API_AUTH_TOKEN, AUTH_RETRY_COUNT
     
     try:
+        # Проверяем количество попыток
+        if AUTH_RETRY_COUNT >= MAX_AUTH_RETRIES:
+            print(f"Превышено максимальное количество попыток авторизации ({MAX_AUTH_RETRIES})")
+            return None
+            
+        AUTH_RETRY_COUNT += 1
+        
         # Читаем данные авторизации из файла
         auth_file = "authdata.json"
         if not os.path.exists(auth_file):
@@ -99,24 +109,30 @@ def get_auth_token():
                 "https": PROXY_URL
             },
             timeout=30,
-            verify=False  # Игнорируем SSL проверки
+            verify=False
         )
         
         print(f"Статус ответа авторизации: {response.status_code}")
         
-        # Пытаемся получить JSON ответ
-        try:
-            result = response.json()
-        except json.JSONDecodeError as e:
-            print(f"Ошибка декодирования JSON: {e}")
-            print(f"Текст ответа: {response.text[:500]}...")
-            return None
-        
-        # Проверяем статус ответа
-        if response.status_code == 201:
+        # Обработка различных статусов
+        if response.status_code == 429:
+            print("Превышен лимит запросов (429). Ожидание 60 секунд...")
+            time.sleep(60)
+            return get_auth_token()  # Рекурсивный вызов после ожидания
+            
+        elif response.status_code == 201:
+            # Пытаемся получить JSON ответ
+            try:
+                result = response.json()
+            except json.JSONDecodeError as e:
+                print(f"Ошибка декодирования JSON: {e}")
+                print(f"Текст ответа: {response.text[:500]}...")
+                return None
+            
             jwt_token = result.get('jwt')
             if jwt_token:
                 API_AUTH_TOKEN = f"Bearer {jwt_token}"
+                AUTH_RETRY_COUNT = 0  # Сбрасываем счетчик при успешной авторизации
                 print("Авторизация успешна!")
                 print(f"Токен получен: {jwt_token[:50]}...")
                 return API_AUTH_TOKEN
@@ -124,9 +140,10 @@ def get_auth_token():
                 print("В ответе отсутствует JWT токен")
                 print(f"Полный ответ: {result}")
                 return None
+                
         else:
             print(f"Ошибка авторизации: {response.status_code}")
-            print(f"Полный ответ: {result}")
+            print(f"Текст ответа: {response.text[:500]}...")
             return None
             
     except requests.exceptions.RequestException as e:
@@ -382,15 +399,15 @@ def prepare_gas_object_data(row):
                             "area": row.get('region_name', ''),  # Используем регион как район
                             "zip_code": row.get('zip_code', 0),
                             "street": street_full,
-                            "house": row['house_number'],
-                            "block": row.get('block'),
+                            "house": str(row['house_number']),  # Должно быть строкой согласно примеру API
+                            "block": str(row.get('block')) if row.get('block') else None,  # Должно быть строкой
                             "flat": 1,  # Значение по умолчанию
                             "room": None,
-                            "region_fias_id": f"region_{row.get('region_code', '')}",
-                            "city_fias_id": row.get('settlement_fias_id', ''),
-                            "settlement_fias_id": row.get('settlement_fias_id', ''),
-                            "area_fias_id": row.get('settlement_fias_id', ''),  # Используем settlement_fias_id
-                            "house_fias_id": row.get('settlement_fias_id', ''),  # Используем settlement_fias_id
+                            "region_fias_id": row.get('settlement_fias_id'),  # Используем реальный FIAS ID
+                            "city_fias_id": row.get('settlement_fias_id'),
+                            "settlement_fias_id": row.get('settlement_fias_id'),
+                            "area_fias_id": row.get('settlement_fias_id'),  # Используем settlement_fias_id
+                            "house_fias_id": row.get('settlement_fias_id'),  # Используем settlement_fias_id
                             "street_fias_id": row.get('street_fias_id'),
                             "extra": row.get('full_address', ''),
                             "oktmo": None,
@@ -407,7 +424,7 @@ def prepare_gas_object_data(row):
         }
     }
     
-    # Обработка числовых значений
+    # Обработка числовых значений согласно API спецификации
     try:
         if gas_object_data["data"]["relationships"]["address"]["data"]["attributes"]["zip_code"]:
             gas_object_data["data"]["relationships"]["address"]["data"]["attributes"]["zip_code"] = int(
@@ -416,26 +433,26 @@ def prepare_gas_object_data(row):
     except (ValueError, TypeError):
         gas_object_data["data"]["relationships"]["address"]["data"]["attributes"]["zip_code"] = 0
     
-    try:
-        if gas_object_data["data"]["relationships"]["address"]["data"]["attributes"]["house"]:
-            gas_object_data["data"]["relationships"]["address"]["data"]["attributes"]["house"] = int(
-                gas_object_data["data"]["relationships"]["address"]["data"]["attributes"]["house"]
-            )
-    except (ValueError, TypeError):
-        # Если не удалось преобразовать в число, оставляем как строку
-        pass
-    
     # Очистка None значений для числовых полей
     numeric_fields = ["oktmo", "flat", "room"]
     for field in numeric_fields:
         if gas_object_data["data"]["relationships"]["address"]["data"]["attributes"][field] is None:
             gas_object_data["data"]["relationships"]["address"]["data"]["attributes"][field] = 0
     
+    # Преобразование в строку для полей, которые должны быть строками согласно API
+    string_fields = ["house", "block", "flat", "room"]
+    for field in string_fields:
+        value = gas_object_data["data"]["relationships"]["address"]["data"]["attributes"][field]
+        if value is not None and value != 0:
+            gas_object_data["data"]["relationships"]["address"]["data"]["attributes"][field] = str(value)
+    
     return gas_object_data
 
 
 def send_gas_object_to_api(gas_object_data, auth_token=None):
     """Отправка данных об объекте газификации в API"""
+    global AUTH_RETRY_COUNT
+    
     url = f"{API_BASE_URL}/gas_objects"
     
     headers = {
@@ -461,9 +478,11 @@ def send_gas_object_to_api(gas_object_data, auth_token=None):
         
         if response.status_code in [200, 201]:
             print("Объект успешно создан!")
+            AUTH_RETRY_COUNT = 0  # Сбрасываем счетчик при успешной операции
             return response.json()
+            
         elif response.status_code == 401:
-            print("Ошибка авторизации. Попытка обновить токен...")
+            print("Ошибка авторизации (401). Попытка обновить токен...")
             new_token = refresh_auth_token()
             if new_token:
                 headers["Authorization"] = new_token
@@ -478,13 +497,23 @@ def send_gas_object_to_api(gas_object_data, auth_token=None):
                 if response.status_code in [200, 201]:
                     print("Объект успешно создан после обновления токена!")
                     return response.json()
+                    
+        elif response.status_code == 429:
+            print("Превышен лимит запросов (429). Ожидание 60 секунд...")
+            time.sleep(60)
+            # Повторяем запрос после ожидания
+            return send_gas_object_to_api(gas_object_data, auth_token)
+            
         else:
-            print(f"Ошибка: {response.status_code}")
-            print(f"Ответ: {response.text[:200]}...")
+            print(f"Ошибка API: {response.status_code}")
+            print(f"Ответ: {response.text[:500]}...")
             return None
             
+    except requests.exceptions.RequestException as e:
+        print(f"Ошибка сетевого запроса: {e}")
+        return None
     except Exception as e:
-        print(f"Ошибка при отправке в API: {e}")
+        print(f"Неожиданная ошибка при отправке в API: {e}")
         return None
 
 # ========== ФУНКЦИИ ДЛЯ ЗАГРУЗКИ ДАННЫХ ИЗ ФАЙЛОВ ==========
@@ -502,15 +531,15 @@ def load_data_from_file(file_path):
 
 def upload_single_file_to_api():
     """Загрузка данных из одного выбранного файла в API"""
-    output_dir = Path("output")
-    if not output_dir.exists():
-        print("Папка 'output' не существует!")
+    api_ready_dir = Path("api_ready")
+    if not api_ready_dir.exists():
+        print("Папка 'api_ready' не существует!")
         return
     
     # Получаем список JSON файлов
-    json_files = list(output_dir.glob("*.json"))
+    json_files = list(api_ready_dir.glob("*.json"))
     if not json_files:
-        print("В папке 'output' нет JSON файлов!")
+        print("В папке 'api_ready' нет JSON файлов!")
         return
     
     print("\nДоступные файлы для загрузки:")
@@ -539,7 +568,7 @@ def upload_single_file_to_api():
                     success_count = 0
                     
                     for i, item in enumerate(data, 1):
-                        print(f"[{i}/{len(data)}] Загрузка объекта...")
+                        print(f"\n[{i}/{len(data)}] Загрузка объекта...")
                         
                         # Определяем структуру данных
                         if 'template' in item:
@@ -555,6 +584,11 @@ def upload_single_file_to_api():
                             print(f"Объект {i} успешно загружен")
                         else:
                             print(f"Ошибка загрузки объекта {i}")
+                            
+                        # Добавляем задержку между запросами чтобы избежать 429
+                        if i < len(data):  # Не ждем после последнего запроса
+                            print("Ожидание 2 секунды перед следующим запросом...")
+                            time.sleep(2)
                     
                     print(f"\nИтоги: Успешно {success_count}/{len(data)}")
                     
@@ -581,16 +615,16 @@ def upload_single_file_to_api():
         print(f"Ошибка при загрузке файла: {e}")
 
 def upload_all_files_from_folder():
-    """Загрузка всех файлов из папки output в API"""
-    output_dir = Path("output")
-    if not output_dir.exists():
-        print("Папка 'output' не существует!")
+    """Загрузка всех файлов из папки api_ready в API"""
+    api_ready_dir = Path("api_ready")
+    if not api_ready_dir.exists():
+        print("Папка 'api_ready' не существует!")
         return
     
     # Получаем список JSON файлов
-    json_files = list(output_dir.glob("*.json"))
+    json_files = list(api_ready_dir.glob("*.json"))
     if not json_files:
-        print("В папке 'output' нет JSON файлов!")
+        print("В папке 'api_ready' нет JSON файлов!")
         return
     
     print(f"Найдено {len(json_files)} файлов для загрузки:")
@@ -620,6 +654,11 @@ def upload_all_files_from_folder():
             else:
                 error_count += 1
                 print(f"Ошибка загрузки файла {file_path.name}")
+                
+            # Добавляем задержку между файлами
+            if i < len(json_files):
+                print("Ожидание 5 секунд перед следующим файлом...")
+                time.sleep(5)
         else:
             error_count += 1
             print(f"Ошибка чтения файла {file_path.name}")
@@ -638,7 +677,7 @@ def upload_data_menu():
     while True:
         print("\nВыберите вариант загрузки:")
         print("1. Загрузить один конкретный файл")
-        print("2. Загрузить все файлы из папки output")
+        print("2. Загрузить все файлы из папки api_ready")
         print("3. Вернуться в главное меню")
         
         choice = input("\nВведите номер варианта: ").strip()
@@ -787,6 +826,26 @@ def save_raw_json_to_file(data, filename_prefix="raw"):
         print(f"Ошибка при сохранении сырых данных: {e}")
         return False
 
+def save_api_ready_data(data, filename_prefix="api_ready"):
+    """Сохранение данных готовых для API в папку api_ready"""
+    try:
+        api_ready_dir = Path("api_ready")
+        api_ready_dir.mkdir(exist_ok=True)
+        
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"{filename_prefix}_{timestamp}.json"
+        filepath = api_ready_dir / filename
+        
+        with open(filepath, 'w', encoding='utf-8') as file:
+            json.dump(data, file, ensure_ascii=False, indent=2)
+        
+        print(f"Данные готовые для API сохранены в файл: {filepath}")
+        return True
+        
+    except Exception as e:
+        print(f"Ошибка при сохранении данных для API: {e}")
+        return False
+
 # ========== ОСНОВНАЯ ФУНКЦИЯ ==========
 
 def main():
@@ -887,28 +946,16 @@ def collect_data_mode():
         # Создаем объекты газификации в правильном формате
         gas_objects = create_gas_objects_from_db_data(address_data, limit=5)
         
-        # Сохраняем подготовленные объекты
+        # Сохраняем подготовленные объекты в папку api_ready
+        save_api_ready_data(gas_objects, "gas_objects_api_ready")
+        
+        # Выводим информацию о созданных объектах
         for i, gas_object in enumerate(gas_objects, 1):
             print(f"\n--- Объект {i} ---")
             print(f"Название: {gas_object['template']['data']['attributes']['name']}")
             print(f"Адрес: {gas_object['template']['data']['relationships']['address']['data']['attributes']['title']}")
-            
-            # Сохраняем для отладки
-            save_raw_json_to_file(gas_object, f"gas_object_formatted_{i}")
-            
-            # Для реальной отправки используем только template
-            api_data = gas_object['template']
-            
-            # РАСКОММЕНТИРУЙТЕ ДЛЯ РЕАЛЬНОЙ ОТПРАВКИ:
-            print("Отправляем данные в API...")
-            result = send_gas_object_to_api(api_data, API_AUTH_TOKEN)
-            if result:
-                print("Успешно отправлено в API")
-            else:
-                print("Ошибка отправки")
         
-        # Сохраняем все объекты в один файл
-        save_raw_json_to_file(gas_objects, "all_gas_objects_formatted")
+        print(f"\nВсе объекты сохранены в папку 'api_ready' для последующей загрузки")
         
     else:
         print("Не удалось получить адресные данные для создания объектов")
@@ -916,8 +963,10 @@ def collect_data_mode():
     print("\n" + "=" * 60)
     print("СБОР ДАННЫХ ЗАВЕРШЕН!")
     print("=" * 60)
-    print("\nВсе данные сохранены в папке 'output/'")
-    print("Для реальной отправки используйте пункт меню 'Загрузка данных в API'")
+    print("\nВсе данные сохранены:")
+    print("- Сырые данные и отчеты: папка 'output/'")
+    print("- Данные готовые для API: папка 'api_ready/'")
+    print("Для загрузки данных в API используйте пункт меню 'Загрузка данных в API'")
 
 def test_auth_mode():
     """Режим тестирования авторизации"""
