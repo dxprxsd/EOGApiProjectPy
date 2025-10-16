@@ -1,0 +1,64 @@
+{
+  "data": {
+    "id": "310",
+    "type": "gas_object",
+    "attributes": {
+      "id": 310,
+      "name": "Объект 727978"
+    },
+    "relationships": {
+      "user": {
+        "data": {
+          "id": "4358",
+          "type": "user"
+        }
+      },
+      "address": {
+        "data": {
+          "id": "128490",
+          "type": "address"
+        }
+      }
+    }
+  },
+  "included": [
+    {
+      "id": "128490",
+      "type": "address",
+      "attributes": {
+        "id": 128490,
+        "kind": "gas_object",
+        "street": "ул. Молодежная",
+        "city": "Сосновский",
+        "region": "Нижегородская область",
+        "country": "Россия",
+        "zip_code": "606170",
+        "area": "Нижегородская область район",
+        "settlement": "Яковское",
+        "block": null,
+        "room": "3",
+        "flat": "123",
+        "house": "6",
+        "region_fias_id": "03A42178-9901-45E5-8DB4-B6117B5CBA41",
+        "area_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+        "city_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+        "street_fias_id": "7313FB85-310F-4AA3-BA6E-EA3101526FA0",
+        "house_fias_id": "F57D6961-6580-4B65-8218-F51A8A0D1E58",
+        "extra": "Original: p2=83, p3=5236, street=10116",
+        "cadastral_number": "123421W",
+        "cadastral_home_number": "123421H",
+        "oktmo": "123456789",
+        "title": "Нижегородская область, ул. Молодежная 6",
+        "settlement_fias_id": "E6927A9A-6AE6-4C2F-8416-F980D1DBFEF0",
+        "okato": "123421H",
+        "has_capital_construction": true,
+        "room_type": "apartment_building",
+        "settlement_type_full": null,
+        "coordinates": {
+          "lat": null,
+          "lng": null
+        }
+      }
+    }
+  ]
+}
