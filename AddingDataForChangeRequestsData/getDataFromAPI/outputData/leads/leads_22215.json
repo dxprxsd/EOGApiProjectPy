@@ -1,0 +1,300 @@
+{
+  "id": "22215",
+  "type": "lead",
+  "attributes": {
+    "id": 22215,
+    "registrate_date": null,
+    "uid": "12-02-0000774",
+    "status": "in_progress",
+    "created_at": "2025-03-13T17:21:36.300+03:00",
+    "updated_at": "2025-03-18T09:30:00.222+03:00",
+    "service_id": 25,
+    "send_date": "2025-03-13T17:21:36.456+03:00",
+    "admin_name": "Нижний Новгород Абр Тех Н.",
+    "organization_name": "ПАО «Газпром газораспределение Нижний Новгород»",
+    "user_name": "Петров В.П.",
+    "sla_date": null,
+    "department": null,
+    "phase": null,
+    "user_id": 17993,
+    "user_full_name": "Петров Василий Петрович",
+    "user_passport": {
+      "date": "2024-11-06",
+      "branch": "ГУВД Москвы",
+      "number": "895423",
+      "series": "8947",
+      "division": null,
+      "identification_document": "01"
+    },
+    "user_phone": "87979797797",
+    "user_email": null,
+    "from_contract": null,
+    "type": null,
+    "object_name": "Объект",
+    "gas_object_type": null,
+    "last_tu_number": "бн",
+    "last_tu_date": "2025-02-26",
+    "planned_gas_consumption": "15,00",
+    "owner": {
+      "bik": null,
+      "fax": null,
+      "inn": null,
+      "kpp": null,
+      "ogrn": null,
+      "okfs": null,
+      "okpo": null,
+      "type": "individual_person",
+      "email": null,
+      "okato": null,
+      "okogu": null,
+      "oktmo": null,
+      "okved": null,
+      "phone": null,
+      "snils": null,
+      "fullname": null,
+      "passport": null,
+      "bank_name": null,
+      "last_name": null,
+      "region_id": null,
+      "birth_date": null,
+      "chief_base": null,
+      "chief_name": null,
+      "chief_post": null,
+      "egrip_date": null,
+      "egrul_date": null,
+      "first_name": null,
+      "extra_phone": null,
+      "middle_name": null,
+      "bank_account": null,
+      "egrip_number": null,
+      "egrip_series": null,
+      "egrul_number": null,
+      "legal_address": {
+        "city": null,
+        "flat": null,
+        "block": null,
+        "house": null,
+        "street": null,
+        "zip_code": null
+      },
+      "postal_address": {
+        "city": null,
+        "flat": null,
+        "block": null,
+        "house": null,
+        "street": null,
+        "zip_code": null
+      },
+      "payment_account": null,
+      "responsible_name": null,
+      "responsible_post": null,
+      "responsible_type": null,
+      "main_organization_id": null,
+      "organization_full_name": null,
+      "organization_short_name": null
+    },
+    "connection_in_boundaries": false,
+    "internal_pipe_construction": false,
+    "supply_gas_equipment": false,
+    "install_gas_equipment": false,
+    "supply_gas_metering": false,
+    "install_gas_metering": false,
+    "implementing_supply_gas_equipment": false,
+    "reason": "gas_consumption_increase",
+    "connection_points": [
+      {
+        "name": "ту1",
+        "max_gas_consumption": "5",
+        "planned_design_date": "",
+        "last_max_gas_consumption": "10",
+        "planned_construction_date": "",
+        "total_max_gas_consumption": "15",
+        "planned_commissioning_date": ""
+      }
+    ],
+    "okved": "",
+    "representative": null,
+    "surveying_document": {
+      "date": null,
+      "number": ""
+    },
+    "gas_consumption_characteristics": true,
+    "send_expired": false,
+    "uploaded_files": false,
+    "expired": false,
+    "status_changed_at": "2025-03-13T17:45:05.862+03:00",
+    "user_notification": true,
+    "status_set_at": {
+      "draft": "2025-03-13T17:21:36.300+03:00",
+      "registered": "2025-03-13T17:21:36.519+03:00",
+      "in_progress": "2025-03-13T17:45:05.866+03:00",
+      "document_check": "2025-03-13T17:33:05.843+03:00"
+    },
+    "gas_using_devices": null,
+    "gas_metering_device": null,
+    "residents": null,
+    "heated_rooms_info": null,
+    "domestic_gas_equipment_maintenance_contract": null,
+    "social_support": null,
+    "social_support_document": null,
+    "gas_consumption_types": null,
+    "domestic_gas_equipment_maintenance": null,
+    "gas_supply": null,
+    "expired_days": null,
+    "sla_days": null,
+    "has_confidant": false,
+    "note": null,
+    "contract_sign_type": "handwritten",
+    "snt_name": null,
+    "snt_inn": null,
+    "preferential_category": false,
+    "coordination_status_changed_on": "2025-03-13",
+    "coordination_status_changed_days_ago": 167,
+    "application_datetime": "2025-03-13T17:21:36.000+03:00",
+    "user_legal_address": null,
+    "correspondence_address": {
+      "id": 127852,
+      "addressable_type": "Lead",
+      "addressable_id": 22215,
+      "kind": "correspondence",
+      "street": "пер. 1-й Чапаева",
+      "city": "г. Бор",
+      "region": "обл. Нижегородская",
+      "country": null,
+      "zip_code": null,
+      "lat": null,
+      "lng": null,
+      "house": "д. 14",
+      "created_at": "2025-03-13T17:21:36.335+03:00",
+      "updated_at": "2025-03-13T17:21:36.335+03:00",
+      "area": "Нижегородская обл., Бор г.",
+      "settlement": "г. Бор",
+      "block": null,
+      "room": null,
+      "flat": "кв. 8",
+      "region_fias_id": "88cd27e2-6a8a-4421-9718-719a28a0a088",
+      "area_fias_id": "e736e903-6bc3-450b-b8af-7909213dc9ef",
+      "city_fias_id": "e736e903-6bc3-450b-b8af-7909213dc9ef",
+      "street_fias_id": "b90c356c-2cdb-4243-aece-66a6b356d993",
+      "house_fias_id": "6c400201-a62a-480b-8409-d5a4fb014651",
+      "extra": null,
+      "cadastral_number": "12:45:125891:11",
+      "deleted_at": null,
+      "cadastral_home_number": "12:45:125891:13",
+      "oktmo": null,
+      "title": "606440, Нижегородская обл., Бор г., 1-й Чапаева пер., д. 14, кв. 8",
+      "settlement_fias_id": "e736e903-6bc3-450b-b8af-7909213dc9ef",
+      "has_capital_construction": true,
+      "okato": null,
+      "room_type": null,
+      "settlement_type_full": null,
+      "region_object_id": 16
+    }
+  },
+  "relationships": {
+    "user": {
+      "data": {
+        "id": "17993",
+        "type": "user"
+      }
+    },
+    "confidant_user": {
+      "data": null
+    },
+    "admin": {
+      "data": {
+        "id": "543",
+        "type": "admin"
+      }
+    },
+    "mfc_manager": {
+      "data": null
+    },
+    "service": {
+      "data": {
+        "id": "25",
+        "type": "service"
+      }
+    },
+    "source": {
+      "data": {
+        "id": "7",
+        "type": "source"
+      }
+    },
+    "branch": {
+      "data": {
+        "id": "72",
+        "type": "branch"
+      }
+    },
+    "region": {
+      "data": {
+        "id": "16",
+        "type": "region"
+      }
+    },
+    "cancellation_reason": {
+      "data": null
+    },
+    "annullation_reason": {
+      "data": null
+    },
+    "rejection_reason": {
+      "data": null
+    },
+    "attorney": {
+      "data": null
+    },
+    "organization": {
+      "data": {
+        "id": "28",
+        "type": "organization"
+      }
+    },
+    "gas_object_address": {
+      "data": {
+        "id": "127851",
+        "type": "address"
+      }
+    },
+    "contract": {
+      "data": {
+        "id": "4779",
+        "type": "contract"
+      }
+    },
+    "specification_agreement": {
+      "data": null
+    },
+    "inventory_object": {
+      "data": null
+    },
+    "social_assistance": {
+      "data": null
+    },
+    "protocol_mismatches": {
+      "data": []
+    },
+    "regions": {
+      "data": [
+        {
+          "id": "28",
+          "type": "region"
+        },
+        {
+          "id": "28",
+          "type": "region"
+        }
+      ]
+    },
+    "gas_object_addresses": {
+      "data": [
+        {
+          "id": "127851",
+          "type": "address"
+        }
+      ]
+    }
+  }
+}

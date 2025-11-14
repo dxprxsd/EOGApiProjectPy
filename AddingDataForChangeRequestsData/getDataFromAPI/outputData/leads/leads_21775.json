@@ -1,0 +1,321 @@
+{
+  "id": "21775",
+  "type": "lead",
+  "attributes": {
+    "id": 21775,
+    "registrate_date": null,
+    "uid": "11-01-0008319",
+    "status": "document_check",
+    "created_at": "2025-01-13T15:01:33.688+03:00",
+    "updated_at": "2025-01-25T20:51:29.138+03:00",
+    "service_id": 24,
+    "send_date": "2025-01-13T15:01:33.869+03:00",
+    "admin_name": "Нижний Новгород Абр Тех Н.",
+    "organization_name": "ПАО «Газпром газораспределение Нижний Новгород»",
+    "user_name": "Гаврилов API Д.А.",
+    "sla_date": null,
+    "department": null,
+    "phase": null,
+    "user_id": 3467,
+    "user_full_name": "Гаврилов API Дмитрий Алексеевич",
+    "user_passport": {
+      "date": "2024-12-26",
+      "branch": "ewsdsadsadsa",
+      "number": "123456",
+      "series": "1111",
+      "division": null,
+      "citizenship": null,
+      "identification_document": "01"
+    },
+    "user_phone": "",
+    "user_email": null,
+    "from_contract": null,
+    "type": null,
+    "object_name": null,
+    "gas_object_type": null,
+    "last_tu_number": "ТУ СТАРЫЕ 25",
+    "last_tu_date": "2025-01-17",
+    "planned_gas_consumption": "5",
+    "owner": {
+      "bik": null,
+      "fax": null,
+      "inn": null,
+      "kpp": null,
+      "ogrn": null,
+      "okfs": null,
+      "okpo": null,
+      "type": "individual_person",
+      "email": null,
+      "okato": null,
+      "okogu": null,
+      "oktmo": null,
+      "okved": null,
+      "phone": null,
+      "snils": null,
+      "fullname": null,
+      "passport": null,
+      "bank_name": null,
+      "last_name": null,
+      "region_id": null,
+      "birth_date": null,
+      "chief_base": null,
+      "chief_name": null,
+      "chief_post": null,
+      "egrip_date": null,
+      "egrul_date": null,
+      "first_name": null,
+      "extra_phone": null,
+      "middle_name": null,
+      "bank_account": null,
+      "egrip_number": null,
+      "egrip_series": null,
+      "egrul_number": null,
+      "legal_address": {
+        "city": null,
+        "flat": null,
+        "block": null,
+        "house": null,
+        "street": null,
+        "zip_code": null
+      },
+      "postal_address": {
+        "city": null,
+        "flat": null,
+        "block": null,
+        "house": null,
+        "street": null,
+        "zip_code": null
+      },
+      "payment_account": null,
+      "responsible_name": null,
+      "responsible_post": null,
+      "responsible_type": null,
+      "main_organization_id": null,
+      "organization_full_name": null,
+      "organization_short_name": null
+    },
+    "connection_in_boundaries": null,
+    "internal_pipe_construction": null,
+    "supply_gas_equipment": null,
+    "install_gas_equipment": null,
+    "supply_gas_metering": null,
+    "install_gas_metering": null,
+    "implementing_supply_gas_equipment": null,
+    "reason": null,
+    "connection_points": null,
+    "okved": null,
+    "representative": null,
+    "surveying_document": null,
+    "gas_consumption_characteristics": null,
+    "send_expired": false,
+    "uploaded_files": false,
+    "expired": true,
+    "status_changed_at": "2025-01-25T20:51:28.823+03:00",
+    "user_notification": true,
+    "status_set_at": {
+      "draft": "2025-01-13T15:01:33.687+03:00",
+      "registered": "2025-01-13T15:01:33.922+03:00",
+      "document_check": "2025-01-25T20:51:28.860+03:00"
+    },
+    "gas_using_devices": null,
+    "gas_metering_device": null,
+    "residents": null,
+    "heated_rooms_info": null,
+    "domestic_gas_equipment_maintenance_contract": null,
+    "social_support": null,
+    "social_support_document": null,
+    "gas_consumption_types": null,
+    "domestic_gas_equipment_maintenance": false,
+    "gas_supply": false,
+    "expired_days": 196,
+    "sla_days": null,
+    "has_confidant": false,
+    "note": null,
+    "contract_sign_type": "",
+    "snt_name": null,
+    "snt_inn": null,
+    "preferential_category": false,
+    "coordination_status_changed_on": null,
+    "coordination_status_changed_days_ago": 0,
+    "application_datetime": "2025-01-13T15:01:34.000+03:00",
+    "user_legal_address": {
+      "id": 11086,
+      "addressable_type": "User",
+      "addressable_id": 3467,
+      "kind": "legal",
+      "street": null,
+      "city": null,
+      "region": null,
+      "country": null,
+      "zip_code": null,
+      "lat": null,
+      "lng": null,
+      "house": null,
+      "created_at": "2021-10-26T03:08:59.904+03:00",
+      "updated_at": "2021-10-26T03:08:59.904+03:00",
+      "area": null,
+      "settlement": null,
+      "block": null,
+      "room": null,
+      "flat": null,
+      "region_fias_id": null,
+      "area_fias_id": null,
+      "city_fias_id": null,
+      "street_fias_id": null,
+      "house_fias_id": null,
+      "extra": null,
+      "cadastral_number": null,
+      "deleted_at": null,
+      "cadastral_home_number": null,
+      "oktmo": null,
+      "title": null,
+      "settlement_fias_id": null,
+      "has_capital_construction": true,
+      "okato": null,
+      "room_type": null,
+      "settlement_type_full": null,
+      "region_object_id": null
+    },
+    "correspondence_address": {
+      "id": 126978,
+      "addressable_type": "Lead",
+      "addressable_id": 21775,
+      "kind": "correspondence",
+      "street": "Абразивная",
+      "city": "Нижний Новгород",
+      "region": "Нижегородская обл",
+      "country": null,
+      "zip_code": "603069",
+      "lat": null,
+      "lng": null,
+      "house": "1",
+      "created_at": "2025-01-13T15:01:33.723+03:00",
+      "updated_at": "2025-01-13T15:01:33.723+03:00",
+      "area": "",
+      "settlement": "",
+      "block": "",
+      "room": "",
+      "flat": "",
+      "region_fias_id": "88cd27e2-6a8a-4421-9718-719a28a0a088",
+      "area_fias_id": "",
+      "city_fias_id": "555e7d61-d9a7-4ba6-9770-6caa8198c483",
+      "street_fias_id": "353697ed-c227-4d4c-b622-5ab1f41a0d41",
+      "house_fias_id": "1156c9c6-4b24-40f4-9fb7-c5e661b8a4a2",
+      "extra": "",
+      "cadastral_number": "",
+      "deleted_at": null,
+      "cadastral_home_number": "",
+      "oktmo": null,
+      "title": "г Нижний Новгород, ул Абразивная, д 1",
+      "settlement_fias_id": "",
+      "has_capital_construction": true,
+      "okato": null,
+      "room_type": null,
+      "settlement_type_full": null,
+      "region_object_id": 28
+    }
+  },
+  "relationships": {
+    "user": {
+      "data": {
+        "id": "3467",
+        "type": "user"
+      }
+    },
+    "confidant_user": {
+      "data": null
+    },
+    "admin": {
+      "data": {
+        "id": "543",
+        "type": "admin"
+      }
+    },
+    "mfc_manager": {
+      "data": null
+    },
+    "service": {
+      "data": {
+        "id": "24",
+        "type": "service"
+      }
+    },
+    "source": {
+      "data": {
+        "id": "8",
+        "type": "source"
+      }
+    },
+    "branch": {
+      "data": {
+        "id": "72",
+        "type": "branch"
+      }
+    },
+    "region": {
+      "data": {
+        "id": "56",
+        "type": "region"
+      }
+    },
+    "cancellation_reason": {
+      "data": null
+    },
+    "annullation_reason": {
+      "data": null
+    },
+    "rejection_reason": {
+      "data": null
+    },
+    "attorney": {
+      "data": null
+    },
+    "organization": {
+      "data": {
+        "id": "28",
+        "type": "organization"
+      }
+    },
+    "gas_object_address": {
+      "data": {
+        "id": "126977",
+        "type": "address"
+      }
+    },
+    "contract": {
+      "data": null
+    },
+    "specification_agreement": {
+      "data": null
+    },
+    "inventory_object": {
+      "data": null
+    },
+    "social_assistance": {
+      "data": null
+    },
+    "protocol_mismatches": {
+      "data": []
+    },
+    "regions": {
+      "data": [
+        {
+          "id": "28",
+          "type": "region"
+        },
+        {
+          "id": "28",
+          "type": "region"
+        }
+      ]
+    },
+    "gas_object_addresses": {
+      "data": [
+        {
+          "id": "126977",
+          "type": "address"
+        }
+      ]
+    }
+  }
+}

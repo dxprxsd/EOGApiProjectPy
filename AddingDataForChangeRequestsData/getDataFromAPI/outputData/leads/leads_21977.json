@@ -1,0 +1,231 @@
+{
+  "id": "21977",
+  "type": "lead",
+  "attributes": {
+    "id": 21977,
+    "registrate_date": null,
+    "uid": "11-01-0008350",
+    "status": "in_progress",
+    "created_at": "2025-02-11T01:22:05.961+03:00",
+    "updated_at": "2025-03-07T14:30:08.036+03:00",
+    "service_id": 24,
+    "send_date": "2025-02-11T01:22:06.076+03:00",
+    "admin_name": "Нижний Новгород Абр Тех Н.",
+    "organization_name": "ПАО «Газпром газораспределение Нижний Новгород»",
+    "user_name": "Гаврилов Д.А.",
+    "sla_date": null,
+    "department": null,
+    "phase": null,
+    "user_id": 17932,
+    "user_full_name": "Гаврилов Дмитрий Алексеевич",
+    "user_passport": {
+      "date": "2025-02-04",
+      "branch": "Мною",
+      "number": "123123",
+      "series": "1231",
+      "division": null,
+      "identification_document": "01"
+    },
+    "user_phone": "+79644012020",
+    "user_email": null,
+    "from_contract": null,
+    "type": null,
+    "object_name": null,
+    "gas_object_type": null,
+    "last_tu_number": "TU 24",
+    "last_tu_date": "2025-02-04",
+    "planned_gas_consumption": "5",
+    "owner": null,
+    "connection_in_boundaries": null,
+    "internal_pipe_construction": null,
+    "supply_gas_equipment": null,
+    "install_gas_equipment": null,
+    "supply_gas_metering": null,
+    "install_gas_metering": null,
+    "implementing_supply_gas_equipment": null,
+    "reason": null,
+    "connection_points": null,
+    "okved": null,
+    "representative": null,
+    "surveying_document": null,
+    "gas_consumption_characteristics": null,
+    "send_expired": false,
+    "uploaded_files": false,
+    "expired": false,
+    "status_changed_at": "2025-03-05T17:32:03.439+03:00",
+    "user_notification": true,
+    "status_set_at": {
+      "draft": "2025-02-11T01:22:05.961+03:00",
+      "registered": "2025-02-11T01:22:06.173+03:00",
+      "in_progress": "2025-03-05T17:32:03.441+03:00",
+      "document_check": "2025-02-13T15:43:58.665+03:00",
+      "executor_selection": "2025-02-13T15:41:46.959+03:00"
+    },
+    "gas_using_devices": null,
+    "gas_metering_device": null,
+    "residents": null,
+    "heated_rooms_info": null,
+    "domestic_gas_equipment_maintenance_contract": null,
+    "social_support": null,
+    "social_support_document": null,
+    "gas_consumption_types": null,
+    "domestic_gas_equipment_maintenance": false,
+    "gas_supply": false,
+    "expired_days": null,
+    "sla_days": null,
+    "has_confidant": false,
+    "note": null,
+    "contract_sign_type": "handwritten",
+    "snt_name": null,
+    "snt_inn": null,
+    "preferential_category": false,
+    "coordination_status_changed_on": null,
+    "coordination_status_changed_days_ago": 0,
+    "application_datetime": "2025-02-11T01:22:06.000+03:00",
+    "user_legal_address": null,
+    "correspondence_address": {
+      "id": 127370,
+      "addressable_type": "Lead",
+      "addressable_id": 21977,
+      "kind": "correspondence",
+      "street": "ул. Абразивная",
+      "city": "г. Нижний Новгород",
+      "region": "обл. Нижегородская",
+      "country": null,
+      "zip_code": null,
+      "lat": null,
+      "lng": null,
+      "house": "д. 10",
+      "created_at": "2025-02-11T01:22:06.020+03:00",
+      "updated_at": "2025-02-11T01:22:06.020+03:00",
+      "area": "Нижегородская обл., Нижний Новгород г.",
+      "settlement": "г. Нижний Новгород",
+      "block": null,
+      "room": null,
+      "flat": "кв. 1",
+      "region_fias_id": "88cd27e2-6a8a-4421-9718-719a28a0a088",
+      "area_fias_id": "555e7d61-d9a7-4ba6-9770-6caa8198c483",
+      "city_fias_id": "555e7d61-d9a7-4ba6-9770-6caa8198c483",
+      "street_fias_id": "353697ed-c227-4d4c-b622-5ab1f41a0d41",
+      "house_fias_id": "f2d8cc68-22ce-4adb-a067-64a1538f9038",
+      "extra": null,
+      "cadastral_number": "11:11:111111",
+      "deleted_at": null,
+      "cadastral_home_number": "22:22:22222",
+      "oktmo": null,
+      "title": "603069, Нижегородская обл., Нижний Новгород г., Абразивная ул., д. 10, кв. 1",
+      "settlement_fias_id": "555e7d61-d9a7-4ba6-9770-6caa8198c483",
+      "has_capital_construction": true,
+      "okato": null,
+      "room_type": null,
+      "settlement_type_full": null,
+      "region_object_id": 56
+    }
+  },
+  "relationships": {
+    "user": {
+      "data": {
+        "id": "17932",
+        "type": "user"
+      }
+    },
+    "confidant_user": {
+      "data": null
+    },
+    "admin": {
+      "data": {
+        "id": "543",
+        "type": "admin"
+      }
+    },
+    "mfc_manager": {
+      "data": null
+    },
+    "service": {
+      "data": {
+        "id": "24",
+        "type": "service"
+      }
+    },
+    "source": {
+      "data": {
+        "id": "7",
+        "type": "source"
+      }
+    },
+    "branch": {
+      "data": {
+        "id": "72",
+        "type": "branch"
+      }
+    },
+    "region": {
+      "data": {
+        "id": "56",
+        "type": "region"
+      }
+    },
+    "cancellation_reason": {
+      "data": null
+    },
+    "annullation_reason": {
+      "data": null
+    },
+    "rejection_reason": {
+      "data": null
+    },
+    "attorney": {
+      "data": null
+    },
+    "organization": {
+      "data": {
+        "id": "28",
+        "type": "organization"
+      }
+    },
+    "gas_object_address": {
+      "data": {
+        "id": "127369",
+        "type": "address"
+      }
+    },
+    "contract": {
+      "data": {
+        "id": "4761",
+        "type": "contract"
+      }
+    },
+    "specification_agreement": {
+      "data": null
+    },
+    "inventory_object": {
+      "data": null
+    },
+    "social_assistance": {
+      "data": null
+    },
+    "protocol_mismatches": {
+      "data": []
+    },
+    "regions": {
+      "data": [
+        {
+          "id": "28",
+          "type": "region"
+        },
+        {
+          "id": "28",
+          "type": "region"
+        }
+      ]
+    },
+    "gas_object_addresses": {
+      "data": [
+        {
+          "id": "127369",
+          "type": "address"
+        }
+      ]
+    }
+  }
+}

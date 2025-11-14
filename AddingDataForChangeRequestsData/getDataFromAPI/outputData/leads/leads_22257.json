@@ -1,0 +1,232 @@
+{
+  "id": "22257",
+  "type": "lead",
+  "attributes": {
+    "id": 22257,
+    "registrate_date": null,
+    "uid": "52-02-0000162",
+    "status": "connection",
+    "created_at": "2025-03-20T13:19:06.055+03:00",
+    "updated_at": "2025-10-17T15:52:53.081+03:00",
+    "service_id": 25,
+    "send_date": "2025-03-20T13:19:06.105+03:00",
+    "admin_name": "Нижний Новгород Абр Тех Н.",
+    "organization_name": "ПАО «Газпром газораспределение Нижний Новгород»",
+    "user_name": "Абраменкова А.В.",
+    "sla_date": null,
+    "department": null,
+    "phase": null,
+    "user_id": 17998,
+    "user_full_name": "Абраменкова Анна Викторовна",
+    "user_passport": {
+      "date": "2022-05-04",
+      "branch": "Снова не знаем кем",
+      "number": "888887",
+      "series": "4567",
+      "division": null,
+      "identification_document": "01"
+    },
+    "user_phone": "84537886758",
+    "user_email": null,
+    "from_contract": null,
+    "type": null,
+    "object_name": null,
+    "gas_object_type": null,
+    "last_tu_number": "бн",
+    "last_tu_date": "2025-03-04",
+    "planned_gas_consumption": "7,00",
+    "owner": null,
+    "connection_in_boundaries": false,
+    "internal_pipe_construction": false,
+    "supply_gas_equipment": false,
+    "install_gas_equipment": false,
+    "supply_gas_metering": false,
+    "install_gas_metering": false,
+    "implementing_supply_gas_equipment": false,
+    "reason": "connection",
+    "connection_points": [],
+    "okved": null,
+    "representative": null,
+    "surveying_document": null,
+    "gas_consumption_characteristics": true,
+    "send_expired": false,
+    "uploaded_files": false,
+    "expired": false,
+    "status_changed_at": "2025-10-07T11:25:14.145+03:00",
+    "user_notification": true,
+    "status_set_at": {
+      "draft": "2025-03-20T13:19:06.055+03:00",
+      "connection": "2025-10-07T11:25:14.184+03:00",
+      "registered": "2025-03-20T13:19:06.151+03:00",
+      "in_progress": "2025-03-20T13:24:06.144+03:00",
+      "document_check": "2025-03-20T13:22:05.892+03:00",
+      "implementation": "2025-10-07T11:24:35.985+03:00"
+    },
+    "gas_using_devices": null,
+    "gas_metering_device": null,
+    "residents": null,
+    "heated_rooms_info": null,
+    "domestic_gas_equipment_maintenance_contract": null,
+    "social_support": null,
+    "social_support_document": null,
+    "gas_consumption_types": null,
+    "domestic_gas_equipment_maintenance": null,
+    "gas_supply": null,
+    "expired_days": null,
+    "sla_days": null,
+    "has_confidant": false,
+    "note": null,
+    "contract_sign_type": "handwritten",
+    "snt_name": null,
+    "snt_inn": null,
+    "preferential_category": false,
+    "coordination_status_changed_on": null,
+    "coordination_status_changed_days_ago": 0,
+    "application_datetime": "2025-03-20T13:19:06.000+03:00",
+    "user_legal_address": null,
+    "correspondence_address": {
+      "id": 127926,
+      "addressable_type": "Lead",
+      "addressable_id": 22257,
+      "kind": "correspondence",
+      "street": "пер. Буденного",
+      "city": "г. Ворсма",
+      "region": "обл. Нижегородская",
+      "country": null,
+      "zip_code": null,
+      "lat": null,
+      "lng": null,
+      "house": "д. 10",
+      "created_at": "2025-03-20T13:19:06.090+03:00",
+      "updated_at": "2025-03-20T13:19:06.090+03:00",
+      "area": "Нижегородская обл., Павловский р-н, Ворсма г.",
+      "settlement": "г. Ворсма",
+      "block": null,
+      "room": null,
+      "flat": null,
+      "region_fias_id": "88cd27e2-6a8a-4421-9718-719a28a0a088",
+      "area_fias_id": "cd695c84-0b68-4d4c-8068-76e9bba1228a",
+      "city_fias_id": "cd695c84-0b68-4d4c-8068-76e9bba1228a",
+      "street_fias_id": "8d4d5621-d2a7-4622-bf1d-0f82580411b5",
+      "house_fias_id": "66159950-65be-4897-a101-da92d8e3c8ac",
+      "extra": null,
+      "cadastral_number": "52:34:0600004:246",
+      "deleted_at": null,
+      "cadastral_home_number": "52:34:0600004:248",
+      "oktmo": null,
+      "title": "606120, Нижегородская обл., Павловский р-н, Ворсма г., Буденного пер., д. 10",
+      "settlement_fias_id": "cd695c84-0b68-4d4c-8068-76e9bba1228a",
+      "has_capital_construction": true,
+      "okato": null,
+      "room_type": null,
+      "settlement_type_full": null,
+      "region_object_id": 28
+    }
+  },
+  "relationships": {
+    "user": {
+      "data": {
+        "id": "17998",
+        "type": "user"
+      }
+    },
+    "confidant_user": {
+      "data": null
+    },
+    "admin": {
+      "data": {
+        "id": "543",
+        "type": "admin"
+      }
+    },
+    "mfc_manager": {
+      "data": null
+    },
+    "service": {
+      "data": {
+        "id": "25",
+        "type": "service"
+      }
+    },
+    "source": {
+      "data": {
+        "id": "7",
+        "type": "source"
+      }
+    },
+    "branch": {
+      "data": {
+        "id": "72",
+        "type": "branch"
+      }
+    },
+    "region": {
+      "data": {
+        "id": "28",
+        "type": "region"
+      }
+    },
+    "cancellation_reason": {
+      "data": null
+    },
+    "annullation_reason": {
+      "data": null
+    },
+    "rejection_reason": {
+      "data": null
+    },
+    "attorney": {
+      "data": null
+    },
+    "organization": {
+      "data": {
+        "id": "28",
+        "type": "organization"
+      }
+    },
+    "gas_object_address": {
+      "data": {
+        "id": "127925",
+        "type": "address"
+      }
+    },
+    "contract": {
+      "data": {
+        "id": "4787",
+        "type": "contract"
+      }
+    },
+    "specification_agreement": {
+      "data": null
+    },
+    "inventory_object": {
+      "data": null
+    },
+    "social_assistance": {
+      "data": null
+    },
+    "protocol_mismatches": {
+      "data": []
+    },
+    "regions": {
+      "data": [
+        {
+          "id": "28",
+          "type": "region"
+        },
+        {
+          "id": "28",
+          "type": "region"
+        }
+      ]
+    },
+    "gas_object_addresses": {
+      "data": [
+        {
+          "id": "127925",
+          "type": "address"
+        }
+      ]
+    }
+  }
+}

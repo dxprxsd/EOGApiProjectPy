@@ -1,0 +1,246 @@
+{
+  "id": "21498",
+  "type": "lead",
+  "attributes": {
+    "id": 21498,
+    "registrate_date": null,
+    "uid": "46-01-0000027",
+    "status": "document_check",
+    "created_at": "2024-11-18T12:22:13.577+03:00",
+    "updated_at": "2024-11-18T12:49:00.866+03:00",
+    "service_id": 24,
+    "send_date": "2024-11-18T12:22:13.670+03:00",
+    "admin_name": "Нижний Новгород Абр Тех Н.",
+    "organization_name": "ПАО «Газпром газораспределение Нижний Новгород»",
+    "user_name": "Новгородский Н.Н.",
+    "sla_date": null,
+    "department": null,
+    "phase": null,
+    "user_id": 17751,
+    "user_full_name": "Новгородский Новгород Н",
+    "user_passport": {
+      "date": "2012-11-01",
+      "branch": "Департаментом",
+      "number": "123698",
+      "series": "7894",
+      "division": "770-883",
+      "identification_document": "01"
+    },
+    "user_phone": "+79891165969",
+    "user_email": "test3@abr.tech",
+    "from_contract": null,
+    "type": null,
+    "object_name": null,
+    "gas_object_type": null,
+    "last_tu_number": "",
+    "last_tu_date": null,
+    "planned_gas_consumption": "10",
+    "owner": {
+      "email": "test@abr.tech",
+      "phone": "+7 (989) 660-33-00",
+      "snils": "329-782-162 11",
+      "fullname": "Новгородский Новгород Н",
+      "passport": {
+        "date": "2012-11-01",
+        "branch": "Департаментом",
+        "number": "123698",
+        "series": "7894",
+        "division": "770-883",
+        "identification_document": "01"
+      },
+      "birth_date": "1990-10-28"
+    },
+    "connection_in_boundaries": null,
+    "internal_pipe_construction": null,
+    "supply_gas_equipment": null,
+    "install_gas_equipment": null,
+    "supply_gas_metering": null,
+    "install_gas_metering": null,
+    "implementing_supply_gas_equipment": null,
+    "reason": null,
+    "connection_points": null,
+    "okved": null,
+    "representative": null,
+    "surveying_document": null,
+    "gas_consumption_characteristics": null,
+    "send_expired": false,
+    "uploaded_files": false,
+    "expired": true,
+    "status_changed_at": "2024-11-18T12:23:00.446+03:00",
+    "user_notification": true,
+    "status_set_at": {
+      "draft": "2024-11-18T12:22:13.577+03:00",
+      "registered": "2024-11-18T12:22:13.724+03:00",
+      "document_check": "2024-11-18T12:23:00.453+03:00"
+    },
+    "gas_using_devices": null,
+    "gas_metering_device": null,
+    "residents": null,
+    "heated_rooms_info": null,
+    "domestic_gas_equipment_maintenance_contract": null,
+    "social_support": null,
+    "social_support_document": null,
+    "gas_consumption_types": null,
+    "domestic_gas_equipment_maintenance": false,
+    "gas_supply": false,
+    "expired_days": 239,
+    "sla_days": null,
+    "has_confidant": true,
+    "note": null,
+    "contract_sign_type": "handwritten",
+    "snt_name": null,
+    "snt_inn": null,
+    "preferential_category": false,
+    "coordination_status_changed_on": null,
+    "coordination_status_changed_days_ago": 0,
+    "application_datetime": "2024-11-18T12:22:14.000+03:00",
+    "user_legal_address": null,
+    "correspondence_address": {
+      "id": 126447,
+      "addressable_type": "Lead",
+      "addressable_id": 21498,
+      "kind": "correspondence",
+      "street": "Кирова",
+      "city": "Дзержинск",
+      "region": "Нижегородская обл",
+      "country": null,
+      "zip_code": "606000",
+      "lat": null,
+      "lng": null,
+      "house": "4",
+      "created_at": "2024-11-18T12:22:13.609+03:00",
+      "updated_at": "2024-11-18T12:22:13.609+03:00",
+      "area": "",
+      "settlement": "",
+      "block": "",
+      "room": "",
+      "flat": "",
+      "region_fias_id": "88cd27e2-6a8a-4421-9718-719a28a0a088",
+      "area_fias_id": "",
+      "city_fias_id": "1d5a97d5-9bdf-44c9-ac42-e201833e7f28",
+      "street_fias_id": "f1d6da87-dd94-46ab-be22-d8d4041a3fc7",
+      "house_fias_id": "",
+      "extra": "",
+      "cadastral_number": "",
+      "deleted_at": null,
+      "cadastral_home_number": "",
+      "oktmo": null,
+      "title": "Нижегородская обл, г Дзержинск, ул Кирова, д 4",
+      "settlement_fias_id": "",
+      "has_capital_construction": true,
+      "okato": null,
+      "room_type": null,
+      "settlement_type_full": null,
+      "region_object_id": 28
+    }
+  },
+  "relationships": {
+    "user": {
+      "data": {
+        "id": "17751",
+        "type": "user"
+      }
+    },
+    "confidant_user": {
+      "data": {
+        "id": "17731",
+        "type": "user"
+      }
+    },
+    "admin": {
+      "data": {
+        "id": "543",
+        "type": "admin"
+      }
+    },
+    "mfc_manager": {
+      "data": null
+    },
+    "service": {
+      "data": {
+        "id": "24",
+        "type": "service"
+      }
+    },
+    "source": {
+      "data": {
+        "id": "8",
+        "type": "source"
+      }
+    },
+    "branch": {
+      "data": {
+        "id": "72",
+        "type": "branch"
+      }
+    },
+    "region": {
+      "data": {
+        "id": "22",
+        "type": "region"
+      }
+    },
+    "cancellation_reason": {
+      "data": null
+    },
+    "annullation_reason": {
+      "data": null
+    },
+    "rejection_reason": {
+      "data": null
+    },
+    "attorney": {
+      "data": {
+        "id": "8",
+        "type": "attorney"
+      }
+    },
+    "organization": {
+      "data": {
+        "id": "28",
+        "type": "organization"
+      }
+    },
+    "gas_object_address": {
+      "data": {
+        "id": "126446",
+        "type": "address"
+      }
+    },
+    "contract": {
+      "data": null
+    },
+    "specification_agreement": {
+      "data": null
+    },
+    "inventory_object": {
+      "data": null
+    },
+    "social_assistance": {
+      "data": null
+    },
+    "protocol_mismatches": {
+      "data": []
+    },
+    "regions": {
+      "data": [
+        {
+          "id": "28",
+          "type": "region"
+        },
+        {
+          "id": "28",
+          "type": "region"
+        }
+      ]
+    },
+    "gas_object_addresses": {
+      "data": [
+        {
+          "id": "126446",
+          "type": "address"
+        }
+      ]
+    }
+  }
+}

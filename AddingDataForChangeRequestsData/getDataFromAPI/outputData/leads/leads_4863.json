@@ -1,0 +1,230 @@
+{
+  "id": "4863",
+  "type": "lead",
+  "attributes": {
+    "id": 4863,
+    "registrate_date": null,
+    "uid": "12-01-0000056",
+    "status": "annulled",
+    "created_at": "2021-12-13T14:50:51.094+03:00",
+    "updated_at": "2022-12-20T12:00:40.673+03:00",
+    "service_id": 24,
+    "send_date": "2021-12-13T14:50:51.173+03:00",
+    "admin_name": "Ермаков Михаил Михайлович",
+    "organization_name": "ПАО «Газпром газораспределение Нижний Новгород»",
+    "user_name": null,
+    "sla_date": null,
+    "department": null,
+    "phase": null,
+    "user_id": null,
+    "user_full_name": null,
+    "user_passport": null,
+    "user_phone": null,
+    "user_email": null,
+    "from_contract": null,
+    "type": null,
+    "object_name": null,
+    "gas_object_type": null,
+    "last_tu_number": "",
+    "last_tu_date": null,
+    "planned_gas_consumption": 5.0,
+    "owner": {
+      "inn": null,
+      "email": "vladelec@mail.ru",
+      "phone": "+7 (911) 111-11-11",
+      "snils": "111-111-111 11",
+      "fullname": "Vladelec",
+      "passport": {
+        "date": "2015-12-01",
+        "branch": "УМВД РОССИИ",
+        "number": "123123",
+        "series": "1231",
+        "division": null,
+        "citizenship": null,
+        "identification_document": "01"
+      },
+      "birth_date": "2011-12-09T00:00:00.000+00:00"
+    },
+    "connection_in_boundaries": null,
+    "internal_pipe_construction": null,
+    "supply_gas_equipment": null,
+    "install_gas_equipment": null,
+    "supply_gas_metering": null,
+    "install_gas_metering": null,
+    "implementing_supply_gas_equipment": null,
+    "reason": null,
+    "connection_points": null,
+    "okved": null,
+    "representative": null,
+    "surveying_document": null,
+    "gas_consumption_characteristics": null,
+    "send_expired": false,
+    "uploaded_files": false,
+    "expired": false,
+    "status_changed_at": "2022-10-27T15:49:38.699+03:00",
+    "user_notification": true,
+    "status_set_at": {
+      "annulled": "2022-10-27T15:49:38.739+03:00"
+    },
+    "gas_using_devices": null,
+    "gas_metering_device": null,
+    "residents": null,
+    "heated_rooms_info": null,
+    "domestic_gas_equipment_maintenance_contract": null,
+    "social_support": null,
+    "social_support_document": null,
+    "gas_consumption_types": null,
+    "domestic_gas_equipment_maintenance": null,
+    "gas_supply": null,
+    "expired_days": null,
+    "sla_days": null,
+    "has_confidant": true,
+    "note": "Заявка была аннулирована в связи с непредоставлением Заявителем необходимых документов и сведений в нормативный срок",
+    "contract_sign_type": null,
+    "snt_name": null,
+    "snt_inn": null,
+    "preferential_category": false,
+    "coordination_status_changed_on": null,
+    "coordination_status_changed_days_ago": 0,
+    "application_datetime": "2021-12-13T14:50:51.000+03:00",
+    "user_legal_address": null,
+    "correspondence_address": {
+      "id": 17151,
+      "addressable_type": "Lead",
+      "addressable_id": 4863,
+      "kind": "correspondence",
+      "street": "Палехская",
+      "city": "Нижний Новгород",
+      "region": "Нижегородская обл",
+      "country": null,
+      "zip_code": null,
+      "lat": null,
+      "lng": null,
+      "house": "1А",
+      "created_at": "2021-12-13T14:50:51.151+03:00",
+      "updated_at": "2021-12-13T14:50:51.151+03:00",
+      "area": null,
+      "settlement": null,
+      "block": null,
+      "room": null,
+      "flat": null,
+      "region_fias_id": "88cd27e2-6a8a-4421-9718-719a28a0a088",
+      "area_fias_id": null,
+      "city_fias_id": "555e7d61-d9a7-4ba6-9770-6caa8198c483",
+      "street_fias_id": "f41b855e-a3e2-4135-8250-d5a60649ad65",
+      "house_fias_id": "31a29bb3-0df2-4e62-975c-b12d3dbe1467",
+      "extra": null,
+      "cadastral_number": null,
+      "deleted_at": null,
+      "cadastral_home_number": null,
+      "oktmo": null,
+      "title": "г Нижний Новгород, ул Палехская, д 1А",
+      "settlement_fias_id": null,
+      "has_capital_construction": true,
+      "okato": null,
+      "room_type": null,
+      "settlement_type_full": null,
+      "region_object_id": 28
+    }
+  },
+  "relationships": {
+    "user": {
+      "data": null
+    },
+    "confidant_user": {
+      "data": {
+        "id": "393",
+        "type": "user"
+      }
+    },
+    "admin": {
+      "data": {
+        "id": "161",
+        "type": "admin"
+      }
+    },
+    "mfc_manager": {
+      "data": null
+    },
+    "service": {
+      "data": {
+        "id": "24",
+        "type": "service"
+      }
+    },
+    "source": {
+      "data": {
+        "id": "8",
+        "type": "source"
+      }
+    },
+    "branch": {
+      "data": {
+        "id": "72",
+        "type": "branch"
+      }
+    },
+    "region": {
+      "data": null
+    },
+    "cancellation_reason": {
+      "data": null
+    },
+    "annullation_reason": {
+      "data": null
+    },
+    "rejection_reason": {
+      "data": null
+    },
+    "attorney": {
+      "data": null
+    },
+    "organization": {
+      "data": {
+        "id": "28",
+        "type": "organization"
+      }
+    },
+    "gas_object_address": {
+      "data": {
+        "id": "17150",
+        "type": "address"
+      }
+    },
+    "contract": {
+      "data": null
+    },
+    "specification_agreement": {
+      "data": null
+    },
+    "inventory_object": {
+      "data": null
+    },
+    "social_assistance": {
+      "data": null
+    },
+    "protocol_mismatches": {
+      "data": []
+    },
+    "regions": {
+      "data": [
+        {
+          "id": "28",
+          "type": "region"
+        },
+        {
+          "id": "28",
+          "type": "region"
+        }
+      ]
+    },
+    "gas_object_addresses": {
+      "data": [
+        {
+          "id": "17150",
+          "type": "address"
+        }
+      ]
+    }
+  }
+}

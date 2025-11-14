@@ -1,0 +1,246 @@
+{
+  "id": "21497",
+  "type": "lead",
+  "attributes": {
+    "id": 21497,
+    "registrate_date": null,
+    "uid": "46-01-0000026",
+    "status": "document_check",
+    "created_at": "2024-11-18T11:57:56.742+03:00",
+    "updated_at": "2024-11-18T12:16:02.521+03:00",
+    "service_id": 24,
+    "send_date": "2024-11-18T11:57:56.927+03:00",
+    "admin_name": "Нижний Новгород Абр Тех Н.",
+    "organization_name": "ПАО «Газпром газораспределение Нижний Новгород»",
+    "user_name": "Представительный П.",
+    "sla_date": null,
+    "department": null,
+    "phase": null,
+    "user_id": 17750,
+    "user_full_name": "Представительный Представитель ",
+    "user_passport": {
+      "date": "2015-11-30",
+      "branch": "кем-то",
+      "number": "012563",
+      "series": "7894",
+      "division": "770-590",
+      "identification_document": "01"
+    },
+    "user_phone": "+79251165633",
+    "user_email": "test2@abr.tech",
+    "from_contract": null,
+    "type": null,
+    "object_name": null,
+    "gas_object_type": null,
+    "last_tu_number": "",
+    "last_tu_date": null,
+    "planned_gas_consumption": "12",
+    "owner": {
+      "email": "test@abr.tech",
+      "phone": "+7 (925) 115-25-63",
+      "snils": "102-250-506 81",
+      "fullname": "Представитель Представительный",
+      "passport": {
+        "date": "2015-11-30",
+        "branch": "кем-то",
+        "number": "012563",
+        "series": "7894",
+        "division": "770-590",
+        "identification_document": "01"
+      },
+      "birth_date": "1994-11-01"
+    },
+    "connection_in_boundaries": null,
+    "internal_pipe_construction": null,
+    "supply_gas_equipment": null,
+    "install_gas_equipment": null,
+    "supply_gas_metering": null,
+    "install_gas_metering": null,
+    "implementing_supply_gas_equipment": null,
+    "reason": null,
+    "connection_points": null,
+    "okved": null,
+    "representative": null,
+    "surveying_document": null,
+    "gas_consumption_characteristics": null,
+    "send_expired": false,
+    "uploaded_files": false,
+    "expired": true,
+    "status_changed_at": "2024-11-18T11:59:36.268+03:00",
+    "user_notification": true,
+    "status_set_at": {
+      "draft": "2024-11-18T11:57:56.742+03:00",
+      "registered": "2024-11-18T11:57:56.966+03:00",
+      "document_check": "2024-11-18T11:59:36.276+03:00"
+    },
+    "gas_using_devices": null,
+    "gas_metering_device": null,
+    "residents": null,
+    "heated_rooms_info": null,
+    "domestic_gas_equipment_maintenance_contract": null,
+    "social_support": null,
+    "social_support_document": null,
+    "gas_consumption_types": null,
+    "domestic_gas_equipment_maintenance": false,
+    "gas_supply": false,
+    "expired_days": 239,
+    "sla_days": null,
+    "has_confidant": true,
+    "note": null,
+    "contract_sign_type": "electronic",
+    "snt_name": null,
+    "snt_inn": null,
+    "preferential_category": false,
+    "coordination_status_changed_on": null,
+    "coordination_status_changed_days_ago": 0,
+    "application_datetime": "2024-11-18T11:57:57.000+03:00",
+    "user_legal_address": null,
+    "correspondence_address": {
+      "id": 126445,
+      "addressable_type": "Lead",
+      "addressable_id": 21497,
+      "kind": "correspondence",
+      "street": "Ударная",
+      "city": "Нижний Новгород",
+      "region": "Нижегородская обл",
+      "country": null,
+      "zip_code": "603037",
+      "lat": null,
+      "lng": null,
+      "house": "1",
+      "created_at": "2024-11-18T11:57:56.771+03:00",
+      "updated_at": "2024-11-18T11:57:56.771+03:00",
+      "area": "",
+      "settlement": "",
+      "block": "",
+      "room": "",
+      "flat": "",
+      "region_fias_id": "88cd27e2-6a8a-4421-9718-719a28a0a088",
+      "area_fias_id": "",
+      "city_fias_id": "555e7d61-d9a7-4ba6-9770-6caa8198c483",
+      "street_fias_id": "e07aedf2-5110-430b-ba52-b477c73aa2d7",
+      "house_fias_id": "927d0471-4fe5-4063-b1d4-2b152a3daef9",
+      "extra": "",
+      "cadastral_number": "",
+      "deleted_at": null,
+      "cadastral_home_number": "",
+      "oktmo": null,
+      "title": "г Нижний Новгород, ул Ударная, д 1",
+      "settlement_fias_id": "",
+      "has_capital_construction": true,
+      "okato": null,
+      "room_type": null,
+      "settlement_type_full": null,
+      "region_object_id": 28
+    }
+  },
+  "relationships": {
+    "user": {
+      "data": {
+        "id": "17750",
+        "type": "user"
+      }
+    },
+    "confidant_user": {
+      "data": {
+        "id": "17731",
+        "type": "user"
+      }
+    },
+    "admin": {
+      "data": {
+        "id": "543",
+        "type": "admin"
+      }
+    },
+    "mfc_manager": {
+      "data": null
+    },
+    "service": {
+      "data": {
+        "id": "24",
+        "type": "service"
+      }
+    },
+    "source": {
+      "data": {
+        "id": "8",
+        "type": "source"
+      }
+    },
+    "branch": {
+      "data": {
+        "id": "72",
+        "type": "branch"
+      }
+    },
+    "region": {
+      "data": {
+        "id": "22",
+        "type": "region"
+      }
+    },
+    "cancellation_reason": {
+      "data": null
+    },
+    "annullation_reason": {
+      "data": null
+    },
+    "rejection_reason": {
+      "data": null
+    },
+    "attorney": {
+      "data": {
+        "id": "7",
+        "type": "attorney"
+      }
+    },
+    "organization": {
+      "data": {
+        "id": "28",
+        "type": "organization"
+      }
+    },
+    "gas_object_address": {
+      "data": {
+        "id": "126444",
+        "type": "address"
+      }
+    },
+    "contract": {
+      "data": null
+    },
+    "specification_agreement": {
+      "data": null
+    },
+    "inventory_object": {
+      "data": null
+    },
+    "social_assistance": {
+      "data": null
+    },
+    "protocol_mismatches": {
+      "data": []
+    },
+    "regions": {
+      "data": [
+        {
+          "id": "28",
+          "type": "region"
+        },
+        {
+          "id": "28",
+          "type": "region"
+        }
+      ]
+    },
+    "gas_object_addresses": {
+      "data": [
+        {
+          "id": "126444",
+          "type": "address"
+        }
+      ]
+    }
+  }
+}

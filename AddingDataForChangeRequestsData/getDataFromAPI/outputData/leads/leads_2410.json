@@ -1,0 +1,175 @@
+{
+  "id": "2410",
+  "type": "lead",
+  "attributes": {
+    "id": 2410,
+    "registrate_date": "2021-09-02T09:14:29.602+03:00",
+    "uid": "52-01-0000044",
+    "status": "gas_start",
+    "created_at": "2021-08-24T14:45:30.648+03:00",
+    "updated_at": "2022-12-20T12:00:18.654+03:00",
+    "service_id": 24,
+    "send_date": "2021-08-24T14:45:30.690+03:00",
+    "admin_name": "Ермаков Михаил Михайлович",
+    "organization_name": "ПАО «Газпром газораспределение Нижний Новгород»",
+    "user_name": "Чикулишева Н.И.",
+    "sla_date": null,
+    "department": null,
+    "phase": null,
+    "user_id": 1895,
+    "user_full_name": "Чикулишева Нина Ивановна",
+    "user_passport": null,
+    "user_phone": null,
+    "user_email": null,
+    "from_contract": null,
+    "type": null,
+    "object_name": null,
+    "gas_object_type": null,
+    "last_tu_number": null,
+    "last_tu_date": null,
+    "planned_gas_consumption": null,
+    "owner": null,
+    "connection_in_boundaries": null,
+    "internal_pipe_construction": null,
+    "supply_gas_equipment": null,
+    "install_gas_equipment": null,
+    "supply_gas_metering": null,
+    "install_gas_metering": null,
+    "implementing_supply_gas_equipment": null,
+    "reason": null,
+    "connection_points": null,
+    "okved": null,
+    "representative": null,
+    "surveying_document": null,
+    "gas_consumption_characteristics": null,
+    "send_expired": false,
+    "uploaded_files": null,
+    "expired": false,
+    "status_changed_at": null,
+    "user_notification": true,
+    "status_set_at": {},
+    "gas_using_devices": null,
+    "gas_metering_device": null,
+    "residents": null,
+    "heated_rooms_info": null,
+    "domestic_gas_equipment_maintenance_contract": null,
+    "social_support": null,
+    "social_support_document": null,
+    "gas_consumption_types": null,
+    "domestic_gas_equipment_maintenance": null,
+    "gas_supply": null,
+    "expired_days": null,
+    "sla_days": null,
+    "has_confidant": false,
+    "note": null,
+    "contract_sign_type": null,
+    "snt_name": null,
+    "snt_inn": null,
+    "preferential_category": false,
+    "coordination_status_changed_on": null,
+    "coordination_status_changed_days_ago": 0,
+    "application_datetime": "2021-08-24T14:45:31.000+03:00",
+    "user_legal_address": null,
+    "correspondence_address": null
+  },
+  "relationships": {
+    "user": {
+      "data": {
+        "id": "1895",
+        "type": "user"
+      }
+    },
+    "confidant_user": {
+      "data": null
+    },
+    "admin": {
+      "data": {
+        "id": "161",
+        "type": "admin"
+      }
+    },
+    "mfc_manager": {
+      "data": null
+    },
+    "service": {
+      "data": {
+        "id": "24",
+        "type": "service"
+      }
+    },
+    "source": {
+      "data": {
+        "id": "7",
+        "type": "source"
+      }
+    },
+    "branch": {
+      "data": {
+        "id": "72",
+        "type": "branch"
+      }
+    },
+    "region": {
+      "data": null
+    },
+    "cancellation_reason": {
+      "data": null
+    },
+    "annullation_reason": {
+      "data": null
+    },
+    "rejection_reason": {
+      "data": null
+    },
+    "attorney": {
+      "data": null
+    },
+    "organization": {
+      "data": {
+        "id": "28",
+        "type": "organization"
+      }
+    },
+    "gas_object_address": {
+      "data": {
+        "id": "5229",
+        "type": "address"
+      }
+    },
+    "contract": {
+      "data": null
+    },
+    "specification_agreement": {
+      "data": null
+    },
+    "inventory_object": {
+      "data": null
+    },
+    "social_assistance": {
+      "data": null
+    },
+    "protocol_mismatches": {
+      "data": []
+    },
+    "regions": {
+      "data": [
+        {
+          "id": "28",
+          "type": "region"
+        },
+        {
+          "id": "28",
+          "type": "region"
+        }
+      ]
+    },
+    "gas_object_addresses": {
+      "data": [
+        {
+          "id": "5229",
+          "type": "address"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "id": "21543",
+  "type": "lead",
+  "attributes": {
+    "id": 21543,
+    "registrate_date": null,
+    "uid": "21-01-0000163",
+    "status": "in_progress",
+    "created_at": "2024-11-28T10:52:11.023+03:00",
+    "updated_at": "2024-12-26T17:16:57.141+03:00",
+    "service_id": 24,
+    "send_date": "2024-11-28T10:52:11.071+03:00",
+    "admin_name": "Нижний Новгород Абр Тех Н.",
+    "organization_name": "ПАО «Газпром газораспределение Нижний Новгород»",
+    "user_name": "Тестовный Т.Т.",
+    "sla_date": null,
+    "department": null,
+    "phase": null,
+    "user_id": 17753,
+    "user_full_name": "Тестовный Тестик Тестикович ",
+    "user_passport": {
+      "date": "2015-11-01",
+      "branch": "МФЦ",
+      "number": "445566",
+      "series": "1234",
+      "division": "770-770",
+      "identification_document": "01"
+    },
+    "user_phone": "+79957722555",
+    "user_email": "test23@abr.tech",
+    "from_contract": null,
+    "type": null,
+    "object_name": null,
+    "gas_object_type": null,
+    "last_tu_number": "",
+    "last_tu_date": null,
+    "planned_gas_consumption": "5",
+    "owner": {
+      "email": "",
+      "phone": "",
+      "snils": "",
+      "fullname": "",
+      "passport": {
+        "date": null,
+        "branch": "",
+        "number": "",
+        "series": "",
+        "division": "",
+        "identification_document": "01"
+      },
+      "birth_date": null
+    },
+    "connection_in_boundaries": null,
+    "internal_pipe_construction": null,
+    "supply_gas_equipment": null,
+    "install_gas_equipment": null,
+    "supply_gas_metering": null,
+    "install_gas_metering": null,
+    "implementing_supply_gas_equipment": null,
+    "reason": null,
+    "connection_points": null,
+    "okved": null,
+    "representative": null,
+    "surveying_document": null,
+    "gas_consumption_characteristics": null,
+    "send_expired": false,
+    "uploaded_files": false,
+    "expired": false,
+    "status_changed_at": "2024-12-26T17:16:24.458+03:00",
+    "user_notification": true,
+    "status_set_at": {
+      "draft": "2024-11-28T10:52:11.023+03:00",
+      "registered": "2024-11-28T10:52:11.157+03:00",
+      "in_progress": "2024-12-26T17:16:24.464+03:00",
+      "document_check": "2024-12-24T00:28:35.894+03:00"
+    },
+    "gas_using_devices": null,
+    "gas_metering_device": null,
+    "residents": null,
+    "heated_rooms_info": null,
+    "domestic_gas_equipment_maintenance_contract": null,
+    "social_support": null,
+    "social_support_document": null,
+    "gas_consumption_types": null,
+    "domestic_gas_equipment_maintenance": false,
+    "gas_supply": false,
+    "expired_days": null,
+    "sla_days": null,
+    "has_confidant": false,
+    "note": null,
+    "contract_sign_type": "",
+    "snt_name": null,
+    "snt_inn": null,
+    "preferential_category": false,
+    "coordination_status_changed_on": null,
+    "coordination_status_changed_days_ago": 0,
+    "application_datetime": "2024-11-28T10:52:11.000+03:00",
+    "user_legal_address": null,
+    "correspondence_address": {
+      "id": 126529,
+      "addressable_type": "Lead",
+      "addressable_id": 21543,
+      "kind": "correspondence",
+      "street": "",
+      "city": "45 км Автодороги Санкт-Петербург-Псков",
+      "region": "Ленинградская обл",
+      "country": null,
+      "zip_code": "",
+      "lat": null,
+      "lng": null,
+      "house": "",
+      "created_at": "2024-11-28T10:52:11.055+03:00",
+      "updated_at": "2024-11-28T10:52:11.055+03:00",
+      "area": "Гатчинский",
+      "settlement": "",
+      "block": "",
+      "room": "",
+      "flat": "",
+      "region_fias_id": "6d1ebb35-70c6-4129-bd55-da3969658f5d",
+      "area_fias_id": "2252f46b-5281-436a-9b02-5a22cc0b2d63",
+      "city_fias_id": "aa1751d9-5c0a-4f68-bc12-f1eb98f152a5",
+      "street_fias_id": "",
+      "house_fias_id": "",
+      "extra": "",
+      "cadastral_number": "",
+      "deleted_at": null,
+      "cadastral_home_number": "",
+      "oktmo": null,
+      "title": "Ленинградская обл, Гатчинский р-н, массив 45 км Автодороги Санкт-Петербург-Псков",
+      "settlement_fias_id": "",
+      "has_capital_construction": true,
+      "okato": null,
+      "room_type": null,
+      "settlement_type_full": null,
+      "region_object_id": 23
+    }
+  },
+  "relationships": {
+    "user": {
+      "data": {
+        "id": "17753",
+        "type": "user"
+      }
+    },
+    "confidant_user": {
+      "data": null
+    },
+    "admin": {
+      "data": {
+        "id": "543",
+        "type": "admin"
+      }
+    },
+    "mfc_manager": {
+      "data": null
+    },
+    "service": {
+      "data": {
+        "id": "24",
+        "type": "service"
+      }
+    },
+    "source": {
+      "data": {
+        "id": "8",
+        "type": "source"
+      }
+    },
+    "branch": {
+      "data": {
+        "id": "72",
+        "type": "branch"
+      }
+    },
+    "region": {
+      "data": {
+        "id": "39",
+        "type": "region"
+      }
+    },
+    "cancellation_reason": {
+      "data": null
+    },
+    "annullation_reason": {
+      "data": null
+    },
+    "rejection_reason": {
+      "data": null
+    },
+    "attorney": {
+      "data": null
+    },
+    "organization": {
+      "data": {
+        "id": "28",
+        "type": "organization"
+      }
+    },
+    "gas_object_address": {
+      "data": {
+        "id": "126528",
+        "type": "address"
+      }
+    },
+    "contract": {
+      "data": null
+    },
+    "specification_agreement": {
+      "data": null
+    },
+    "inventory_object": {
+      "data": null
+    },
+    "social_assistance": {
+      "data": null
+    },
+    "protocol_mismatches": {
+      "data": []
+    },
+    "regions": {
+      "data": [
+        {
+          "id": "28",
+          "type": "region"
+        },
+        {
+          "id": "28",
+          "type": "region"
+        }
+      ]
+    },
+    "gas_object_addresses": {
+      "data": [
+        {
+          "id": "126528",
+          "type": "address"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "id": "2511",
+  "type": "lead",
+  "attributes": {
+    "id": 2511,
+    "registrate_date": "2021-09-02T09:23:51.336+03:00",
+    "uid": "52-01-0000092",
+    "status": "gas_start",
+    "created_at": "2021-08-25T14:13:01.409+03:00",
+    "updated_at": "2022-12-20T12:00:19.398+03:00",
+    "service_id": 24,
+    "send_date": "2021-08-25T14:13:01.439+03:00",
+    "admin_name": "Ермаков Михаил Михайлович",
+    "organization_name": "ПАО «Газпром газораспределение Нижний Новгород»",
+    "user_name": "Бродель Д.С.",
+    "sla_date": null,
+    "department": null,
+    "phase": null,
+    "user_id": 1985,
+    "user_full_name": "Бродель Денис Сергеевич",
+    "user_passport": null,
+    "user_phone": null,
+    "user_email": null,
+    "from_contract": null,
+    "type": null,
+    "object_name": null,
+    "gas_object_type": null,
+    "last_tu_number": "",
+    "last_tu_date": null,
+    "planned_gas_consumption": 5.0,
+    "owner": {
+      "inn": null,
+      "email": "",
+      "phone": "",
+      "snils": "",
+      "fullname": "",
+      "passport": {
+        "date": null,
+        "branch": "",
+        "number": "",
+        "series": "",
+        "division": null,
+        "citizenship": null,
+        "identification_document": "01"
+      },
+      "birth_date": null
+    },
+    "connection_in_boundaries": null,
+    "internal_pipe_construction": null,
+    "supply_gas_equipment": null,
+    "install_gas_equipment": null,
+    "supply_gas_metering": null,
+    "install_gas_metering": null,
+    "implementing_supply_gas_equipment": null,
+    "reason": null,
+    "connection_points": null,
+    "okved": null,
+    "representative": null,
+    "surveying_document": null,
+    "gas_consumption_characteristics": null,
+    "send_expired": false,
+    "uploaded_files": null,
+    "expired": false,
+    "status_changed_at": null,
+    "user_notification": true,
+    "status_set_at": {},
+    "gas_using_devices": null,
+    "gas_metering_device": null,
+    "residents": null,
+    "heated_rooms_info": null,
+    "domestic_gas_equipment_maintenance_contract": null,
+    "social_support": null,
+    "social_support_document": null,
+    "gas_consumption_types": null,
+    "domestic_gas_equipment_maintenance": null,
+    "gas_supply": null,
+    "expired_days": null,
+    "sla_days": null,
+    "has_confidant": false,
+    "note": null,
+    "contract_sign_type": null,
+    "snt_name": null,
+    "snt_inn": null,
+    "preferential_category": false,
+    "coordination_status_changed_on": null,
+    "coordination_status_changed_days_ago": 0,
+    "application_datetime": "2021-08-25T14:13:01.000+03:00",
+    "user_legal_address": null,
+    "correspondence_address": {
+      "id": 16982,
+      "addressable_type": "Lead",
+      "addressable_id": 2511,
+      "kind": "correspondence",
+      "street": null,
+      "city": "Александровск",
+      "region": "Пермский край",
+      "country": null,
+      "zip_code": null,
+      "lat": null,
+      "lng": null,
+      "house": null,
+      "created_at": "2021-12-01T11:19:01.564+03:00",
+      "updated_at": "2021-12-01T11:19:01.564+03:00",
+      "area": null,
+      "settlement": "Яйва",
+      "block": null,
+      "room": null,
+      "flat": null,
+      "region_fias_id": "4f8b1a21-e4bb-422f-9087-d3cbf4bebc14",
+      "area_fias_id": null,
+      "city_fias_id": "4f07ade1-1415-44c8-bed9-e851f1ef558d",
+      "street_fias_id": null,
+      "house_fias_id": null,
+      "extra": null,
+      "cadastral_number": null,
+      "deleted_at": null,
+      "cadastral_home_number": null,
+      "oktmo": null,
+      "title": "Пермский край, г Александровск, рп Яйва",
+      "settlement_fias_id": "09d32270-c5c2-456c-b758-cebdafb4af72",
+      "has_capital_construction": true,
+      "okato": null,
+      "room_type": null,
+      "settlement_type_full": null,
+      "region_object_id": 32
+    }
+  },
+  "relationships": {
+    "user": {
+      "data": {
+        "id": "1985",
+        "type": "user"
+      }
+    },
+    "confidant_user": {
+      "data": null
+    },
+    "admin": {
+      "data": {
+        "id": "161",
+        "type": "admin"
+      }
+    },
+    "mfc_manager": {
+      "data": null
+    },
+    "service": {
+      "data": {
+        "id": "24",
+        "type": "service"
+      }
+    },
+    "source": {
+      "data": {
+        "id": "7",
+        "type": "source"
+      }
+    },
+    "branch": {
+      "data": {
+        "id": "72",
+        "type": "branch"
+      }
+    },
+    "region": {
+      "data": null
+    },
+    "cancellation_reason": {
+      "data": null
+    },
+    "annullation_reason": {
+      "data": null
+    },
+    "rejection_reason": {
+      "data": null
+    },
+    "attorney": {
+      "data": null
+    },
+    "organization": {
+      "data": {
+        "id": "28",
+        "type": "organization"
+      }
+    },
+    "gas_object_address": {
+      "data": {
+        "id": "16981",
+        "type": "address"
+      }
+    },
+    "contract": {
+      "data": null
+    },
+    "specification_agreement": {
+      "data": null
+    },
+    "inventory_object": {
+      "data": null
+    },
+    "social_assistance": {
+      "data": null
+    },
+    "protocol_mismatches": {
+      "data": []
+    },
+    "regions": {
+      "data": [
+        {
+          "id": "28",
+          "type": "region"
+        },
+        {
+          "id": "28",
+          "type": "region"
+        }
+      ]
+    },
+    "gas_object_addresses": {
+      "data": [
+        {
+          "id": "16981",
+          "type": "address"
+        }
+      ]
+    }
+  }
+}

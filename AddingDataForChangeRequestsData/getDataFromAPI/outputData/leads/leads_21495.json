@@ -1,0 +1,219 @@
+{
+  "id": "21495",
+  "type": "lead",
+  "attributes": {
+    "id": 21495,
+    "registrate_date": null,
+    "uid": "52-02-0000134",
+    "status": "document_check",
+    "created_at": "2024-11-18T10:56:49.256+03:00",
+    "updated_at": "2025-01-28T13:51:30.845+03:00",
+    "service_id": 25,
+    "send_date": "2024-11-18T10:56:49.448+03:00",
+    "admin_name": "Нижний Новгород Абр Тех Н.",
+    "organization_name": "ПАО «Газпром газораспределение Нижний Новгород»",
+    "user_name": "Новый Н.Н.",
+    "sla_date": null,
+    "department": null,
+    "phase": null,
+    "user_id": 17749,
+    "user_full_name": "Новый Нов Новович",
+    "user_passport": {
+      "date": "2010-11-01",
+      "branch": "МФЦ",
+      "number": "112233",
+      "series": "1111",
+      "division": "770-110",
+      "identification_document": "01"
+    },
+    "user_phone": "+79162918888",
+    "user_email": "test1@abr.tech",
+    "from_contract": null,
+    "type": null,
+    "object_name": "Объекть",
+    "gas_object_type": null,
+    "last_tu_number": "",
+    "last_tu_date": null,
+    "planned_gas_consumption": "3",
+    "owner": {
+      "email": "test@abr.tech",
+      "phone": "+7 (916) 291-88-68",
+      "snils": "864-465-968 67",
+      "fullname": "Новый Нов Новович",
+      "passport": {
+        "date": "2015-10-31",
+        "branch": "МФЦ",
+        "number": "456789",
+        "series": "1234",
+        "division": "770-550",
+        "identification_document": "01"
+      },
+      "birth_date": "1995-10-28"
+    },
+    "connection_in_boundaries": false,
+    "internal_pipe_construction": false,
+    "supply_gas_equipment": false,
+    "install_gas_equipment": false,
+    "supply_gas_metering": false,
+    "install_gas_metering": false,
+    "implementing_supply_gas_equipment": false,
+    "reason": "connection",
+    "connection_points": [
+      {
+        "name": "ТУ ФЛ Нижний",
+        "max_gas_consumption": "5",
+        "planned_design_date": "",
+        "last_max_gas_consumption": "4",
+        "planned_construction_date": "",
+        "total_max_gas_consumption": "6",
+        "planned_commissioning_date": ""
+      }
+    ],
+    "okved": "",
+    "representative": null,
+    "surveying_document": {
+      "date": null,
+      "number": ""
+    },
+    "gas_consumption_characteristics": true,
+    "send_expired": false,
+    "uploaded_files": false,
+    "expired": true,
+    "status_changed_at": "2024-11-18T10:57:57.199+03:00",
+    "user_notification": true,
+    "status_set_at": {
+      "draft": "2024-11-18T10:56:49.255+03:00",
+      "registered": "2024-11-18T10:56:49.535+03:00",
+      "document_check": "2024-11-18T10:57:57.207+03:00"
+    },
+    "gas_using_devices": null,
+    "gas_metering_device": null,
+    "residents": null,
+    "heated_rooms_info": null,
+    "domestic_gas_equipment_maintenance_contract": null,
+    "social_support": null,
+    "social_support_document": null,
+    "gas_consumption_types": null,
+    "domestic_gas_equipment_maintenance": null,
+    "gas_supply": null,
+    "expired_days": 239,
+    "sla_days": null,
+    "has_confidant": true,
+    "note": null,
+    "contract_sign_type": "electronic",
+    "snt_name": null,
+    "snt_inn": null,
+    "preferential_category": false,
+    "coordination_status_changed_on": null,
+    "coordination_status_changed_days_ago": 0,
+    "application_datetime": "2024-11-18T10:56:49.000+03:00",
+    "user_legal_address": null,
+    "correspondence_address": null
+  },
+  "relationships": {
+    "user": {
+      "data": {
+        "id": "17749",
+        "type": "user"
+      }
+    },
+    "confidant_user": {
+      "data": {
+        "id": "17731",
+        "type": "user"
+      }
+    },
+    "admin": {
+      "data": {
+        "id": "543",
+        "type": "admin"
+      }
+    },
+    "mfc_manager": {
+      "data": null
+    },
+    "service": {
+      "data": {
+        "id": "25",
+        "type": "service"
+      }
+    },
+    "source": {
+      "data": {
+        "id": "8",
+        "type": "source"
+      }
+    },
+    "branch": {
+      "data": {
+        "id": "72",
+        "type": "branch"
+      }
+    },
+    "region": {
+      "data": null
+    },
+    "cancellation_reason": {
+      "data": null
+    },
+    "annullation_reason": {
+      "data": null
+    },
+    "rejection_reason": {
+      "data": null
+    },
+    "attorney": {
+      "data": {
+        "id": "6",
+        "type": "attorney"
+      }
+    },
+    "organization": {
+      "data": {
+        "id": "28",
+        "type": "organization"
+      }
+    },
+    "gas_object_address": {
+      "data": {
+        "id": "126441",
+        "type": "address"
+      }
+    },
+    "contract": {
+      "data": null
+    },
+    "specification_agreement": {
+      "data": null
+    },
+    "inventory_object": {
+      "data": null
+    },
+    "social_assistance": {
+      "data": null
+    },
+    "protocol_mismatches": {
+      "data": []
+    },
+    "regions": {
+      "data": [
+        {
+          "id": "28",
+          "type": "region"
+        },
+        {
+          "id": "28",
+          "type": "region"
+        }
+      ]
+    },
+    "gas_object_addresses": {
+      "data": [
+        {
+          "id": "126441",
+          "type": "address"
+        }
+      ]
+    }
+  }
+}

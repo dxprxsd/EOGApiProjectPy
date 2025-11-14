@@ -1,0 +1,260 @@
+{
+  "id": "21923",
+  "type": "lead",
+  "attributes": {
+    "id": 21923,
+    "registrate_date": null,
+    "uid": "64-02-0000081",
+    "status": "in_progress",
+    "created_at": "2025-01-31T00:10:05.964+03:00",
+    "updated_at": "2025-02-27T13:44:59.052+03:00",
+    "service_id": 25,
+    "send_date": "2025-01-31T00:10:06.061+03:00",
+    "admin_name": "Нижний Новгород Абр Тех Н.",
+    "organization_name": "ПАО «Газпром газораспределение Нижний Новгород»",
+    "user_name": "Анемяч3 А.У.",
+    "sla_date": null,
+    "department": null,
+    "phase": null,
+    "user_id": 17918,
+    "user_full_name": "Анемяч3 Анилвиъ3 Укбичег3",
+    "user_passport": {
+      "date": "2025-03-04",
+      "branch": "12sadsada",
+      "number": "123124",
+      "series": "1234",
+      "division": null,
+      "identification_document": "01"
+    },
+    "user_phone": "",
+    "user_email": null,
+    "from_contract": null,
+    "type": null,
+    "object_name": "4",
+    "gas_object_type": null,
+    "last_tu_number": "7",
+    "last_tu_date": "2025-02-10",
+    "planned_gas_consumption": "5,4",
+    "owner": {
+      "type": null,
+      "email": "",
+      "phone": "",
+      "snils": "",
+      "fullname": "",
+      "passport": {
+        "date": null,
+        "number": "",
+        "series": ""
+      },
+      "base_document": {
+        "date": null,
+        "name": "",
+        "number": ""
+      }
+    },
+    "connection_in_boundaries": false,
+    "internal_pipe_construction": false,
+    "supply_gas_equipment": false,
+    "install_gas_equipment": false,
+    "supply_gas_metering": false,
+    "install_gas_metering": false,
+    "implementing_supply_gas_equipment": false,
+    "reason": "connection",
+    "connection_points": [
+      {
+        "name": "45",
+        "max_gas_consumption": "4",
+        "planned_design_date": "",
+        "last_max_gas_consumption": "6",
+        "planned_construction_date": "",
+        "total_max_gas_consumption": "5",
+        "planned_commissioning_date": ""
+      }
+    ],
+    "okved": "",
+    "representative": null,
+    "surveying_document": {
+      "date": null,
+      "number": ""
+    },
+    "gas_consumption_characteristics": true,
+    "send_expired": false,
+    "uploaded_files": false,
+    "expired": false,
+    "status_changed_at": "2025-02-05T15:04:05.888+03:00",
+    "user_notification": true,
+    "status_set_at": {
+      "draft": "2025-01-31T00:10:05.964+03:00",
+      "registered": "2025-01-31T00:10:06.150+03:00",
+      "in_progress": "2025-02-05T15:04:05.890+03:00",
+      "document_check": "2025-02-05T14:57:36.119+03:00",
+      "executor_selection": "2025-02-05T14:56:20.867+03:00"
+    },
+    "gas_using_devices": null,
+    "gas_metering_device": null,
+    "residents": null,
+    "heated_rooms_info": null,
+    "domestic_gas_equipment_maintenance_contract": null,
+    "social_support": null,
+    "social_support_document": null,
+    "gas_consumption_types": null,
+    "domestic_gas_equipment_maintenance": null,
+    "gas_supply": null,
+    "expired_days": null,
+    "sla_days": null,
+    "has_confidant": false,
+    "note": "Ошибка оператора при выборе статуса",
+    "contract_sign_type": "electronic",
+    "snt_name": null,
+    "snt_inn": null,
+    "preferential_category": false,
+    "coordination_status_changed_on": null,
+    "coordination_status_changed_days_ago": 0,
+    "application_datetime": "2025-01-31T00:10:06.000+03:00",
+    "user_legal_address": null,
+    "correspondence_address": {
+      "id": 127272,
+      "addressable_type": "Lead",
+      "addressable_id": 21923,
+      "kind": "correspondence",
+      "street": "ул. Зеленский Съезд",
+      "city": "г. Нижний Новгород",
+      "region": "обл. Нижегородская",
+      "country": null,
+      "zip_code": null,
+      "lat": null,
+      "lng": null,
+      "house": "д. 6",
+      "created_at": "2025-01-31T00:10:06.002+03:00",
+      "updated_at": "2025-01-31T00:10:06.002+03:00",
+      "area": "Нижегородская обл., Нижний Новгород г.",
+      "settlement": "г. Нижний Новгород",
+      "block": null,
+      "room": null,
+      "flat": "кв. 1",
+      "region_fias_id": "88cd27e2-6a8a-4421-9718-719a28a0a088",
+      "area_fias_id": "555e7d61-d9a7-4ba6-9770-6caa8198c483",
+      "city_fias_id": "555e7d61-d9a7-4ba6-9770-6caa8198c483",
+      "street_fias_id": "6abad413-7175-4d69-841e-1eff2f798f6c",
+      "house_fias_id": "0453cd2f-ee18-4ef1-a63a-800aef4bef07",
+      "extra": null,
+      "cadastral_number": "64:66:468",
+      "deleted_at": null,
+      "cadastral_home_number": null,
+      "oktmo": null,
+      "title": "603001, Нижегородская обл., Нижний Новгород г., Зеленский Съезд ул., д. 6, кв. 1",
+      "settlement_fias_id": "555e7d61-d9a7-4ba6-9770-6caa8198c483",
+      "has_capital_construction": true,
+      "okato": null,
+      "room_type": null,
+      "settlement_type_full": null,
+      "region_object_id": 59
+    }
+  },
+  "relationships": {
+    "user": {
+      "data": {
+        "id": "17918",
+        "type": "user"
+      }
+    },
+    "confidant_user": {
+      "data": null
+    },
+    "admin": {
+      "data": {
+        "id": "543",
+        "type": "admin"
+      }
+    },
+    "mfc_manager": {
+      "data": null
+    },
+    "service": {
+      "data": {
+        "id": "25",
+        "type": "service"
+      }
+    },
+    "source": {
+      "data": {
+        "id": "7",
+        "type": "source"
+      }
+    },
+    "branch": {
+      "data": {
+        "id": "72",
+        "type": "branch"
+      }
+    },
+    "region": {
+      "data": {
+        "id": "59",
+        "type": "region"
+      }
+    },
+    "cancellation_reason": {
+      "data": null
+    },
+    "annullation_reason": {
+      "data": null
+    },
+    "rejection_reason": {
+      "data": null
+    },
+    "attorney": {
+      "data": null
+    },
+    "organization": {
+      "data": {
+        "id": "28",
+        "type": "organization"
+      }
+    },
+    "gas_object_address": {
+      "data": {
+        "id": "127271",
+        "type": "address"
+      }
+    },
+    "contract": {
+      "data": {
+        "id": "4702",
+        "type": "contract"
+      }
+    },
+    "specification_agreement": {
+      "data": null
+    },
+    "inventory_object": {
+      "data": null
+    },
+    "social_assistance": {
+      "data": null
+    },
+    "protocol_mismatches": {
+      "data": []
+    },
+    "regions": {
+      "data": [
+        {
+          "id": "28",
+          "type": "region"
+        },
+        {
+          "id": "28",
+          "type": "region"
+        }
+      ]
+    },
+    "gas_object_addresses": {
+      "data": [
+        {
+          "id": "127271",
+          "type": "address"
+        }
+      ]
+    }
+  }
+}

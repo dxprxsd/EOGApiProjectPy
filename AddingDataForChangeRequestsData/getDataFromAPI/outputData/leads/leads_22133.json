@@ -1,0 +1,230 @@
+{
+  "id": "22133",
+  "type": "lead",
+  "attributes": {
+    "id": 22133,
+    "registrate_date": null,
+    "uid": "12-01-0000768",
+    "status": "in_progress",
+    "created_at": "2025-02-27T16:53:36.593+03:00",
+    "updated_at": "2025-03-07T14:04:19.883+03:00",
+    "service_id": 24,
+    "send_date": "2025-02-27T16:53:36.795+03:00",
+    "admin_name": "Нижний Новгород Абр Тех Н.",
+    "organization_name": "ПАО «Газпром газораспределение Нижний Новгород»",
+    "user_name": "Анемяч3 А.У.",
+    "sla_date": null,
+    "department": null,
+    "phase": null,
+    "user_id": 17918,
+    "user_full_name": "Анемяч3 Анилвиъ3 Укбичег3",
+    "user_passport": {
+      "date": "2025-03-04",
+      "branch": "12sadsada",
+      "number": "123124",
+      "series": "1234",
+      "division": null,
+      "identification_document": "01"
+    },
+    "user_phone": "",
+    "user_email": null,
+    "from_contract": null,
+    "type": null,
+    "object_name": null,
+    "gas_object_type": null,
+    "last_tu_number": "78",
+    "last_tu_date": "2025-02-06",
+    "planned_gas_consumption": "5,00",
+    "owner": null,
+    "connection_in_boundaries": null,
+    "internal_pipe_construction": null,
+    "supply_gas_equipment": null,
+    "install_gas_equipment": null,
+    "supply_gas_metering": null,
+    "install_gas_metering": null,
+    "implementing_supply_gas_equipment": null,
+    "reason": null,
+    "connection_points": null,
+    "okved": null,
+    "representative": null,
+    "surveying_document": null,
+    "gas_consumption_characteristics": null,
+    "send_expired": false,
+    "uploaded_files": false,
+    "expired": false,
+    "status_changed_at": "2025-03-07T14:02:13.494+03:00",
+    "user_notification": true,
+    "status_set_at": {
+      "draft": "2025-02-27T16:53:36.593+03:00",
+      "registered": "2025-02-27T16:53:36.950+03:00",
+      "in_progress": "2025-03-07T14:02:13.520+03:00",
+      "document_check": "2025-02-27T17:32:35.916+03:00"
+    },
+    "gas_using_devices": null,
+    "gas_metering_device": null,
+    "residents": null,
+    "heated_rooms_info": null,
+    "domestic_gas_equipment_maintenance_contract": null,
+    "social_support": null,
+    "social_support_document": null,
+    "gas_consumption_types": null,
+    "domestic_gas_equipment_maintenance": false,
+    "gas_supply": false,
+    "expired_days": null,
+    "sla_days": null,
+    "has_confidant": false,
+    "note": null,
+    "contract_sign_type": "electronic",
+    "snt_name": null,
+    "snt_inn": null,
+    "preferential_category": false,
+    "coordination_status_changed_on": null,
+    "coordination_status_changed_days_ago": 0,
+    "application_datetime": "2025-02-27T16:53:37.000+03:00",
+    "user_legal_address": null,
+    "correspondence_address": {
+      "id": 127681,
+      "addressable_type": "Lead",
+      "addressable_id": 22133,
+      "kind": "correspondence",
+      "street": "пл. Мира",
+      "city": "г. Кстово",
+      "region": "обл. Нижегородская",
+      "country": null,
+      "zip_code": null,
+      "lat": null,
+      "lng": null,
+      "house": "д. 8А",
+      "created_at": "2025-02-27T16:53:36.647+03:00",
+      "updated_at": "2025-02-27T16:53:36.647+03:00",
+      "area": "Нижегородская обл., Кстовский р-н, Кстово г.",
+      "settlement": "г. Кстово",
+      "block": null,
+      "room": null,
+      "flat": "кв. 71",
+      "region_fias_id": "88cd27e2-6a8a-4421-9718-719a28a0a088",
+      "area_fias_id": "8d72434a-977f-418b-80e0-f37ff75d52e4",
+      "city_fias_id": "8d72434a-977f-418b-80e0-f37ff75d52e4",
+      "street_fias_id": "624268fd-7ebc-4d91-815f-8df7e2f3b356",
+      "house_fias_id": "f1717fa1-cfeb-434c-8736-aa269f7a591d",
+      "extra": null,
+      "cadastral_number": "12:13:123456:11",
+      "deleted_at": null,
+      "cadastral_home_number": "12:13:123456:14",
+      "oktmo": null,
+      "title": "607650, Нижегородская обл., Кстовский р-н, Кстово г., Мира пл., д. 8А, кв. 71",
+      "settlement_fias_id": "8d72434a-977f-418b-80e0-f37ff75d52e4",
+      "has_capital_construction": true,
+      "okato": null,
+      "room_type": null,
+      "settlement_type_full": null,
+      "region_object_id": 16
+    }
+  },
+  "relationships": {
+    "user": {
+      "data": {
+        "id": "17918",
+        "type": "user"
+      }
+    },
+    "confidant_user": {
+      "data": null
+    },
+    "admin": {
+      "data": {
+        "id": "543",
+        "type": "admin"
+      }
+    },
+    "mfc_manager": {
+      "data": null
+    },
+    "service": {
+      "data": {
+        "id": "24",
+        "type": "service"
+      }
+    },
+    "source": {
+      "data": {
+        "id": "7",
+        "type": "source"
+      }
+    },
+    "branch": {
+      "data": {
+        "id": "72",
+        "type": "branch"
+      }
+    },
+    "region": {
+      "data": {
+        "id": "16",
+        "type": "region"
+      }
+    },
+    "cancellation_reason": {
+      "data": null
+    },
+    "annullation_reason": {
+      "data": null
+    },
+    "rejection_reason": {
+      "data": null
+    },
+    "attorney": {
+      "data": null
+    },
+    "organization": {
+      "data": {
+        "id": "28",
+        "type": "organization"
+      }
+    },
+    "gas_object_address": {
+      "data": {
+        "id": "127680",
+        "type": "address"
+      }
+    },
+    "contract": {
+      "data": {
+        "id": "4768",
+        "type": "contract"
+      }
+    },
+    "specification_agreement": {
+      "data": null
+    },
+    "inventory_object": {
+      "data": null
+    },
+    "social_assistance": {
+      "data": null
+    },
+    "protocol_mismatches": {
+      "data": []
+    },
+    "regions": {
+      "data": [
+        {
+          "id": "28",
+          "type": "region"
+        },
+        {
+          "id": "28",
+          "type": "region"
+        }
+      ]
+    },
+    "gas_object_addresses": {
+      "data": [
+        {
+          "id": "127680",
+          "type": "address"
+        }
+      ]
+    }
+  }
+}

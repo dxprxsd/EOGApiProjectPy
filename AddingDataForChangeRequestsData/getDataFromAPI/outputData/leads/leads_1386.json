@@ -1,0 +1,222 @@
+{
+  "id": "1386",
+  "type": "lead",
+  "attributes": {
+    "id": 1386,
+    "registrate_date": "2021-03-31T08:46:42.532+03:00",
+    "uid": "52-МЧРГ-000006",
+    "status": "done",
+    "created_at": "2021-03-30T15:49:38.035+03:00",
+    "updated_at": "2023-11-02T17:11:57.746+03:00",
+    "service_id": 7,
+    "send_date": "2021-03-30T15:59:28.594+03:00",
+    "admin_name": "Морозов Владислав Андреевич",
+    "organization_name": "ПАО «Газпром газораспределение Нижний Новгород»",
+    "user_name": "Каргина А.И.",
+    "sla_date": null,
+    "department": null,
+    "phase": null,
+    "user_id": 393,
+    "user_full_name": "Каргина Анна Игоревна",
+    "user_passport": {
+      "date": "03.10.2020",
+      "branch": "Отделом УФМС России по Нижегородской области",
+      "number": "608845",
+      "series": "22-20",
+      "division": "502-009",
+      "citizenship": "Россия"
+    },
+    "user_phone": "+79065795549",
+    "user_email": "annaisupova1997@yandex.ru",
+    "from_contract": null,
+    "type": null,
+    "object_name": "",
+    "gas_object_type": "частный дом",
+    "last_tu_number": null,
+    "last_tu_date": null,
+    "planned_gas_consumption": null,
+    "owner": null,
+    "connection_in_boundaries": null,
+    "internal_pipe_construction": null,
+    "supply_gas_equipment": null,
+    "install_gas_equipment": null,
+    "supply_gas_metering": null,
+    "install_gas_metering": null,
+    "implementing_supply_gas_equipment": null,
+    "reason": null,
+    "connection_points": null,
+    "okved": null,
+    "representative": null,
+    "surveying_document": null,
+    "gas_consumption_characteristics": null,
+    "send_expired": false,
+    "uploaded_files": null,
+    "expired": false,
+    "status_changed_at": null,
+    "user_notification": false,
+    "status_set_at": {},
+    "gas_using_devices": null,
+    "gas_metering_device": null,
+    "residents": null,
+    "heated_rooms_info": null,
+    "domestic_gas_equipment_maintenance_contract": null,
+    "social_support": null,
+    "social_support_document": null,
+    "gas_consumption_types": null,
+    "domestic_gas_equipment_maintenance": null,
+    "gas_supply": null,
+    "expired_days": null,
+    "sla_days": null,
+    "has_confidant": false,
+    "note": null,
+    "contract_sign_type": null,
+    "snt_name": null,
+    "snt_inn": null,
+    "preferential_category": false,
+    "coordination_status_changed_on": null,
+    "coordination_status_changed_days_ago": 0,
+    "application_datetime": "2021-03-30T15:59:29.000+03:00",
+    "user_legal_address": {
+      "id": 1719,
+      "addressable_type": "User",
+      "addressable_id": 393,
+      "kind": "legal",
+      "street": "УЛ КЛУБНАЯ",
+      "city": "Г ВОЛОДАРСК",
+      "region": null,
+      "country": "#<Address:0x00005644f6dbb460>",
+      "zip_code": "606007",
+      "lat": null,
+      "lng": null,
+      "house": "85",
+      "created_at": "2021-03-30T15:44:57.035+03:00",
+      "updated_at": "2021-03-30T16:00:49.513+03:00",
+      "area": null,
+      "settlement": null,
+      "block": null,
+      "room": null,
+      "flat": null,
+      "region_fias_id": null,
+      "area_fias_id": null,
+      "city_fias_id": null,
+      "street_fias_id": null,
+      "house_fias_id": null,
+      "extra": null,
+      "cadastral_number": null,
+      "deleted_at": null,
+      "cadastral_home_number": null,
+      "oktmo": null,
+      "title": null,
+      "settlement_fias_id": null,
+      "has_capital_construction": true,
+      "okato": null,
+      "room_type": null,
+      "settlement_type_full": null,
+      "region_object_id": null
+    },
+    "correspondence_address": null
+  },
+  "relationships": {
+    "user": {
+      "data": {
+        "id": "393",
+        "type": "user"
+      }
+    },
+    "confidant_user": {
+      "data": null
+    },
+    "admin": {
+      "data": {
+        "id": "349",
+        "type": "admin"
+      }
+    },
+    "mfc_manager": {
+      "data": null
+    },
+    "service": {
+      "data": {
+        "id": "7",
+        "type": "service"
+      }
+    },
+    "source": {
+      "data": {
+        "id": "3",
+        "type": "source"
+      }
+    },
+    "branch": {
+      "data": {
+        "id": "72",
+        "type": "branch"
+      }
+    },
+    "region": {
+      "data": null
+    },
+    "cancellation_reason": {
+      "data": null
+    },
+    "annullation_reason": {
+      "data": null
+    },
+    "rejection_reason": {
+      "data": null
+    },
+    "attorney": {
+      "data": null
+    },
+    "organization": {
+      "data": {
+        "id": "28",
+        "type": "organization"
+      }
+    },
+    "gas_object_address": {
+      "data": {
+        "id": "1721",
+        "type": "address"
+      }
+    },
+    "contract": {
+      "data": {
+        "id": "3778",
+        "type": "contract"
+      }
+    },
+    "specification_agreement": {
+      "data": null
+    },
+    "inventory_object": {
+      "data": null
+    },
+    "social_assistance": {
+      "data": null
+    },
+    "protocol_mismatches": {
+      "data": []
+    },
+    "regions": {
+      "data": [
+        {
+          "id": "28",
+          "type": "region"
+        },
+        {
+          "id": "28",
+          "type": "region"
+        }
+      ]
+    },
+    "gas_object_addresses": {
+      "data": [
+        {
+          "id": "1721",
+          "type": "address"
+        }
+      ]
+    }
+  }
+}

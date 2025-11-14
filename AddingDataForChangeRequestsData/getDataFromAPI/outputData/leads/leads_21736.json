@@ -1,0 +1,282 @@
+{
+  "id": "21736",
+  "type": "lead",
+  "attributes": {
+    "id": 21736,
+    "registrate_date": null,
+    "uid": "12-01-0000763",
+    "status": "registered",
+    "created_at": "2024-12-25T17:20:25.227+03:00",
+    "updated_at": "2025-01-13T12:23:28.270+03:00",
+    "service_id": 24,
+    "send_date": "2024-12-25T17:20:25.419+03:00",
+    "admin_name": null,
+    "organization_name": "ПАО «Газпром газораспределение Нижний Новгород»",
+    "user_name": null,
+    "sla_date": null,
+    "department": null,
+    "phase": null,
+    "user_id": null,
+    "user_full_name": null,
+    "user_passport": null,
+    "user_phone": null,
+    "user_email": null,
+    "from_contract": null,
+    "type": null,
+    "object_name": null,
+    "gas_object_type": null,
+    "last_tu_number": "TU-old-1",
+    "last_tu_date": "2024-12-24",
+    "planned_gas_consumption": "5",
+    "owner": {
+      "bik": null,
+      "fax": null,
+      "inn": "",
+      "kpp": "",
+      "ogrn": "",
+      "okfs": "",
+      "okpo": "",
+      "type": "individual_person",
+      "email": "doversya@gmail.com",
+      "okato": "",
+      "okogu": "",
+      "oktmo": "",
+      "okved": "",
+      "phone": "+79012345680",
+      "snils": "994-074-168 53",
+      "fullname": null,
+      "passport": {
+        "date": "2024-12-11",
+        "branch": "УМВД России",
+        "number": "123123",
+        "series": "2131",
+        "division": "370-002",
+        "identification_document": "01"
+      },
+      "bank_name": null,
+      "last_name": "Доверенное",
+      "region_id": null,
+      "birth_date": "2003-12-23",
+      "chief_base": null,
+      "chief_name": null,
+      "chief_post": null,
+      "egrip_date": null,
+      "egrul_date": null,
+      "first_name": "лицо",
+      "extra_phone": null,
+      "middle_name": "Уполномоч",
+      "bank_account": null,
+      "egrip_number": null,
+      "egrip_series": null,
+      "egrul_number": null,
+      "legal_address": {
+        "city": null,
+        "flat": null,
+        "block": null,
+        "house": null,
+        "street": null,
+        "zip_code": null
+      },
+      "postal_address": {
+        "city": null,
+        "flat": null,
+        "block": null,
+        "house": null,
+        "street": null,
+        "zip_code": null
+      },
+      "payment_account": null,
+      "responsible_name": null,
+      "responsible_post": null,
+      "responsible_type": null,
+      "main_organization_id": null,
+      "organization_full_name": null,
+      "organization_short_name": null
+    },
+    "connection_in_boundaries": null,
+    "internal_pipe_construction": null,
+    "supply_gas_equipment": null,
+    "install_gas_equipment": null,
+    "supply_gas_metering": null,
+    "install_gas_metering": null,
+    "implementing_supply_gas_equipment": null,
+    "reason": null,
+    "connection_points": null,
+    "okved": null,
+    "representative": null,
+    "surveying_document": null,
+    "gas_consumption_characteristics": null,
+    "send_expired": true,
+    "uploaded_files": false,
+    "expired": true,
+    "status_changed_at": "2024-12-25T17:20:25.419+03:00",
+    "user_notification": true,
+    "status_set_at": {
+      "draft": "2024-12-25T17:20:25.227+03:00",
+      "registered": "2024-12-25T17:20:25.527+03:00"
+    },
+    "gas_using_devices": null,
+    "gas_metering_device": null,
+    "residents": null,
+    "heated_rooms_info": null,
+    "domestic_gas_equipment_maintenance_contract": null,
+    "social_support": null,
+    "social_support_document": null,
+    "gas_consumption_types": null,
+    "domestic_gas_equipment_maintenance": false,
+    "gas_supply": false,
+    "expired_days": 214,
+    "sla_days": null,
+    "has_confidant": true,
+    "note": null,
+    "contract_sign_type": "handwritten",
+    "snt_name": null,
+    "snt_inn": null,
+    "preferential_category": false,
+    "coordination_status_changed_on": null,
+    "coordination_status_changed_days_ago": 0,
+    "application_datetime": "2024-12-25T17:20:25.000+03:00",
+    "user_legal_address": null,
+    "correspondence_address": {
+      "id": 126903,
+      "addressable_type": "Lead",
+      "addressable_id": 21736,
+      "kind": "correspondence",
+      "street": "Абрамцевская",
+      "city": "Москва",
+      "region": "г Москва",
+      "country": null,
+      "zip_code": "127576",
+      "lat": null,
+      "lng": null,
+      "house": "1",
+      "created_at": "2024-12-25T17:20:25.271+03:00",
+      "updated_at": "2024-12-25T17:20:25.271+03:00",
+      "area": "",
+      "settlement": "",
+      "block": "",
+      "room": "",
+      "flat": "",
+      "region_fias_id": "0c5b2444-70a0-4932-980c-b4dc0d3f02b5",
+      "area_fias_id": "",
+      "city_fias_id": "0c5b2444-70a0-4932-980c-b4dc0d3f02b5",
+      "street_fias_id": "bc46ef75-670c-48df-bf76-5ce12085f1a5",
+      "house_fias_id": "828d6c9a-044f-47f7-925a-752fffd9ee19",
+      "extra": "",
+      "cadastral_number": "",
+      "deleted_at": null,
+      "cadastral_home_number": "",
+      "oktmo": null,
+      "title": "г Москва, ул Абрамцевская, д 1",
+      "settlement_fias_id": "",
+      "has_capital_construction": true,
+      "okato": null,
+      "room_type": null,
+      "settlement_type_full": null,
+      "region_object_id": 1
+    }
+  },
+  "relationships": {
+    "user": {
+      "data": null
+    },
+    "confidant_user": {
+      "data": {
+        "id": "3467",
+        "type": "user"
+      }
+    },
+    "admin": {
+      "data": null
+    },
+    "mfc_manager": {
+      "data": null
+    },
+    "service": {
+      "data": {
+        "id": "24",
+        "type": "service"
+      }
+    },
+    "source": {
+      "data": {
+        "id": "8",
+        "type": "source"
+      }
+    },
+    "branch": {
+      "data": {
+        "id": "72",
+        "type": "branch"
+      }
+    },
+    "region": {
+      "data": {
+        "id": "16",
+        "type": "region"
+      }
+    },
+    "cancellation_reason": {
+      "data": null
+    },
+    "annullation_reason": {
+      "data": null
+    },
+    "rejection_reason": {
+      "data": null
+    },
+    "attorney": {
+      "data": {
+        "id": "33",
+        "type": "attorney"
+      }
+    },
+    "organization": {
+      "data": {
+        "id": "28",
+        "type": "organization"
+      }
+    },
+    "gas_object_address": {
+      "data": {
+        "id": "126902",
+        "type": "address"
+      }
+    },
+    "contract": {
+      "data": null
+    },
+    "specification_agreement": {
+      "data": null
+    },
+    "inventory_object": {
+      "data": null
+    },
+    "social_assistance": {
+      "data": null
+    },
+    "protocol_mismatches": {
+      "data": []
+    },
+    "regions": {
+      "data": [
+        {
+          "id": "28",
+          "type": "region"
+        },
+        {
+          "id": "28",
+          "type": "region"
+        }
+      ]
+    },
+    "gas_object_addresses": {
+      "data": [
+        {
+          "id": "126902",
+          "type": "address"
+        }
+      ]
+    }
+  }
+}
