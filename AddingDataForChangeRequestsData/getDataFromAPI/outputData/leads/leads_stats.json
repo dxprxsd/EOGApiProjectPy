@@ -1,8 +1,8 @@
 {
-  "total_leads": 144,
-  "success": 144,
+  "total_leads": 99,
+  "success": 99,
   "errors": 0,
-  "start_time": "2025-11-13T07:57:46.786073",
+  "start_time": "2025-11-19T11:36:29.194237",
   "filters": {
     "order_key": "id",
     "order_type": "desc",
@@ -42,7 +42,7 @@
     "short_format": false
   },
   "output_directory": "/home/kuzminiv/EOGProjPyApi/AddingDataForChangeRequestsData/getDataFromAPI/outputData/leads",
-  "detailed_leads": 144,
-  "end_time": "2025-11-13T07:59:16.271475",
-  "duration": "0:01:29.485402"
+  "detailed_leads": 99,
+  "end_time": "2025-11-19T11:37:29.613127",
+  "duration": "0:01:00.418890"
 }

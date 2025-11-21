@@ -70,7 +70,7 @@
     "gas_consumption_types": null,
     "domestic_gas_equipment_maintenance": false,
     "gas_supply": false,
-    "expired_days": 591,
+    "expired_days": 596,
     "sla_days": null,
     "has_confidant": false,
     "note": null,
@@ -81,6 +81,8 @@
     "coordination_status_changed_on": null,
     "coordination_status_changed_days_ago": 0,
     "application_datetime": "2023-07-24T09:59:51.000+03:00",
+    "quality_mark": null,
+    "quality_verified_at": null,
     "user_legal_address": {
       "id": 97050,
       "addressable_type": "User",

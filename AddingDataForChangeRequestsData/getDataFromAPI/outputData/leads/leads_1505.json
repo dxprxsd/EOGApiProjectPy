@@ -76,6 +76,8 @@
     "coordination_status_changed_on": null,
     "coordination_status_changed_days_ago": 0,
     "application_datetime": "2021-04-05T13:33:37.000+03:00",
+    "quality_mark": null,
+    "quality_verified_at": null,
     "user_legal_address": {
       "id": 1669,
       "addressable_type": "User",
