@@ -8,12 +8,12 @@
 |-|--------|
 | **AddDataOnAPI** | Программы для добавления данных в API |
 | **AddingDataForChangeRequestsData** | Программы для изменения данных о заявках на портале |
-| &nbsp;&nbsp;├── **getDataFromAPI** | Программы для получения данных с API |
-| &nbsp;&nbsp;├── **getDataFromDB** | Программы для получения данных из БД |
-| &nbsp;&nbsp;└── **output data** | Выходные данные программ |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── **drafts** | Черновики заявок |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── **infoData** | Информационные данные и отчеты |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── **leads** | Данные по лидам/заявкам |
+| &nbsp;&nbsp;├── getDataFromAPI | Программы для получения данных с API |
+| &nbsp;&nbsp;├── getDataFromDB | Программы для получения данных из БД |
+| &nbsp;&nbsp;└── output data | Выходные данные программ |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── drafts | Черновики заявок |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── infoData | Информационные данные и отчеты |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── leads | Данные по лидам/заявкам |
 | **drafts** | Черновики и временные файлы |
 | **infoData** | Информационные данные и отчеты |
 | **leads** | Данные по лидам/заявкам |
