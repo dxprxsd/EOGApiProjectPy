@@ -1,0 +1,51 @@
+{
+  "total": 5,
+  "successful": 5,
+  "failed": 0,
+  "total_size": 32062,
+  "results": [
+    {
+      "success": true,
+      "lead_id": 1364,
+      "file_path": "/home/kuzminiv/EOGProjPyApi/AddingDataForChangeRequestsData/getDataFromAPI/outputData/requestsData/lead_1364_documents.zip",
+      "file_size": 6552,
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "success": true,
+      "lead_id": 1365,
+      "file_path": "/home/kuzminiv/EOGProjPyApi/AddingDataForChangeRequestsData/getDataFromAPI/outputData/requestsData/lead_1365_documents.zip",
+      "file_size": 6300,
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "success": true,
+      "lead_id": 1366,
+      "file_path": "/home/kuzminiv/EOGProjPyApi/AddingDataForChangeRequestsData/getDataFromAPI/outputData/requestsData/lead_1366_documents.zip",
+      "file_size": 6354,
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "success": true,
+      "lead_id": 1385,
+      "file_path": "/home/kuzminiv/EOGProjPyApi/AddingDataForChangeRequestsData/getDataFromAPI/outputData/requestsData/lead_1385_documents.zip",
+      "file_size": 6281,
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "success": true,
+      "lead_id": 1507,
+      "file_path": "/home/kuzminiv/EOGProjPyApi/AddingDataForChangeRequestsData/getDataFromAPI/outputData/requestsData/lead_1507_documents.zip",
+      "file_size": 6575,
+      "error": null,
+      "status_code": 200
+    }
+  ],
+  "start_time": "2025-11-27T08:42:13.731385",
+  "end_time": "2025-11-27T08:42:19.529223",
+  "duration": "0:00:05.797838"
+}
